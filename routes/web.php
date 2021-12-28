@@ -20,6 +20,10 @@ Route::get('/', function () {
 Route::get('/sambutan', function () {
     return view('sambutan');
 });
+
+Route::get('/pendidikan', function () {
+    return view('pendidikan');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
