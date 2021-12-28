@@ -138,8 +138,8 @@ Main Banner START -->
 					</svg>
 				</figure>
 				<!-- Title -->
-				<h1 class="mb-0 display-6">Limitless learning at your
-					<span class="position-relative">fingertips
+				<h1 class="mb-0 display-6">Aplikasi belajar gratis pertama di Indonesia <br>
+					<span class="position-relative">Kampus Gratis
 						<!-- SVG START -->
             <span class="position-absolute top-50 start-50 translate-middle ms-3 z-index-n1">
               <svg width="300px" height="62.1px" enable-background="new 0 0 366 62.1" viewBox="0 0 366 62.1" xmlns="http://www.w3.org/2000/svg">
@@ -151,23 +151,23 @@ Main Banner START -->
 				</h1>
 				
         <!-- Content -->
-				<p class="my-4 lead">Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by experts to help you acquire new skills.</p>
+				<p class="my-4 lead">Belajar mudah dengan kampus gratis, tanpa biaya dan dicarikan pekerjaan setelah lulus.</p>
 				
         <!-- Info -->
 				<ul class="list-inline position-relative justify-content-center justify-content-lg-start mb-4">
-					<li class="list-inline-item me-2"> <i class="bi bi-patch-check-fill h6 me-1"></i>Learn with experts</li>
-					<li class="list-inline-item me-2"> <i class="bi bi-patch-check-fill h6 me-1"></i>Get certificate</li>
-					<li class="list-inline-item"> <i class="bi bi-patch-check-fill h6 me-1"></i>Get membership</li>
+					<li class="list-inline-item me-2"> <i class="bi bi-patch-check-fill h6 me-1"></i>Pengajar profesional</li>
+					<li class="list-inline-item me-2"> <i class="bi bi-patch-check-fill h6 me-1"></i>GRATIS</li>
+					<li class="list-inline-item"> <i class="bi bi-patch-check-fill h6 me-1"></i>Dapat pekerjaan</li>
 				</ul>
 
 				<div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
 					<!-- Button -->
-					<a href="#" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Get Started</a>
+					<a href="#" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Daftar Sekarang!!</a>
 					<!-- Video button -->
           <a data-glightbox data-gallery="office-tour" href="https://www.youtube.com/embed/tXHviS-4ygo" class="ms-0 ms-sm-4 d-block">
 						<div class="btn btn-round btn-primary-shadow mb-0 me-3 align-middle d-inline-block"> <i class="fas fa-play"></i></div>
 						<div class="align-middle d-inline-block">
-							<h6 class="mb-0 fw-normal">Watch video</h6>
+							<h6 class="mb-0 fw-normal">Lihat demo</h6>
 						</div>
 					</a>
 				</div>
@@ -222,7 +222,7 @@ Main Banner START -->
 				<!-- Icon logos END -->
 
 				<!-- Congratulations message -->
-				<div class="p-3 bg-blur border border-light shadow rounded-4 position-absolute bottom-0 start-0 z-index-9 d-none d-xl-block mb-5 ms-5">
+				{{-- <div class="p-3 bg-blur border border-light shadow rounded-4 position-absolute bottom-0 start-0 z-index-9 d-none d-xl-block mb-5 ms-5">
 					<div class="d-flex justify-content-between align-items-center">
 						<!-- Icon -->
 						<span class="icon-lg bg-warning rounded-circle"><i class="fas fa-envelope text-white"></i></span>
@@ -232,7 +232,7 @@ Main Banner START -->
 							<p class="mb-0 small text-white">Your admission completed</p>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 
 				<!-- Active student --> 
 				<div class="p-3 bg-success d-inline-block rounded-4 shadow-lg position-absolute top-50 end-0 translate-middle-y mt-n7 z-index-1 d-none d-md-block" style="background:url(assets/images/pattern/01.png) no-repeat center center; background-size:cover;">
@@ -285,7 +285,7 @@ Counter START -->
 							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="10"	data-purecounter-delay="200">0</h5>
 							<span class="mb-0 h5">K</span>
 						</div>
-						<p class="mb-0">Online Courses</p>
+						<p class="mb-0">Total materi</p>
 					</div>
 				</div>
 			</div>
@@ -298,7 +298,7 @@ Counter START -->
 							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-delay="200">0</h5>
 							<span class="mb-0 h5">+</span>
 						</div>
-						<p class="mb-0">Expert Tutors</p>
+						<p class="mb-0">Dosen profesional</p>
 					</div>
 				</div>
 			</div>
@@ -311,7 +311,7 @@ Counter START -->
 							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="60"	data-purecounter-delay="200">0</h5>
 							<span class="mb-0 h5">K+</span>
 						</div>
-						<p class="mb-0">Online Students</p>
+						<p class="mb-0">Mahasiswa aktif</p>
 					</div>
 				</div>
 			</div>
@@ -324,7 +324,7 @@ Counter START -->
 							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6" data-purecounter-delay="300">0</h5>
 							<span class="mb-0 h5">K+</span>
 						</div>
-						<p class="mb-0">Certified Courses</p>
+						<p class="mb-0">Mitra yang bekerja sama</p>
 					</div>
 				</div>
 			</div>
@@ -333,6 +333,98 @@ Counter START -->
 </section>
 <!-- =======================
 Counter END -->
+
+<section class="pt-0 pt-md-5">
+	<div class="container">
+		<!-- Title -->
+
+		<div class="row align-items-center">
+			<div class="col-lg-5 position-relative">
+				<!-- Image -->
+				<img src="assets/images/instructor/03.jpg" class="rounded" alt="">
+			</div>
+
+			<div class="col-lg-7 mt-4 mt-lg-0">
+				<!-- Title -->
+				<h2 class="mb-3">Sambutan Pimpinan Kampus Gratis</h2>
+
+				<!-- Content -->
+				<p>How promotion excellent curiosity yet attempted happiness Gay prosperous impression had conviction For every delay death ask to style Me mean able  my by in they Extremity now strangers contained breakfast him discourse additions Sincerity collected contented led now perpetual extremely forfeited </p>
+				<p>Happiness prosperous impression had conviction For every delay in they Extremity now strangers contained breakfast him discourse additions Sincerity collected contented led now perpetual extremely forfeited</p>
+
+				<!-- Info -->
+				<ul class="list-group list-group-borderless mt-4">
+					<li class="list-group-item d-flex">
+            <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation takes less time
+					</li>
+					<li class="list-group-item d-flex">
+            <i class="bi bi-patch-check-fill text-success me-2"></i>Professional and easy to use software
+					</li>
+					<li class="list-group-item d-flex">
+            <i class="bi bi-patch-check-fill text-success me-2"></i>Perfect for any device with pixel-perfect design
+					</li>
+					<li class="list-group-item d-flex">
+            <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation too fast
+					</li>
+				</ul>
+
+				<!-- Progress bar START -->
+				<div class="row mt-3 g-4">
+					<!-- Progress item -->
+					<div class="col-md-6">
+						<div class="overflow-hidden">
+							<h6>Enterprise customer</h6>
+							<div class="progress progress-sm bg-primary bg-opacity-10">
+								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+								<span class="progress-percent-simple ms-auto h6 fw-light">85%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Progress item -->
+					<div class="col-md-6">
+						<div class="overflow-hidden">
+							<h6>Accurate Course</h6>
+							<div class="progress progress-sm bg-primary bg-opacity-10">
+								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+								<span class="progress-percent-simple ms-auto h6 fw-light">90%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Progress item -->
+					<div class="col-md-6">
+						<div class="overflow-hidden">
+							<h6>Languages</h6>
+							<div class="progress progress-sm bg-primary bg-opacity-10">
+								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<span class="progress-percent-simple ms-auto h6 fw-light">75%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Progress item -->
+					<div class="col-md-6">
+						<div class="overflow-hidden">
+							<h6>Instructors</h6>
+							<div class="progress progress-sm bg-primary bg-opacity-10">
+								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+								<span class="progress-percent-simple ms-auto h6 fw-light">95%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Progress bar END -->
+			</div>	
+		</div>
+	</div>
+</section>
+
+
 
 <!-- =======================
 Popular course START -->
