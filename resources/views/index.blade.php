@@ -353,7 +353,7 @@ Counter END -->
 				<p>Happiness prosperous impression had conviction For every delay in they Extremity now strangers contained breakfast him discourse additions Sincerity collected contented led now perpetual extremely forfeited</p>
 
 				<!-- Info -->
-				<ul class="list-group list-group-borderless mt-4">
+				<ul class="list-group list-group-borderless mt-4 mb-3">
 					<li class="list-group-item d-flex">
             <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation takes less time
 					</li>
@@ -367,65 +367,14 @@ Counter END -->
             <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation too fast
 					</li>
 				</ul>
-
-				<!-- Progress bar START -->
-				<div class="row mt-3 g-4">
-					<!-- Progress item -->
-					<div class="col-md-6">
-						<div class="overflow-hidden">
-							<h6>Enterprise customer</h6>
-							<div class="progress progress-sm bg-primary bg-opacity-10">
-								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-								<span class="progress-percent-simple ms-auto h6 fw-light">85%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Progress item -->
-					<div class="col-md-6">
-						<div class="overflow-hidden">
-							<h6>Accurate Course</h6>
-							<div class="progress progress-sm bg-primary bg-opacity-10">
-								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-								<span class="progress-percent-simple ms-auto h6 fw-light">90%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Progress item -->
-					<div class="col-md-6">
-						<div class="overflow-hidden">
-							<h6>Languages</h6>
-							<div class="progress progress-sm bg-primary bg-opacity-10">
-								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-								<span class="progress-percent-simple ms-auto h6 fw-light">75%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Progress item -->
-					<div class="col-md-6">
-						<div class="overflow-hidden">
-							<h6>Instructors</h6>
-							<div class="progress progress-sm bg-primary bg-opacity-10">
-								<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-								<span class="progress-percent-simple ms-auto h6 fw-light">95%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Progress bar END -->
+				<a class="btn btn-primary-soft mt-4" href="#">Baca Selengkapnya</a>
 			</div>	
 		</div>
 	</div>
 </section>
 
 <section>
-	<div class="container">
+	<div class="container mb-3">
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-sm-10 col-xl-6 text-center mx-auto">
@@ -460,11 +409,313 @@ Counter END -->
 		</div> <!-- Row END -->
 	</div>
 </section>
+<!-- =======================
+Content START -->
+<section class="position-relative pt-0 pt-lg-5">
+	<div class="container">
+		<div class="row mb-4">
+			<div class="col-lg-8 mx-auto text-center">
+				<h2 class="fs-1">Berita Terkini</h2>
+				<p class="mb-0">Choose from hundreds of courses from specialist organizations</p>
+			</div>
+		</div>
+		<div class="row g-4">
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/02.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-danger text-white">Student life</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Student Loan Survey: Many Owe $50K-plus</a></h5>
+						<p class="text-truncate-2">Affronting imprudence do he he everything. Offered chiefly farther of my no colonel shyness. Such on help ye some door if in. Laughter proposal laughing any son law consider. Needed except up piqued an.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Frances Guerrero</a></h6>
+							<span class="small">30M Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/08.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-success text-white">Student life</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">How to make a college list</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list down to colleges that best fit their needs, experts say. Yet remarkably appearance get him his projection.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Louis Crawford</a></h6>
+							<span class="small">12H Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/09.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-purple text-white">Travel</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Never underestimate the influence of Eduport</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Joan Wallace</a></h6>
+							<span class="small">5D Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/03.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-danger text-white">Research</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Covid-19 and the college experienced</a></h5>
+						<p class="text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Amanda Reed</a></h6>
+							<span class="small">July 21, 2021</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/07.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-success text-white">Research</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Best Pinterest Boards for learning about business</a></h5>
+						<p class="text-truncate-2">Fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Samuel Bishop</a></h6>
+							<span class="small">40D ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/04.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-primary text-white">Sports</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">The Olympics are over, now what?</a></h5>
+						<p class="text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Carolyn Ortiz</a></h6>
+							<span class="small">Aug 31, 2021</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+			
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/05.jpg" class="card-imgp" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-info text-white">Student story</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Campus Support for First-Year Students</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Lori Stevens</a></h6>
+							<span class="small">3M Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/06.jpg" class="card-imgp" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-orange text-white">Marketing</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Bad habits that people in the industry need to quit</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Louis Crawford</a></h6>
+							<span class="small">10D Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+		</div> <!-- Row end -->
+
+		<!-- Pagination START -->
+		<nav class="d-flex justify-content-center mt-5" aria-label="navigation">
+			<ul class="pagination pagination-primary-soft rounded mb-0">
+				<li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-double-left"></i></a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
+				<li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#">..</a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#">6</a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+			</ul>
+		</nav>
+		<!-- Pagination END -->
+
+	</div>
+</section>
+<!-- =======================
+Page content END -->
+
+<!-- =======================
+Action box START -->
+<section class="">
+	<div class="container">
+		<div class="row g-4">
+      <!-- Action box item -->
+			<div class="col-lg-6 position-relative overflow-hidden">
+				<div class="bg-primary bg-opacity-10 rounded-3 p-5 h-100">
+					<!-- Image -->
+					<div class="position-absolute bottom-0 end-0 me-3">
+						<img src="assets/images/element/08.svg" class="h-100px h-sm-200px" alt="">
+					</div>	
+					<!-- Content -->
+					<div class="row">
+						<div class="col-sm-8 position-relative">
+							<h3 class="mb-1">Kerjasama Universitas</h3>
+							<p class="mb-3 h5 fw-light lead">Get the right professional certificate program for you.</p>
+							<a href="#" class="btn btn-primary mb-0">Lihat kerjasama</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <!-- Action box item -->
+			<div class="col-lg-6 position-relative overflow-hidden">
+				<div class="bg-secondary rounded-3 bg-opacity-10 p-5 h-100">
+					<!-- Image -->
+					<div class="position-absolute bottom-0 end-0 me-3">
+						<img src="assets/images/element/15.svg" class="h-100px h-sm-200px" alt="">
+					</div>	
+					<!-- Content -->
+					<div class="row">
+						<div class="col-sm-8 position-relative">
+							<h3 class="mb-1">Kerjasama Mitra</h3>
+							<p class="mb-3 h5 fw-light lead">Enroll now in the most popular and best rated courses.</p>
+							<a href="#" class="btn btn-warning mb-0">Lihat kerjasama</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Action box END -->
 
 
 <!-- =======================
 Popular course START -->
-<section>
+{{-- <section>
 	<div class="container">
 		<!-- Title -->
 		<div class="row mb-4">
@@ -1327,7 +1578,7 @@ Popular course START -->
 		</div>
 		<!-- Tabs content END -->
 	</div>
-</section>
+</section> --}}
 <!-- =======================
 Popular course END -->
 
@@ -1361,12 +1612,12 @@ Action box START -->
 							<div class="row align-items-center">
 								<!-- Title -->
 								<div class="col-lg-7">
-									<h3 class="text-white">Become an Instructor!</h3>
+									<h3 class="text-white">Daftar Sekarang!!</h3>
 									<p class="text-white mb-3 mb-lg-0">Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced. Yet uncommonly his ten who diminution astonished.</p>
 								</div>
 								<!-- Content and input -->
 								<div class="col-lg-5 text-lg-end">
-									<a href="#" class="btn btn-outline-warning mb-0">Start Teaching Today</a>
+									<a href="#" class="btn btn-outline-warning btn-lg mb-0">Daftar Kampus Gratis</a>
 								</div>
 							</div>
 						</div>
@@ -1825,9 +2076,9 @@ Reviews START -->
 			</div>
 			<div class="col-xl-5 order-1 text-center text-xl-start">
 				<!-- Title -->
-				<h2 class="fs-1">Some valuable feedback from our students</h2>
+				<h2 class="fs-1">Kata mereka tentang Kampus Gratis</h2>
 				<p>Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how.</p>
-				<a href="#" class="btn btn-primary mb-0">View Reviews</a>
+				<a href="#" class="btn btn-primary mb-0">Lihat testimoni lainnya</a>
 			</div>
 		</div> <!-- Row END -->
 	</div>
