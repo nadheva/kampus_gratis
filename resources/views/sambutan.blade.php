@@ -11,7 +11,7 @@
                 <div class="card shadow p-2 mb-4 text-center">
                   <div class="rounded-3">
                     <!-- Image -->
-                    <img src="assets/images/instructor/07.jpg" class="card-img" alt="course image">
+                    <img src="assets/images/instructor/03.jpg" class="card-img" alt="course image">
                   </div>
         
                   <!-- Card body -->

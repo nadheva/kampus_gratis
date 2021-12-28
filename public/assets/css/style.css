@@ -4609,6 +4609,25 @@ textarea.form-control-lg {
   background-color: #fff;
   border-color: #dde0e3 #dde0e3 #fff;
 }
+.navbar-up{
+  background-color: #066ac9;
+  font-weight: 500;
+}
+.nav-up-item{
+  color: #f2c22c
+  ;
+}
+.nav-up-link{
+  display: block;
+  padding: 0.25rem 0.75rem;
+  color: #fff3cd;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-up-link:hover, .nav-up-link:focus {
+  color: #f7c32e
+  ;
+}
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-left-radius: 0;
@@ -4655,7 +4674,6 @@ textarea.form-control-lg {
 .tab-content > .active {
   display: block;
 }
-
 .navbar {
   position: relative;
   display: -webkit-box;
@@ -4673,6 +4691,7 @@ textarea.form-control-lg {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
+  font-size: 14px;
 }
 .navbar > .container,
 .navbar > .container-fluid,
