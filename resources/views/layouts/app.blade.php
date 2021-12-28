@@ -7,6 +7,7 @@
 <!-- Header START -->
 <header class="navbar-light navbar-sticky header-static">
 	<!-- Logo Nav START -->
+
     @include('partials.navbar')
 	<!-- Logo Nav END -->
 </header>
