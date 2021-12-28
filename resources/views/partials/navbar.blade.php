@@ -32,7 +32,7 @@
         <!-- Main navbar START -->
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">      
                 <ul class="navbar-nav mx-auto order-0">
-                    <li class="nav-item menu"><a class="nav-link" href="index.html">Tentang</a></li>
+                    <li class="nav-item menu"><a class="nav-link" href="index.html">Tentang Kampus Gratis</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="index.html">Pendidikan</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="index.html">Mahasiswa</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="index.html">Penelitian</a></li>
