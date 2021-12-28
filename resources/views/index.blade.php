@@ -367,7 +367,7 @@ Counter END -->
             <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation too fast
 					</li>
 				</ul>
-				<a class="btn btn-primary-soft mt-4" href="#">Baca Selengkapnya</a>
+				<a class="btn btn-primary-soft mt-4" href="/sambutan">Baca Selengkapnya</a>
 			</div>	
 		</div>
 	</div>
