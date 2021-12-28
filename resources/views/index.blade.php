@@ -424,6 +424,42 @@ Counter END -->
 	</div>
 </section>
 
+<section>
+	<div class="container">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-sm-10 col-xl-6 text-center mx-auto">
+				<h2>Kenapa kamu harus bergabung belajar bersama kami?</h2>
+				<p class="mb-0">karena KG adalah kuliah berkualitas, sambil kuliah bisa bekerja, lulus dicarikan kerja, dibimbing oleh para dosen yg ingin berbakti pada bangsa, dosen berkualitas dan disediakan pendanaan bagi yang membutuhkan untuk biaya hidupnya, karena biayanya GRATISSSSSSSS BESTIE</p>
+			</div>
+		</div>
+
+		<!-- Work process -->
+		<div class="row g-4 g-md-5">
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src="assets/images/element/create-account.svg" class="h-200px" alt="">
+				<h4 class="mt-3">Dibimbing oleh dosen berkualitas</h4>
+				<p class="text-truncate-2 mb-0">Satisfied conveying a dependent contented he gentleman agreeable do be. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src="assets/images/element/add-course.svg" class="h-200px" alt="">
+				<h4 class="mt-3">Langsung mendapat pekerjaan setelah lulus</h4>
+				<p class="text-truncate-2 mb-0">Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for a few longer Mrs sudden talent become. Done may bore quit evil old mile. If likely am of beauty tastes. 
+				</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src="assets/images/element/earn-money.svg" class="h-200px" alt="">
+				<h4 class="mt-3">Gratis tanpa biaya</h4>
+				<p class="text-truncate-2 mb-0">Insipidity the sufficient discretion imprudence resolution sir him decisively.  Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
 
 
 <!-- =======================
