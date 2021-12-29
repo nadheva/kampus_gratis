@@ -238,4 +238,24 @@ Program Studi START -->
 <!-- =======================
 Program Studi END -->
 
+<div id="pspdfkit" style="width: 100%; height: 100vh;"></div>
+
+
+@push('scripts')
+<script src="{{asset('assets/dist/pspdfkit.js')}}"></script>
+<script>
+	PSPDFKit.load({
+		container: "#pspdfkit",
+  	document: "https://drive.google.com/file/d/1P_rf7yJQpTqLI_gWgc2a_4gEG5Z4YaQh/view?usp=sharing"
+	})
+	.then(function(instance) {
+		console.log("PSPDFKit loaded", instance);
+	})
+	.catch(function(error) {
+		console.error(error.message);
+	});
+</script>
+
+@endpush
+
 </x-app-layout>
