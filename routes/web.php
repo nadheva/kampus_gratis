@@ -24,6 +24,11 @@ Route::get('/sambutan', function () {
 Route::get('/pendidikan', function () {
     return view('pendidikan');
 });
+
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
