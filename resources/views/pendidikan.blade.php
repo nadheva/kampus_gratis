@@ -24,7 +24,7 @@ Main Banner START -->
         <h1 class="display-4">Pendidikan Kampus Gratis</h1>
 				<p class="lead mb-4">We are so eager to be working with kids and making a difference in their careers. Being a mentor is what we have always wanted to be.</p>
 
-				
+
         <!-- Button -->
         <a href="#contact-form" class="btn btn-primary">Daftar Kampus Gratis</a>
 			</div>
@@ -111,7 +111,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/01.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">Digital Marketing</a>
@@ -127,7 +127,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/03.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">Figma</a>
@@ -143,7 +143,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/05.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">Python</a>
@@ -159,7 +159,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/06.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">Angular</a>
@@ -175,7 +175,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/07.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">React-Native</a>
@@ -191,7 +191,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/08.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">Sketch</a>
@@ -207,7 +207,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/09.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">Javascript</a>
@@ -223,7 +223,7 @@ Program Studi START -->
 				<div class="card card-metro overflow-hidden rounded-3">
 					<img src="assets/images/courses/4by3/10.jpg" alt="">
 					<!-- Image overlay -->
-					<div class="card-img-overlay d-flex"> 
+					<div class="card-img-overlay d-flex">
 						<!-- Info -->
 						<div class="mt-auto card-text">
 							<a href="#" class="text-white mt-auto h5 stretched-link">Bootstrap</a>
@@ -242,11 +242,12 @@ Program Studi END -->
 
 
 @push('scripts')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="{{asset('assets/dist/pspdfkit.js')}}"></script>
 <script>
 	PSPDFKit.load({
 		container: "#pspdfkit",
-  	document: "https://drive.google.com/file/d/1P_rf7yJQpTqLI_gWgc2a_4gEG5Z4YaQh/view?usp=sharing"
+  	    document: "http://127.0.0.1:8000/berkas/demo.pdf"
 	})
 	.then(function(instance) {
 		console.log("PSPDFKit loaded", instance);
@@ -259,3 +260,4 @@ Program Studi END -->
 @endpush
 
 </x-app-layout>
+
