@@ -238,7 +238,18 @@ Program Studi START -->
 <!-- =======================
 Program Studi END -->
 
-<div id="pspdfkit" style="width: 100%; height: 100vh;"></div>
+<section class="mt-4">
+	<div class="container">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-lg-8 text-center mx-auto">
+				<h2 class="fs-1">Kalender Akademik</h2>
+			</div>
+		</div>
+
+		<div id="pspdfkit" style="width: 100%; height: 100vh;"></div>
+	</div>
+</section>
 
 
 @push('scripts')
