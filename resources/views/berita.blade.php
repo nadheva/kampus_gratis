@@ -55,7 +55,7 @@
                         <div class="col-xl-6">
                             <form class="bg-body shadow rounded p-2">
                                 <div class="input-group input-borderless">
-                                    <input class="form-control me-1" type="search" placeholder="Find your course">
+                                    <input class="form-control me-1" type="search" placeholder="Cari disini">
                                     <button type="button" class="btn btn-primary mb-0 rounded z-index-1"><i class="fas fa-search"></i></button>
                                 </div>
                             </form>
@@ -65,10 +65,10 @@
                         <div class="col-xl-3 mt-3 mt-xl-0">
                             <form class="bg-body shadow rounded p-2 input-borderless">
                                 <select class="form-select form-select-sm js-choice border-0" aria-label=".form-select-sm">
-                                    <option value="">Most Viewed</option>
-                                    <option>Recently search</option>
-                                    <option>Most popular</option>
-                                    <option>Top rated</option>
+                                    <option value="">Paling banyak dilihat</option>
+                                    <option>Sedang dicari</option>
+                                    <option>Paling populer</option>
+                                    <option>Rating tertinggi</option>
                                 </select>
                             </form>
                         </div>
@@ -80,7 +80,7 @@
                                 <i class="fas fa-sliders-h me-1"></i> Show filter
                             </button>
                             <!-- Advanced filter responsive toggler END -->
-                            <p class="mb-0 text-end">Showing 1-7 of 32 result</p>
+                            <p class="mb-0 text-end">Menampilkan 1-7 dari 32 hasil </p>
                         </div>
         
                     </div>
@@ -90,328 +90,231 @@
                     <div class="row g-4">
         
                         <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/08.jpg" class="card-img-top" alt="course image">
-                                <!-- Card body -->
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-purple bg-opacity-10 text-purple">All level</a>
-                                        <a href="#" class="h6 fw-light mb-0"><i class="far fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Sketch from A to Z: for app designer</a></h5>
-                                    <p class="mb-2 text-truncate-2">Proposal indulged no do sociable he throwing settling.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.0/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>12h 56m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>15 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/02.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-success bg-opacity-10 text-success">Beginner</a>
-                                        <a href="#" class="text-danger"><i class="fas fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Graphic Design Masterclass</a></h5>
-                                    <p class="mb-2 text-truncate-2">Rooms oh fully taken by worse do Points afraid but may end Rooms Points afraid but may end Rooms</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.5/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>9h 56m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>65 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/03.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-success bg-opacity-10 text-success">Beginner</a>
-                                        <a href="#" class="h6 fw-light mb-0"><i class="far fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Create a Design System in Figma</a></h5>
-                                    <p class="mb-2 text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end afraid but may end.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.5/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>5h 56m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>32 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/07.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-success bg-opacity-10 text-success">Beginner</a>
-                                        <a href="#" class="text-danger"><i class="fas fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Deep Learning with React-Native </a></h5>
-                                    <p class="mb-2 text-truncate-2">Far advanced settling say finished raillery. Offered chiefly farther.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.0/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>18h 56m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>99 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/11.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-purple bg-opacity-10 text-purple">All level</a>
-                                        <a href="#" class="text-danger"><i class="fas fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Build Responsive Websites with HTML</a></h5>
-                                    <p class="mb-2 text-truncate-2">Far advanced settling say finished raillery. Offered chiefly farther.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.0/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>15h 30m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>68 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/12.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-success bg-opacity-10 text-success">Beginner</a>
-                                        <a href="#" class="h6 fw-light mb-0"><i class="far fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Build Websites with CSS</a></h5>
-                                    <p class="text-truncate-2 mb-2">Far advanced settling say finished raillery. Offered chiefly farther.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.5/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>36h 30m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>72 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/05.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-success bg-opacity-10 text-success">Beginner</a>
-                                        <a href="#" class="h6 fw-light mb-0"><i class="far fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">The Complete Web Development in python</a></h5>
-                                    <p class="text-truncate-2 mb-2">Mention Mr manners opinion if garrets enabled.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.5/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>10h 00m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>26 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/06.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-info bg-opacity-10 text-info">Intermediate</a>
-                                        <a href="#" class="h6 fw-light mb-0"><i class="far fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Angular – The Complete Guider</a></h5>
-                                    <p class="text-truncate-2 mb-2">Rooms oh fully taken by worse do. Points afraid but may end.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.5/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>9h 32m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>42 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-        
-                        <!-- Card item START -->
-                        <div class="col-sm-6 col-xl-4">
-                            <div class="card shadow h-100">
-                                <!-- Image -->
-                                <img src="assets/images/courses/4by3/10.jpg" class="card-img-top" alt="course image">
-                                <div class="card-body pb-0">
-                                    <!-- Badge and favorite -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <a href="#" class="badge bg-info bg-opacity-10 text-info">Intermediate</a>
-                                        <a href="#" class="text-danger"><i class="fas fa-heart"></i></a>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title"><a href="#">Bootstrap 5 From Scratch</a></h5>
-                                    <p class="text-truncate-2 mb-2">Far advanced settling say finished raillery. Offered chiefly farther.</p>
-                                    <!-- Rating star -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-                                        <li class="list-inline-item ms-2 h6 fw-light mb-0">4.5/5.0</li>
-                                    </ul>
-                                </div>
-                                <!-- Card footer -->
-                                <div class="card-footer pt-0 pb-3">
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>25h 56m</span>
-                                        <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>38 lectures</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+ 			<!-- Card item START -->
+             <div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/02.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-danger text-white">Student life</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Student Loan Survey: Many Owe $50K-plus</a></h5>
+						<p class="text-truncate-2">Affronting imprudence do he he everything. Offered chiefly farther of my no colonel shyness. Such on help ye some door if in. Laughter proposal laughing any son law consider. Needed except up piqued an.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Frances Guerrero</a></h6>
+							<span class="small">30M Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/08.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-success text-white">Student life</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">How to make a college list</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list down to colleges that best fit their needs, experts say. Yet remarkably appearance get him his projection.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Louis Crawford</a></h6>
+							<span class="small">12H Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/09.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-purple text-white">Travel</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Never underestimate the influence of Eduport</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Joan Wallace</a></h6>
+							<span class="small">5D Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/03.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-danger text-white">Research</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Covid-19 and the college experienced</a></h5>
+						<p class="text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Amanda Reed</a></h6>
+							<span class="small">July 21, 2021</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/07.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-success text-white">Research</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Best Pinterest Boards for learning about business</a></h5>
+						<p class="text-truncate-2">Fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Samuel Bishop</a></h6>
+							<span class="small">40D ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/04.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-primary text-white">Sports</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">The Olympics are over, now what?</a></h5>
+						<p class="text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Carolyn Ortiz</a></h6>
+							<span class="small">Aug 31, 2021</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+			
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/05.jpg" class="card-imgp" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-info text-white">Student story</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Campus Support for First-Year Students</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Lori Stevens</a></h6>
+							<span class="small">3M Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/06.jpg" class="card-imgp" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						<div class="card-img-overlay d-flex align-items-start p-3">
+							<!-- badge -->
+							<a href="#" class="badge bg-orange text-white">Marketing</a>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Bad habits that people in the industry need to quit</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Louis Crawford</a></h6>
+							<span class="small">10D Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
                         <!-- Card item END -->
         
                     </div>
@@ -448,14 +351,14 @@
                                         <!-- Category START -->
                                         <div class="card card-body shadow p-4 mb-4">
                                             <!-- Title -->
-                                            <h4 class="mb-3">Category</h4>
+                                            <h4 class="mb-3">Filter</h4>
                                             <!-- Category group -->
                                             <div class="col-12">
                                                 <!-- Checkbox -->
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
-                                                        <label class="form-check-label" for="flexCheckDefault9">All</label>
+                                                        <label class="form-check-label" for="flexCheckDefault9">Semua</label>
                                                     </div>
                                                     <span class="small">(1256)</span>
                                                 </div>
@@ -463,7 +366,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
-                                                        <label class="form-check-label" for="flexCheckDefault10">Development</label>
+                                                        <label class="form-check-label" for="flexCheckDefault10">Pendidikan</label>
                                                     </div>
                                                     <span class="small">(365)</span>
                                                 </div>
@@ -471,7 +374,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
-                                                        <label class="form-check-label" for="flexCheckDefault11">Design</label>
+                                                        <label class="form-check-label" for="flexCheckDefault11">Penelitian</label>
                                                     </div>
                                                     <span class="small">(156)</span>
                                                 </div>
@@ -479,7 +382,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
-                                                        <label class="form-check-label" for="flexCheckDefault12">Accounting</label>
+                                                        <label class="form-check-label" for="flexCheckDefault12">Pengabdian</label>
                                                     </div>
                                                     <span class="small">(65)</span>
                                                 </div>
@@ -487,34 +390,11 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
-                                                        <label class="form-check-label" for="flexCheckDefault17">Translation</label>
+                                                        <label class="form-check-label" for="flexCheckDefault17">Prestasi</label>
                                                     </div>
                                                     <span class="small">(245)</span>
                                                 </div>
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                                                        <label class="form-check-label" for="flexCheckDefault13">Finance</label>
-                                                    </div>
-                                                    <span class="small">(184)</span>
-                                                </div>
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
-                                                        <label class="form-check-label" for="flexCheckDefault14">Legal</label>
-                                                    </div>
-                                                    <span class="small">(65)</span>
-                                                </div>
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
-                                                        <label class="form-check-label" for="flexCheckDefault15">Photography</label>
-                                                    </div>
-                                                    <span class="small">(99)</span>
-                                                </div>
+                                              
                                                 
                                                 <!-- Collapse body -->
                                                 <div class="collapse multi-collapse" id="multiCollapseExample1">
@@ -646,7 +526,7 @@
         
                             <!-- Button -->
                             <div class="d-grid p-2 p-lg-0 text-center">
-                                <button class="btn btn-primary mb-0">Filter Results</button>
+                                <button class="btn btn-primary mb-0">Filter Hasil</button>
                             </div>
         
                         </div>
@@ -694,13 +574,13 @@
                         <div class="row align-items-center">
                             <!-- Title -->
                             <div class="col-lg-6">
-                                <h3 class="text-white mb-3 mb-lg-0">Are you ready for a more great Conversation?</h3>
+                                <h3 class="text-white mb-3 mb-lg-0">Silahkan subscribe untuk mendapatkan berita terkini</h3>
                             </div>
                             <!-- Input item -->
                             <div class="col-lg-6 text-lg-end">
                                 <form class="bg-body rounded p-2">
                                     <div class="input-group">
-                                        <input class="form-control border-0 me-1" type="email" placeholder="Type your email here">
+                                        <input class="form-control border-0 me-1" type="email" placeholder="Ketik email disini">
                                         <button type="button" class="btn btn-dark mb-0 rounded">Subscribe</button>
                                     </div>
                                 </form>
