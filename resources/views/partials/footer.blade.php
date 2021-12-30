@@ -4,7 +4,7 @@
 		<div class="row g-4">
 
 			<!-- Widget 1 START -->
-			<div class="col-lg-6 mx-auto">
+			<div class="col-lg-5 mx-auto">
 				<!-- logo -->
 				<a class="me-0" href="index.html">
 					<img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo">
