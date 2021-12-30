@@ -29,6 +29,10 @@ Route::get('/tentang', function () {
     return view('tentang');
 });
 
+Route::get('/mahasiswa', function () {
+    return view('mahasiswa');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
