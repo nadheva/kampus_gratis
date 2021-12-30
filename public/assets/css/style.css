@@ -4599,7 +4599,7 @@ textarea.form-control-lg {
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
-  color: #9a9ea4 !important;
+  color: white !important;
   background-color: transparent;
   border-color: transparent;
 }
@@ -4609,13 +4609,19 @@ textarea.form-control-lg {
   background-color: #fff;
   border-color: #dde0e3 #dde0e3 #fff;
 }
+
 .navbar-up{
   background-color: #066ac9;
   font-weight: 500;
 }
 .nav-up-item{
-  color: #f2c22c
-  ;
+  color: #f2c22c;
+}
+.putih{
+  color: white !important;
+}
+.putih:hover, .putih:focus{
+  color: #f7c32e;
 }
 .nav-up-link{
   display: block;
@@ -4625,8 +4631,7 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 .nav-up-link:hover, .nav-up-link:focus {
-  color: #f7c32e
-  ;
+  color: #f7c32e;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -17989,6 +17994,7 @@ textarea.form-control-lg {
   margin-left: 0.35rem;
   font-weight: 900;
   vertical-align: middle;
+  text-align: end !important;
   border: none;
 }
 .navbar-expand-sm .dropdown-submenu.dropend .dropdown-toggle:after {
