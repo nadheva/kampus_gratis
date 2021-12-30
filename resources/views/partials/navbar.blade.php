@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl navbar-up py-3">
+{{-- <nav class="navbar navbar-expand-xl navbar-up py-3">
     <div class="container-fluid px-3 px-xl-5">
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
@@ -8,6 +8,30 @@
                 <li class="nav-up-item menu"><a class="nav-up-link" href="index.html">FAQ</a></li>
             </ul>
         </div>
+    </div>
+</nav> --}}
+<nav class="navbar navbar-expand-xl navbar-up">
+    <div class="container-fluid px-3 px-xl-5">
+        <!-- Main navbar START -->
+        <div class="navbar-collapse w-100 collapse" id="navbarCollapse">      
+            <div class="mx-auto" style="width: 200px;">
+              </div>
+            <!-- Nav Main menu END -->
+
+            <!-- Nav Search START -->
+            <div class="nav px-4 ml-4 flex-nowrap align-items-center">
+                <div class="nav-item w-100">
+                    <ul class="navbar-nav mx-auto order-0">
+                        <li class="nav-item menu"><a class="nav-link putih" href="/tentang">Berita</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="/pendidikan">Alumni</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="/mahasiswa">Pengumuman</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="index.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Nav Search END -->
+        </div>
+        <!-- Main navbar END -->
     </div>
 </nav>
 
