@@ -41,6 +41,10 @@ Route::get('/pengabdian', function () {
     return view('pengabdian');
 });
 
+Route::get('/berita', function () {
+    return view('berita');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
