@@ -48,61 +48,70 @@
                     </div>
                  <!-- Content END -->
                 </div>
-                <section class="py-0 py-xl-5">
+                <section>
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <div class="container d-flex justify-container-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="donutchart" style="width: 900px; height: 500px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-0 py-lg-5">
                     <div class="container">
-                        <div class="row g-4">
-                        <!-- Counter item -->
-                            <div class="col-sm-6 col-xl-3">
-                                <div class="d-flex justify-content-center align-items-center p-4 bg-purple bg-opacity-10 rounded-3">
-                                    <span class="display-6 lh-1 text-purple mb-0"><i class="fas fa-user-graduate"></i></span>
-                                    <div class="ms-4 h6 fw-normal">
-                                        <div class="d-flex">
-                                            <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="60"	data-purecounter-delay="200">0</h5>
-                                            <span class="mb-0 h5">K+</span>
-                                        </div>
-                                        <p class="mb-0">Jumlah Mahasiswa</p>
+                        <div class="bg-orange bg-opacity-10 p-4 p-sm-5 rounded position-relative overflow-hidden">
+                            <!-- SVG decoration -->
+                            <figure class="position-absolute top-50 end-0 translate-middle-y me-n7">
+                                <svg class="fill-white opacity-8 rotate-193" width="676px" height="161.3px" viewBox="0 0 676 161.3" style="enable-background:new 0 0 676 161.3;" xml:space="preserve">
+                                    <path d="M53.6,18.8c28.6,8.8,50.3,27.3,70.9,48c19.9,19.9,39.5,40.8,65.3,53c53.3,24.9,116,12.4,168.2-9.1 c58.4-23.9,113.2-59.8,176.2-70.3c30.9-5.1,64.1-2.6,90.9,14.7c22.4,14.4,34.4,36.9,39.5,62.4c2.9,14.5,3.9,29.2,4.6,43.9h6.8 c-0.2-4.2-0.5-8.3-0.8-12.5c-1.7-24.1-4.9-49.1-17.6-70.3c-14.5-23.9-40-39.2-67-44.8c-32.9-6.8-67.2-0.3-98.5,10.2 c-30.3,10-59,24.2-87.7,38.1c-54.8,26.4-115.5,53.1-177.9,42c-14.5-2.6-28.7-7.4-41.7-14.7c-12.8-7.3-23.9-16.7-34.6-26.7 c-20.7-19.6-39.4-42-64.1-56.8c-25.6-15.4-56.4-22.2-86-19H0v6.9C17.9,11.8,36.3,13.5,53.6,18.8z"/>
+                                </svg>
+                            </figure>
+                            <!-- SVG decoration -->
+                            <figure class="position-absolute top-0 start-0 mt-3 ms-n3 opacity-5">
+                                <svg width="818.6px" height="235.1px" viewBox="0 0 818.6 235.1">
+                                    <path class="fill-orange" d="M735,226.3c-5.7,0.6-11.5,1.1-17.2,1.7c-66.2,6.8-134.7,13.7-192.6-16.6c-34.6-18.1-61.4-47.9-87.3-76.7 c-21.4-23.8-43.6-48.5-70.2-66.7c-53.2-36.4-121.6-44.8-175.1-48c-13.6-0.8-27.5-1.4-40.9-1.9c-46.9-1.9-95.4-3.9-141.2-16.5 C8.3,1.2,6.2,0.6,4.2,0H0c3.3,1,6.6,2,10,3c46,12.5,94.5,14.6,141.5,16.5c13.4,0.6,27.3,1.1,40.8,1.9 c53.4,3.2,121.5,11.5,174.5,47.7c26.5,18.1,48.6,42.7,70,66.5c26,28.9,52.9,58.8,87.7,76.9c58.3,30.5,127,23.5,193.3,16.7 c5.8-0.6,11.5-1.2,17.2-1.7c26.2-2.6,55-4.2,83.5-2.2v-1.2C790,222,761.2,223.7,735,226.3z"></path>
+                                </svg>
+                            </figure>
+                
+                            <div class="row g-4 position-relative align-items-center justify-content-center">
+                
+                                <!-- Counter item -->
+                                <div class="col-sm-6 col-lg-3 text-center">
+                                    <div class="d-flex justify-content-center">
+                                        <h4 class="purecounter display-6 text-orange fw-bold mb-0" data-purecounter-start="0" data-purecounter-end="89"	data-purecounter-delay="200">0</h4>
+                                        <span class="display-6 text-orange mb-0">K</span>
                                     </div>
+                                    <h6 class="mb-0 fw-bold">Jumlah Mahasiswa</h6>
                                 </div>
-                            </div>
-                            <!-- Counter item -->
-                            <div class="col-sm-6 col-xl-3">
-                                <div class="d-flex justify-content-center align-items-center p-4 bg-blue bg-opacity-10 rounded-3">
-                                    <span class="display-6 lh-1 text-blue mb-0"><i class="fas fa-user-tie"></i></span>
-                                    <div class="ms-4 h6 fw-normal">
-                                        <div class="d-flex">
-                                            <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-delay="200">0</h5>
-                                            <span class="mb-0 h5">+</span>
-                                        </div>
-                                        <p class="mb-0">Jumlah Dosen Tetap</p>
+                
+                                <!-- Counter item -->
+                                <div class="col-sm-6 col-lg-3 text-center">
+                                    <div class="d-flex justify-content-center">
+                                        <h4 class="purecounter display-6 text-orange fw-bold mb-0" data-purecounter-start="0" data-purecounter-end="25"	data-purecounter-delay="200">0</h4>
+                                        <span class="display-6 text-orange mb-0">K</span>
+                                    </div>	
+                                    <h6 class="mb-0 fw-bold">Total Dosen</h6>
+                                </div>
+                
+                                <!-- Counter item -->
+                                <div class="col-sm-6 col-lg-3 text-center">
+                                    <div class="d-flex justify-content-center">
+                                        <h4 class="purecounter display-6 text-orange fw-bold mb-0" data-purecounter-start="0" data-purecounter-end="20"	data-purecounter-delay="200">0</h4>
+                                        <span class="display-6 text-orange mb-0"></span>
                                     </div>
+                                    <h6 class="mb-0 fw-bold">Total Program Studi</h6>
                                 </div>
-                            </div>
-                            <!-- Counter item -->
-                            <div class="col-sm-6 col-xl-3">
-                                <div class="d-flex justify-content-center align-items-center p-4 bg-info bg-opacity-10 rounded-3">
-                                    <span class="display-6 lh-1 text-info mb-0"><i class="bi bi-patch-check-fill"></i></span>
-                                    <div class="ms-4 h6 fw-normal">
-                                        <div class="d-flex">
-                                            <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6" data-purecounter-delay="300">0</h5>
-                                            <span class="mb-0 h5">K+</span>
-                                        </div>
-                                        <p class="mb-0">Jumlah Program Studi</p>
+                
+                                <!-- Counter item -->
+                                <div class="col-sm-6 col-lg-3 text-center">
+                                    <div class="d-flex justify-content-center">
+                                        <h4 class="purecounter display-6 text-orange fw-bold mb-0" data-purecounter-start="0" data-purecounter-end="20"	data-purecounter-delay="200">0</h4>
+                                        <span class="display-6 text-orange mb-0">K</span>
                                     </div>
+                                    <h6 class="mb-0 fw-bold">Jumlah Staff Administrasi</h6>
                                 </div>
-                            </div>
-                            <!-- Counter item -->
-                            <div class="col-sm-6 col-xl-3">
-                                <div class="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
-                                    <span class="display-6 lh-1 text-warning mb-0"><i class="fas fa-tv"></i></span>
-                                    <div class="ms-4 h6 fw-normal">
-                                        <div class="d-flex">
-                                            <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="10"	data-purecounter-delay="200">0</h5>
-                                            <span class="mb-0 h5">K</span>
-                                        </div>
-                                        <p class="mb-0">Jumlah Staff Administrasi</p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> <!-- Row END -->
                         </div>
                     </div>
                     <div class="text-center mt-5">
@@ -120,6 +129,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="pt-4">
                     <div class="container">
                         <!-- Search option START -->
@@ -560,4 +570,31 @@
     </section>
     <!-- =======================
     Page content END -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Diploma 1', 11],
+        ['Sarjana', 2],
+        ['Pascasarjana', 2],
+        ]);
+
+        var options = {
+        title: 'Jumlah Mahasiswa',
+        pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+        }
+
+        });
+    </script>
 </x-app-layout>
