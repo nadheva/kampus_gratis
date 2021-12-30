@@ -33,6 +33,10 @@ Route::get('/mahasiswa', function () {
     return view('mahasiswa');
 });
 
+Route::get('/penelitian', function () {
+    return view('penelitian');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
