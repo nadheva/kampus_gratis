@@ -4,7 +4,7 @@
 		<div class="row g-4">
 
 			<!-- Widget 1 START -->
-			<div class="col-lg-3">
+			<div class="col-lg-6 mx-auto">
 				<!-- logo -->
 				<a class="me-0" href="index.html">
 					<img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo">
@@ -21,7 +21,7 @@
 			</div>
 			<!-- Widget 1 END -->
 
-			<!-- Widget 2 START -->
+			{{-- <!-- Widget 2 START -->
 			<div class="col-lg-6">
 				<div class="row g-4">
 					<!-- Link block -->
@@ -57,7 +57,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 			<!-- Widget 2 END -->
 
 			<!-- Widget 3 START -->
@@ -77,9 +77,9 @@
 						<a href="#"> <img src="assets/images/client/google-play.svg" alt=""> </a>
 					</div>
 					<!-- App store button -->
-					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
+					{{-- <div class="col-6 col-sm-4 col-md-3 col-lg-6">
 						<a href="#"> <img src="assets/images/client/app-store.svg" alt="app-store"> </a>
-					</div>
+					</div> --}}
 				</div> <!-- Row END -->
 			</div> 
 			<!-- Widget 3 END -->

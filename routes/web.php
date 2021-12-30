@@ -37,6 +37,10 @@ Route::get('/penelitian', function () {
     return view('penelitian');
 });
 
+Route::get('/pengabdian', function () {
+    return view('pengabdian');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

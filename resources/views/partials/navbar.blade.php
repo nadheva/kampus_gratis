@@ -36,7 +36,7 @@
                     <li class="nav-item menu"><a class="nav-link" href="/pendidikan">Pendidikan</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/mahasiswa">Mahasiswa</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/penelitian">Penelitian</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="index.html">Pengabdian</a></li>
+                    <li class="nav-item menu"><a class="nav-link" href="/pengabdian">Pengabdian</a></li>
                 </ul>
             <!-- Nav Main menu END -->
 
