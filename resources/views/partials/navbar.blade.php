@@ -22,10 +22,10 @@
             <div class="nav px-4 ml-4 flex-nowrap align-items-center">
                 <div class="nav-item w-100">
                     <ul class="navbar-nav mx-auto order-0">
-                        <li class="nav-item menu"><a class="nav-link putih" href="/tentang">Berita</a></li>
-                        <li class="nav-item menu"><a class="nav-link putih" href="/pendidikan">Alumni</a></li>
-                        <li class="nav-item menu"><a class="nav-link putih" href="/mahasiswa">Pengumuman</a></li>
-                        <li class="nav-item menu"><a class="nav-link putih" href="index.html">FAQ</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="/berita">Berita</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="/alumni">Alumni</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="/pengumuman">Pengumuman</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="/faq">FAQ</a></li>
                     </ul>
                 </div>
             </div>
