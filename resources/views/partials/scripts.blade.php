@@ -5,6 +5,7 @@
 <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.js"></script>
 <script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+{{-- <script src="assets/vendor/choices/js/choices.min.js"></script> --}}
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
