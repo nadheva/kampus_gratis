@@ -25,6 +25,15 @@ Route::get('/pendidikan', function () {
     return view('pendidikan');
 });
 
+
+Route::get('/berita', function () {
+    return view('berita');
+});
+
+Route::get('/detail-berita', function () {
+    return view('detailBerita');
+});
+
 Route::get('/tentang', function () {
     return view('tentang');
 });
