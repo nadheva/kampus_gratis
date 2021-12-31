@@ -14,35 +14,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('landingpage.index');
 });
 
 Route::get('/sambutan', function () {
-    return view('sambutan');
+    return view('landingpage.sambutan');
 });
 
 Route::get('/pendidikan', function () {
-    return view('pendidikan');
+    return view('landingpage.pendidikan');
 });
 
 Route::get('/tentang', function () {
-    return view('tentang');
+    return view('landingpage.tentang');
 });
 
 Route::get('/mahasiswa', function () {
-    return view('mahasiswa');
+    return view('landingpage.mahasiswa');
 });
 
 Route::get('/penelitian', function () {
-    return view('penelitian');
+    return view('landingpage.penelitian');
 });
 
 Route::get('/pengabdian', function () {
-    return view('pengabdian');
+    return view('landingpage.pengabdian');
 });
 
 Route::get('/berita', function () {
-    return view('berita');
+    return view('landingpage.berita');
 });
 
 Route::get('/dashboard', function () {
