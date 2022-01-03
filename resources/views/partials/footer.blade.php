@@ -7,8 +7,8 @@
 			<div class="col-lg-5 mx-auto">
 				<!-- logo -->
 				<a class="me-0" href="index.html">
-					<img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo">
-					<img class="dark-mode-item h-40px" src="assets/images/logo-light.svg" alt="logo">
+					<img class="light-mode-item h-40px" src="assets/images/logo.png" alt="logo"  style="max-width: 200%">
+					<img class="dark-mode-item h-40px" src="assets/images/logo.png" alt="logo"  style="max-width: 200%">
 				</a>
 				<p class="my-3">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
 				<!-- Social media icon -->

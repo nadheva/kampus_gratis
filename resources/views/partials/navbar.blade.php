@@ -39,8 +39,8 @@
     <div class="container-fluid px-3 px-xl-5">
         <!-- Logo START -->
         <a class="navbar-brand" href="/">
-            <img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
-            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+            <img class="light-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo" style="max-width: 200%">
+            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"  style="max-width: 200%">
         </a>
         <!-- Logo END -->
 
