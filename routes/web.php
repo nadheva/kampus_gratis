@@ -57,6 +57,9 @@ Route::get('/registrasi', function () {
     return view('landingpage.registrasi');
 });
 
+Route::get('/job-channel', function () {
+    return view('landingpage.job-channel');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
