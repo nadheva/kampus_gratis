@@ -45,6 +45,19 @@ Route::get('/berita', function () {
     return view('landingpage.berita');
 });
 
+Route::get('/alumni', function () {
+    return view('landingpage.alumni');
+});
+
+Route::get('/faq', function () {
+    return view('landingpage.faq');
+});
+
+Route::get('/registrasi', function () {
+    return view('landingpage.registrasi');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
