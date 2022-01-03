@@ -45,6 +45,10 @@ Route::get('/berita', function () {
     return view('landingpage.berita');
 });
 
+Route::get('/pengumuman', function () {
+    return view('landingpage.pengumuman');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
