@@ -62,6 +62,15 @@ Route::get('/job-channel', function () {
 });
 
 Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
+
+Route::get('/banner', function () {
+    return view('admin.banner');
+});
+
+
+Route::get('/dashboard-login', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
