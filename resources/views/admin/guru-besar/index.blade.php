@@ -94,7 +94,10 @@ Page content START -->
                                         <td>{{$b->deskripsi}}</td>
                                         <td>
 											<a href="{{url('guru-besar-edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
-											<a href="{{url('guru-besar-destroy',$b->id)}}" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</a>
+                                            <form id="form-delete" action="{{url('guru-besar-destroy',$b->id)}}""  style="display: inline">
+                                                @csrf
+                                                <button type="submit" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</button>
+                                              </form>
 										</td>
 									</tr>
 									@endforeach
@@ -130,25 +133,26 @@ Page content START -->
 </section>
 <!-- =======================
 Page content END -->
+@push('scripts')
 <script>
-    
-    $('.show_confirm').click(function(event) {
-            var form =  $(this).closest("form");
-            var name = $(this).data("name");
-            event.preventDefault();
-            swal({
-                title: `Hapus Data?`,
-                text: "Jika data terhapus, data akan hilang selamanya!",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true,
-            })
-            .then((willDelete) => {
-              if (willDelete) {
-                form.submit();
-              }
-            });
-        });
-    
-  </script>
+  $('.show_confirm').click(function(event) {
+		  var form =  $(this).closest("form");
+		  var name = $(this).data("name");
+		  event.preventDefault();
+		  swal({
+			  title: `Hapus Data?`,
+			  text: "Jika data terhapus, data akan hilang selamanya!",
+			  icon: "warning",
+			  buttons: true,
+			  dangerMode: true,
+		  })
+		  .then((willDelete) => {
+			if (willDelete) {
+			  form.submit();
+			}
+		  });
+	  });
+  
+</script>
+@endpush
 </x-app-layout>
