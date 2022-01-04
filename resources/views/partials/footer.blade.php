@@ -7,8 +7,8 @@
 			<div class="col-lg-5 mx-auto">
 				<!-- logo -->
 				<a class="me-0" href="index.html">
-					<img class="light-mode-item h-40px" src="assets/images/logo.png" alt="logo"  style="max-width: 200%">
-					<img class="dark-mode-item h-40px" src="assets/images/logo.png" alt="logo"  style="max-width: 200%">
+					<img class="light-mode-item h-40px" src="{{asset('assets/images/logo.png')}}" alt="logo"  style="max-width: 200%">
+					<img class="dark-mode-item h-40px" src="{{asset('assets/images/logo.png')}}" alt="logo"  style="max-width: 200%">
 				</a>
 				<p class="my-3">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
 				<!-- Social media icon -->
@@ -74,7 +74,7 @@
 				<div class="row g-2 mt-2">
 					<!-- Google play store button -->
 					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
-						<a href="#"> <img src="assets/images/client/google-play.svg" alt=""> </a>
+						<a href="#"> <img src="{{asset('assets/images/client/google-play.svg')}}" alt=""> </a>
 					</div>
 					<!-- App store button -->
 					{{-- <div class="col-6 col-sm-4 col-md-3 col-lg-6">
@@ -104,9 +104,9 @@
 										<i class="fas fa-globe me-2"></i>Language
 									</a>
 									<ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
-										<li><a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="assets/images/flags/uk.svg" alt="">English</a></li>
-										<li><a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="assets/images/flags/gr.svg" alt="">German </a></li>
-										<li><a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="assets/images/flags/sp.svg" alt="">French</a></li>
+										<li><a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="{{asset('assets/images/flags/uk.svg')}}" alt="">English</a></li>
+										<li><a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="{{asset('assets/images/flags/gr.svg')}}" alt="">German </a></li>
+										<li><a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="{{asset('assets/images/flags/sp.svg')}}" alt="">French</a></li>
 									</ul>
 								</div>
 							</li>

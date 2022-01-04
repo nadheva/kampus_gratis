@@ -8,7 +8,7 @@ class BannerController extends Controller
 {
     public function index() {
         $banner = Banner::all();
-        return view('admin.banner', compact('banner'));
+        return view('admin.banner.index', compact('banner'));
     }
 
     public function create() {
@@ -38,7 +38,7 @@ class BannerController extends Controller
             'deskripsi' => $request->deskripsi,
             'gambar' => $txt,
         ]);
-        return redirect()->route('/banner')
+        return redirect('banner')
             ->with('success', 'Banner Berhasil Ditambahkan');
     }
 
@@ -65,14 +65,14 @@ class BannerController extends Controller
         }else{}
 
         $banner->save();
-        return redirect()->route('/banner')
+        return redirect('banner')
         ->with('edit', 'Banner Berhasil Diedit');
     }
 
     public function destroy($id)
     {
         Banner::where('id', $id)->delete();
-        return redirect()->route('/banner')
+        return redirect('banner')
         ->with('delete', 'Banner Berhasil Dihapus');
     }
 

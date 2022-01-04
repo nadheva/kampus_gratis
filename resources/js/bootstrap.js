@@ -1,3 +1,6 @@
+
+window.Noty = require('noty');
+
 window._ = require('lodash');
 
 /**

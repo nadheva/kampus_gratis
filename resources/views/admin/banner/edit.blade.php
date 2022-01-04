@@ -6,7 +6,7 @@
             <h6 class="mb-0">Edit Banner</h6>
             <hr class="horizontal dark my-3">
             <div class="card-body">
-              <form role="form text-left" action="/banner-update/{id}" method="POST" enctype="multipart/form-data">
+              <form role="form text-left" action="{{url('banner-update',$banner->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <input type="hidden" name="id">

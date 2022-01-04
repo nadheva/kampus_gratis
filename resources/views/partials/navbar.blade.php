@@ -39,8 +39,8 @@
     <div class="container-fluid px-3 px-xl-5">
         <!-- Logo START -->
         <a class="navbar-brand" href="/">
-            <img class="light-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo" style="max-width: 200%">
-            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"  style="max-width: 200%">
+            <img class="light-mode-item navbar-brand-item" src="{{asset('assets/images/logo.png')}}" alt="logo" style="max-width: 200%">
+            <img class="dark-mode-item navbar-brand-item" src="{{asset('assets/images/logo.png')}}" alt="logo"  style="max-width: 200%">
         </a>
         <!-- Logo END -->
 
@@ -80,7 +80,7 @@
         <!-- Profile START -->
         <div class="dropdown ms-1 ms-lg-0">
             <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
+                <img class="avatar-img rounded-circle" src="{{asset('assets/images/avatar/01.jpg')}}" alt="avatar">
             </a>
             <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
                 <!-- Profile info -->

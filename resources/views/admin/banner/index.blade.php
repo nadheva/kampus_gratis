@@ -99,8 +99,8 @@ Page content START -->
 
 										<!-- Table data -->
 										<td>
-											<a href="/banner-edit/{id}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
-											<a href="/banner-destroy/{id}" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</a>
+											<a href="{{url('banner-edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
+											<a href="{{url('banner-destroy',$b->id)}}" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</a>
 										</td>
 									</tr>
 									@endforeach
