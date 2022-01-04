@@ -38,6 +38,15 @@ Page content START -->
 								</form>
 							</div>
 
+							<div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
+								<div class="nav-wrapper position-relative end-0">
+								  <div class="text-end ms-auto">
+									<div class="mt-2 mt-sm-0">
+										<a href="/banner-tambah" class="btn btn-outline-primary mb-0">Tambah</a>
+									</div>
+								  </div>
+								</div>
+							  </div>
 							<!-- Select option -->
 							<div class="col-md-3">
 								<!-- Short by filter -->
@@ -60,14 +69,15 @@ Page content START -->
 								<!-- Table head -->
 								<thead>
 									<tr>
-										<th scope="col" class="border-0 rounded-start">Banner</th>
-										<th scope="col" class="border-0">Description</th>  
-										<th scope="col" class="border-0 rounded-end">Action</th>
+										<th scope="col" class="border-0 rounded-start">Heading</th>
+										<th scope="col" class="border-0">Deskripsi</th>
+										<th scope="col" class="border-0 rounded-end">Aksi</th>
 									</tr>
 								</thead>
 
 								<!-- Table body START -->
 								<tbody>
+									@foreach($banner as $b)
 									<!-- Table item -->
 									<tr>
 										<!-- Table data -->
@@ -75,76 +85,25 @@ Page content START -->
 											<div class="d-flex align-items-center">
 												<!-- Image -->
 												<div class="w-100px">
-													<img src="assets/images/courses/4by3/08.jpg" class="rounded" alt="">
+													<img src="{{ asset( $b->gambar) }}"  class="rounded" alt="">
 												</div>
 												<div class="mb-0 ms-2">
 													<!-- Title -->
-													<h6><a href="#">Building Scalable APIs with GraphQL</a></h6>
+													<h6><a href="#">{{$b->heading}}</a></h6>
 												</div>
 											</div>
 										</td>
 
 										<!-- Table data -->
-										<td>40</td>
+										<td>{{$b->deskripsi}}</td>
 
 										<!-- Table data -->
 										<td>
-											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Ubah</a>
-											<a href="#" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0"><i class="bi bi-arrow-repeat me-1"></i>Hapus</a>
+											<a href="/banner-edit/{id}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
+											<a href="/banner-destroy/{id}" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</a>
 										</td>
 									</tr>
-
-									<!-- Table item -->
-									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="assets/images/courses/4by3/08.jpg" class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6><a href="#">Building Scalable APIs with GraphQL</a></h6>
-												</div>
-											</div>
-										</td>
-
-										<!-- Table data -->
-										<td>40</td>
-
-										<!-- Table data -->
-										<td>
-											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Ubah</a>
-											<a href="#" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0"><i class="bi bi-arrow-repeat me-1"></i>Hapus</a>
-										</td>
-									</tr>
-
-									<!-- Table item -->
-									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="assets/images/courses/4by3/08.jpg" class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6><a href="#">Building Scalable APIs with GraphQL</a></h6>
-												</div>
-											</div>
-										</td>
-
-										<!-- Table data -->
-										<td>40</td>
-
-										<!-- Table data -->
-										<td>
-											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Ubah</a>
-											<a href="#" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0"><i class="bi bi-arrow-repeat me-1"></i>Hapus</a>
-										</td>
-									</tr>
+									@endforeach
 								</tbody>
 								<!-- Table body END -->
 							</table>
@@ -177,5 +136,25 @@ Page content START -->
 </section>
 <!-- =======================
 Page content END -->
-
+<script>
+    
+    $('.show_confirm').click(function(event) {
+            var form =  $(this).closest("form");
+            var name = $(this).data("name");
+            event.preventDefault();
+            swal({
+                title: `Hapus Data?`,
+                text: "Jika data terhapus, data akan hilang selamanya!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+              if (willDelete) {
+                form.submit();
+              }
+            });
+        });
+    
+  </script>
 </x-app-layout>

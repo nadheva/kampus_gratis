@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BannerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,9 +66,15 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/banner', function () {
-    return view('admin.banner');
-});
+//Banner
+Route::get('/banner', [BannerController::class, 'index']);
+Route::get('/banner-tambah', [BannerController::class, 'create']);
+Route::post('/banner-store', [BannerController::class, 'store']);
+Route::get('/banner-edit/{id}', [BannerController::class, 'edit']);
+Route::put('/banner-update/{id}', [BannerController::class, 'update']);
+Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
+
+// Route::resource('banner', [BannerController::class])->name('banner');
 
 
 Route::get('/dashboard-login', function () {
