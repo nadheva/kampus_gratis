@@ -4,7 +4,7 @@
     <a class="list-group-item" href="instructor-edit-profile.html"><i class="bi bi-pencil-square fa-fw me-2"></i>Tentang Kampus Gratis</a>
     <a class="list-group-item" href="student-course-list.html"><i class="bi bi-basket fa-fw me-2"></i>Guru Besar </a>
     <a class="list-group-item" href="student-payment-info.html"><i class="bi bi-credit-card-2-front fa-fw me-2"></i>Agenda Kegiatan</a>
-    <a class="list-group-item" href="student-bookmark.html"><i class="bi bi-cart-check fa-fw me-2"></i>Penelitian</a>
+    <a class="list-group-item" href="{{route('data-penelitian.index')}}"><i class="bi bi-cart-check fa-fw me-2"></i>Penelitian</a>
     <a class="list-group-item" href="instructor-setting.html"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan</a>
     <a class="list-group-item text-danger bg-danger-soft-hover" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
 

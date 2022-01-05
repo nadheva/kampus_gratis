@@ -81,9 +81,9 @@ Route::put('/banner-update/{id}', [BannerController::class, 'update']);
 Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
 
 Route::resource('detail', DetailController::class);
-Route::resource('penelitian-admin', PenelitianController::class);
+Route::resource('data-penelitian', PenelitianController::class);
 
-//Guru Besar
+//Guru Besars
 Route::get('/guru-besar', [GuruBesarController::class, 'index']);
 Route::get('/guru-besar-tambah', [GuruBesarController::class, 'create']);
 Route::post('/guru-besar-store', [GuruBesarController::class, 'store']);
