@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <!-- =======================
 Main part START -->
 <section>
@@ -576,4 +576,4 @@ Main part START -->
 </section>
 <!-- =======================
 Main part END -->
-</x-app-layout>
+</x-guest-layout>

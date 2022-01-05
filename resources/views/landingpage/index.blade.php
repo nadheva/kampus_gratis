@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
 
 	
 <!-- =======================
@@ -1227,4 +1227,4 @@ Reviews START -->
 Reviews END -->
 
 
-</x-app-layout>
+</x-guest-layout>

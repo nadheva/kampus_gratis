@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
 <!-- =======================
 Page Banner START -->
 <section class="bg-blue align-items-center d-flex" style="background:url(assets/images/pattern/04.png) no-repeat center center; background-size:cover;">
@@ -620,4 +620,4 @@ Form and Tabs START -->
 </section>
 <!-- =======================
 Form and Tabs END -->
-</x-app-layout>
+</x-guest-layout>

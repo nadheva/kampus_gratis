@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <!-- =======================
 Page Banner START -->
 <section class="py-5">
@@ -1413,4 +1413,4 @@ Prestasi Mahasiswa START -->
 <!-- =======================
 Prestasi Mahasiswa END -->
 
-</x-app-layout>
+</x-guest-layout>

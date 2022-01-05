@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <section class="py-5">
         <div class="container">
             <div class="row position-relative">
@@ -631,4 +631,4 @@
 
         });
     </script>
-</x-app-layout>
+</x-guest-layout>

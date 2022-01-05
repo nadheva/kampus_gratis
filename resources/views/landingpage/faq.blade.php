@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <!-- =======================
 Page Banner START -->
 <section class="bg-light py-5">
@@ -301,4 +301,4 @@ Page content START -->
 </section>
 <!-- =======================
 Page content END -->
-</x-app-layout>
+</x-guest-layout>
