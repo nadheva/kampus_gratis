@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\GuruBesarController;
+use App\Http\Controllers\AgendaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +28,9 @@ Route::get('/pendidikan', function () {
     return view('landingpage.pendidikan');
 });
 
-Route::get('/tentang', function () {
-    return view('landingpage.tentang');
-});
+// Route::get('/tentang', function () {
+//     return view('landingpage.tentang');
+// });
 
 Route::get('/mahasiswa', function () {
     return view('landingpage.mahasiswa');
@@ -82,6 +83,9 @@ Route::post('/guru-besar-store', [GuruBesarController::class, 'store']);
 Route::get('/guru-besar-edit/{id}', [GuruBesarController::class, 'edit']);
 Route::put('/guru-besar-update/{id}', [GuruBesarController::class, 'update']);
 Route::get('/guru-besar-destroy/{id}', [GuruBesarController::class, 'destroy']);
+Route::get('/tentang', [GuruBesarController::class, 'gurubesar']);
+
+Route::resource('agenda', AgendaController::class);
 
 // Route::resource('banner', [BannerController::class])->name('banner');
 

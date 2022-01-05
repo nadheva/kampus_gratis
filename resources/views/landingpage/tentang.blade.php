@@ -173,6 +173,7 @@
                         <div class="row g-4 justify-content-center">
                 
                             <!-- Card item START -->
+                            @foreach($gurubesar as $b)
                             <div class="col-lg-10 col-xl-6">
                                 <div class="card shadow p-2">
                                     <div class="row g-0">
@@ -187,7 +188,7 @@
                                                 <!-- Title -->
                                                 <div class="d-sm-flex justify-content-sm-between mb-2 mb-sm-3">
                                                     <div>
-                                                        <h5 class="card-title mb-0"><a href="#">Dennis Barrett</a></h5>
+                                                        <h5 class="card-title mb-0"><a href="#">{{$b->nama}}</a></h5>
                                                         <p class="small mb-2 mb-sm-0">Professor at Sigma College</p>
                                                     </div>
                                                     <span class="h6 fw-light">4.3<i class="fas fa-star text-warning ms-1"></i></span>
@@ -220,9 +221,10 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                             <!-- Card item END -->
                 
-                            <!-- Card item START -->
+                            {{-- <!-- Card item START -->
                             <div class="col-lg-10 col-xl-6">
                                 <div class="card shadow p-2">
                                     <div class="row g-0">
@@ -369,10 +371,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- Card item END -->
                 
-                            <!-- Card item START -->
+                            {{-- <!-- Card item START -->
                             <div class="col-lg-10 col-xl-6">
                                 <div class="card shadow p-2">
                                     <div class="row g-0">
@@ -567,7 +569,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>

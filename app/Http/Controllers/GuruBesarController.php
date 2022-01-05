@@ -11,6 +11,11 @@ class GuruBesarController extends Controller
         return view('admin.guru-besar.index', compact('gurubesar'));
     }
 
+    public function gurubesar() {
+        $gurubesar = GuruBesar::all();
+        return view('landingpage.tentang', compact('gurubesar'));
+    }
+
     public function create() {
         return view('admin.guru-besar.create');
     }

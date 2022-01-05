@@ -21,7 +21,7 @@ Page content START -->
 				<div class="card border rounded-3">
 					<!-- Card header START -->
 					<div class="card-header border-bottom">
-						<h3 class="mb-0">Data Guru Besar Kampus Gratis</h3>
+						<h3 class="mb-0">Data Agenda Kampus Gratis</h3>
 					</div>
 					<!-- Card header END -->
 
@@ -42,7 +42,7 @@ Page content START -->
 								<div class="nav-wrapper position-relative end-0">
 								  <div class="text-end ms-auto">
 									<div class="mt-2 mt-sm-0">
-										<a href="/guru-besar-tambah" class="btn btn-outline-primary mb-0">Tambah</a>
+										<a href="{{route('agenda.create')}}" class="btn btn-outline-primary mb-0">Tambah</a>
 									</div>
 								  </div>
 								</div>
@@ -69,10 +69,10 @@ Page content START -->
 								<!-- Table head -->
 								<thead>
 									<tr>
-										<th scope="col" class="border-0 rounded-start">Nama</th>
-                                        <th scope="col" class="border-0 rounded-start">Lulusan</th>
-                                        <th scope="col" class="border-0 rounded-start">Pekerjaan</th>
-                                        <th scope="col" class="border-0 rounded-start">Foto</th>
+										<th scope="col" class="border-0 rounded-start">Judul</th>
+                                        <th scope="col" class="border-0 rounded-start">Gambar</th>
+                                        <th scope="col" class="border-0 rounded-start">Jenis</th>
+                                        <th scope="col" class="border-0 rounded-start">Tanggal</th>
 										<th scope="col" class="border-0">Deskripsi</th>
 										<th scope="col" class="border-0 rounded-end">Aksi</th>
 									</tr>
@@ -80,22 +80,23 @@ Page content START -->
 
 								<!-- Table body START -->
 								<tbody>
-									@foreach($gurubesar as $b)
+									@foreach($agenda as $b)
 									<!-- Table item -->
 									<tr>
-                                        <td>{{$b->nama}}</td>
-                                        <td>{{$b->lulusan}}</td>
-                                        <td>{{$b->pekerjaan}}</td>
+                                        <td>{{$b->judul}}</td>
                                         <td>
                                         <div class="w-100px">
-                                            <img src="{{ asset( $b->foto) }}"  class="rounded" alt="">
+                                            <img src="{{ asset( $b->gambar) }}"  class="rounded" alt="">
                                         </div>
                                         </td>
+                                        <td>{{$b->jenis}}</td>
+                                        <td>{{$b->tanggal}}</td>
                                         <td>{{$b->deskripsi}}</td>
                                         <td>
-											<a href="{{url('guru-besar-edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
-                                            <form id="form-delete" action="{{url('guru-besar-destroy',$b->id)}}""  style="display: inline">
+											<a href="{{route('agenda.edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
+                                            <form id="form-delete" action="{{route('agenda.destroy',$b->id)}}" method="POST"  style="display: inline">
                                                 @csrf
+                                                @method('DELETE')
                                                 <button type="submit" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</button>
                                               </form>
 										</td>
