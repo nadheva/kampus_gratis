@@ -61,6 +61,7 @@
                     <li class="nav-item menu"><a class="nav-link" href="/mahasiswa">Mahasiswa</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/penelitian">Penelitian</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/pengabdian">Pengabdian</a></li>
+                    <li class="nav-item menu"><a class="nav-link" href="/job-channel">Karir</a></li>
                 </ul>
             <!-- Nav Main menu END -->
 
