@@ -33,6 +33,7 @@
         </div>
         <!-- Card body START -->
     </div>
+  </div>
     <!-- Card END -->
 
     {{-- @push('scripts')
@@ -45,4 +46,4 @@
     </script>
     @endpush --}}
     
-  </x-app-layout>
+</x-app-layout>

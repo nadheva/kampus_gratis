@@ -21,6 +21,6 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/apexcharts/css/apexcharts.css')}}">
 
 	<!-- Theme CSS -->
-	<link id="style-switch" rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
+	<link id="" rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
 @stack('css')
 </head>
