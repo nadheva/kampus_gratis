@@ -22,6 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/glightbox/css/glightbox.css')}}">
 
 	<!-- Theme CSS -->
-	<link id="style-switch" rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
 @stack('css')
 </head>
