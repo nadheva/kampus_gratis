@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <div class="container-fluid py-4">
       <div class="row">
         <div class="col-lg-9 col-12 mx-auto">
@@ -23,7 +23,7 @@
                   <textarea class="form-control" aria-label="With textarea" name="deskripsi" rows="4">{{$banner->deskripsi}}</textarea>
                 </div>
                 <div class="text-end">
-                        <a href="javascript:history.back()" class="btn bg-gradient-danger"><i class="ni ni-bold-left"></i>&nbsp;&nbsp;Batal</a> 
+                        <a href="javascript:history.back()" class="btn bg-gradient-danger"><i class="ni ni-bold-left"></i>&nbsp;&nbsp;Batal</a>
                   <button type="submit" class="btn bg-gradient-dark"><i class="fas fa-plus"></i>&nbsp;&nbsp;Edit</button>
                 </div>
               </form>
@@ -32,4 +32,4 @@
         </div>
       </div>
     </div>
-  </x-app-layout>
+  </x-guest-layout>
