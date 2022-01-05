@@ -40,7 +40,7 @@ class AgendaController extends Controller
             'deskripsi' => $request->deskripsi,
             'gambar' => $txt,
             'jenis' => $request->jenis,
-            'taanggal' => $request->tanggal
+            'tanggal' => $request->tanggal
         ]);
         return redirect()->route('agenda.index')
             ->with('success', 'Agenda Berhasil Ditambahkan');

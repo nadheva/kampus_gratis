@@ -230,7 +230,6 @@ Agenda Mahasiswa START -->
 		<div class="row mb-4">
 			<div class="col-lg-8 mx-auto text-center">
 				<h2 class="mb-0">Agenda kegiatan mahasiswa</h2>
-				<p class="mb-0">Perceived end knowledge certainly day sweetness why cordially.</p>
 			</div>
 		</div>
 
@@ -239,255 +238,42 @@ Agenda Mahasiswa START -->
 			<div class="tiny-slider arrow-round arrow-dark arrow-hover">
 				<div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-edge="2" data-dots="false" data-items="3" data-items-lg="2" data-items-sm="1">
 					<!-- Card item START -->
+					@foreach($agenda as $a)
 					<div>
 						<div class="card border mb-1">
 							<!-- Card image -->
-							<img class="card-img-top" src="assets/images/university/02.jpg" alt="Card image">
+							<img class="card-img-top" src="{{asset($a->gambar)}}" alt="Card image">
 							<!-- Card body -->
 							<div class="card-body">
 								<div class="d-flex justify-content-between align-items-center mt-n6 mb-3">
 									<!-- Logo image -->
 									<div class="bg-white p-2 rounded-2 shadow">
-										<img class="rounded-1 h-60px" src="assets/images/client/uni-logo-01.svg" alt="university logo">
+										{{-- <img class="rounded-1 h-60px" src="assets/images/client/uni-logo-01.svg" alt="university logo"> --}}
 									</div>
 									<!-- Badge -->
-									<div class="h5 mb-0"><a href="#" class="badge bg-danger text-white">Admission Closed</a></div>
+									<div class="h5 mb-0"><a href="#" class="badge bg-danger text-white">{{$a->jenis}}</a></div>
 								</div>
 								<!-- Badge and rating -->
 								<div class="d-flex justify-content-between mb-3">
 									<!-- Badge -->
-									<span><a href="#" class="badge bg-dark text-white">Private</a></span>
-									<!-- Rating star -->
-									<ul class="list-inline hstack mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-										<li class="list-inline-item ms-2 h6 fw-light mb-0">(4.5)</li>
-									</ul>
+									<span><a href="#" class="badge bg-dark text-white">{{$a->tanggal}}</a></span>
 								</div>
 								<!-- Title -->
-								<h5 class="card-title mb-3"><a href="#">American Century University, New Mexico</a></h5>
-								<p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i>4502 Colonial Drive Andeerson, IN </p>
-								<!-- Info -->
-								<ul class="nav nav-divider h6 fw-light mb-3">
-									<li class="nav-item">BSC</li>
-                  <li class="nav-item">BBA</li>
-									<li class="nav-item">Engineer</li>
-									<li class="nav-item">BCA</li>
-									<li class="nav-item">MBBS</li>
-								</ul>
+								<h5 class="card-title mb-3"><a href="#">{{$a->judul}}</a></h5>
+								<p class="mb-3">{{$a->deskripsi}}</p>
 								<!-- Content -->
 								<div class="row item-collapse">
 									<div class="col-6">
-										<ul class="list-group list-group-borderless">
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Canteen</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Stationary</li>
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Hostel</li>
-										</ul>
 									</div>
 									<div class="col-6">
-                    <ul class="list-group list-group-borderless">
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Library</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Playground</li>
-										</ul>
 									</div>
 									<!-- Button -->
-									<div class="mt-3"><a href="#" class="btn btn-primary-soft">View more</a></div>
+									<div class="mt-3"><a href="#" class="btn btn-primary-soft">Baca Selengkapnya</a></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card border mb-1">
-							<!-- Card image -->
-							<img class="card-img-top" src="assets/images/university/04.jpg" alt="Card image">
-							<!-- Card body -->
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center mt-n6 mb-3">
-									<!-- Logo image -->
-									<div class="bg-white p-2 rounded-2 shadow">
-										<img class="rounded-1 h-60px" src="assets/images/client/uni-logo-03.svg" alt="university logo">
-									</div>
-									<!-- Badge -->
-									<div class="h5 mb-0"><a href="#" class="badge bg-success text-white">Admission Open</a></div>
-								</div>
-								<!-- Badge and rating -->
-								<div class="d-flex justify-content-between mb-3">
-									<!-- Badge -->
-									<span><a href="#" class="badge bg-dark text-white">Public</a></span>
-									<!-- Rating star -->
-									<ul class="list-inline hstack mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-										<li class="list-inline-item ms-2 h6 fw-light mb-0">(4.5)</li>
-									</ul>
-								</div>
-								<!-- Title -->
-								<h5 class="card-title mb-3"><a href="#">Indiana College of - Bloomington</a></h5>
-								<p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> Bloomington, IN </p>
-								<!-- Info -->
-								<ul class="nav nav-divider h6 fw-light mb-3">
-									<li class="nav-item">MBBS</li>
-									<li class="nav-item">Engineer</li>
-                  <li class="nav-item">BBA</li>
-									<li class="nav-item">BCA</li>
-									<li class="nav-item">BSC</li>
-								</ul>
-								<!-- Content -->
-								<div class="row item-collapse">
-									<div class="col-6">
-										<ul class="list-group list-group-borderless">
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Playground</li>
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Library</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Canteen</li>
-										</ul>
-									</div>
-									<div class="col-6">
-                    <ul class="list-group list-group-borderless">
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Stationary</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Hostel</li>
-										</ul>
-									</div>
-									<!-- Button -->
-									<div class="mt-3"><a href="#" class="btn btn-primary-soft">View more</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card border mb-1">
-							<!-- Card image -->
-							<img class="card-img-top" src="assets/images/university/01.jpg" alt="Card image">
-							<!-- Card body -->
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center mt-n6 mb-3">
-									<!-- Logo image -->
-									<div class="bg-white p-2 rounded-2 shadow">
-										<img class="rounded-1 h-60px" src="assets/images/client/uni-logo-02.svg" alt="university logo">
-									</div>
-									<!-- Badge -->
-									<div class="h5 mb-0"><a href="#" class="badge bg-success text-white">Admission Open</a></div>
-								</div>
-								<!-- Badge and rating -->
-								<div class="d-flex justify-content-between mb-3">
-									<!-- Badge -->
-									<span><a href="#" class="badge bg-dark text-white">Private</a></span>
-									<!-- Rating star -->
-									<ul class="list-inline hstack mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-										<li class="list-inline-item ms-2 h6 fw-light mb-0">(4.0)</li>
-									</ul>
-								</div>
-								<!-- Title -->
-								<h5 class="card-title mb-3"><a href="#">College of South Florida</a></h5>
-								<p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> 4653 Linda Street Newark, PA </p>
-								<!-- Info -->
-								<ul class="nav nav-divider h6 fw-light mb-3">
-                  <li class="nav-item">BBA</li>
-									<li class="nav-item">BCA</li>
-									<li class="nav-item">BSC</li>
-									<li class="nav-item">Engineer</li>
-								</ul>
-								<!-- Content -->
-								<div class="row item-collapse">
-									<div class="col-6">
-										<ul class="list-group list-group-borderless">
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Gym</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Stationary</li>
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Playground</li>
-										</ul>
-									</div>
-									<div class="col-6">
-                    <ul class="list-group list-group-borderless">
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Canteen</li>
-                      <li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Library</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Hostel</li>
-										</ul>
-									</div>
-									<!-- Button -->
-									<div class="mt-3"><a href="#" class="btn btn-primary-soft">View more</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card border mb-1">
-							<!-- Card image -->
-							<img class="card-img-top" src="assets/images/university/03.jpg" alt="Card image">
-							<!-- Card body -->
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center mt-n6 mb-3">
-									<!-- Logo image -->
-									<div class="bg-white p-2 rounded-2 shadow">
-										<img class="rounded-1 h-60px" src="assets/images/client/uni-logo-01.svg" alt="university logo">
-									</div>
-									<!-- Badge -->
-									<div class="h5 mb-0"><a href="#" class="badge bg-danger text-white">Admission Closed</a></div>
-								</div>
-								<!-- Badge and rating -->
-								<div class="d-flex justify-content-between mb-3">
-									<!-- Badge -->
-									<span><a href="#" class="badge bg-dark text-white">Public</a></span>
-									<!-- Rating star -->
-									<ul class="list-inline hstack mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-										<li class="list-inline-item ms-2 h6 fw-light mb-0">(4.5)</li>
-									</ul>
-								</div>
-								<!-- Title -->
-								<h5 class="card-title mb-3"><a href="#">Andeerson Campus</a></h5>
-								<p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> 4502 Colonial Drive Andeerson, IN </p>
-								<!-- Info -->
-								<ul class="nav nav-divider h6 fw-light mb-3">
-									<li class="nav-item">Engineer</li>
-									<li class="nav-item">BBA</li>
-									<li class="nav-item">BCA</li>
-									<li class="nav-item">BSC</li>
-									<li class="nav-item">MBBS</li>
-								</ul>
-								<!-- Content -->
-								<div class="row item-collapse">
-									<div class="col-6">
-										<ul class="list-group list-group-borderless">
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Library</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Canteen</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Stationary</li>
-										</ul>
-									</div>
-									<div class="col-6">
-										<ul class="list-group list-group-borderless">
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Hostel</li>
-											<li class="list-group-item text-body py-1"> <i class="fas fa-fw fa-check text-success"></i>Playground</li>
-										</ul>
-									</div>
-									<!-- Button -->
-									<div class="mt-3"><a href="#" class="btn btn-primary-soft">View more</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
+					@endforeach
 					<!-- Card item END -->
 				</div>
 			</div>
