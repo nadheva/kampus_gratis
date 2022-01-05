@@ -13,7 +13,7 @@
 						<!-- Avatar -->
 						<div class="col-auto mt-4 mt-md-0">
 							<div class="avatar avatar-xxl mt-n3">
-								<img class="avatar-img rounded-circle border border-white border-3 shadow" src="assets/images/avatar/01.jpg" alt="">
+								<img class="avatar-img rounded-circle border border-white border-3 shadow" src="{{asset('assets/images/avatar/01.jpg')}}" alt="">
 							</div>
 						</div>
 						<!-- Profile info -->

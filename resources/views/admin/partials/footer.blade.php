@@ -4,7 +4,7 @@
 			<!-- Widget -->
 			<div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
 				<!-- Logo START -->
-				<a href="index.html"> <img class="h-20px" src="assets/images/logo-light.svg" alt="logo"> </a>
+				<a href="index.html"> <img class="h-20px" src="{{asset('assets/images/logo-light.svg')}}" alt="logo"> </a>
 			</div>
 			
 			<!-- Widget -->
