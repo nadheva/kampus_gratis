@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\GuruBesarController;
+use App\Http\Controllers\PenelitianController;
 
 /*
 |--------------------------------------------------------------------------
@@ -80,6 +81,7 @@ Route::put('/banner-update/{id}', [BannerController::class, 'update']);
 Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
 
 Route::resource('detail', DetailController::class);
+Route::resource('penelitian-admin', PenelitianController::class);
 
 //Guru Besar
 Route::get('/guru-besar', [GuruBesarController::class, 'index']);
