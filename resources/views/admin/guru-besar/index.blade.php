@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <!-- =======================
 Page Banner START -->
 @include('partials.banner-dashboard')
@@ -39,7 +39,7 @@ Page content START -->
 							</div>
 
 							<div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
-								<div class="nav-wrapper position-relative end-0">
+								<div class="nav-wrguester position-relative end-0">
 								  <div class="text-end ms-auto">
 									<div class="mt-2 mt-sm-0">
 										<a href="/guru-besar-tambah" class="btn btn-outline-primary mb-0">Tambah</a>
@@ -129,7 +129,7 @@ Page content START -->
 			<!-- Main content END -->
 			</div><!-- Row END -->
 		</div>
-	</div>	
+	</div>
 </section>
 <!-- =======================
 Page content END -->
@@ -152,7 +152,7 @@ Page content END -->
 			}
 		  });
 	  });
-  
+
 </script>
 @endpush
-</x-app-layout>
+</x-guest-layout>

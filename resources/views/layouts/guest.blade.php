@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="en">
+    @include('admin.partials.head')
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<body>
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+<!-- Header START -->
+<header class="navbar-light navbar-sticky header-static">
+	<!-- Logo Nav START -->
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @include('admin.partials.navbar')
+	<!-- Logo Nav END -->
+</header>
+<!-- Header END -->
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-    </head>
-    <body>
-        <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
-        </div>
-    </body>
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+	{{ $slot }}
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+@include('admin.partials.footer')
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+@include('admin.partials.scripts')
+
+
+</body>
 </html>
