@@ -66,6 +66,10 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
 
+// Route::get('/detail', function () {
+//     return view('admin.detail');
+// });
+
 //Banner
 Route::get('/banner', [BannerController::class, 'index']);
 Route::get('/banner-tambah', [BannerController::class, 'create']);
@@ -75,6 +79,8 @@ Route::put('/banner-update/{id}', [BannerController::class, 'update']);
 Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
 
 // Route::resource('banner', [BannerController::class])->name('banner');
+Route::resource('detail', DetailController::class);
+
 
 
 Route::get('/dashboard-login', function () {
