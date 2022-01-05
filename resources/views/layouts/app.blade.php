@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partials.head')
+    @include('landingpage.partials.head')
 
 <body>
 
@@ -8,7 +8,7 @@
 <header class="navbar-light navbar-sticky header-static">
 	<!-- Logo Nav START -->
 
-    @include('partials.navbar')
+    @include('landingpage.partials.navbar')
 	<!-- Logo Nav END -->
 </header>
 <!-- Header END -->
@@ -21,13 +21,13 @@
 
 <!-- =======================
 Footer START -->
-@include('partials.footer')
+@include('landingpage.partials.footer')
 <!-- =======================
 Footer END -->
 
 <!-- Back to top -->
 <div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
-@include('partials.scripts')
+@include('landingpage.partials.scripts')
 
 
 </body>

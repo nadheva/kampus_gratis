@@ -65,7 +65,7 @@ Route::get('/job-channel', function () {
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
-});
+})->name('dashboard');
 
 //Banner
 Route::get('/banner', [BannerController::class, 'index']);
@@ -84,11 +84,5 @@ Route::put('/guru-besar-update/{id}', [GuruBesarController::class, 'update']);
 Route::get('/guru-besar-destroy/{id}', [GuruBesarController::class, 'destroy']);
 
 // Route::resource('banner', [BannerController::class])->name('banner');
-
-
-Route::get('/dashboard-login', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 
 require __DIR__.'/auth.php';
