@@ -13,7 +13,7 @@
 <nav class="navbar navbar-expand-xl navbar-up">
     <div class="container-fluid px-3 px-xl-5">
         <!-- Main navbar START -->
-        <div class="navbar-collapse w-100 collapse" id="navbarCollapse">      
+        <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
             <div class="mx-auto" style="width: 200px;">
               </div>
             <!-- Nav Main menu END -->
@@ -54,7 +54,7 @@
         </button>
 
         <!-- Main navbar START -->
-        <div class="navbar-collapse w-100 collapse" id="navbarCollapse">      
+        <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto order-0">
                     <li class="nav-item menu"><a class="nav-link" href="/tentang">Tentang Kampus Gratis</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/pendidikan">Pendidikan</a></li>
@@ -98,6 +98,10 @@
                     <hr>
                 </li>
                 <!-- Links -->
+                <li>
+                    <a class="dropdown-item" href="{{route('dashboard')}}"><i class="bi bi-person fa-fw me-2"></i>Dashboard</a>
+                </li>
+
                 <li><a class="dropdown-item" href="#"><i class="bi bi-person fa-fw me-2"></i>Edit Profile</a></li>
                 <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Account Settings</a></li>
                 <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help</a></li>
@@ -111,7 +115,7 @@
                         </div>
                         <span>Dark mode</span>
                     </div>
-                </li> 
+                </li>
       <!-- Dark mode switch END -->
             </ul>
         </div>

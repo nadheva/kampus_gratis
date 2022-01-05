@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\GuruBesarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +65,7 @@ Route::get('/job-channel', function () {
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
-});
+})->name('dashboard');
 
 // Route::get('/detail', function () {
 //     return view('admin.detail');
@@ -78,13 +79,16 @@ Route::get('/banner-edit/{id}', [BannerController::class, 'edit']);
 Route::put('/banner-update/{id}', [BannerController::class, 'update']);
 Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
 
-// Route::resource('banner', [BannerController::class])->name('banner');
 Route::resource('detail', DetailController::class);
 
+//Guru Besar
+Route::get('/guru-besar', [GuruBesarController::class, 'index']);
+Route::get('/guru-besar-tambah', [GuruBesarController::class, 'create']);
+Route::post('/guru-besar-store', [GuruBesarController::class, 'store']);
+Route::get('/guru-besar-edit/{id}', [GuruBesarController::class, 'edit']);
+Route::put('/guru-besar-update/{id}', [GuruBesarController::class, 'update']);
+Route::get('/guru-besar-destroy/{id}', [GuruBesarController::class, 'destroy']);
 
-
-Route::get('/dashboard-login', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::resource('banner', [BannerController::class])->name('banner');
 
 require __DIR__.'/auth.php';

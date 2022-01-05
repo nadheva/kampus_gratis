@@ -42,7 +42,7 @@ Page content START -->
 								<div class="nav-wrapper position-relative end-0">
 								  <div class="text-end ms-auto">
 									<div class="mt-2 mt-sm-0">
-										<a href="/banner-tambah" class="btn btn-outline-primary mb-0">Tambah</a>
+										<a href="/guru-besar-tambah" class="btn btn-outline-primary mb-0">Tambah</a>
 									</div>
 								  </div>
 								</div>
@@ -69,7 +69,10 @@ Page content START -->
 								<!-- Table head -->
 								<thead>
 									<tr>
-										<th scope="col" class="border-0 rounded-start">Heading</th>
+										<th scope="col" class="border-0 rounded-start">Nama</th>
+                                        <th scope="col" class="border-0 rounded-start">Lulusan</th>
+                                        <th scope="col" class="border-0 rounded-start">Pekerjaan</th>
+                                        <th scope="col" class="border-0 rounded-start">Foto</th>
 										<th scope="col" class="border-0">Deskripsi</th>
 										<th scope="col" class="border-0 rounded-end">Aksi</th>
 									</tr>
@@ -77,30 +80,21 @@ Page content START -->
 
 								<!-- Table body START -->
 								<tbody>
-									@foreach($banner as $b)
+									@foreach($gurubesar as $b)
 									<!-- Table item -->
 									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="{{ asset( $b->gambar) }}"  class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6><a href="#">{{$b->heading}}</a></h6>
-												</div>
-											</div>
-										</td>
-
-										<!-- Table data -->
-										<td>{{$b->deskripsi}}</td>
-
-										<!-- Table data -->
-										<td>
-											<a href="{{url('banner-edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
-                                            <form id="form-delete" action="{{url('banner-destroy',$b->id)}}""  style="display: inline">
+                                        <td>{{$b->nama}}</td>
+                                        <td>{{$b->lulusan}}</td>
+                                        <td>{{$b->pekerjaan}}</td>
+                                        <td>
+                                        <div class="w-100px">
+                                            <img src="{{ asset( $b->foto) }}"  class="rounded" alt="">
+                                        </div>
+                                        </td>
+                                        <td>{{$b->deskripsi}}</td>
+                                        <td>
+											<a href="{{url('guru-besar-edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
+                                            <form id="form-delete" action="{{url('guru-besar-destroy',$b->id)}}""  style="display: inline">
                                                 @csrf
                                                 <button type="submit" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</button>
                                               </form>
