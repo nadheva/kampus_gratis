@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <section class="pt-5 pb-0">
         <div class="container">
             <div class="row g-0 g-lg-5">
@@ -47,4 +47,4 @@
             </div>
         </div>
     </section>
-</x-app-layout>
+</x-guest-layout>

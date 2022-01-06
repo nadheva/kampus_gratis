@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <!-- =======================
 Main Banner START -->
 <section class="position-relative pt-5">
@@ -338,5 +338,5 @@ Video divider END -->
 
 @endpush
 
-</x-app-layout>
+</x-guest-layout>
 

@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <!-- =======================
 Page Banner START -->
 @include('partials.banner-dashboard')
@@ -282,7 +282,7 @@ Page content START -->
 
 										<!-- Table data -->
 										<td>14</td>
-										
+
 										<!-- Table data -->
 										<td>
 											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Continue</a>
@@ -316,9 +316,9 @@ Page content START -->
 			<!-- Main content END -->
 			</div><!-- Row END -->
 		</div>
-	</div>	
+	</div>
 </section>
 <!-- =======================
 Page content END -->
 
-</x-app-layout>
+</x-guest-layout>

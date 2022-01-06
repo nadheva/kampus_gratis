@@ -70,6 +70,10 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->name('dashboard');
 
+// Route::get('/detail', function () {
+//     return view('admin.detail');
+// });
+
 //Banner
 Route::get('/banner', [BannerController::class, 'index']);
 Route::get('/banner-tambah', [BannerController::class, 'create']);
@@ -78,7 +82,10 @@ Route::get('/banner-edit/{id}', [BannerController::class, 'edit']);
 Route::put('/banner-update/{id}', [BannerController::class, 'update']);
 Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
 
-//Guru Besar
+Route::resource('detail', DetailController::class);
+Route::resource('data-penelitian', PenelitianController::class);
+
+//Guru Besars
 Route::get('/guru-besar', [GuruBesarController::class, 'index']);
 Route::get('/guru-besar-tambah', [GuruBesarController::class, 'create']);
 Route::post('/guru-besar-store', [GuruBesarController::class, 'store']);

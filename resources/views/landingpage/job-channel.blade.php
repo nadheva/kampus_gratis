@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <!-- =======================
 Page Banner START -->
 <section class="py-5">
@@ -522,4 +522,4 @@ Newsletter START -->
 		</div>
 	</div>
 </section>
-</x-app-layout>
+</x-guest-layout>
