@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\GuruBesarController;
 use App\Http\Controllers\AgendaController;
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\JurnalController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\TentangController;
 use App\Http\Controllers\PenelitianController;
@@ -96,6 +98,7 @@ Route::get('/guru-besar-destroy/{id}', [GuruBesarController::class, 'destroy']);
 Route::get('/tentang', [TentangController::class, 'view']);
 
 Route::resource('agenda', AgendaController::class);
+Route::resource('data-jurnal', JurnalController::class);
 Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
 
 // Route::resource('banner', [BannerController::class])->name('banner');
