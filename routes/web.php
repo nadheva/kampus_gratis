@@ -9,6 +9,7 @@ use App\Http\Controllers\TentangController;
 use App\Http\Controllers\PenelitianController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\QuestionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,6 +90,7 @@ Route::resource('detail', DetailController::class);
 Route::resource('data-penelitian', PenelitianController::class);
 Route::resource('data-prestasi', PrestasiController::class);
 Route::resource('data-berita', BeritaController::class);
+Route::resource('data-faq', QuestionController::class);
 
 //Guru Besars
 Route::get('/guru-besar', [GuruBesarController::class, 'index']);

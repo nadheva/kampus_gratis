@@ -86,7 +86,7 @@ class PenelitianController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $penelitian = penelitian::findOrFail($id);
+        $penelitian = Penelitian::findOrFail($id);
         
         $penelitian->judul = $request->judul;
         $penelitian->isi = $request->isi;
