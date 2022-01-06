@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePenelitianTable extends Migration
+class CreateFaqTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreatePenelitianTable extends Migration
      */
     public function up()
     {
-        Schema::create('penelitian', function (Blueprint $table) {
+        Schema::create('faq', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->text('isi');
-            $table->string('penulis');
+            $table->string('ask');
+            $table->text('answer');
             $table->enum('status', ['live', 'draft']);
             $table->timestamps();
         });
@@ -30,6 +29,6 @@ class CreatePenelitianTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('penelitian');
+        Schema::dropIfExists('faq');
     }
 }

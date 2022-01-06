@@ -19,6 +19,11 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/font-awesome/css/all.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/apexcharts/css/apexcharts.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/choices/css/choices.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/aos/aos.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/glightbox/css/glightbox.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/quill/css/quill.snow.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/stepper/css/bs-stepper.min.css')}}">
 
 	<!-- Theme CSS -->
 	<link id="" rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">

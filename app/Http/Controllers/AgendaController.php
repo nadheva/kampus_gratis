@@ -55,8 +55,6 @@ class AgendaController extends Controller
 
     public function update(Request $request, $id)
     {
-
-
         $agenda = Agenda::findOrFail($id);
         if (isset($request->gambar)){
             $extention = $request->gambar->extension();

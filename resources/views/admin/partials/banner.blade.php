@@ -26,10 +26,6 @@
 									<li class="list-inline-item h6 fw-light me-3 mb-1 mb-sm-0"><i class="fas fa-book text-purple me-2"></i>25 Courses</li>
 								</ul>
 							</div>
-							<!-- Button -->
-							<div class="d-flex align-items-center mt-2 mt-md-0">
-								<a href="instructor-create-course.html" class="btn btn-success mb-0">Create a course</a>
-							</div>
 						</div>
 					</div>
 				</div>

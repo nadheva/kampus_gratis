@@ -4,6 +4,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\GuruBesarController;
 use App\Http\Controllers\AgendaController;
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\JurnalController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\TentangController;
+use App\Http\Controllers\PenelitianController;
+use App\Http\Controllers\PrestasiController;
+use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\PengabdianController;
@@ -79,12 +87,20 @@ Route::get('/dashboard', function () {
 // });
 Route::resource('detail', DetailController::class);
 Route::resource('data-penelitian', PenelitianController::class);
+Route::resource('data-prestasi', PrestasiController::class);
+Route::resource('data-berita', BeritaController::class);
+Route::resource('data-faq', QuestionController::class);
+
+Route::get('/tentang', [TentangController::class, 'view']);
+
 Route::resource('banner', BannerController::class);
 Route::resource('guru-besar', GuruBesarController::class);
 Route::resource('agenda', AgendaController::class);
 Route::resource('pengumuman', PengumumanController::class);
 Route::resource('pengabdian', PengabdianController::class);
 
+Route::resource('data-jurnal', JurnalController::class);
+Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
 
 // Route::resource('banner', [BannerController::class])->name('banner');
 

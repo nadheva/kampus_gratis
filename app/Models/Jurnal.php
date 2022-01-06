@@ -5,17 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Penelitian extends Model
+class Jurnal extends Model
 {
     use HasFactory;
-    protected $table = 'penelitian';
+    protected $table = 'jurnal';
     protected $fillable = [
         'judul',
+        'abstrak',
         'isi',
         'penulis',
-        'status'
+        'gambar',
+        'file'
     ];
 
-    
+
     protected $primaryKey = 'id';
 }

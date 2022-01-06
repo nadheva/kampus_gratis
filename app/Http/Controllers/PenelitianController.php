@@ -26,7 +26,7 @@ class PenelitianController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.penelitian.create');
     }
 
     /**
@@ -37,7 +37,21 @@ class PenelitianController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judul' => 'required',
+            'isi' => 'required',
+            'penulis' => 'required',
+            'status' => 'required'
+        ]);
+
+        Penelitian::create([
+            'judul' => $request->judul,
+            'isi' => $request->isi,
+            'penulis' => $request->penulis,
+            'status' => $request->status
+        ]);
+        return redirect()->route('data-penelitian.index')
+            ->with('success', 'Data Penelitian Berhasil Ditambahkan');
     }
 
     /**
@@ -57,9 +71,10 @@ class PenelitianController extends Controller
      * @param  \App\Models\Penelitian  $penelitian
      * @return \Illuminate\Http\Response
      */
-    public function edit(Penelitian $penelitian)
+    public function edit($id)
     {
-        //
+        $penelitian = Penelitian::find($id);
+        return view('admin.penelitian.edit', compact('penelitian'));
     }
 
     /**
@@ -69,9 +84,18 @@ class PenelitianController extends Controller
      * @param  \App\Models\Penelitian  $penelitian
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Penelitian $penelitian)
+    public function update(Request $request, $id)
     {
-        //
+        $penelitian = Penelitian::findOrFail($id);
+        
+        $penelitian->judul = $request->judul;
+        $penelitian->isi = $request->isi;
+        $penelitian->penulis = $request->penulis;
+        $penelitian->status = $request->status;
+
+        $penelitian->save();
+        return redirect()->route('data-penelitian.index')
+        ->with('edit', 'penelitian Berhasil Diedit');
     }
 
     /**
@@ -80,8 +104,10 @@ class PenelitianController extends Controller
      * @param  \App\Models\Penelitian  $penelitian
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Penelitian $penelitian)
+    public function destroy($id)
     {
-        //
+        Penelitian::where('id', $id)->delete();
+        return redirect()->route('data-penelitian.index')
+        ->with('delete', 'Data penelitian Berhasil Dihapus');
     }
 }

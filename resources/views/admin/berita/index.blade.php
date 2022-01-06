@@ -4,7 +4,7 @@
         <div class="card border rounded-3">
             <!-- Card header START -->
             <div class="card-header border-bottom">
-                <h3 class="mb-0">Data Penelitian</h3>
+                <h3 class="mb-0">Data Berita</h3>
             </div>
             <!-- Card header END -->
 
@@ -25,7 +25,7 @@
 						<div class="nav-wrguester position-relative end-0">
 						  <div class="text-end ms-auto">
 							<div class="mt-2 mt-sm-0">
-                                <a href="{{ route('data-penelitian.create') }}" class="btn btn-success mb-0">Tambah Penelitian</a>
+                                <a href="{{ route('data-berita.create') }}" class="btn btn-success mb-0">Tambah Berita</a>
 							</div>
 						  </div>
 						</div>
@@ -39,7 +39,7 @@
                         <!-- Table head -->
                         <thead>
                             <tr>
-                                <th scope="col" class="border-0 rounded-start">Judul Penelitian</th>
+                                <th scope="col" class="border-0 rounded-start">Judul Berita</th>
                                 <th scope="col" class="border-0">Isi</th>
                                 <th scope="col" class="border-0">Status</th>
                                 <th scope="col" class="border-0 rounded-end">Aksi</th>
@@ -48,7 +48,7 @@
 
                         <!-- Table body START -->
                         <tbody>
-                            @foreach ($penelitian as $item)
+                            @foreach ($berita as $item)
                                 <!-- Table item -->
                                 <tr>
                                     <!-- Course item -->
@@ -56,7 +56,7 @@
                                         <div class="d-flex align-items-center">
                                             <!-- Image -->
                                             <div class="w-100px">
-                                                <img src="assets/images/courses/4by3/08.jpg" class="rounded" alt="">
+                                                <img style="max-height: 300px" src={{ asset($item->gambar) }} class="rounded" alt="prestasi">
                                             </div>
                                             <div class="mb-0 ms-2">
                                                 <!-- Title -->
@@ -69,15 +69,15 @@
                                         </div>
                                     </td>
                                     <!-- Isi item -->
-                                    <td class="text-center text-sm-start"><a href="#">Lihat penelitian</a></td>
+                                    <td class="text-center text-sm-start"><a href="#">Lihat berita</a></td>
                                     <!-- Status item -->
                                     <td>
                                         <div class="badge bg-success bg-opacity-10 text-success">{{ $item->status }}</div>
                                     </td>
                                     <!-- Action item -->
                                     <td>
-                                        <a href="{{route('data-penelitian.edit',$item->id)}}" class="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i class="far fa-fw fa-edit"></i></a>
-                                        <form id="form-delete" action="{{route('data-penelitian.destroy',$item->id)}}" method="POST"  style="display: inline">
+                                        <a href="{{route('data-berita.edit',$item->id)}}" class="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i class="far fa-fw fa-edit"></i></a>
+                                        <form id="form-delete" action="{{route('data-berita.destroy',$item->id)}}" method="POST"  style="display: inline">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-sm btn-danger-soft btn-round mb-0"><i class="fas fa-fw fa-times"></i></button>
