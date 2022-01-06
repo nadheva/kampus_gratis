@@ -7,6 +7,7 @@ use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\TentangController;
 use App\Http\Controllers\PenelitianController;
+use App\Http\Controllers\PrestasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,6 +86,7 @@ Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
 
 Route::resource('detail', DetailController::class);
 Route::resource('data-penelitian', PenelitianController::class);
+Route::resource('data-prestasi', PrestasiController::class);
 
 //Guru Besars
 Route::get('/guru-besar', [GuruBesarController::class, 'index']);
