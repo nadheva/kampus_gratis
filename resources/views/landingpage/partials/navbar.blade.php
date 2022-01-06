@@ -56,11 +56,11 @@
         <!-- Main navbar START -->
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto order-0">
-                    <li class="nav-item menu"><a class="nav-link" href="/tentang">Tentang Kampus Gratis</a></li>
+                    <li class="nav-item menu"><a class="nav-link" href="/tentang-page">Tentang Kampus Gratis</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/pendidikan">Pendidikan</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="/mahasiswa">Mahasiswa</a></li>
+                    <li class="nav-item menu"><a class="nav-link" href="/mahasiswa-page">Mahasiswa</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/penelitian">Penelitian</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="/pengabdian">Pengabdian</a></li>
+                    <li class="nav-item menu"><a class="nav-link" href="/pengabdian-page">Pengabdian</a></li>
                     <li class="nav-item menu"><a class="nav-link" href="/job-channel">Karir</a></li>
                 </ul>
             <!-- Nav Main menu END -->

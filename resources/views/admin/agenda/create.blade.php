@@ -1,12 +1,17 @@
-<x-app-layout>
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-lg-9 col-12 mx-auto">
-          <div class="card card-body mt-4">
-            <h6 class="mb-0">Tambah Agenda</h6>
-            <hr class="horizontal dark my-3">
-            <div class="card-body">
-              <form role="form text-left" action="{{route('agenda.store')}}" method="POST" enctype="multipart/form-data">
+ <x-app-layout>
+  
+    <div class="col-xl-9">
+      <!-- Card START -->
+      <div class="card border rounded-3">
+          <!-- Card header START -->
+          <div class="card-header border-bottom">
+              <h3 class="mb-0">Tambah Agenda</h3>
+          </div>
+          <!-- Card header END -->
+  
+          <!-- Card body START -->
+          <div class="card-body">
+            <form role="form text-left" action="{{route('agenda.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                   <label for="exampleFormControlSelect1">Judul</label>
@@ -45,19 +50,21 @@
                   <button type="submit" class="btn bg-gradient-dark"><i class="fas fa-plus"></i>&nbsp;&nbsp;Tambah</button>
                 </div>
               </form>
-            </div>
           </div>
-        </div>
+          <!-- Card body START -->
       </div>
     </div>
+      <!-- Card END -->
   
-    {{-- @push('scripts')
-    <script>
-      tinymce.init({
-        selector: 'textarea',
-        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-        toolbar_mode: 'floating',
-     });
-    </script>
-    @endpush --}}
+      {{-- @push('scripts')
+      <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+          toolbar_mode: 'floating',
+       });
+      </script>
+      @endpush --}}
+      
   </x-app-layout>
+  

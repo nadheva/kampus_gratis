@@ -10,6 +10,9 @@ use App\Http\Controllers\PenelitianController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\PengumumanController;
+use App\Http\Controllers\PengabdianController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +28,12 @@ use App\Http\Controllers\QuestionController;
 Route::get('/', function () {
     return view('landingpage.index');
 });
+
+//Beranda
+Route::get('/tentang-page', [BerandaController::class, 'tentang']);
+Route::get('/mahasiswa-page', [BerandaController::class, 'mahasiswa']);
+Route::get('/pengabdian-page', [BerandaController::class, 'pengabdian']);
+Route::get('/pengumuman-page', [BerandaController::class, 'pengumuman']);
 
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
@@ -46,9 +55,6 @@ Route::get('/penelitian', function () {
     return view('landingpage.penelitian');
 });
 
-Route::get('/pengabdian', function () {
-    return view('landingpage.pengabdian');
-});
 
 Route::get('/berita', function () {
     return view('landingpage.berita');
@@ -77,32 +83,20 @@ Route::get('/dashboard', function () {
 // Route::get('/detail', function () {
 //     return view('admin.detail');
 // });
-
-//Banner
-Route::get('/banner', [BannerController::class, 'index']);
-Route::get('/banner-tambah', [BannerController::class, 'create']);
-Route::post('/banner-store', [BannerController::class, 'store']);
-Route::get('/banner-edit/{id}', [BannerController::class, 'edit']);
-Route::put('/banner-update/{id}', [BannerController::class, 'update']);
-Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
-
 Route::resource('detail', DetailController::class);
 Route::resource('data-penelitian', PenelitianController::class);
 Route::resource('data-prestasi', PrestasiController::class);
 Route::resource('data-berita', BeritaController::class);
 Route::resource('data-faq', QuestionController::class);
 
-//Guru Besars
-Route::get('/guru-besar', [GuruBesarController::class, 'index']);
-Route::get('/guru-besar-tambah', [GuruBesarController::class, 'create']);
-Route::post('/guru-besar-store', [GuruBesarController::class, 'store']);
-Route::get('/guru-besar-edit/{id}', [GuruBesarController::class, 'edit']);
-Route::put('/guru-besar-update/{id}', [GuruBesarController::class, 'update']);
-Route::get('/guru-besar-destroy/{id}', [GuruBesarController::class, 'destroy']);
 Route::get('/tentang', [TentangController::class, 'view']);
 
+Route::resource('banner', BannerController::class);
+Route::resource('guru-besar', GuruBesarController::class);
 Route::resource('agenda', AgendaController::class);
-Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
+Route::resource('pengumuman', PengumumanController::class);
+Route::resource('pengabdian', PengabdianController::class);
+
 
 // Route::resource('banner', [BannerController::class])->name('banner');
 

@@ -11,7 +11,7 @@
 
         <!-- Card body START -->
         <div class="card-body">
-          <form role="form text-left" action="/guru-besar-store" method="POST" enctype="multipart/form-data">
+          <form role="form text-left" action="{{route('guru-besar.store')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
               <label for="exampleFormControlSelect1">Nama</label>
