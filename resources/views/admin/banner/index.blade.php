@@ -69,9 +69,10 @@
 
 								<!-- Table data -->
 								<td>
-									<a href="{{url('banner-edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
-									<form id="form-delete" action="{{url('banner-destroy',$b->id)}}""  style="display: inline">
+									<a href="{{route('banner.edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
+									<form id="form-delete" action="{{route('banner.destroy',$b->id)}}" method="POST"  style="display: inline">
 										@csrf
+										@method('DELETE')
 										<button type="submit" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</button>
 									  </form>
 								</td>
