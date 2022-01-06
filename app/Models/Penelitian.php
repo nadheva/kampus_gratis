@@ -13,6 +13,7 @@ class Penelitian extends Model
         'judul',
         'isi',
         'penulis',
+        'status'
     ];
 
     

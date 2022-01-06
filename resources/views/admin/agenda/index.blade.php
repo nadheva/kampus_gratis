@@ -98,7 +98,7 @@ Page content START -->
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</button>
-                                              </form>
+                                            </form>
 										</td>
 									</tr>
 									@endforeach

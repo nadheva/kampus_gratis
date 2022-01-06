@@ -6,6 +6,7 @@ use App\Http\Controllers\GuruBesarController;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\TentangController;
+use App\Http\Controllers\PenelitianController;
 
 /*
 |--------------------------------------------------------------------------

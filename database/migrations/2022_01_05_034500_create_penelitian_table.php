@@ -18,6 +18,7 @@ class CreatePenelitianTable extends Migration
             $table->string('judul');
             $table->text('isi');
             $table->string('penulis');
+            $table->enum('status', ['live', 'draft']);
             $table->timestamps();
         });
     }
