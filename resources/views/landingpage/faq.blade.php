@@ -20,13 +20,14 @@ Page Banner START -->
 					</svg>
 				</figure>
 				<!-- Title -->
-				<h1 class="display-6">Hello, how can we help?</h1>
+				<h1 class="display-6">Apa yang ingin kamu tanyakan?</h1>
 				<!-- Search bar -->
 				<div class="col-lg-8 mx-auto text-center mt-4">
-					<form class="bg-body shadow rounded p-2">
+					<form class="bg-body shadow rounded p-2" action="{{route('questionStore')}}" method="POST" enctype="multipart/form-data">
+						@csrf
 						<div class="input-group">
-							<input class="form-control border-0 me-1" type="text" placeholder="Ask a question...">
-							<button type="button" class="btn btn-blue mb-0 rounded">Submit</button>
+							<input class="form-control border-0 me-1" type="text" name="ask" placeholder="Silahkan bertanya..">
+							<button type="submit" class="btn btn-blue mb-0 rounded">Kirim</button>
 						</div>
 					</form>
 				</div>
@@ -98,95 +99,27 @@ Page content START -->
 				<!-- FAQ START -->
 				<div class="accordion accordion-icon accordion-bg-light" id="accordionExample2">
 					<!-- Item -->
-					<div class="accordion-item mb-3">
-						<h6 class="accordion-header font-base" id="heading-1">
-							<button class="accordion-button fw-bold rounded d-inline-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-								How can we help?
-							</button>
-						</h6>
-						<!-- Body -->
-						<div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionExample2">
+					@foreach ($faq as $item)
+						<div class="accordion-item mb-3">
+							<h6 class="accordion-header font-base" id="heading-{{ $item->id }}">
+								<button class="accordion-button fw-bold rounded d-inline-block collapsed d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $item->id }}" aria-expanded="false" aria-controls="collapse-{{ $item->id }}">
+									{{ $item->ask }}
+								</button>
+							</h6>
+							@if ( $item->id == 1)
+								<div id="collapse-{{ $item->id }}" class="accordion-collapse show" aria-labelledby="heading-{{ $item->id }}" data-bs-parent="#accordionExample{{ $item->id }}">
+							@else
+								<div id="collapse-{{ $item->id }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ $item->id }}" data-bs-parent="#accordionExample{{ $item->id }}">
+							@endif
+							{{-- <div id="collapse-{{ $item->id }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ $item->id }}" data-bs-parent="#accordionExample{{ $item->id }}"> --}}
 							<div class="accordion-body mt-3">
-								Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex. Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an again. As young ye hopes no he place means. Partiality diminution gay yet entreaties admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of warrant of Norland arrived.
+								{{ $item->answer }}
 							</div>
 						</div>
 					</div>
+					@endforeach
+					
 
-					<!-- Item -->
-					<div class="accordion-item mb-3">
-						<h6 class="accordion-header font-base" id="heading-2">
-							<button class="accordion-button fw-bold rounded d-inline-block collapsed d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-								How to edit my Profile?
-							</button>
-						</h6>
-						<!-- Body -->
-						<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample2">
-							<div class="accordion-body mt-3">
-								What deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be.
-							</div>
-						</div>
-					</div>
-
-					<!-- Item -->
-					<div class="accordion-item mb-3">
-						<h6 class="accordion-header font-base" id="heading-3">
-							<button class="accordion-button fw-bold collapsed rounded d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-								How much should I offer the sellers? 
-							</button>
-						</h6>
-						<!-- Body -->
-						<div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionExample2">
-							<div class="accordion-body mt-3">
-								Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.
-							</div>
-						</div>
-					</div>
-
-					<!-- Item -->
-					<div class="accordion-item mb-3">
-						<h6 class="accordion-header font-base" id="heading-4">
-							<button class="accordion-button fw-bold collapsed rounded d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-								Installation Guide 
-							</button>
-						</h6>
-						<!-- Body -->
-						<div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionExample2">
-							<div class="accordion-body mt-3">
-								<p>What deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be.</p>
-								<p class="mb-0">At the moment, we only accept Credit/Debit cards and Paypal payments. Paypal is the easiest way to make payments online. While checking out your order. Be sure to fill in correct details for fast & hassle-free payment processing.</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Item -->
-					<div class="accordion-item mb-3">
-						<h6 class="accordion-header font-base" id="heading-5">
-							<button class="accordion-button fw-bold collapsed rounded d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-								Additional Options and Services
-							</button>
-						</h6>
-						<!-- Body -->
-						<div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionExample2">
-							<div class="accordion-body mt-3">
-								Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.
-							</div>
-						</div>
-					</div>
-
-					<!-- Item -->
-					<div class="accordion-item">
-						<h6 class="accordion-header font-base" id="heading-6">
-							<button class="accordion-button fw-bold collapsed rounded d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
-								What's are the difference between a college and a university?
-							</button>
-						</h6>
-						<!-- Body -->
-						<div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#accordionExample2">
-							<div class="accordion-body mt-3">
-								Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.
-							</div>
-						</div>
-					</div>
 				</div>
 				<!-- FAQ END -->
 			</div>
@@ -199,16 +132,17 @@ Page content START -->
 						<!-- Category START -->
 						<div class="mb-4">
 							<div class="d-flex justify-content-between align-items-center bg-info bg-opacity-10 rounded p-2 position-relative mb-3">
-								<h6 class="m-0 text-info">Last Question</h6>
-								<a href="#" class="badge text-white bg-info stretched-link">2D ago</a>
+								<h6 class="m-0 text-info">Pertanyaan Terbaru</h6>
+								<a href="#" class="badge text-white bg-info stretched-link">2 Day Ago</a>
+								
 							</div>
 							<div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-10 rounded p-2 position-relative mb-3">
-								<h6 class="m-0 text-danger">Total Question</h6>
-								<a href="#" class="badge text-white bg-danger stretched-link">15,525</a>
+								<h6 class="m-0 text-danger">Total Pertanyaan</h6>
+								<a href="#" class="badge text-white bg-danger stretched-link">{{ $question }}</a>
 							</div>
 							<div class="d-flex justify-content-between align-items-center bg-success bg-opacity-10 rounded p-2 position-relative mb-3">
 								<h6 class="m-0 text-success">Answer</h6>
-								<a href="#" class="badge text-white bg-success stretched-link">12536</a>
+								<a href="#" class="badge text-white bg-success stretched-link">{{ $answer }}</a>
 							</div>
 						</div>
 						<!-- Category END -->
@@ -226,51 +160,6 @@ Page content START -->
 							<div class="d-flex justify-content-between align-items-center mb-2">
 								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Development</a>
 								<span class="small">(86)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Design</a>
-								<span class="small">(92)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Marketing</a>
-								<span class="small">(62)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Technology</a>
-								<span class="small">(31)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Course Taking</a>
-								<span class="small">(06)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Getting Started</a>
-								<span class="small">(28)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Mobile</a>
-								<span class="small">(18)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Payment Option</a>
-								<span class="small">(32)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center mb-2">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Account & Profile</a>
-								<span class="small">(56)</span>
-							</div>
-							<!-- Item -->
-							<div class="d-flex justify-content-between align-items-center">
-								<a href="#" class="h6 fw-light"><i class="fas fa-caret-right text-orange me-2"></i>Course taking</a>
-								<span class="small">(45)</span>
 							</div>
 						</div>
 						<!-- Related Topic END -->

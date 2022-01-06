@@ -58,9 +58,9 @@ Route::get('/alumni', function () {
     return view('landingpage.alumni');
 });
 
-Route::get('/faq', function () {
-    return view('landingpage.faq');
-});
+// Route::get('/faq', function () {
+//     return view('landingpage.faq');
+// });
 
 Route::get('/registrasi', function () {
     return view('landingpage.registrasi');
@@ -91,6 +91,8 @@ Route::resource('data-penelitian', PenelitianController::class);
 Route::resource('data-prestasi', PrestasiController::class);
 Route::resource('data-berita', BeritaController::class);
 Route::resource('data-faq', QuestionController::class);
+Route::post('faq', [QuestionController::class, 'questionStore'])->name('questionStore');
+Route::get('faq', [QuestionController::class, 'faq'])->name('faq');
 
 //Guru Besars
 Route::get('/guru-besar', [GuruBesarController::class, 'index']);

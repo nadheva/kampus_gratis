@@ -82,62 +82,38 @@
                         <!-- Table body START -->
                         <tbody>
                             <!-- Table item -->
-                            <tr>
-                                <!-- Table data -->
-                                <td>
-                                    <div class="d-flex align-items-center position-relative">
-                                        <!-- Image -->
-                                        <div class="avatar avatar-md mb-2 mb-md-0">
-                                            <img src="assets/images/avatar/01.jpg" class="rounded" alt="">
+                            @foreach ($userQuestion as $item)
+                                <tr>
+                                    <!-- Table data -->
+                                    <td>
+                                        <div class="d-flex align-items-center position-relative">
+                                            <!-- Image -->
+                                            <div class="avatar avatar-md mb-2 mb-md-0">
+                                                <img src="assets/images/avatar/01.jpg" class="rounded" alt="">
+                                            </div>
+                                            <div class="mb-0 ms-2">
+                                                <!-- Title -->
+                                                <h6 class="mb-0"><a href="#" class="stretched-link">{{ $item->user }}</a></h6>
+                                                <!-- Address -->
+                                                <span class="text-body small" style="word-break: break-word">
+                                                {{ $item->ask }}    
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="mb-0 ms-2">
-                                            <!-- Title -->
-                                            <h6 class="mb-0"><a href="#" class="stretched-link">Pengguna baru</a></h6>
-                                            <!-- Address -->
-                                            <span class="text-body small" style="word-break: break-word">
-                                            Mumbai    
-                                            </span>
-                                        </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                                <!-- Table data -->
-                                <td>4/9/2021</td>
+                                    <!-- Table data -->
+                                    <td>{{ $item->created_at }}</td>
 
-                                <!-- Table data -->
-                                <td>
-                                    <a href="#" class="btn btn-success-soft btn-round me-1 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Message"><i class="far fa-envelope"></i></a>
-                                    <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="fas fa-ban"></i></button>
-                                </td>
-                            </tr>
-
-                            <!-- Table item -->
-                            <tr>
-                                <!-- Table data -->
-                                <td>
-                                    <div class="d-flex align-items-center position-relative">
-                                        <!-- Image -->
-                                        <div class="avatar avatar-md mb-2 mb-md-0">
-                                            <img src="assets/images/avatar/06.jpg" class="rounded" alt="">
-                                        </div>
-                                        <div class="mb-0 ms-2">
-                                            <!-- Title -->
-                                            <h6 class="mb-0"><a href="#" class="stretched-link">Frances Guerrero</a></h6>
-                                            <!-- Address -->
-                                            <span class="text-body small"><i class="fas fa-fw fa-map-marker-alt me-1 mt-1"></i>Pune</span>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <!-- Table data -->
-                                <td>8/8/2021</td>
-
-                                <!-- Table data -->
-                                <td>
-                                    <a href="#" class="btn btn-success-soft btn-round me-1 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Message"><i class="far fa-envelope"></i></a>
-                                    <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="fas fa-ban"></i></button>
-                                </td>
-                            </tr>
+                                    <!-- Table data -->
+                                    <td>
+                                        
+                                        <a href="#" class="btn btn-success-soft btn-round me-1 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Message"><i class="far fa-envelope"></i></a>
+                                        <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="fas fa-ban"></i></button>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            
                         </tbody>
                         <!-- Table body END -->
                     </table>
@@ -164,4 +140,8 @@
         </div>
         <!-- Card END -->
     </div>
+
+    {{-- Message Modal --}}
+    
+
 </x-app-layout>
