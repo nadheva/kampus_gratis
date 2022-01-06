@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePrestasiTable extends Migration
+class CreateBeritaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreatePrestasiTable extends Migration
      */
     public function up()
     {
-        Schema::create('prestasi', function (Blueprint $table) {
+        Schema::create('berita', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
             $table->text('isi');
             $table->string('penulis');
             $table->string('gambar');
-            $table->enum('jenis', ['Mahasiswa', 'Dosen', 'Lembaga'])->default('Mahasiswa');
             $table->enum('status', ['live', 'draft']);
             $table->timestamps();
         });
@@ -32,6 +31,6 @@ class CreatePrestasiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prestasi');
+        Schema::dropIfExists('berita');
     }
 }
