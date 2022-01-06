@@ -1,20 +1,4 @@
 <x-app-layout>
-    <!-- =======================
-Page Banner START -->
-@include('landingpage.partials.banner-dashboard')
-<!-- =======================
-Page Banner END -->
-
-<!-- =======================
-Page content START -->
-<section class="pt-0">
-	<div class="container">
-		<div class="row">
-
-			<!-- Right sidebar START -->
-			@include('landingpage.partials.sidebar-dashboard')
-			<!-- Right sidebar END -->
-
 			<!-- Main content START -->
 			<div class="col-xl-9">
 
@@ -48,7 +32,7 @@ Page content START -->
 								</div>
 							  </div>
 							<!-- Select option -->
-							<div class="col-md-3">
+							{{-- <div class="col-md-3">
 								<!-- Short by filter -->
 								<form>
 									<select class="form-select js-choice border-0 z-index-9 bg-transparent" aria-label=".form-select-sm">
@@ -59,7 +43,7 @@ Page content START -->
 										<option>Most Viewed</option>
 									</select>
 								</form>
-							</div>
+							</div> --}}
 						</div>
 						<!-- Search and select END -->
 
@@ -128,10 +112,6 @@ Page content START -->
 					<!-- Card body START -->
 				</div>
 			<!-- Main content END -->
-			</div><!-- Row END -->
-		</div>
-	</div>	
-</section>
 <!-- =======================
 Page content END -->
 @push('scripts')

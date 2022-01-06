@@ -42,7 +42,7 @@ class GuruBesarController extends Controller
             'lulusan' => $request->lulusan,
             'pekerjaan' => $request->pekerjaan
         ]);
-        return redirect('guru-besar')
+        return redirect()->route('guru-besar.index')
             ->with('success', 'Guru Besar Berhasil Ditambahkan');
     }
 
@@ -69,14 +69,14 @@ class GuruBesarController extends Controller
         }else{}
 
         $gurubesar->save();
-        return redirect('guru-besar')
+        return redirect()->route('guru-besar.index')
         ->with('edit', 'Guru Besar Berhasil Diedit');
     }
 
     public function destroy($id)
     {
         GuruBesar::where('id', $id)->delete();
-        return redirect('guru-besar')
+        return redirect()->route('guru-besar.index')
         ->with('delete', 'Guru Besar Berhasil Dihapus');
     }
 

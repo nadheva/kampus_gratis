@@ -1,7 +1,7 @@
 <x-guest-layout>
     <!-- =======================
 Page Banner START -->
-@include('partials.banner-dashboard')
+@include('admin.partials.banner')
 <!-- =======================
 Page Banner END -->
 
@@ -12,7 +12,7 @@ Page content START -->
 		<div class="row">
 
 			<!-- Right sidebar START -->
-			@include('partials.sidebar-dashboard')
+			@include('admin.partials.sidebar')
 			<!-- Right sidebar END -->
 
 			<!-- Main content START -->

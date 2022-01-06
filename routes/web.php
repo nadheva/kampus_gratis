@@ -73,27 +73,11 @@ Route::get('/dashboard', function () {
 // Route::get('/detail', function () {
 //     return view('admin.detail');
 // });
-
-//Banner
-Route::get('/banner', [BannerController::class, 'index']);
-Route::get('/banner-tambah', [BannerController::class, 'create']);
-Route::post('/banner-store', [BannerController::class, 'store']);
-Route::get('/banner-edit/{id}', [BannerController::class, 'edit']);
-Route::put('/banner-update/{id}', [BannerController::class, 'update']);
-Route::get('/banner-destroy/{id}', [BannerController::class, 'destroy']);
-
 Route::resource('detail', DetailController::class);
 Route::resource('data-penelitian', PenelitianController::class);
-
-//Guru Besars
-Route::get('/guru-besar', [GuruBesarController::class, 'index']);
-Route::get('/guru-besar-tambah', [GuruBesarController::class, 'create']);
-Route::post('/guru-besar-store', [GuruBesarController::class, 'store']);
-Route::get('/guru-besar-edit/{id}', [GuruBesarController::class, 'edit']);
-Route::put('/guru-besar-update/{id}', [GuruBesarController::class, 'update']);
-Route::get('/guru-besar-destroy/{id}', [GuruBesarController::class, 'destroy']);
 Route::get('/tentang', [TentangController::class, 'view']);
-
+Route::resource('banner', BannerController::class);
+Route::resource('guru-besar', GuruBesarController::class);
 Route::resource('agenda', AgendaController::class);
 Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
 
