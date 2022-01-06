@@ -27,6 +27,7 @@ Route::get('/', function () {
 Route::get('/tentang-page', [BerandaController::class, 'tentang']);
 Route::get('/mahasiswa-page', [BerandaController::class, 'mahasiswa']);
 Route::get('/pengabdian-page', [BerandaController::class, 'pengabdian']);
+Route::get('/pengumuman-page', [BerandaController::class, 'pengumuman']);
 
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
