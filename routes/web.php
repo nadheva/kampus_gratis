@@ -28,9 +28,9 @@ use App\Http\Controllers\AlumniController;
 |
 */
 
-Route::get('/', function () {
-    return view('landingpage.index');
-});
+// Route::get('/', function () {
+//     return view('landingpage.index');
+// });
 
 //Beranda
 Route::get('/tentang-page', [BerandaController::class, 'tentang']);
@@ -38,6 +38,8 @@ Route::get('/mahasiswa-page', [BerandaController::class, 'mahasiswa']);
 Route::get('/pengabdian-page', [BerandaController::class, 'pengabdian']);
 Route::get('/pengumuman-page', [BerandaController::class, 'pengumuman']);
 Route::get('/alumni-page', [BerandaController::class, 'alumni']);
+Route::get('/penelitian-page', [BerandaController::class, 'penelitian']);
+Route::get('/', [BerandaController::class, 'beranda']);
 
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
@@ -55,9 +57,9 @@ Route::get('/pendidikan', function () {
 //     return view('landingpage.mahasiswa');
 // });
 
-Route::get('/penelitian', function () {
-    return view('landingpage.penelitian');
-});
+// Route::get('/penelitian', function () {
+//     return view('landingpage.penelitian');
+// });
 
 
 Route::get('/berita', function () {

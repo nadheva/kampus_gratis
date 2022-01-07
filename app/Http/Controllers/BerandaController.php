@@ -6,6 +6,8 @@ use App\Models\GuruBesar;
 use App\Models\Pengabdian;
 use App\Models\Pengumuman;
 use App\Models\Alumni;
+use App\Models\Banner;
+use App\Models\Jurnal;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -38,4 +40,16 @@ class BerandaController extends Controller
         $alumni = Alumni::all();
         return view('landingpage.alumni', compact('alumni'));
     }
+    
+    public function beranda()
+    {
+        $banner = Banner::all();
+        return view('landingpage.index',compact('banner'));
+    }
+    public function penelitian()
+    {
+        $jurnal = Jurnal::all();
+        return view('landingpage.penelitian',compact('jurnal'));
+    }
+
 }
