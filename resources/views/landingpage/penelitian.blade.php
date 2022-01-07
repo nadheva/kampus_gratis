@@ -42,41 +42,18 @@
                 <div class="col-lg-5 position-relative mt-xl-0" id="fill-instructor-form">
                     <div class="row g-4">
                         <!-- Item -->
-                        <div>
-                            <div class="bg-primary bg-opacity-10 rounded-3 text-center p-3 position-relative btn-transition">
-                                <!-- Image -->
-                                <div class="icon-xl bg-body mx-auto rounded-circle mb-3">
-                                    <img src="assets/images/element/data-science.svg" alt="">
+                        @foreach ($penelitian as $item)
+                            <div>
+                                <div class="bg-primary bg-opacity-10 rounded-3 text-center p-3 position-relative btn-transition">
+                                    <!-- Image -->
+                                    <div class="icon-xl bg-body mx-auto rounded-circle mb-3">
+                                        <img src="assets/images/element/data-science.svg" alt="">
+                                    </div>
+                                    <!-- Title -->
+                                    <h5 class="mb-1"><a href="#" class="stretched-link">{{ $item->judul }}</a></h5>
                                 </div>
-                                <!-- Title -->
-                                <h5 class="mb-1"><a href="#" class="stretched-link">Penelitian 1</a></h5>
                             </div>
-                        </div>
-            
-                        <!-- Item -->
-                        <div>
-                            <div class="bg-primary bg-opacity-10 rounded-3 text-center p-3 position-relative btn-transition">
-                                <!-- Image -->
-                                <div class="icon-xl bg-body mx-auto rounded-circle mb-3">
-                                    <img src="assets/images/element/online.svg" alt="">
-                                </div>
-                                <!-- Title -->
-                                <h5 class="mb-1"><a href="#" class="stretched-link">Penelitian 2</a></h5>
-                            </div>
-                        </div>
-            
-            
-                        <!-- Item -->
-                        <div>
-                            <div class="bg-primary bg-opacity-10 rounded-3 text-center p-3 position-relative btn-transition">
-                                <!-- Image -->
-                                <div class="icon-xl bg-body mx-auto rounded-circle mb-3">
-                                    <img src="assets/images/element/profit.svg" alt="">
-                                </div>
-                                <!-- Title -->
-                                <h5 class="mb-1"><a href="#" class="stretched-link">Penelitian 3</a></h5>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <!-- Left Content END -->
@@ -116,71 +93,23 @@
                 <div class="tiny-slider arrow-round arrow-dark arrow-hover">
                     <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-edge="2" data-dots="false" data-items="3" data-items-lg="2" data-items-sm="1">
                         <!-- Card item START -->
-                        <div>
-                            <div class="card border mb-1">
-                                <div class="card-body">
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 1</a></h5>
-                                    <p class="mb-3">Isi</p>
-                                    <!-- Content -->
-                                    <div class="row item-collapse">
-                                        <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
+                        @foreach ($jurnal as $item)
+                            <div>
+                                <div class="card border mb-1">
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <h5 class="card-title mb-3"><a href="#">{{ $item->judul }}</a></h5>
+                                        <p class="mb-3">{{ $item->abstrak }}</p>
+                                        <!-- Content -->
+                                        <div class="row item-collapse">
+                                            <!-- Button -->
+                                            <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Card item END -->
-    
-                        <!-- Card item START -->
-                        <div>
-                            <div class="card border mb-1">
-                                <div class="card-body">
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 2</a></h5>
-                                    <p class="mb-3">Isi</p>
-                                    <!-- Content -->
-                                    <div class="row item-collapse">
-                                        <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-    
-                        <!-- Card item START -->
-                        <div>
-                            <div class="card border mb-1">
-                                <div class="card-body">
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 3</a></h5>
-                                    <p class="mb-3">Isi</p>
-                                    <!-- Content -->
-                                    <div class="row item-collapse">
-                                        <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-    
-                        <!-- Card item START -->
-                        <div>
-                            <div class="card border mb-1">
-                                <div class="card-body">
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 4</a></h5>
-                                    <p class="mb-3">Isi</p>
-                                    <!-- Content -->
-                                    <div class="row item-collapse">
-                                        <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+                        
                         <!-- Card item END -->
                     </div>
                 </div>

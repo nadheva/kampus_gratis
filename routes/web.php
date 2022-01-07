@@ -54,13 +54,6 @@ Route::get('/pendidikan', function () {
 //     return view('landingpage.mahasiswa');
 // });
 
-Route::get('/penelitian', function () {
-    return view('landingpage.penelitian');
-});
-
-Route::get('/berita', function () {
-    return view('landingpage.berita');
-});
 
 Route::get('/alumni', function () {
     return view('landingpage.alumni');
@@ -77,6 +70,9 @@ Route::get('/job-channel', function () {
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->name('dashboard');
+
+Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
+Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
 
 Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionStore');
 Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
