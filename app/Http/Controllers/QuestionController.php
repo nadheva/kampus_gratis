@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Question;
+use App\Models\UserQuestion;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class QuestionController extends Controller
 {
@@ -15,7 +17,8 @@ class QuestionController extends Controller
     public function index()
     {
         $faq = Question::all();
-        return view('admin.faq.index', compact('faq'));
+        $userQuestion = UserQuestion::all();
+        return view('admin.faq.index', compact('faq', 'userQuestion'));
     }
 
     /**
@@ -50,7 +53,7 @@ class QuestionController extends Controller
         return redirect()->route('data-faq.index')
             ->with('success', 'Data FAQ Berhasil Ditambahkan');
     }
-
+    
     /**
      * Display the specified resource.
      *
