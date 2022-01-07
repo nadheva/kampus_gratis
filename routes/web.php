@@ -31,11 +31,11 @@ Route::get('/', function () {
     return view('landingpage.index');
 });
 
-//Beranda
 Route::get('/tentang-page', [BerandaController::class, 'tentang']);
 Route::get('/mahasiswa-page', [BerandaController::class, 'mahasiswa']);
 Route::get('/pengabdian-page', [BerandaController::class, 'pengabdian']);
 Route::get('/pengumuman-page', [BerandaController::class, 'pengumuman']);
+Route::get('/faq', [BerandaController::class, 'faq']);
 
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
@@ -57,17 +57,12 @@ Route::get('/penelitian', function () {
     return view('landingpage.penelitian');
 });
 
-
 Route::get('/berita', function () {
     return view('landingpage.berita');
 });
 
 Route::get('/alumni', function () {
     return view('landingpage.alumni');
-});
-
-Route::get('/faq', function () {
-    return view('landingpage.faq');
 });
 
 Route::get('/registrasi', function () {
@@ -82,9 +77,10 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->name('dashboard');
 
-// Route::get('/detail', function () {
-//     return view('admin.detail');
-// });
+
+
+
+// ADMIN
 Route::resource('detail', DetailController::class);
 Route::resource('data-penelitian', PenelitianController::class);
 Route::resource('data-prestasi', PrestasiController::class);
@@ -101,7 +97,5 @@ Route::resource('pengabdian', PengabdianController::class);
 
 Route::resource('data-jurnal', JurnalController::class);
 Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
-
-// Route::resource('banner', [BannerController::class])->name('banner');
 
 require __DIR__.'/auth.php';

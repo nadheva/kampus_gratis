@@ -5,7 +5,7 @@ Page Banner START -->
 	<div class="container">
 		<div class="row g-4 g-md-5 position-relative">
 			<!-- SVG decoration -->
-			<figure class="position-absolute top-0 start-0 d-none d-sm-block">	
+			<figure class="position-absolute top-0 start-0 d-none d-sm-block">
 				<svg width="22px" height="22px" viewBox="0 0 22 22">
 					<polygon class="fill-purple" points="22,8.3 13.7,8.3 13.7,0 8.3,0 8.3,8.3 0,8.3 0,13.7 8.3,13.7 8.3,22 13.7,22 13.7,13.7 22,13.7 "></polygon>
 				</svg>
@@ -88,7 +88,7 @@ Page Banner END -->
 Page content START -->
 <section class="pt-5 pb-0 pb-lg-5">
 	<div class="container">
-	
+
 		<div class="row g-4 g-md-5">
 			<!-- Main content START -->
 			<div class="col-lg-8">
@@ -131,7 +131,7 @@ Page content START -->
 					<div class="accordion-item mb-3">
 						<h6 class="accordion-header font-base" id="heading-3">
 							<button class="accordion-button fw-bold collapsed rounded d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-								How much should I offer the sellers? 
+								How much should I offer the sellers?
 							</button>
 						</h6>
 						<!-- Body -->
@@ -146,7 +146,7 @@ Page content START -->
 					<div class="accordion-item mb-3">
 						<h6 class="accordion-header font-base" id="heading-4">
 							<button class="accordion-button fw-bold collapsed rounded d-block pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-								Installation Guide 
+								Installation Guide
 							</button>
 						</h6>
 						<!-- Body -->
@@ -200,7 +200,7 @@ Page content START -->
 						<div class="mb-4">
 							<div class="d-flex justify-content-between align-items-center bg-info bg-opacity-10 rounded p-2 position-relative mb-3">
 								<h6 class="m-0 text-info">Last Question</h6>
-								<a href="#" class="badge text-white bg-info stretched-link">2D ago</a>
+								<a href="#" class="badge text-white bg-info stretched-link">{{$beda}} Hari yang lalu</a>
 							</div>
 							<div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-10 rounded p-2 position-relative mb-3">
 								<h6 class="m-0 text-danger">Total Question</h6>
