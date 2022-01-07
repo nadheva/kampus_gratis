@@ -1,21 +1,4 @@
 <x-app-layout>
-    <!-- =======================
-Page Banner START -->
-@include('landingpage.partials.banner-dashboard')
-<!-- =======================
-Page Banner END -->
-
-		<div class="card border rounded-3">
-			<!-- Card header START -->
-			<div class="card-header border-bottom">
-				<h3 class="mb-0">Data Guru Besar Kampus Gratis</h3>
-			</div>
-			<!-- Card header END -->
-
-			<!-- Right sidebar START -->
-			@include('landingpage.partials.sidebar-dashboard')
-			<!-- Right sidebar END -->
-
 			<!-- Main content START -->
 			<div class="col-xl-9">
 
@@ -67,9 +50,10 @@ Page Banner END -->
 								</td>
 								<td>{{$b->deskripsi}}</td>
 								<td>
-									<a href="{{url('guru-besar-edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
-									<form id="form-delete" action="{{url('guru-besar-destroy',$b->id)}}""  style="display: inline">
+									<a href="{{route('guru-besar.edit',$b->id)}}" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Edit</a>
+									<form id="form-delete" action="{{route('guru-besar.destroy',$b->id)}}" method="POST"  style="display: inline">
 										@csrf
+										@method('DELETE')
 										<button type="submit" class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="bi bi-arrow-repeat me-1"></i>Hapus</button>
 									  </form>
 								</td>

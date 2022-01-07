@@ -38,7 +38,7 @@ class BannerController extends Controller
             'deskripsi' => $request->deskripsi,
             'gambar' => $txt,
         ]);
-        return redirect('banner')
+        return redirect()->route('banner.index')
             ->with('success', 'Banner Berhasil Ditambahkan');
     }
 
@@ -65,14 +65,14 @@ class BannerController extends Controller
         }else{}
 
         $banner->save();
-        return redirect('banner')
+        return redirect()->route('banner.index')
         ->with('edit', 'Banner Berhasil Diedit');
     }
 
     public function destroy($id)
     {
         Banner::where('id', $id)->delete();
-        return redirect('banner')
+        return redirect()->route('banner.index')
         ->with('delete', 'Banner Berhasil Dihapus');
     }
 

@@ -55,7 +55,7 @@
   
           <!-- Card body START -->
           <div class="card-body">
-            <form role="form text-left" action="{{url('guru-besar-update',$gurubesar->id)}}" method="POST" enctype="multipart/form-data">
+            <form role="form text-left" action="{{route('guru-besar.update',$gurubesar->id)}}" method="POST" enctype="multipart/form-data">
               @csrf
               @method('PUT')
               <input type="hidden" name="id">
