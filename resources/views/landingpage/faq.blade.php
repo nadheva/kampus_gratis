@@ -132,8 +132,8 @@ Page content START -->
 						<!-- Category START -->
 						<div class="mb-4">
 							<div class="d-flex justify-content-between align-items-center bg-info bg-opacity-10 rounded p-2 position-relative mb-3">
-								<h6 class="m-0 text-info">Last Question</h6>
-								<a href="#" class="badge text-white bg-info stretched-link">{{$beda}} Hari yang lalu</a>
+								<h6 class="m-0 text-info">Pertanyaan terakhir</h6>
+								<a href="#" class="badge text-white bg-info stretched-link">{{$beda}}</a>
 							</div>
 							<div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-10 rounded p-2 position-relative mb-3">
 								<h6 class="m-0 text-danger">Total Pertanyaan</h6>

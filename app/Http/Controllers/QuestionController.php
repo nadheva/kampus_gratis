@@ -53,35 +53,7 @@ class QuestionController extends Controller
         return redirect()->route('data-faq.index')
             ->with('success', 'Data FAQ Berhasil Ditambahkan');
     }
-
-    public function questionStore(Request $request)
-    {
-        $request->validate([
-            'ask' => 'required',
-        ]);
-
-        UserQuestion::create([
-            'ask' => $request->ask,
-            'user' => 'Unknown',
-            'isanswer' => 0
-        ]);
-        return redirect(route('faq'))
-            ->with('success', 'Pertanyaan berhasil dikirimkan');
-    }
-
-    public function faq()
-    {
-        $faq = Question::all();
-        $question = UserQuestion::all()->count();
-        $answer = UserQuestion::all()->sum('isanswer');
-
-        // $latest = UserQuestion::all()->sortByDesc('created_at')->take(1)->toArray();
-        
-        // $latest = UserQuestion::all()->orderBy('created_at','desc')->limit(5)->get();
-        // dd($latest);
-        return view('landingpage.faq', compact('question', 'answer', 'faq'));
-    }
-
+    
     /**
      * Display the specified resource.
      *

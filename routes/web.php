@@ -15,6 +15,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\PengabdianController;
+use App\Http\Controllers\FiturController;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,6 +78,8 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->name('dashboard');
 
+Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionStore');
+Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 
 
 
@@ -86,8 +89,8 @@ Route::resource('data-penelitian', PenelitianController::class);
 Route::resource('data-prestasi', PrestasiController::class);
 Route::resource('data-berita', BeritaController::class);
 Route::resource('data-faq', QuestionController::class);
-Route::post('faq', [QuestionController::class, 'questionStore'])->name('questionStore');
-Route::get('faq', [QuestionController::class, 'faq'])->name('faq');
+Route::resource('data-fitur', FiturController::class);
+
 
 Route::get('/tentang', [TentangController::class, 'view']);
 

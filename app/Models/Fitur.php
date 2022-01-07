@@ -5,16 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Detail extends Model
+class Fitur extends Model
 {
     use HasFactory;
-    protected $table = 'detail';
+    protected $table = 'fitur';
     protected $fillable = [
-        'sejarah',
-        'latar_belakang',
-        'visi',
-        'misi',
-        'identitas'
+        'fitur',
+        'deskripsi',
+        'gambar'
     ];
     protected $primaryKey = 'id';
 }
