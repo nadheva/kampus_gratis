@@ -112,7 +112,7 @@
                                     <!-- Info -->
                                     <div class="d-flex justify-content-between">
                                         <h6 class="mb-0"><a href="#">{{ $item->penulis }}</a></h6>
-                                        <span class="small">{{ $item->beda }}</span>
+                                        <span class="small">{{ $item->created_at->diffForHumans() }}</span>
                                     </div>
                                 </div>
                             </div>
