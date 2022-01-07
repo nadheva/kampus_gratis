@@ -15,6 +15,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\PengabdianController;
+use App\Http\Controllers\AlumniController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,7 @@ Route::get('/tentang-page', [BerandaController::class, 'tentang']);
 Route::get('/mahasiswa-page', [BerandaController::class, 'mahasiswa']);
 Route::get('/pengabdian-page', [BerandaController::class, 'pengabdian']);
 Route::get('/pengumuman-page', [BerandaController::class, 'pengumuman']);
+Route::get('/alumni-page', [BerandaController::class, 'alumni']);
 
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
@@ -62,9 +64,9 @@ Route::get('/berita', function () {
     return view('landingpage.berita');
 });
 
-Route::get('/alumni', function () {
-    return view('landingpage.alumni');
-});
+// Route::get('/alumni-page', function () {
+//     return view('landingpage.alumni');
+// });
 
 Route::get('/faq', function () {
     return view('landingpage.faq');
@@ -98,6 +100,7 @@ Route::resource('guru-besar', GuruBesarController::class);
 Route::resource('agenda', AgendaController::class);
 Route::resource('pengumuman', PengumumanController::class);
 Route::resource('pengabdian', PengabdianController::class);
+Route::resource('alumni', AlumniController::class);
 
 Route::resource('data-jurnal', JurnalController::class);
 Route::get('/mahasiswa', [MahasiswaController::class, 'view']);

@@ -5,6 +5,7 @@ use App\Models\Agenda;
 use App\Models\GuruBesar;
 use App\Models\Pengabdian;
 use App\Models\Pengumuman;
+use App\Models\Alumni;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -30,5 +31,11 @@ class BerandaController extends Controller
     {
         $pengumuman = Pengumuman::all();
         return view('landingpage.pengumuman', compact('pengumuman'));
+    }
+    
+    public function alumni() 
+    {
+        $alumni = Alumni::all();
+        return view('landingpage.alumni', compact('alumni'));
     }
 }

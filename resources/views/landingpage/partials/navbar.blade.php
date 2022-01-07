@@ -23,7 +23,7 @@
                 <div class="nav-item w-100">
                     <ul class="navbar-nav mx-auto order-0">
                         <li class="nav-item menu"><a class="nav-link putih" href="/berita">Berita</a></li>
-                        <li class="nav-item menu"><a class="nav-link putih" href="/alumni">Alumni</a></li>
+                        <li class="nav-item menu"><a class="nav-link putih" href="/alumni-page">Alumni</a></li>
                         <li class="nav-item menu"><a class="nav-link putih" href="/pengumuman">Pengumuman</a></li>
                         <li class="nav-item menu"><a class="nav-link putih" href="/faq">FAQ</a></li>
                     </ul>
