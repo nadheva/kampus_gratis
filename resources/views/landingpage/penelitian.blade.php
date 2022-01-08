@@ -122,11 +122,17 @@
                                 <div class="card-body">
                                     <!-- Title -->
                                     <h5 class="card-title mb-3"><a href="#">{{$j->judul}}</a></h5>
+                                    <!-- Card image -->
+                                    <div class="w-300px">
+                                        <img src="{{ asset( $j->gambar) }}"  class="rounded card-img-top" style="max-height: 300px" alt="">
+                                    </div>
+                                    <div class="my-3">
                                     <p class="mb-3">{{$j->isi}}</p>
+                                    </div>
                                     <!-- Content -->
                                     <div class="row item-collapse">
                                         <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
+                                        <div class="mx-9"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
                                     </div>
                                 </div>
                             </div>
