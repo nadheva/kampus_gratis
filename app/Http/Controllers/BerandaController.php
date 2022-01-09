@@ -11,10 +11,8 @@ use App\Models\Pengumuman;
 use App\Models\Question;
 use App\Models\UserQuestion;
 use Carbon\Carbon;
-
 use App\Models\Alumni;
 use App\Models\Banner;
-use App\Models\Jurnal;
 use App\Models\Prestasi;
 use Illuminate\Http\Request;
 
@@ -95,10 +93,4 @@ class BerandaController extends Controller
         $banner = Banner::all();
         return view('landingpage.index',compact('banner'));
     }
-    public function penelitian()
-    {
-        $jurnal = Jurnal::all();
-        return view('landingpage.penelitian',compact('jurnal'));
-    }
-
 }
