@@ -82,6 +82,9 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->name('dashboard');
 
+Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
+Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
+
 Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionStore');
 Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 

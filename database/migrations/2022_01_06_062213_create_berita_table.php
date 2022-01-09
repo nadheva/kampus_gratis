@@ -19,6 +19,7 @@ class CreateBeritaTable extends Migration
             $table->text('isi');
             $table->string('penulis');
             $table->string('gambar');
+            $table->string('kategori');
             $table->enum('status', ['live', 'draft']);
             $table->timestamps();
         });

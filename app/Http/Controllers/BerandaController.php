@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Models\Agenda;
+use App\Models\Berita;
 use App\Models\GuruBesar;
+use App\Models\Jurnal;
+use App\Models\Penelitian;
 use App\Models\Pengabdian;
 use App\Models\Pengumuman;
 use App\Models\Question;
@@ -39,6 +42,20 @@ class BerandaController extends Controller
     {
         $pengumuman = Pengumuman::all();
         return view('landingpage.pengumuman', compact('pengumuman'));
+    }
+
+    public function berita()
+    {
+        $berita = Berita::all();
+        $beda = $berita->created_at->diffForHumans();
+        return view('landingpage.berita', compact('berita', 'beda'));
+    }
+
+    public function penelitian()
+    {
+        $penelitian = Penelitian::all();
+        $jurnal = Jurnal::all();
+        return view('landingpage.penelitian', compact('penelitian', 'jurnal'));
     }
 
     public function faq()
