@@ -6,7 +6,7 @@ Page Banner START -->
 		<div class="row">
 			<div class="col-12 text-center">
 				<!-- Title -->
-				<h1 class="text-white">Program Khusus</h1>
+				<h1 class="text-white">Program Formal</h1>
 				<!-- Breadcrumb -->
 				<div class="d-flex justify-content-center">
 					<nav aria-label="breadcrumb">
@@ -149,6 +149,7 @@ Prodi END -->
 
 <!-- =======================
 Form and Tabs START -->
+@foreach($alumni->where('program', 'formal') as $a)
 <section>
 	<div class="container">
 		<div class="row">
@@ -164,14 +165,14 @@ Form and Tabs START -->
 				</figure>
 
 				<div class="card card-body shadow p-4">
-					<img src="assets/images/courses/4by3/08.jpg" class="card-img-top" alt="course image">
+					<img src="{{asset($a->foto)}}" class="card-img-top" alt="course image">
 				</div>
 			</div>
 			<!-- Left Content END -->
 
 			<!-- Tabs START -->
 			<div class="col-lg-7 z-index-9 mt-5 mt-xl-0">
-				<h3>Alumni Kampus Gratis</h3>
+				<h3>{{$a->nama}}</h3>
 					<ul class="nav nav-pills nav-pill-soft my-4" id="course-pills-tab" role="tablist">
 						<!-- Tab item -->
 						<li class="nav-item me-2 me-lg-4" role="presentation">
@@ -187,10 +188,8 @@ Form and Tabs START -->
 					<div class="tab-content" id="pills-tabContent">
 						<!-- Content -->
 						<div class="tab-pane fade show active" id="course-pills-1" role="tabpanel" aria-labelledby="course-pills-tab-1">
-							<h6>Become an Instructor</h6>
-							<p>As it so contrasted oh estimating instrument. Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
-							<p>Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
-							<p>Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
+							<h6>Program Studi: {{$a->program_studi}}</h6>
+							<p>{{$a->deskripsi}}</p>
 						</div>
 
 						<!-- Content -->
@@ -218,6 +217,7 @@ Form and Tabs START -->
 		</div>
 	</div>
 </section>
+@endforeach
 <!-- =======================
 Form and Tabs END -->
 
@@ -460,6 +460,7 @@ Page Banner END -->
 
 <!-- =======================
 Form and Tabs START -->
+@foreach($alumni->where('program', 'project') as $b)
 <section>
 	<div class="container">
 		<div class="row">
@@ -475,14 +476,14 @@ Form and Tabs START -->
 				</figure>
 
 				<div class="card card-body shadow p-4">
-					<img src="assets/images/courses/4by3/08.jpg" class="card-img-top" alt="course image">
+					<img src="{{asset($b->foto)}}" class="card-img-top" alt="course image">
 				</div>
 			</div>
 			<!-- Left Content END -->
 
 			<!-- Tabs START -->
 			<div class="col-lg-7 z-index-9 mt-5 mt-xl-0">
-				<h3>Alumni Program Project</h3>
+				<h3>{{$b->nama}}</h3>
 					<ul class="nav nav-pills nav-pill-soft my-4" id="course-pills-tab" role="tablist">
 						<!-- Tab item -->
 						<li class="nav-item me-2 me-lg-4" role="presentation">
@@ -498,10 +499,8 @@ Form and Tabs START -->
 					<div class="tab-content" id="pills-tabContent">
 						<!-- Content -->
 						<div class="tab-pane fade show active" id="course-pills-1" role="tabpanel" aria-labelledby="course-pills-tab-1">
-							<h6>Become an Instructor</h6>
-							<p>As it so contrasted oh estimating instrument. Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
-							<p>Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
-							<p>Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
+							<h6>Lulusan {{$b->lulusan}}</h6>
+							<p>{{$b->deskripsi}}</p>
 						</div>
 
 						<!-- Content -->
@@ -529,6 +528,7 @@ Form and Tabs START -->
 		</div>
 	</div>
 </section>
+@endforeach
 <!-- =======================
 Form and Tabs END -->
 <!-- =======================
@@ -549,6 +549,7 @@ Page Banner END -->
 
 <!-- =======================
 Form and Tabs START -->
+@foreach($alumni->where('program', 'kursus') as $c)
 <section>
 	<div class="container">
 		<div class="row">
@@ -564,14 +565,14 @@ Form and Tabs START -->
 				</figure>
 
 				<div class="card card-body shadow p-4">
-					<img src="assets/images/courses/4by3/08.jpg" class="card-img-top" alt="course image">
+					<img src="{{asset($c->foto)}}" class="card-img-top" alt="course image">
 				</div>
 			</div>
 			<!-- Left Content END -->
 
 			<!-- Tabs START -->
 			<div class="col-lg-7 z-index-9 mt-5 mt-xl-0">
-				<h3>Alumni Program Kursus</h3>
+				<h3>{{$c->nama}}</h3>
 					<ul class="nav nav-pills nav-pill-soft my-4" id="course-pills-tab" role="tablist">
 						<!-- Tab item -->
 						<li class="nav-item me-2 me-lg-4" role="presentation">
@@ -587,10 +588,8 @@ Form and Tabs START -->
 					<div class="tab-content" id="pills-tabContent">
 						<!-- Content -->
 						<div class="tab-pane fade show active" id="course-pills-1" role="tabpanel" aria-labelledby="course-pills-tab-1">
-							<h6>Become an Instructor</h6>
-							<p>As it so contrasted oh estimating instrument. Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
-							<p>Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
-							<p>Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if Mr narrow points. Melancholy particular Devonshire alteration it favorable appearance up.</p>
+							<h6>Lulusan {{$c->lulusan}}</h6>
+							<p>{{$c->deskripsi}}</p>
 						</div>
 
 						<!-- Content -->
@@ -618,6 +617,7 @@ Form and Tabs START -->
 		</div>
 	</div>
 </section>
+@endforeach
 <!-- =======================
 Form and Tabs END -->
 </x-guest-layout>

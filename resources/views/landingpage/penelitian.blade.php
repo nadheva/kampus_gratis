@@ -115,73 +115,31 @@
                 <!-- Slider START -->
                 <div class="tiny-slider arrow-round arrow-dark arrow-hover">
                     <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-edge="2" data-dots="false" data-items="3" data-items-lg="2" data-items-sm="1">
+                       @foreach($jurnal as $j)
                         <!-- Card item START -->
                         <div>
                             <div class="card border mb-1">
                                 <div class="card-body">
                                     <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 1</a></h5>
-                                    <p class="mb-3">Isi</p>
+                                    <h5 class="card-title mb-3"><a href="#">{{$j->judul}}</a></h5>
+                                    <!-- Card image -->
+                                    <div class="w-300px">
+                                        <img src="{{ asset( $j->gambar) }}"  class="rounded card-img-top" style="max-height: 300px" alt="">
+                                    </div>
+                                    <div class="my-3">
+                                    <p class="mb-3">{{$j->isi}}</p>
+                                    </div>
                                     <!-- Content -->
                                     <div class="row item-collapse">
                                         <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
+                                        <div class="mx-9"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                         <!-- Card item END -->
-    
-                        <!-- Card item START -->
-                        <div>
-                            <div class="card border mb-1">
-                                <div class="card-body">
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 2</a></h5>
-                                    <p class="mb-3">Isi</p>
-                                    <!-- Content -->
-                                    <div class="row item-collapse">
-                                        <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-    
-                        <!-- Card item START -->
-                        <div>
-                            <div class="card border mb-1">
-                                <div class="card-body">
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 3</a></h5>
-                                    <p class="mb-3">Isi</p>
-                                    <!-- Content -->
-                                    <div class="row item-collapse">
-                                        <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-    
-                        <!-- Card item START -->
-                        <div>
-                            <div class="card border mb-1">
-                                <div class="card-body">
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-3"><a href="#">Jurnal 4</a></h5>
-                                    <p class="mb-3">Isi</p>
-                                    <!-- Content -->
-                                    <div class="row item-collapse">
-                                        <!-- Button -->
-                                        <div class="mt-3"><a href="#" class="btn btn-primary-soft">Lihat Jurnal</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
+
                     </div>
                 </div>
                 <!-- Slider END -->
