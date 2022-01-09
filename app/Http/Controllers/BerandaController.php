@@ -8,6 +8,7 @@ use App\Models\Pengumuman;
 use App\Models\Alumni;
 use App\Models\Banner;
 use App\Models\Jurnal;
+use App\Models\Prestasi;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -15,7 +16,9 @@ class BerandaController extends Controller
     public function mahasiswa()
     {
         $agenda = Agenda::all();
-        return view('landingpage.mahasiswa', compact('agenda'));
+        $prestasi = Prestasi::all();
+        $tahun = Prestasi::select('tahun');
+        return view('landingpage.mahasiswa', compact('agenda', 'prestasi', 'tahun'));
     }
     public function tentang() 
     {

@@ -29,6 +29,10 @@
 				  </div>
 			  </div>
 			  <div class="mb-3">
+				<label for="exampleFormControlSelect1">Tahun</label>
+				<input type="number" class="form-control" name="tahun" placeholder="Masukkan Tahun" required>
+			  </div>
+			  <div class="mb-3">
 				<label for="exampleFormControlSelect1">Penulis</label>
 				<input type="text" class="form-control" name="penulis" placeholder="Nama Penulis" required>
 				<input type="hidden" class="form-control" name="status" value="live" required>
