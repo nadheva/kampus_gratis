@@ -16,9 +16,8 @@ class BerandaController extends Controller
     public function mahasiswa()
     {
         $agenda = Agenda::all();
-        $prestasi = Prestasi::all();
-        $tahun = Prestasi::select('tahun');
-        return view('landingpage.mahasiswa', compact('agenda', 'prestasi', 'tahun'));
+        $prestasi = Prestasi::latest()->get();
+        return view('landingpage.mahasiswa', compact('agenda', 'prestasi'));
     }
     public function tentang() 
     {
