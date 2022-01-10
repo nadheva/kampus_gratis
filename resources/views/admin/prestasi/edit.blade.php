@@ -30,6 +30,10 @@
               </div>
             </div>
             <div class="mb-3">
+              <label for="exampleFormControlSelect1">Judul</label>
+              <input type="text" class="form-control" name="judul" value="{{$prestasi->tahun}}" required>
+              </div>
+            <div class="mb-3">
             <label for="exampleFormControlSelect1">Penulis</label>
             <input type="text" class="form-control" name="penulis" value="{{ $prestasi->penulis }}" required>
             <input type="hidden" class="form-control" name="status" value="{{ $prestasi->status }}" required>

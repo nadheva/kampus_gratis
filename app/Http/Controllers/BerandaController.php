@@ -11,7 +11,9 @@ use App\Models\Pengumuman;
 use App\Models\Question;
 use App\Models\UserQuestion;
 use Carbon\Carbon;
-
+use App\Models\Alumni;
+use App\Models\Banner;
+use App\Models\Prestasi;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -19,7 +21,8 @@ class BerandaController extends Controller
     public function mahasiswa()
     {
         $agenda = Agenda::all();
-        return view('landingpage.mahasiswa', compact('agenda'));
+        $prestasi = Prestasi::latest()->get();
+        return view('landingpage.mahasiswa', compact('agenda', 'prestasi'));
     }
     public function tentang()
     {
@@ -77,5 +80,17 @@ class BerandaController extends Controller
         ]);
         return redirect(route('faq'))
             ->with('success', 'Pertanyaan berhasil dikirimkan');
+    }
+
+    public function alumni()
+    {
+        $alumni = Alumni::all();
+        return view('landingpage.alumni', compact('alumni'));
+    }
+
+    public function beranda()
+    {
+        $banner = Banner::all();
+        return view('landingpage.index',compact('banner'));
     }
 }

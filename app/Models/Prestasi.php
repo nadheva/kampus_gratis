@@ -12,6 +12,7 @@ class Prestasi extends Model
     protected $fillable = [
         'judul',
         'isi',
+        'tahun',
         'penulis',
         'jenis',
         'gambar',

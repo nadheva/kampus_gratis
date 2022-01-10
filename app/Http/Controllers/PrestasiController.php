@@ -39,6 +39,7 @@ class PrestasiController extends Controller
         $request->validate([
             'judul' => 'required',
             'isi' => 'required',
+            'tahun' => 'required',
             'gambar' => 'required',
             'jenis' => 'required',
             'status' => 'required',
@@ -58,6 +59,7 @@ class PrestasiController extends Controller
         Prestasi::create([
             'judul' => $request->judul,
             'isi' => $request->isi,
+            'tahun' => $request->tahun,            
             'gambar' => $txt,
             'jenis' => $request->jenis,
             'tahun' => $request->tahun,
@@ -110,6 +112,7 @@ class PrestasiController extends Controller
             $prestasi->gambar = $txt;
             $prestasi->judul = $request->judul;
             $prestasi->isi = $request->isi;
+            $prestasi->tahun = $request->tahun;
             $prestasi->penulis = $request->penulis;
             $prestasi->jenis = $request->jenis;
             $prestasi->tahun = $request->tahun;

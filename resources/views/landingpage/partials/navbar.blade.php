@@ -22,10 +22,10 @@
             <div class="nav px-4 ml-4 flex-nowrap align-items-center">
                 <div class="nav-item w-100">
                     <ul class="navbar-nav mx-auto order-0">
-                        <li class="nav-item menu"><a class="nav-link putih" href="/berita">Berita</a></li>
-                        <li class="nav-item menu"><a class="nav-link putih" href="/alumni">Alumni</a></li>
-                        <li class="nav-item menu"><a class="nav-link putih" href="/pengumuman">Pengumuman</a></li>
-                        <li class="nav-item menu"><a class="nav-link putih" href="/faq">FAQ</a></li>
+                        <li class="nav-item menu {{ request()->is('berita*') ? 'active' : '' }}"><a class="nav-link putih" href="/berita">Berita</a></li>
+                        <li class="nav-item menu {{ request()->is('alumni*') ? 'active' : '' }}"><a class="nav-link putih" href="/alumni">Alumni</a></li>
+                        <li class="nav-item menu {{ request()->is('pengumuman*') ? 'active' : '' }}"><a class="nav-link putih" href="/pengumuman">Pengumuman</a></li>
+                        <li class="nav-item menu {{ request()->is('faq*') ? 'active' : '' }}"><a class="nav-link putih" href="/faq">FAQ</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,12 +56,12 @@
         <!-- Main navbar START -->
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto order-0">
-                    <li class="nav-item menu"><a class="nav-link" href="/tentang">Tentang Kampus Gratis</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="/pendidikan">Pendidikan</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="/mahasiswa">Mahasiswa</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="/penelitian">Penelitian</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="/pengabdian">Pengabdian</a></li>
-                    <li class="nav-item menu"><a class="nav-link" href="/job-channel">Karir</a></li>
+                    <li class="nav-item menu "><a class="nav-link {{ request()->is('tentang*') ? 'active' : '' }}" href="/tentang-page">Tentang Kampus Gratis</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pendidikan*') ? 'active' : '' }}" href="/pendidikan">Pendidikan</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('mahasiswa*') ? 'active' : '' }}" href="/mahasiswa-page">Mahasiswa</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('penelitian*') ? 'active' : '' }}" href="/penelitian">Penelitian</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pengabdian*') ? 'active' : '' }}" href="/pengabdian-page">Pengabdian</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('job*') ? 'active' : '' }}" href="/job-channel">Karir</a></li>
                 </ul>
             <!-- Nav Main menu END -->
 
