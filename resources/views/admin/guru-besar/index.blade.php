@@ -12,7 +12,7 @@
 						<div class="nav-wrguester position-relative end-0">
 						  <div class="text-end ms-auto">
 							<div class="mt-2 mt-sm-0">
-								<a href="/guru-besar-tambah" class="btn btn-outline-primary mb-0">Tambah</a>
+								<a href="{{ route('guru-besar.create') }}" class="btn btn-outline-primary mb-0">Tambah</a>
 							</div>
 						  </div>
 						</div>
