@@ -14,6 +14,8 @@ use Carbon\Carbon;
 use App\Models\Alumni;
 use App\Models\Banner;
 use App\Models\Prestasi;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -92,5 +94,16 @@ class BerandaController extends Controller
     {
         $banner = Banner::all();
         return view('landingpage.index',compact('banner'));
+    }
+
+    public function jobchannel()
+    {
+        $client = new Client();
+        // $guzzleClient = new \GuzzleHttp\Client(['verify' => false]);
+        $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel');
+        $response = $request->getBody()->getContents();
+        $result = json_decode($response,true);
+        // dd($result);
+        return view('landingpage.job-channel', compact('result'));
     }
 }

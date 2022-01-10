@@ -41,6 +41,7 @@ Route::get('/faq', [BerandaController::class, 'faq']);
 Route::get('/alumni-page', [BerandaController::class, 'alumni']);
 Route::get('/penelitian-page', [BerandaController::class, 'penelitian']);
 Route::get('/', [BerandaController::class, 'beranda']);
+Route::get('/job-channel', [BerandaController::class, 'jobchannel']);
 
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
@@ -74,9 +75,9 @@ Route::get('/registrasi', function () {
     return view('landingpage.registrasi');
 });
 
-Route::get('/job-channel', function () {
-    return view('landingpage.job-channel');
-});
+// Route::get('/job-channel', function () {
+//     return view('landingpage.job-channel');
+// });
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
