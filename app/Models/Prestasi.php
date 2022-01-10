@@ -16,6 +16,7 @@ class Prestasi extends Model
         'penulis',
         'jenis',
         'gambar',
+        'tahun',
         'status'
     ];
 

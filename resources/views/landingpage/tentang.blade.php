@@ -179,7 +179,7 @@
                                     <div class="row g-0">
                                         <!-- Image -->
                                         <div class="col-md-4">
-                                            <img src="assets/images/instructor/01.jpg" class="rounded-3" alt="...">
+                                            <img src="{{ asset($b->foto) }}" class="rounded-3" alt="guru-besar">
                                         </div>
                 
                                         <!-- Card body -->

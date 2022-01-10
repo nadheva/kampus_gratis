@@ -47,8 +47,8 @@ class BerandaController extends Controller
     public function berita()
     {
         $berita = Berita::all();
-        $beda = $berita->created_at->diffForHumans();
-        return view('landingpage.berita', compact('berita', 'beda'));
+        // $beda = $berita->created_at->diffForHumans();
+        return view('landingpage.berita', compact('berita'));
     }
 
     public function penelitian()

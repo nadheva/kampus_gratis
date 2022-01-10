@@ -56,12 +56,12 @@
         <!-- Main navbar START -->
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto order-0">
-                    <li class="nav-item menu "><a class="nav-link {{ request()->is('tentang*') ? 'active' : '' }}" href="/tentang-page">Tentang Kampus Gratis</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pendidikan*') ? 'active' : '' }}" href="/pendidikan">Pendidikan</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('mahasiswa*') ? 'active' : '' }}" href="/mahasiswa-page">Mahasiswa</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('penelitian*') ? 'active' : '' }}" href="/penelitian">Penelitian</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pengabdian*') ? 'active' : '' }}" href="/pengabdian-page">Pengabdian</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('job*') ? 'active' : '' }}" href="/job-channel">Karir</a></li>
+                    <li class="nav-item menu "><a class="nav-link {{ request()->is('tentang*') ? 'active' : '' }}" href="{{ route('tentang') }}">Tentang Kampus Gratis</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pendidikan*') ? 'active' : '' }}" href="{{ url('pendidikan') }}">Pendidikan</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('mahasiswa*') ? 'active' : '' }}" href="{{ route('mahasiswa') }}">Mahasiswa</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('penelitian*') ? 'active' : '' }}" href="{{ route('penelitian') }}">Penelitian</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pengabdian*') ? 'active' : '' }}" href="{{ url('pengabdian') }}">Pengabdian</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('job*') ? 'active' : '' }}" href="{{ url('job-channel') }}">Karir</a></li>
                 </ul>
             <!-- Nav Main menu END -->
 

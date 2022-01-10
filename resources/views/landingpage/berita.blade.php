@@ -87,7 +87,7 @@
                     <!-- Search option END -->
         
                     <!-- Course Grid START -->
-                    <div class="row g-4">
+                    <div class="row g-3">
         
                         <!-- Card item START -->
                     <!-- Card item START -->
@@ -112,7 +112,7 @@
                                     <!-- Info -->
                                     <div class="d-flex justify-content-between">
                                         <h6 class="mb-0"><a href="#">{{ $item->penulis }}</a></h6>
-                                        <span class="small">{{ $item->beda }}</span>
+                                        <span class="small">{{ $item->created_at->diffForHumans() }}</span>
                                     </div>
                                 </div>
                             </div>

@@ -33,13 +33,12 @@ use App\Http\Controllers\AlumniController;
 //     return view('landingpage.index');
 // });
 
-Route::get('/tentang-page', [BerandaController::class, 'tentang']);
-Route::get('/mahasiswa-page', [BerandaController::class, 'mahasiswa']);
-Route::get('/pengabdian-page', [BerandaController::class, 'pengabdian']);
-Route::get('/pengumuman-page', [BerandaController::class, 'pengumuman']);
-Route::get('/faq', [BerandaController::class, 'faq']);
-Route::get('/alumni-page', [BerandaController::class, 'alumni']);
-Route::get('/penelitian-page', [BerandaController::class, 'penelitian']);
+Route::get('/tentang', [BerandaController::class, 'tentang'])->name('tentang');
+Route::get('/mahasiswa', [BerandaController::class, 'mahasiswa'])->name('mahasiswa');
+Route::get('/pengabdian', [BerandaController::class, 'pengabdian'])->name('pengabdian');
+Route::get('/pengumuman', [BerandaController::class, 'pengumuman'])->name('pengumuman');
+Route::get('/faq', [BerandaController::class, 'faq'])->name('faq');
+Route::get('/alumni', [BerandaController::class, 'alumni'])->name('alumni');
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/job-channel', [BerandaController::class, 'jobchannel']);
 
@@ -50,26 +49,6 @@ Route::get('/sambutan', function () {
 Route::get('/pendidikan', function () {
     return view('landingpage.pendidikan');
 });
-
-// Route::get('/tentang', function () {
-//     return view('landingpage.tentang');
-// });
-
-// Route::get('/mahasiswa', function () {
-//     return view('landingpage.mahasiswa');
-// });
-
-// Route::get('/penelitian', function () {
-//     return view('landingpage.penelitian');
-// });
-
-Route::get('/berita', function () {
-    return view('landingpage.berita');
-});
-
-// Route::get('/alumni-page', function () {
-//     return view('landingpage.alumni');
-// });
 
 Route::get('/registrasi', function () {
     return view('landingpage.registrasi');
@@ -85,7 +64,6 @@ Route::get('/dashboard', function () {
 
 Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
 Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
-
 Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionStore');
 Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 
@@ -112,7 +90,11 @@ Route::prefix('admin')->group(function () {
 });
 
 
-// ADMIN
+Route::resource('data-banner', BannerController::class);
+Route::resource('data-guru-besar', GuruBesarController::class);
+Route::resource('data-agenda', AgendaController::class);
+Route::resource('data-pengumuman', PengumumanController::class);
+Route::resource('data-pengabdian', PengabdianController::class);
 
 
 require __DIR__ . '/auth.php';
