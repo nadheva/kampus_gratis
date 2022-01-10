@@ -42,6 +42,7 @@ class PrestasiController extends Controller
             'gambar' => 'required',
             'jenis' => 'required',
             'status' => 'required',
+            'tahun' => 'required',
             'penulis' => 'required'
         ]);
 
@@ -59,6 +60,7 @@ class PrestasiController extends Controller
             'isi' => $request->isi,
             'gambar' => $txt,
             'jenis' => $request->jenis,
+            'tahun' => $request->tahun,
             'status' => $request->status,
             'penulis' => $request->penulis
         ]);
@@ -110,6 +112,7 @@ class PrestasiController extends Controller
             $prestasi->isi = $request->isi;
             $prestasi->penulis = $request->penulis;
             $prestasi->jenis = $request->jenis;
+            $prestasi->tahun = $request->tahun;
             $prestasi->status = $request->status;
         }else{}
 

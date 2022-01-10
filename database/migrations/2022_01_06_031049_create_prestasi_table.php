@@ -19,6 +19,7 @@ class CreatePrestasiTable extends Migration
             $table->text('isi');
             $table->string('penulis');
             $table->string('gambar');
+            $table->integer('tahun');
             $table->enum('jenis', ['Mahasiswa', 'Dosen', 'Lembaga'])->default('Mahasiswa');
             $table->enum('status', ['live', 'draft']);
             $table->timestamps();

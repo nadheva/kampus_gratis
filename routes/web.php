@@ -32,10 +32,10 @@ Route::get('/', function () {
     return view('landingpage.index');
 });
 
-Route::get('/tentang-page', [BerandaController::class, 'tentang']);
-Route::get('/mahasiswa-page', [BerandaController::class, 'mahasiswa']);
-Route::get('/pengabdian-page', [BerandaController::class, 'pengabdian']);
-Route::get('/pengumuman-page', [BerandaController::class, 'pengumuman']);
+Route::get('/tentang', [BerandaController::class, 'tentang']);
+Route::get('/mahasiswa', [BerandaController::class, 'mahasiswa']);
+Route::get('/pengabdian', [BerandaController::class, 'pengabdian']);
+Route::get('/pengumuman', [BerandaController::class, 'pengumuman']);
 Route::get('/faq', [BerandaController::class, 'faq']);
 
 Route::get('/sambutan', function () {
@@ -45,15 +45,6 @@ Route::get('/sambutan', function () {
 Route::get('/pendidikan', function () {
     return view('landingpage.pendidikan');
 });
-
-// Route::get('/tentang', function () {
-//     return view('landingpage.tentang');
-// });
-
-// Route::get('/mahasiswa', function () {
-//     return view('landingpage.mahasiswa');
-// });
-
 
 Route::get('/alumni', function () {
     return view('landingpage.alumni');
@@ -80,7 +71,7 @@ Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 
 
 // ADMIN
-Route::resource('detail', DetailController::class);
+Route::resource('data-detail', DetailController::class);
 Route::resource('data-penelitian', PenelitianController::class);
 Route::resource('data-prestasi', PrestasiController::class);
 Route::resource('data-berita', BeritaController::class);
@@ -90,11 +81,11 @@ Route::resource('data-fitur', FiturController::class);
 
 Route::get('/tentang', [TentangController::class, 'view']);
 
-Route::resource('banner', BannerController::class);
-Route::resource('guru-besar', GuruBesarController::class);
-Route::resource('agenda', AgendaController::class);
-Route::resource('pengumuman', PengumumanController::class);
-Route::resource('pengabdian', PengabdianController::class);
+Route::resource('data-banner', BannerController::class);
+Route::resource('data-guru-besar', GuruBesarController::class);
+Route::resource('data-agenda', AgendaController::class);
+Route::resource('data-pengumuman', PengumumanController::class);
+Route::resource('data-pengabdian', PengabdianController::class);
 
 Route::resource('data-jurnal', JurnalController::class);
 Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
