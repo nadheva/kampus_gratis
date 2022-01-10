@@ -103,16 +103,6 @@ class BerandaController extends Controller
         $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel');
         $response = $request->getBody()->getContents();
         $result = json_decode($response,true);
-        // dd($result);
-
-
-        // foreach($result["data"] as  $key => $value){
-        //     $data[] =  $value;
-
-        // };
-
-        // dd($data);
-
         return view('landingpage.job-channel', compact('result'));
     }
 }

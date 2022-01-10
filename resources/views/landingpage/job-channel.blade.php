@@ -132,7 +132,7 @@ Page content START -->
 					<div class="col-sm-6 col-lg-4 col-xl-3">
 						<div class="card shadow h-100">
 							<!-- Image -->
-							<img src="assets/images/courses/4by3/08.jpg" class="card-img-top" alt="course image">
+							<img src="{{'http://dashboard.kampusgratis.id/'.$value["foto"]}}" class="card-img-top" alt="course image">
 							<!-- Card body -->
 							<div class="card-body pb-0">
 								<!-- Badge and favorite -->
