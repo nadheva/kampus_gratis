@@ -5,7 +5,7 @@
 <script src="{{asset('assets/vendor/tiny-slider/tiny-slider.js')}}"></script>
 <script src="{{asset('assets/vendor/glightbox/js/glightbox.js')}}"></script>
 <script src="{{asset('assets/vendor/purecounterjs/dist/purecounter_vanilla.js')}}"></script>
-{{-- <script src="assets/vendor/choices/js/choices.min.js"></script> --}}
+<script src="{{asset('assets/vendor/choices/js/choices.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
 <!-- Template Functions -->
 <script src="{{asset('assets/js/functions.js')}}"></script>

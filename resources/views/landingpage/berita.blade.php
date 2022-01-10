@@ -87,7 +87,7 @@
                     <!-- Search option END -->
         
                     <!-- Course Grid START -->
-                    <div class="row g-4">
+                    <div class="row g-3">
         
                         <!-- Card item START -->
                     <!-- Card item START -->

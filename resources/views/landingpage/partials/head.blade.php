@@ -20,6 +20,8 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/tiny-slider/tiny-slider.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/glightbox/css/glightbox.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/choices/css/choices.min.css')}}">
+
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
