@@ -54,8 +54,8 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="border-0 rounded-start">Nama</th>
-                                <th scope="col" class="border-0 rounded-start">Foto</th>
-                                <th scope="col" class="border-0 rounded-start">Lulusan</th>
+                                <th scope="col" class="border-0">Foto</th>
+                                <th scope="col" class="border-0">Lulusan</th>
                                 <th scope="col" class="border-0">Deskripsi</th>
                                 <th scope="col" class="border-0 rounded-end">Aksi</th>
                             </tr>
