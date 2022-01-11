@@ -14,7 +14,7 @@ Main part START -->
 					<li>Kolom yang memiliki tanda <span class="text-danger">*</span> merupakan kolom wajib untuk diisi</li>
 				</ul>
 				<!-- Form START -->
-				<form class="row g-3">
+				<form class="row g-3" action="/post_registrasi" method="POST">
 					<h5 class="mb-0">Data Diri</h5>
 
 					<!-- First name -->
@@ -24,7 +24,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Nama depan <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="namaDepan">
+								<input type="text" class="form-control" name="nama_depan">
 							</div>
 						</div>
 					</div>
@@ -36,7 +36,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Nama tengah <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="namaTengah">
+								<input type="text" class="form-control" name="nama_tengah">
 							</div>
 						</div>
 					</div>
@@ -48,7 +48,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Nama akhir <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="namaAkhir">
+								<input type="text" class="form-control" name="nama_akhir">
 							</div>
 						</div>
 					</div>
@@ -60,7 +60,7 @@ Main part START -->
 								<h6 class="mb-lg-0">NIK <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="nik">
+								<input type="text" class="form-control" name="nik">
 							</div>
 						</div>
 					</div>
@@ -72,7 +72,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Email <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="email" class="form-control" id="email">
+								<input type="email" class="form-control" name="email">
 							</div>
 						</div>
 					</div>
@@ -87,7 +87,7 @@ Main part START -->
 							<div class="col-lg-8">
 								<div class="row g-2 g-sm-4">
 									<div class="col-12">
-										<select class="form-select js-choice z-index-9 border-0 bg-light" aria-label=".form-select-sm">
+										<select class="form-select js-choice z-index-9 border-0 bg-light" aria-label=".form-select-sm" name="prodi">
 											<option value="">Prodi</option>
 											<option>1</option>
 											<option>2</option>
@@ -134,7 +134,19 @@ Main part START -->
 								<h6 class="mb-lg-0">Tahun Ajar <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="nik" disabled value="TA.2022-2">
+								<input type="text" class="form-control" name="tahun_ajar" disabled value="TA.2022-2">
+							</div>
+						</div>
+					</div>
+
+                    <!-- Semester -->
+					<div class="col-12">
+						<div class="row g-xl-0 align-items-center">
+							<div class="col-lg-4">
+								<h6 class="mb-lg-0">Semester <span class="text-danger">*</span></h6>
+							</div>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" name="semester" disabled value="TA.2022-2">
 							</div>
 						</div>
 					</div>
@@ -143,10 +155,10 @@ Main part START -->
 					<div class="col-12">
 						<div class="row g-xl-0">
 							<div class="col-lg-4">
-								<h6 class="mb-lg-0">Alamat domisili sekarang <span class="text-danger">*</span></h6>
+								<h6 class="mb-lg-0">Alamat domisili <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<textarea class="form-control" rows="3" placeholder=""></textarea>
+								<textarea class="form-control" rows="3" placeholder="" name="alamat_domisili"></textarea>
 							</div>
 						</div>
 					</div>
@@ -158,7 +170,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Alamat sesuai KTP <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<textarea class="form-control" rows="3" placeholder=""></textarea>
+								<textarea class="form-control" rows="3" placeholder="" name="alamat_ktp"></textarea>
 							</div>
 						</div>
 					</div>
@@ -170,7 +182,7 @@ Main part START -->
 								<h6 class="mb-lg-0">No HP <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="no_hp">
+								<input type="text" class="form-control" name="no_hp">
 							</div>
 						</div>
 					</div>
@@ -182,13 +194,23 @@ Main part START -->
 								<h6 class="mb-lg-0">Tempat Lahir <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="no_hp">
+								<input type="text" class="form-control" name="tempat_lahir">
 							</div>
 						</div>
 					</div>
 
                     <!-- Tanggal Lahir -->
-                    <div class="col-12">
+					<div class="col-12">
+						<div class="row g-xl-0 align-items-center">
+							<div class="col-lg-4">
+								<h6 class="mb-lg-0">Tanggal Lahir <span class="text-danger">*</span></h6>
+							</div>
+							<div class="col-lg-8">
+								<input type="date" class="form-control" name="tgl_lahir">
+							</div>
+						</div>
+					</div>
+                    {{-- <div class="col-12">
                         <div class="row g-xl-0 align-items-center">
                             <div class="col-lg-4">
                                 <h6 class="mb-lg-0">Tanggal Lahir</h6>
@@ -272,7 +294,7 @@ Main part START -->
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 					<!-- Gender -->
 					<div class="col-12">
@@ -283,13 +305,13 @@ Main part START -->
 							<div class="col-lg-8">
 								<div class="d-flex">
 									<div class="form-check radio-bg-light me-4">
-										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+										<input class="form-check-input" type="radio" name="kelamin" checked>
 										<label class="form-check-label" for="flexRadioDefault1">
 											Male
 										</label>
 									</div>
 									<div class="form-check radio-bg-light">
-										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+										<input class="form-check-input" type="radio" name="kelamin">
 										<label class="form-check-label" for="flexRadioDefault2">
 											Female
 										</label>
@@ -312,13 +334,13 @@ Main part START -->
 								<h6 class="mb-lg-0">Tinggal dengan siapa <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="fullName">
+								<input type="text" class="form-control" name="tinggal">
 							</div>
 						</div>
 					</div>
 
 					<!-- Relation with applicant -->
-					<div class="col-12">
+					{{-- <div class="col-12">
 						<div class="row g-xl-0 align-items-center">
 							<div class="col-lg-4">
 								<h6 class="mb-lg-0">Relation with applicant <span class="text-danger">*</span></h6>
@@ -327,7 +349,7 @@ Main part START -->
 								<input type="text" class="form-control" id="relation">
 							</div>
 						</div>
-					</div>
+					</div> --}}
 
 					<!-- Yang Membiayai -->
 					<div class="col-12">
@@ -336,7 +358,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Yang Membiayai <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="email" class="form-control" id="email2">
+								<input type="text" class="form-control" name="pembiaya">
 							</div>
 						</div>
 					</div>
@@ -348,7 +370,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Nama Ayah (beri tanda Alm bila sudah tiada)<span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="phoneNumber2">
+								<input type="text" class="form-control" name="nama_ayah">
 							</div>
 						</div>
 					</div>
@@ -360,7 +382,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Nama Ibu (beri tanda Alm bila sudah tiada)<span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="phoneNumber2">
+								<input type="text" class="form-control" name="nama_ibu">
 							</div>
 						</div>
 					</div>
@@ -372,22 +394,22 @@ Main part START -->
 								<h6 class="mb-lg-0">Pekerjaan Ayah <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="phoneNumber2">
+								<input type="text" class="form-control" name="kerja_ayah">
 							</div>
 						</div>
 					</div>
 
-                    <!-- Penghasilan Ayah -->
+                    {{-- <!-- Penghasilan Ayah -->
 					<div class="col-12">
 						<div class="row g-xl-0 align-items-center">
 							<div class="col-lg-4">
 								<h6 class="mb-lg-0">Penghasilan Ayah <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="phoneNumber2">
+								<input type="text" class="form-control" name="penghasilan">
 							</div>
 						</div>
-					</div>
+					</div> --}}
 
                     <!-- Pekerjaan Ibu -->
 					<div class="col-12">
@@ -396,12 +418,12 @@ Main part START -->
 								<h6 class="mb-lg-0">Pekerjaan Ibu <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="phoneNumber2">
+								<input type="text" class="form-control" name="kerja_ibu">
 							</div>
 						</div>
 					</div>
 
-                    <!-- Penghasilan Ibu -->
+                    {{-- <!-- Penghasilan Ibu -->
 					<div class="col-12">
 						<div class="row g-xl-0 align-items-center">
 							<div class="col-lg-4">
@@ -411,7 +433,7 @@ Main part START -->
 								<input type="text" class="form-control" id="phoneNumber2">
 							</div>
 						</div>
-					</div>
+					</div> --}}
 
 					<!-- Pekerjaan diri sendiri -->
 					<div class="col-12">
@@ -420,7 +442,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Pekerjaan diri sendiri <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="jobTitle">
+								<input type="text" class="form-control" name="pekerjaan">
 							</div>
 						</div>
 					</div>
@@ -432,7 +454,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Penghasilan diri sendiri per bulan <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="jobTitle">
+								<input type="text" class="form-control" name="penghasilan">
 							</div>
 						</div>
 					</div>
@@ -450,7 +472,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Pakta Integritas <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="file" class="form-control" id="collegeName">
+								<input type="file" class="form-control" name="pakta_integritas">
 							</div>
 						</div>
 					</div>  
@@ -462,7 +484,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Scan KTP <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="file" class="form-control" id="collegeName">
+								<input type="file" class="form-control" name="scan_ktp">
 							</div>
 						</div>
 					</div>
@@ -474,7 +496,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Scan Kartu Keluarga <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="file" class="form-control" id="collegeName">
+								<input type="file" class="form-control" name="scan_kk">
 							</div>
 						</div>
 					</div>
@@ -486,7 +508,7 @@ Main part START -->
 								<h6 class="mb-lg-0">Ijazah Terbaru <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="file" class="form-control" id="collegeName">
+								<input type="file" class="form-control" name="scan_ijazah">
 							</div>
 						</div>
 					</div>
@@ -499,7 +521,7 @@ Main part START -->
 								<p class="mb-lg-0">Background warna merah </p>
 							</div>
 							<div class="col-lg-8">
-								<input type="file" class="form-control" id="collegeName">
+								<input type="file" class="form-control" name="pas_foto">
 							</div>
 						</div>
 					</div>
@@ -512,7 +534,7 @@ Main part START -->
 								<p class="mb-lg-0">Bila telah kuliah di tempat lain </p>
 							</div>
 							<div class="col-lg-8">
-								<input type="file" class="form-control" id="collegeName">
+								<input type="file" class="form-control" name="transkip">
 							</div>
 						</div>
 					</div>
@@ -525,7 +547,7 @@ Main part START -->
 								<p class="mb-lg-0">Didapatkan dari kampus asal </p>
 							</div>
 							<div class="col-lg-8">
-								<input type="file" class="form-control" id="collegeName">
+								<input type="file" class="form-control" name="surat_rekomendasi">
 							</div>
 						</div>
 					</div>
@@ -536,7 +558,7 @@ Main part START -->
 					<!-- Program Belajar Kampus Gratis -->
 					<h5 class="mt-0">Program Belajar Kampus Gratis</h5>
 
-					<!-- Program -->
+					{{-- <!-- Program -->
                     <div class="col-lg-4">
                         <h6 class="mb-lg-0">Pilih Program </h6>
                     </div>
@@ -561,7 +583,7 @@ Main part START -->
                                 </label>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 					<!-- Button -->
 					<div class="col-12 text-sm-end">
