@@ -137,7 +137,10 @@ class BerandaController extends Controller
             'nama_ibu' => $request->get('nama_ibu'),
             'kerja_ayah' => $request->get('kerja_ayah'),
             'kerja_ibu' => $request->get('kerja_ibu'),
-            'penghasilan' => $request->get('pekerjaan'),
+            'pekerjaan' => $request->get('pekerjaan'),
+            'penghasilan' => $request->get('penghasilan'),
+            'penghasilan_ayah' => $request->get('penghasilan_ayah'),
+            'penghasilan_ibu' => $request->get('penghasilan_ibu'),
             'pakta_integritas' => $request->get('pakta_integritas'),
             'scan_ktp' => $request->get('scan_ktp'),
             'scan_kk' => $request->get('scan_kk'),
@@ -145,8 +148,10 @@ class BerandaController extends Controller
             'pas_foto' => $request->get('pas_foto'),
             'transkip' => $request->get('transkip'),
             'surat_rekomendasi' => $request->get('surat_rekomendasi'),
+            'program' => $request->get('program'),
+            'isVerified' => false,
         ]] );
-        return redirect()->route('/')
+        return redirect('/')
         ->with('success', 'Selamat anda sudah terdaftar!');
     }
 }

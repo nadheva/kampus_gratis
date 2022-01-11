@@ -306,13 +306,13 @@ Main part START -->
 							<div class="col-lg-8">
 								<div class="d-flex">
 									<div class="form-check radio-bg-light me-4">
-										<input class="form-check-input" type="radio" name="kelamin" checked>
+										<input class="form-check-input" type="radio" name="kelamin" value="laki=laki" checked>
 										<label class="form-check-label" for="flexRadioDefault1">
 											Male
 										</label>
 									</div>
 									<div class="form-check radio-bg-light">
-										<input class="form-check-input" type="radio" name="kelamin">
+										<input class="form-check-input" type="radio" name="kelamin" value="perempuan">
 										<label class="form-check-label" for="flexRadioDefault2">
 											Female
 										</label>
@@ -400,17 +400,17 @@ Main part START -->
 						</div>
 					</div>
 
-                    {{-- <!-- Penghasilan Ayah -->
+                    <!-- Penghasilan Ayah -->
 					<div class="col-12">
 						<div class="row g-xl-0 align-items-center">
 							<div class="col-lg-4">
 								<h6 class="mb-lg-0">Penghasilan Ayah <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" name="penghasilan">
+								<input type="text" class="form-control" name="penghasilan_ayah">
 							</div>
 						</div>
-					</div> --}}
+					</div>
 
                     <!-- Pekerjaan Ibu -->
 					<div class="col-12">
@@ -424,17 +424,17 @@ Main part START -->
 						</div>
 					</div>
 
-                    {{-- <!-- Penghasilan Ibu -->
+                    <!-- Penghasilan Ibu -->
 					<div class="col-12">
 						<div class="row g-xl-0 align-items-center">
 							<div class="col-lg-4">
 								<h6 class="mb-lg-0">Penghasilan Ibu <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" id="phoneNumber2">
+								<input type="text" class="form-control" name="penghasilan_ibu">
 							</div>
 						</div>
-					</div> --}}
+					</div>
 
 					<!-- Pekerjaan diri sendiri -->
 					<div class="col-12">
@@ -559,32 +559,32 @@ Main part START -->
 					<!-- Program Belajar Kampus Gratis -->
 					<h5 class="mt-0">Program Belajar Kampus Gratis</h5>
 
-					{{-- <!-- Program -->
+					<!-- Program -->
                     <div class="col-lg-4">
                         <h6 class="mb-lg-0">Pilih Program </h6>
                     </div>
 					<div class="col-lg-8">
                         <div class="d-flex">
                             <div class="form-check radio-bg-light me-4">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <input class="form-check-input" type="radio" name="program" value="D1" checked>
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     D1
                                 </label>
                             </div>
                             <div class="form-check radio-bg-light me-4">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <input class="form-check-input" type="radio" name="program" value="S1">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     S1
                                 </label>
                             </div>
                             <div class="form-check radio-bg-light">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <input class="form-check-input" type="radio" name="program" value="Kursus">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     Kursus
                                 </label>
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
 
 					<!-- Button -->
 					<div class="col-12 text-sm-end">
