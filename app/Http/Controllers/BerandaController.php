@@ -114,38 +114,39 @@ class BerandaController extends Controller
     public function post_registrasi(Request $request)
     {
         $client = new Client();
-        $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',[
-            'nama_depan' => $request->nama_depan,
-            'nama_tengah' => $request->nama_tengah,
-            'nama_akhir' => $request->nama_akhir,
-            'nik' => $request->nik,
-            'email' => $request->email,
-            'prodi' => $request->prodi,
-            'tahun_ajar' => $request->tahun_ajar,
-            'semester' => $request->semester,
-            'alamat_domisili' => $request->alamat_domisili,
-            'alamat_ktp' => $request->alamat_ktp,
-            'no_hp' => $request->no_hp,
-            'tempat_lahir' => $request->tempat_lahir,
-            'tgl_lahir' => $request->tgl_lahir,
-            'kelamin' => $request->kelamin,
-            'tinggal' => $request->tinggal,
-            'pembiaya' => $request->pembiaya,
-            'nama_ayah' => $request->nama_ayah,
-            'nama_ibu' => $request->nama_ibu,
-            'kerja_ayah' => $request->kerja_ayah,
-            'kerja_ibu' => $request->kerja_ibu,
-            'penghasilan' => $request->pekerjaan,
-            'pakta_integritas' => $request->pakta_integritas,
-            'scan_ktp' => $request->scan_ktp,
-            'scan_kk' => $request->scan_kk,
-            'scan_ijazah' => $request->scan_ijazah,
-            'pas_foto' => $request->pas_foto,
-            'transkip' => $request->transkip,
-            'surat_rekomendasi' => $request->surat_rekomendasi,
-        ] );
-        $response = $request->send();
-        // return redirect()->back();
-        dd($response);
+        $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
+        ['form_params' =>
+        [
+            'nama_depan' => $request->get('nama_depan'),
+            'nama_tengah' => $request->get('nama_tengah'),
+            'nama_akhir' => $request->get('nama_akhir'),
+            'nik' => $request->get('nik'),
+            'email' => $request->get('email'),
+            'prodi' => $request->get('prodi'),
+            'tahun_ajar' => $request->get('tahun_ajar'),
+            'semester' => $request->get('semester'),
+            'alamat_domisili' => $request->get('alamat_domisili'),
+            'alamat_ktp' => $request->get('alamat_ktp'),
+            'no_hp' => $request->get('no_hp'),
+            'tempat_lahir' => $request->get('tempat_lahir'),
+            'tgl_lahir' => $request->get('tgl_lahir'),
+            'kelamin' => $request->get('kelamin'),
+            'tinggal' => $request->get('tinggal'),
+            'pembiaya' => $request->get('pembiaya'),
+            'nama_ayah' => $request->get('nama_ayah'),
+            'nama_ibu' => $request->get('nama_ibu'),
+            'kerja_ayah' => $request->get('kerja_ayah'),
+            'kerja_ibu' => $request->get('kerja_ibu'),
+            'penghasilan' => $request->get('pekerjaan'),
+            'pakta_integritas' => $request->get('pakta_integritas'),
+            'scan_ktp' => $request->get('scan_ktp'),
+            'scan_kk' => $request->get('scan_kk'),
+            'scan_ijazah' => $request->get('scan_ijazah'),
+            'pas_foto' => $request->get('pas_foto'),
+            'transkip' => $request->get('transkip'),
+            'surat_rekomendasi' => $request->get('surat_rekomendasi'),
+        ]] );
+        return redirect()->route('/')
+        ->with('success', 'Selamat anda sudah terdaftar!');
     }
 }

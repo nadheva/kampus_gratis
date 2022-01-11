@@ -15,6 +15,7 @@ Main part START -->
 				</ul>
 				<!-- Form START -->
 				<form class="row g-3" action="/post_registrasi" method="POST">
+					@csrf
 					<h5 class="mb-0">Data Diri</h5>
 
 					<!-- First name -->
