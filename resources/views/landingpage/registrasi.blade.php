@@ -22,34 +22,10 @@ Main part START -->
 					<div class="col-12">
 						<div class="row g-xl-0 align-items-center">
 							<div class="col-lg-4">
-								<h6 class="mb-lg-0">Nama depan <span class="text-danger">*</span></h6>
+								<h6 class="mb-lg-0">Nama Lengkap <span class="text-danger">*</span></h6>
 							</div>
 							<div class="col-lg-8">
-								<input type="text" class="form-control" name="nama_depan">
-							</div>
-						</div>
-					</div>
-
-					<!-- Middle name -->
-					<div class="col-12">
-						<div class="row g-xl-0 align-items-center">
-							<div class="col-lg-4">
-								<h6 class="mb-lg-0">Nama tengah <span class="text-danger">*</span></h6>
-							</div>
-							<div class="col-lg-8">
-								<input type="text" class="form-control" name="nama_tengah">
-							</div>
-						</div>
-					</div>
-
-					<!-- Last name -->
-					<div class="col-12">
-						<div class="row g-xl-0 align-items-center">
-							<div class="col-lg-4">
-								<h6 class="mb-lg-0">Nama akhir <span class="text-danger">*</span></h6>
-							</div>
-							<div class="col-lg-8">
-								<input type="text" class="form-control" name="nama_akhir">
+								<input type="text" class="form-control" name="nama_lengkap">
 							</div>
 						</div>
 					</div>
