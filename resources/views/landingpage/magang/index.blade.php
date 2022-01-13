@@ -320,7 +320,7 @@
                     <!-- Title and button -->
                     <div class="d-sm-flex justify-content-sm-between">
                         <h2 class="mb-0">Peserta Magang Kami</h2>
-                        <a href="#" class="btn btn-light mt-2">Daftar Magang</a>
+                        <a href="{{ url('daftar-magang') }}" class="btn btn-light mt-2">Daftar Magang</a>
                     </div>
                     
                     <!-- Slider START -->

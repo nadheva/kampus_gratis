@@ -54,7 +54,11 @@ Route::get('/registrasi', function () {
 });
 
 Route::get('/magang', function () {
-    return view('landingpage.magang');
+    return view('landingpage.magang.index');
+});
+
+Route::get('/daftar-magang', function () {
+    return view('landingpage.magang.daftar-magang');
 });
 
 Route::get('/job-channel', function () {
