@@ -53,6 +53,10 @@ Route::get('/registrasi', function () {
     return view('landingpage.registrasi');
 });
 
+Route::get('/magang', function () {
+    return view('landingpage.magang');
+});
+
 Route::get('/job-channel', function () {
     return view('landingpage.job-channel');
 });
