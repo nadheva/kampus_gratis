@@ -258,7 +258,7 @@
     About founder END -->
     
     <!-- =======================
-    Award and Team START -->
+    Posisi Magang and Team START -->
     <section>
         <div class="container">
             <div class="row">
@@ -267,35 +267,50 @@
                     <h2>Posisi Magang</h2>
                     <!-- Content -->
                     <ul class="list-group list-group-borderless mt-4">
-                        <!-- Award item -->
+                        <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            <h6 class="mb-0">2015</h6>
+                            {{-- <h6 class="mb-0">2015</h6> --}}
                             <span class="fs-6 ms-3">Apps dan Web Developer</span>
                         </li>
-                        <!-- Award item -->
+                        <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            <h6 class="mb-0">2016</h6>
-                            <span class="fs-6 ms-3">Analytics, Algoritma</span>
+                            {{-- <h6 class="mb-0">2016</h6> --}}
+                            <span class="fs-6 ms-3">Analytics, Algoritma & Artifical Intelegence</span>
                         </li>
-                        <!-- Award item -->
+                        <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            <h6 class="mb-0">2017</h6>
-                            <span class="fs-6 ms-3">National Teacher of the Year</span>
+                            {{-- <h6 class="mb-0">2017</h6> --}}
+                            <span class="fs-6 ms-3">Desain dan Pengembangan Materi Ajar</span>
                         </li>
-                        <!-- Award item -->
+                        <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            <h6 class="mb-0">2018</h6>
-                            <span class="fs-6 ms-3">Best education agency 2018</span>
+                            {{-- <h6 class="mb-0">2018</h6> --}}
+                            <span class="fs-6 ms-3">Desain Grafis, Animasi dan Video</span>
                         </li>
-                        <!-- Award item -->
+                        <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            <h6 class="mb-0">2019</h6>
-                            <span class="fs-6 ms-3">Teacher of the nation (2nd place)</span>
+                            {{-- <h6 class="mb-0">2019</h6> --}}
+                            <span class="fs-6 ms-3">Manajemen Dosen dan Pelayanan Mahasiswa</span>
                         </li>
-                        <!-- Award item -->
+                        <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            <h6 class="mb-0">2020</h6>
-                            <span class="fs-6 ms-3">Best Independent Education Agency</span>
+                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <span class="fs-6 ms-3">Learner Progress, Asessment Center & Competency Development</span>
+                        </li>
+                        <!-- Posisi Magang item -->
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <span class="fs-6 ms-3">Digital Marketing & Social Media Campaign</span>
+                        </li>
+                        <!-- Posisi Magang item -->
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <span class="fs-6 ms-3">Kerjasama antar Lembaga dan Perijinan</span>
+                        </li>
+                        <!-- Posisi Magang item -->
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <span class="fs-6 ms-3">Manajemen Proyek (Project Management Officer)</span>
                         </li>
                     </ul>
                 </div>
@@ -415,7 +430,7 @@
         </div>
     </section>
     <!-- =======================
-    Award and Team END -->
+    Posisi Magang and Team END -->
     
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
