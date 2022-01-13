@@ -49,7 +49,6 @@
     
         <div class="row g-4">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7aLc5EwxzWZMI30EPy1w-okZeYE4CVH__yNYHtlxDH8vRUw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
-
       </div>
     </section>
     <!-- =======================
