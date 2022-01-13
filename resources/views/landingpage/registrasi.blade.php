@@ -307,37 +307,37 @@ Main part START -->
 							<div class="col-lg-8">
 								<div class="d-flex">
 								<div class="form-custom checkbox-bg-light me-4">
-									<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Tunanetra">
+									<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Tunanetra">
 									<label class="custom-control-label">Tunanetra</label>
 								</div>
 								</div>
 								<div class="d-flex">
 									<div class="form-custom checkbox-bg-light me-4">
-										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Kekurangan secara fisik / mental">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Kekurangan secara fisik / mental">
 										<label class="custom-control-label">Kekurangan secara fisik / mental</label>
 									</div>
 								</div>
 								<div class="d-flex">
 									<div class="form-custom checkbox-bg-light me-4">
-										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Pengungsi">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Pengungsi">
 										<label class="custom-control-label">Pengungsi</label>
 									</div>
 								</div>
 								<div class="d-flex">
 									<div class="form-custom checkbox-bg-light me-4">
-										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Tenaga migran">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Tenaga migran">
 										<label class="custom-control-label">Tenaga migran</label>
 									</div>
 								</div>
 								<div class="d-flex">
 									<div class="form-custom checkbox-bg-light me-4">
-										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Daerah konflik">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Daerah konflik">
 										<label class="custom-control-label">Daerah konflik</label>
 									</div>
 								</div>
 								<div class="d-flex">
 									<div class="form-custom checkbox-bg-light me-4">
-										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Menghidupi adik yang cacat">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Menghidupi adik yang cacat">
 										<label class="custom-control-label">Menghidupi adik yang cacat</label>
 									</div>
 								</div>
