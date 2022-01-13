@@ -297,6 +297,53 @@ Main part START -->
 							</div>
 						</div>
 					</div>
+					<!-- Gender -->
+					<div class="col-12">
+						<div class="row g-xl-0 align-items-center">
+							<div class="col-lg-4">
+								<h6 class="mb-lg-0">Kebutuhan Khusus</h6>
+								<span class="text-danger">* boleh lebih dari 1</span>
+							</div>
+							<div class="col-lg-8">
+								<div class="d-flex">
+								<div class="form-custom checkbox-bg-light me-4">
+									<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Tunanetra">
+									<label class="custom-control-label">Tunanetra</label>
+								</div>
+								</div>
+								<div class="d-flex">
+									<div class="form-custom checkbox-bg-light me-4">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Kekurangan secara fisik / mental">
+										<label class="custom-control-label">Kekurangan secara fisik / mental</label>
+									</div>
+								</div>
+								<div class="d-flex">
+									<div class="form-custom checkbox-bg-light me-4">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Pengungsi">
+										<label class="custom-control-label">Pengungsi</label>
+									</div>
+								</div>
+								<div class="d-flex">
+									<div class="form-custom checkbox-bg-light me-4">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Tenaga migran">
+										<label class="custom-control-label">Tenaga migran</label>
+									</div>
+								</div>
+								<div class="d-flex">
+									<div class="form-custom checkbox-bg-light me-4">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Daerah konflik">
+										<label class="custom-control-label">Daerah konflik</label>
+									</div>
+								</div>
+								<div class="d-flex">
+									<div class="form-custom checkbox-bg-light me-4">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus" value="Menghidupi adik yang cacat">
+										<label class="custom-control-label">Menghidupi adik yang cacat</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<!-- Divider -->
 					<hr class="my-5">

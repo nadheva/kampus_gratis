@@ -129,6 +129,7 @@ class BerandaController extends Controller
             'tempat_lahir' => $request->get('tempat_lahir'),
             'tgl_lahir' => $request->get('tgl_lahir'),
             'kelamin' => $request->get('kelamin'),
+            'kebutuhan_khusus' => $request->get('kebutuhan_khusus'),
             'tinggal' => $request->get('tinggal'),
             'pembiaya' => $request->get('pembiaya'),
             'nama_ayah' => $request->get('nama_ayah'),
