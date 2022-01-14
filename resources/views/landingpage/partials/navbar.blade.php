@@ -57,7 +57,17 @@
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto order-0">
                     <li class="nav-item menu "><a class="nav-link {{ request()->is('tentang*') ? 'active' : '' }}" href="{{ route('tentang') }}">Tentang Kampus Gratis</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pendidikan*') ? 'active' : '' }}" href="{{ url('pendidikan') }}">Pendidikan</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle {{ request()->is('pendidikan*', 'diploma*', 'sarjana*') ? 'active' : '' }}" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pendidikan</a>
+						<ul class="dropdown-menu" aria-labelledby="demoMenu">
+							<li> <a class="dropdown-item" href="{{ url('diploma') }}">Diploma 1</a></li>
+							<li> <a class="dropdown-item" href="{{ url('sarjana') }}">Sarjana</a></li>
+							<li> <a class="dropdown-item" href="{{ url('kursus') }}">Kursus</a></li>
+							<li> <hr class="dropdown-divider"></li>
+							<li> <a class="dropdown-item  {{ request()->is('pendidikan*') ? 'active' : '' }}" href="{{ url('pendidikan') }}">Tentang Pendidikan</a></li>
+						</ul>
+					</li>
+
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('mahasiswa*') ? 'active' : '' }}" href="{{ route('mahasiswa') }}">Mahasiswa</a></li>
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('penelitian*') ? 'active' : '' }}" href="{{ route('penelitian') }}">Penelitian</a></li>
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('pengabdian*') ? 'active' : '' }}" href="{{ url('pengabdian') }}">Pengabdian</a></li>
