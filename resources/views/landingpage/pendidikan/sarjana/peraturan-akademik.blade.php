@@ -76,7 +76,7 @@
                     <div class="bg-body shadow rounded-2 p-4">
                         <div class="tab-content pt-2" id="course-pills-tabContent">
                                 <h5 class="mb-3">1. Nilai Kredit</h5>
-                                <p class="mb-3">Satuan dasar untuk perencanaan beban kegiatan akademik adalah Satuan Kredit Semester (SKS). Sesuai dengan Peraturan Menteri Pendidikan dan Kebudayaan (Permendikbud) Nomor 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi bahwa mata kuliah yang mempunyai nilai satu SKS berarti mata kuliah tersebut diberikan setiap minggu dalam satu semester dengan kegiatan proses belajar selama satu sesi (50 menit), 60 menit penugasan terstruktur (dari dosen), dan 60 menit kegiatan mandiri. Satu semester terdiri dari 16 minggu perkuliahan yang terbagi menjadi 14 kali tatap muka di kelas, 1 kali Ujian Tengah Semester (UTS), dan 1 kali Ujian Akhir Semester (UAS).</p>
+                                <p class="mb-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Satuan dasar untuk perencanaan beban kegiatan akademik adalah Satuan Kredit Semester (SKS). Sesuai dengan Peraturan Menteri Pendidikan dan Kebudayaan (Permendikbud) Nomor 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi bahwa mata kuliah yang mempunyai nilai satu SKS berarti mata kuliah tersebut diberikan setiap minggu dalam satu semester dengan kegiatan proses belajar selama satu sesi (50 menit), 60 menit penugasan terstruktur (dari dosen), dan 60 menit kegiatan mandiri. Satu semester terdiri dari 16 minggu perkuliahan yang terbagi menjadi 14 kali tatap muka di kelas, 1 kali Ujian Tengah Semester (UTS), dan 1 kali Ujian Akhir Semester (UAS).</p>
                                 <p class="mb-3">
                                 <div class="card">
                                 <div class="table-responsive">
@@ -245,20 +245,20 @@
                                     </ul>
                                 </p>
                              <h5 class="pb-0 py-lg-2">2. Penentuan Beban Studi</h5>
-                             <P class="mb-3">Pada semester pertama, mahasiswa diwajibkan menempuh paket mata kuliah. Sedang pada semester berikutnya jumlah SKS yang bisa ditempuh ditentukan berdasarkan Indeks Prestasi (IP) semester yang didapat dari semester sebelumnya, dengan ketentuan sebagai berikut:
+                             <P class="mb-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada semester pertama, mahasiswa diwajibkan menempuh paket mata kuliah. Sedang pada semester berikutnya jumlah SKS yang bisa ditempuh ditentukan berdasarkan Indeks Prestasi (IP) semester yang didapat dari semester sebelumnya, dengan ketentuan sebagai berikut:
                             </P>
                             <div class="card">
                                 <div class="table-responsive">
                                 <table class="table align-items-center styled-table">
                                     <thead>
                                         <tr>
-                                          <th>Indeks Prestasi Semester (IPS)</th>
+                                          <th>Prestasi Semester (IPS)</th>
                                           <th>Beban Studi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                          <td>3.00-4.00</td>
+                                          <td>3.00 - 4.00</td>
                                           <td>22 - 24 SKS</td>
                                         </tr>
                                         <tr>
@@ -284,9 +284,9 @@
                             </div>
                             <P class="mb-3">Jumlah SKS maksimal yang diambil oleh mahasiswa setiap semester adalah 24 SKS. Ketentuan IP semester akan secara otomatis terekam dalam rencana studi mahasiswa dan mahasiswa dilarang mengambil mata kuliah melebihi SKS yang ditentukan. Sistem informasi akademik secara otomatis akan menampilkan jumlah SKS yang dapat diambil pada menu SIAKAD Kampus Gratis.</P>
                         <h5 class="pb-0 py-lg-2">3. Pengisian Kartu Rencana Studi </h5>
-                        <P class="mb-3">Pengisian rencana studi dilakukan melalui portal Sistem Akademik pada tiap semester sesuai dengan yang diterbitkan oleh Bagian Staf Admin Kampus Gratis. Mahasiswa dapat menyunting (edit) pengisian rencana studi sesuai dengan jadwal yang ditetapkan.</P>
+                        <P class="mb-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pengisian rencana studi dilakukan melalui portal Sistem Akademik pada tiap semester sesuai dengan yang diterbitkan oleh Bagian Staf Admin Kampus Gratis. Mahasiswa dapat menyunting (edit) pengisian rencana studi sesuai dengan jadwal yang ditetapkan.</P>
                         <h5 class="pb-0 py-lg-2">4. Perkuliahan</h5>
-                        <p class="mb-3">Kegiatan perkuliahan selama masa pandemi dilakukan sepenuhnya melalui media daring (<span class="emphasized">online</span>). Perkuliahan dirancang oleh dosen pengampu dengan sistem sinkron maupun asinkron. Media perkuliahan yang digunakan adalah Aplikasi Kampus Gratis, <span class="emphasized">Zoom Meeting, Google Meet, Webex Meeting, Google Classroom</span>, dan sebagainya. Kegiatan perkuliahan diselenggarakan 14 kali dalam satu semester yang dibagi menjadi tujuh minggu sebelum UTS dan tujuh minggu setelahnya. Perkuliahan diselenggarakan setiap hari dari Senin–Jumat, mulai pukul 07.00–21.00 WIB. Jeda sesi perkuliahan antara sesi pertama dan kedua adalah 30 menit. Jeda istirahat siang adalah pukul 12.30–13.00 WIB. Mahasiswa wajib mengikuti peraturan dan tata tertib presensi selama masa perkuliahan daring.</p>
+                        <p class="mb-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kegiatan perkuliahan selama masa pandemi dilakukan sepenuhnya melalui media daring (<span class="emphasized">online</span>). Perkuliahan dirancang oleh dosen pengampu dengan sistem sinkron maupun asinkron. Media perkuliahan yang digunakan adalah Aplikasi Kampus Gratis, <span class="emphasized">Zoom Meeting, Google Meet, Webex Meeting, Google Classroom</span>, dan sebagainya. Kegiatan perkuliahan diselenggarakan 14 kali dalam satu semester yang dibagi menjadi tujuh minggu sebelum UTS dan tujuh minggu setelahnya. Perkuliahan diselenggarakan setiap hari dari Senin–Jumat, mulai pukul 07.00–21.00 WIB. Jeda sesi perkuliahan antara sesi pertama dan kedua adalah 30 menit. Jeda istirahat siang adalah pukul 12.30–13.00 WIB. Mahasiswa wajib mengikuti peraturan dan tata tertib presensi selama masa perkuliahan daring.</p>
                     </div>
                     </div>
                  <!-- Content END -->
