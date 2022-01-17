@@ -62,6 +62,7 @@
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('penelitian*') ? 'active' : '' }}" href="{{ route('penelitian') }}">Penelitian</a></li>
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('pengabdian*') ? 'active' : '' }}" href="{{ url('pengabdian') }}">Pengabdian</a></li>
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('job*') ? 'active' : '' }}" href="{{ url('job-channel') }}">Karir</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('magang*') ? 'active' : '' }}" href="{{ url('magang') }}">Program Magang</a></li>
                 </ul>
             <!-- Nav Main menu END -->
 
