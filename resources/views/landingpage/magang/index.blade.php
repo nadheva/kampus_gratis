@@ -118,89 +118,89 @@
                 </div>
             </div>
     
-            <div class="row align-items-center">
+            <div class="row align-items-start">
                 <div class="col-lg-5 position-relative">
-    
                     <!-- Image -->
                     <img src="{{asset('assets/images/teams/aset5.png')}}" class="rounded" alt="">
                 </div>
     
                 <div class="col-lg-7 mt-4 mt-lg-0">
                     <!-- Title -->
-                    <h4 class="mb-3">35,000+ happy students joined with us to achieve their goals</h4>
-    
-                    <!-- Content -->
-                    <p>How promotion excellent curiosity yet attempted happiness Gay prosperous impression had conviction For every delay death ask to style Me mean able  my by in they Extremity now strangers contained breakfast him discourse additions Sincerity collected contented led now perpetual extremely forfeited </p>
-                    <p>Happiness prosperous impression had conviction For every delay in they Extremity now strangers contained breakfast him discourse additions Sincerity collected contented led now perpetual extremely forfeited</p>
-    
+                    <h4 class="mb-3">Rencana Proses Recruitment dan Onboarding</h4>
                     <!-- Info -->
                     <ul class="list-group list-group-borderless mt-4">
                         <li class="list-group-item d-flex">
-                <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation takes less time
+                        <i class="bi bi-patch-check-fill text-success me-2"></i>Seleksi administrative: Memeriksa kelengkapan dan kesesuaian berkas kandidat pemagang.
                         </li>
                         <li class="list-group-item d-flex">
-                <i class="bi bi-patch-check-fill text-success me-2"></i>Professional and easy to use software
+                        <i class="bi bi-patch-check-fill text-success me-2"></i>Wawancara oleh Competence Expert yang ahli dibidangnya, untuk mengetahui tingkat kemampuan teknis dan pengalaman.
                         </li>
                         <li class="list-group-item d-flex">
-                <i class="bi bi-patch-check-fill text-success me-2"></i>Perfect for any device with pixel-perfect design
+                        <i class="bi bi-patch-check-fill text-success me-2"></i>MOU antara Kampus Gratis dan Universitas.
                         </li>
                         <li class="list-group-item d-flex">
-                <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation too fast
+                        <i class="bi bi-patch-check-fill text-success me-2"></i>Kontrak dengan mahasiswa dan diketahui oleh kaprodi
                         </li>
                     </ul>
+
+                    <!-- Title -->
+                    <h5 class="mb-3 mt-2">Program Magang Fleksibel - Non Uang Saku</h5>
     
-                    <!-- Progress bar START -->
-                    <div class="row mt-3 g-4">
-                        <!-- Progress item -->
-                        <div class="col-md-6">
-                            <div class="overflow-hidden">
-                                <h6>Enterprise customer</h6>
-                                <div class="progress progress-sm bg-primary bg-opacity-10">
-                                    <div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="progress-percent-simple ms-auto h6 fw-light">85%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- Progress item -->
-                        <div class="col-md-6">
-                            <div class="overflow-hidden">
-                                <h6>Accurate Course</h6>
-                                <div class="progress progress-sm bg-primary bg-opacity-10">
-                                    <div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="progress-percent-simple ms-auto h6 fw-light">90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- Progress item -->
-                        <div class="col-md-6">
-                            <div class="overflow-hidden">
-                                <h6>Languages</h6>
-                                <div class="progress progress-sm bg-primary bg-opacity-10">
-                                    <div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="progress-percent-simple ms-auto h6 fw-light">75%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- Progress item -->
-                        <div class="col-md-6">
-                            <div class="overflow-hidden">
-                                <h6>Instructors</h6>
-                                <div class="progress progress-sm bg-primary bg-opacity-10">
-                                    <div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="progress-percent-simple ms-auto h6 fw-light">95%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Progress bar END -->
+                    <!-- Content -->
+                    <p>
+                        Program Magang Terdiri Dari Dua Periode:
+                    </p>
+                    <!-- Info -->
+                    <ul class="list-group list-group-borderless mt-4">
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-cursor-fill text-info me-2"></i>Periode awal, dimulai Pertengahan Februari, Maret, April, hingga pertengahan mei 2022
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-cursor-fill text-info me-2"></i>Periode akhir, dimulai pertengan Mei, Juni, Juli, hingga pertengahan Agustus 2022.
+                        </li>
+                    </ul>
+
+                    <!-- Title -->
+                    <h5 class="mb-3 mt-2">Perbedaan program magang Fleksible Vs Magang Kampus Merdeka 
+                    </h5>
+                    <!-- Info -->
+                    <ul class="list-group list-group-borderless mt-4">
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Di lakukan 4 jam per hari di tambah 30 menit meeting koordinasi harian, senin sampai jumat, selama 15 minggu (3 bulan).
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Mahasiswa dapat mengikuti magang sambil kuliah, dan dapat memilih untuk mengikuti magang di pagi hari atau sore hari, sesuai kesediaan waktunya.
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Mahasiswa tetap diminta untuk membuat laporan harian sesuai format yang sudah di tetapkan, untuk kemudian menjadi bahan untuk penilaian bulanan dan penilaian akhir. 
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Mahasiswa boleh mengikuti program magang sambil pada saat yang sama mengikuti kuliah dikampusnya. 
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Bila mahasiswa sedang mengikuti ujian, penugasan kampus, atau keadaan emergensi, maka diperbolehkan menukar hari atau izin.
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Bila diperlukan, Peraturan magang dapat disesuaikan untuk setiap kampus, mengacu kepentingan kampus yang bersangkutan. 
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Penilaian mahasiswa mengikuti aturan dari kampus yang bersangkutan. 
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Terdapat dua program, pagi dan sore, dan mahasiswa mengikuti hanya  setengah hari, fleksibel bisa di ubah-ubah sesuai dengan kepentingannya di bulan itu.
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Mahasiswa direkomendasikan untuk membuat skripsi terkait pekerjaan magang di tempat kami.
+                        </li>
+                        <li class="list-group-item d-flex">
+                        <i class="bi bi-disc-fill text-success me-2"></i>Untuk setiap mahasiswa magang akan ditugaskan mentor yg berpengalaman, khususnya sebagai konsultan dengan pengalaman lebih dari 7 tahun
+                        </li>
+                    </ul>
                 </div>	
+            </div>
+            <div class="col-10 text-center mx-auto position-relative mt-4">
+                <!-- Image -->
+                <img src="{{asset('assets/images/teams/magang.png')}}" class="rounded" alt="magang" width="70%">
             </div>
         </div>
     </section>
@@ -270,7 +270,7 @@
                     <!-- Title and button -->
                     <div class="d-sm-flex justify-content-sm-between">
                         <h2 class="mb-0">Peserta Magang Kami</h2>
-                        <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-light mt-2">Daftar Magang</a>
+                        <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-light mt-2" target="_BLANK">Daftar Magang</a>
                     </div>
                     
                     <!-- Slider START -->

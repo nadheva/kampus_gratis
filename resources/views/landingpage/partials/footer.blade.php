@@ -13,10 +13,10 @@
 				<p class="my-3">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
 				<!-- Social media icon -->
 				<ul class="list-inline mb-0 mt-3">
-					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
-					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
-					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-twitter" href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
-					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook" target="_BLANK" href="https://www.facebook.com/Learning-Kampus-Gratis-100676062407934"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" target="_BLANK" href="https://instagram.com/kampus.gratis?utm_medium=copy_link"><i class="fab fa-fw fa-instagram"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-twitter" target="_BLANK" href="https://twitter.com/kampus_gratis"><i class="fab fa-fw fa-twitter"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-linkedin" target="_BLANK" href="http://linkedin.com/in/kampusgratis"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
 				</ul>
 			</div>
 			<!-- Widget 1 END -->
@@ -51,11 +51,11 @@
 						<h5 class="mb-2 mb-md-4">Contact</h5>
 						<!-- Time -->
 						<p class="mb-2">
-							Toll free:<span class="h6 fw-light ms-2">+1234 568 963</span>
-							<span class="d-block small">(9:AM to 8:PM IST)</span>
+							Phone:<span class="h6 fw-light ms-2">+62 812-1609-5555</span>
+							<span class="d-block small">(08.00 s/d 17.00 WIB)</span>
 						</p>
 
-						<p class="mb-0">Email:<span class="h6 fw-light ms-2">example@gmail.com</span></p>
+						<p class="mb-0">Email:<span class="h6 fw-light ms-2">manajemen@kampusgratis.id</span></p>
 
 						<div class="row g-2 mt-2">
 							<!-- Google play store button -->
