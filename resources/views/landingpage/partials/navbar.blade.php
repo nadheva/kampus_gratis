@@ -24,6 +24,8 @@
                     <ul class="navbar-nav mx-auto order-0">
                         <li class="nav-item menu {{ request()->is('berita*') ? 'active' : '' }}"><a class="nav-link putih" href="/berita">Berita</a></li>
                         <li class="nav-item menu {{ request()->is('alumni*') ? 'active' : '' }}"><a class="nav-link putih" href="/alumni">Alumni</a></li>
+                        <li class="nav-item menu {{ request()->is('penelitian*') ? 'active' : '' }}"><a class="nav-link putih" href="{{ route('penelitian') }}">Penelitian</a></li>
+                        <li class="nav-item menu {{ request()->is('pengabdian*') ? 'active' : '' }}"><a class="nav-link putih" href="{{ url('pengabdian') }}">Pengabdian</a></li>
                         <li class="nav-item menu {{ request()->is('pengumuman*') ? 'active' : '' }}"><a class="nav-link putih" href="/pengumuman">Pengumuman</a></li>
                         <li class="nav-item menu {{ request()->is('faq*') ? 'active' : '' }}"><a class="nav-link putih" href="/faq">FAQ</a></li>
                     </ul>
@@ -59,10 +61,8 @@
                     <li class="nav-item menu "><a class="nav-link {{ request()->is('tentang*') ? 'active' : '' }}" href="{{ route('tentang') }}">Tentang Kampus Gratis</a></li>
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('pendidikan*') ? 'active' : '' }}" href="{{ url('pendidikan') }}">Pendidikan</a></li>
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('mahasiswa*') ? 'active' : '' }}" href="{{ route('mahasiswa') }}">Mahasiswa</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('penelitian*') ? 'active' : '' }}" href="{{ route('penelitian') }}">Penelitian</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('pengabdian*') ? 'active' : '' }}" href="{{ url('pengabdian') }}">Pengabdian</a></li>
                     <li class="nav-item menu"><a class="nav-link {{ request()->is('job*') ? 'active' : '' }}" href="{{ url('job-channel') }}">Karir</a></li>
-                    <li class="nav-item menu"><a class="nav-link {{ request()->is('magang*') ? 'active' : '' }}" href="{{ url('magang') }}">Program Magang</a></li>
+                    <li class="nav-item menu"><a class="nav-link {{ request()->is('magang*') ? 'active' : '' }}" href="{{ url('magang') }}">Program Magang Kampus Gratis II</a></li>
                 </ul>
             <!-- Nav Main menu END -->
 
