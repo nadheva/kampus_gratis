@@ -51,7 +51,7 @@
                         </div>
                         <!-- Image -->
                         <div class="col-12">
-                            <img class="rounded-4" src="{{asset('assets/images/teams/aset1.jpg')}}" alt="">
+                            <img class="rounded-4" src="{{asset('assets/images/teams/aset1.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         </svg>
                     </figure>
                     <!-- Image -->
-                    <img class="rounded-4" src="{{asset('assets/images/teams/aset2.jpg')}}" alt="">
+                    <img class="rounded-4" src="{{asset('assets/images/teams/aset2.png')}}" alt="">
                 </div>
     
                 <!-- Right image -->
