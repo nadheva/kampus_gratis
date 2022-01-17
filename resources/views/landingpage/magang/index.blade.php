@@ -270,7 +270,7 @@
                     <!-- Title and button -->
                     <div class="d-sm-flex justify-content-sm-between">
                         <h2 class="mb-0">Peserta Magang Kami</h2>
-                        <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-light mt-2" target="_BLANK">Daftar Magang</a>
+                        <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">Daftar Magang</a>
                     </div>
                     
                     <!-- Slider START -->
