@@ -202,6 +202,13 @@
                 <!-- Image -->
                 <img src="{{asset('assets/images/teams/magang.png')}}" class="rounded" alt="magang" width="70%">
             </div>
+            <div class="col-7 text-center mx-auto position-relative mt-4">
+                {{-- <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">DAFTAR MAGANG</a> --}}
+                <div class="d-grid gap-2">
+                    <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">DAFTAR MAGANG</a>
+                    {{-- <button class="btn btn-primary" type="button">Button</button> --}}
+                </div>
+            </div>
         </div>
     </section>
     <!-- =======================
@@ -219,47 +226,47 @@
                     <ul class="list-group list-group-borderless mt-4">
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2015</h6> --}}
+                            <h6 class="mb-0">1</h6>
                             <span class="fs-6 ms-3">Apps dan Web Developer</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2016</h6> --}}
+                            <h6 class="mb-0">2</h6>
                             <span class="fs-6 ms-3">Analytics, Algoritma & Artifical Intelegence</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2017</h6> --}}
+                            <h6 class="mb-0">3</h6>
                             <span class="fs-6 ms-3">Desain dan Pengembangan Materi Ajar</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2018</h6> --}}
+                            <h6 class="mb-0">4</h6>
                             <span class="fs-6 ms-3">Desain Grafis, Animasi dan Video</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2019</h6> --}}
+                            <h6 class="mb-0">5</h6>
                             <span class="fs-6 ms-3">Manajemen Dosen dan Pelayanan Mahasiswa</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <h6 class="mb-0">6</h6>
                             <span class="fs-6 ms-3">Learner Progress, Asessment Center & Competency Development</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <h6 class="mb-0">7</h6>
                             <span class="fs-6 ms-3">Digital Marketing & Social Media Campaign</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <h6 class="mb-0">8</h6>
                             <span class="fs-6 ms-3">Kerjasama antar Lembaga dan Perijinan</span>
                         </li>
                         <!-- Posisi Magang item -->
                         <li class="list-group-item d-flex align-items-center px-0">
-                            {{-- <h6 class="mb-0">2020</h6> --}}
+                            <h6 class="mb-0">9</h6>
                             <span class="fs-6 ms-3">Manajemen Proyek (Project Management Officer)</span>
                         </li>
                     </ul>
@@ -270,7 +277,7 @@
                     <!-- Title and button -->
                     <div class="d-sm-flex justify-content-sm-between">
                         <h2 class="mb-0">Peserta Magang Kami</h2>
-                        <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">Daftar Magang</a>
+                        {{-- <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">Daftar Magang</a> --}}
                     </div>
                     
                     <!-- Slider START -->
@@ -285,7 +292,7 @@
                                 </div>
                                 <!-- Info -->
                                 <h6 class="mb-0"><a href="#">Tifa</a></h6>
-                                <p class="mb-0 small">Koten Video</p>
+                                <p class="mb-0 small">Konten Video</p>
                             </div>
     
                             <!-- Avatar item -->
