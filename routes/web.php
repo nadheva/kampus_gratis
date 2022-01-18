@@ -69,9 +69,6 @@ Route::get('/daftar-magang', function () {
     return view('landingpage.magang.daftar-magang');
 });
 
-Route::get('/job-channel', function () {
-    return view('landingpage.job-channel');
-});
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
