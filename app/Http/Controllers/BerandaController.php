@@ -117,9 +117,7 @@ class BerandaController extends Controller
         $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
         ['form_params' =>
         [
-            'nama_depan' => $request->get('nama_depan'),
-            'nama_tengah' => $request->get('nama_tengah'),
-            'nama_akhir' => $request->get('nama_akhir'),
+            'nama_lengkap' => $request->get('nama_lengkap'),
             'nik' => $request->get('nik'),
             'email' => $request->get('email'),
             'prodi' => $request->get('prodi'),
@@ -131,6 +129,7 @@ class BerandaController extends Controller
             'tempat_lahir' => $request->get('tempat_lahir'),
             'tgl_lahir' => $request->get('tgl_lahir'),
             'kelamin' => $request->get('kelamin'),
+            'kebutuhan_khusus' => $request->get('kebutuhan_khusus'),
             'tinggal' => $request->get('tinggal'),
             'pembiaya' => $request->get('pembiaya'),
             'nama_ayah' => $request->get('nama_ayah'),

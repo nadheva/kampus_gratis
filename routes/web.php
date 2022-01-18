@@ -51,7 +51,12 @@ Route::get('/sambutan', function () {
 Route::get('/pendidikan', function () {
     return view('landingpage.pendidikan');
 });
-
+Route::get('/sarjana', function () {
+    return view('landingpage.pendidikan.sarjana');
+});
+Route::get('/peraturan-akademik-sarjana', function () {
+    return view('landingpage.pendidikan.sarjana.peraturan-akademik');
+});
 // Route::get('/registrasi', function () {
 //     return view('landingpage.registrasi');
 // });

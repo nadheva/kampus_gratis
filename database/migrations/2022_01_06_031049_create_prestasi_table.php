@@ -17,7 +17,6 @@ class CreatePrestasiTable extends Migration
             $table->id();
             $table->string('judul');
             $table->text('isi');
-            $table->string('tahun');
             $table->string('penulis');
             $table->string('gambar');
             $table->integer('tahun');
