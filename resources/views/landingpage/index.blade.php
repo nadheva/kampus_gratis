@@ -346,27 +346,12 @@ Counter END -->
 
 			<div class="col-lg-7 mt-4 mt-lg-0">
 				<!-- Title -->
-				<h2 class="mb-3">Sambutan Pimpinan Kampus Gratis</h2>
+				<h2 class="mb-3">{{$sambutan->judul}}</h2>
 
 				<!-- Content -->
-				<p>How promotion excellent curiosity yet attempted happiness Gay prosperous impression had conviction For every delay death ask to style Me mean able  my by in they Extremity now strangers contained breakfast him discourse additions Sincerity collected contented led now perpetual extremely forfeited </p>
-				<p>Happiness prosperous impression had conviction For every delay in they Extremity now strangers contained breakfast him discourse additions Sincerity collected contented led now perpetual extremely forfeited</p>
-
-				<!-- Info -->
-				<ul class="list-group list-group-borderless mt-4 mb-3">
-					<li class="list-group-item d-flex">
-            <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation takes less time
-					</li>
-					<li class="list-group-item d-flex">
-            <i class="bi bi-patch-check-fill text-success me-2"></i>Professional and easy to use software
-					</li>
-					<li class="list-group-item d-flex">
-            <i class="bi bi-patch-check-fill text-success me-2"></i>Perfect for any device with pixel-perfect design
-					</li>
-					<li class="list-group-item d-flex">
-            <i class="bi bi-patch-check-fill text-success me-2"></i>Setup and installation too fast
-					</li>
-				</ul>
+				<p>
+					{{$sambutan->isi}}
+				</p>
 				<a class="btn btn-primary-soft mt-4" href="/sambutan">Baca Selengkapnya</a>
 			</div>	
 		</div>
