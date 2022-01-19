@@ -95,7 +95,7 @@ class BerandaController extends Controller
         $banner = Banner::all();
         $sambutan = Berita::where('kategori', 'sambutan')->get();
         // dd($sambutan);
-        return view('landingpage.index',compact('banner', '  sambutan'));
+        return view('landingpage.index',compact('banner', 'sambutan'));
     }
 
     public function jobchannel()
