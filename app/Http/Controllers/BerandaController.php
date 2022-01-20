@@ -93,7 +93,7 @@ class BerandaController extends Controller
     public function beranda()
     {
         $banner = Banner::all();
-        $sambutan = Berita::where('kategori', 'sambutan')->get();
+        $sambutan = Berita::where('kategori', 'sambutan')->first();
         // dd($sambutan);
         return view('landingpage.index',compact('banner', 'sambutan'));
     }
