@@ -108,6 +108,18 @@ class BerandaController extends Controller
         return view('landingpage.job-channel', compact('result'));
     }
 
+    public function showJobchannel()
+    {
+        $client = new Client();
+        // $guzzleClient = new \GuzzleHttp\Client(['verify' => false]);
+        $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel');
+        $response = $request->getBody()->getContents();
+        $result = json_decode($response,true);
+        return view('landingpage.job-channel', compact('result'));
+
+        return view('landingpage.job-channel-show');    
+    }
+
     public function registrasi()
     {
         return view('landingpage.registrasi');
