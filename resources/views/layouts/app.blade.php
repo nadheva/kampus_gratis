@@ -62,6 +62,5 @@ Footer END -->
 <div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
 
 @include('admin.partials.scripts')
-
 </body>
 </html>

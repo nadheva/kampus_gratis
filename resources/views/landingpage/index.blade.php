@@ -349,7 +349,7 @@ Counter END -->
 				<h2 class="mb-3">{{$sambutan->judul}}</h2>
 
 				<!-- Content -->
-				<p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					{{$sambutan->isi}}
 				</p>
 				<a class="btn btn-primary-soft mt-4" href="/sambutan">Baca Selengkapnya</a>
