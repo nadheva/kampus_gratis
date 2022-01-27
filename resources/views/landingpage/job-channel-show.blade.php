@@ -191,7 +191,7 @@
         <div class="container">
             <!-- Title -->
             <div class="row mb-4">
-                <h2 class="mb-0">Lowongan Pekerjaan Lainnya </h2>
+                <h2 class="mb-0">{{ $result->posisi_pekerjaan }}</h2>
             </div>
     
             <div class="row">
