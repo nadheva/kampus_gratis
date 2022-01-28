@@ -141,7 +141,7 @@ Page content START -->
 									<a href="#" class="h6 fw-light mb-0"><i class="far fa-heart"></i></a>
 								</div>
 								<!-- Title -->
-								<h5 class="card-title"><a href="#">{{$value["posisi_pekerjaan"]}}</a></h5>
+								<h5 class="card-title"><a href="{{ route('showJobchannel', $value["id"]) }}">{{$value["posisi_pekerjaan"]}}</a></h5>
 							</div>
 							<!-- Card footer -->
 							<div class="card-footer pt-0 pb-3">

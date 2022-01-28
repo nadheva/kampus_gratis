@@ -41,6 +41,7 @@ Route::get('/faq', [BerandaController::class, 'faq'])->name('faq');
 Route::get('/alumni', [BerandaController::class, 'alumni'])->name('alumni');
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/job-channel', [BerandaController::class, 'jobchannel']);
+Route::get('/job-channel/{id}', [BerandaController::class, 'showJobchannel'])->name('showJobchannel');
 Route::get('/registrasi', [BerandaController::class, 'registrasi']);
 Route::post('/post_registrasi', [BerandaController::class, 'post_registrasi']);
 

@@ -17,6 +17,7 @@ use App\Models\Prestasi;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class BerandaController extends Controller
 {
@@ -105,6 +106,16 @@ class BerandaController extends Controller
         $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel');
         $response = $request->getBody()->getContents();
         $result = json_decode($response,true);
+        return view('landingpage.job-channel', compact('result'));
+    }
+
+    public function showJobchannel($id)
+    {
+       $client = new Client();
+        // $guzzleClient = new \GuzzleHttp\Client(['verify' => false]);
+        $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel/'.$id);
+        $response = $request->getBody()->getContents();
+        $result = json_decode($response,true); 
         return view('landingpage.job-channel', compact('result'));
     }
 
