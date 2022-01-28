@@ -102,17 +102,17 @@ Route::prefix('admin')->group(function () {
 });
 
 //Route Login
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', [DashboardController::class, 'Dashboard'])
-            ->name('Dashboard');
-    Route::get('/form', function () {
-        return view('form');
-    })->name('form');
-    Route::get('/tab', function () {
-        return view('tab');
-    })->name('form');
-    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
-});
+// Route::group(['middleware' => 'auth'], function () {
+//     Route::get('/', [DashboardController::class, 'Dashboard'])
+//             ->name('Dashboard');
+//     Route::get('/form', function () {
+//         return view('form');
+//     })->name('form');
+//     Route::get('/tab', function () {
+//         return view('tab');
+//     })->name('form');
+//     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+// });
 
 Route::resource('data-banner', BannerController::class);
 Route::resource('data-guru-besar', GuruBesarController::class);

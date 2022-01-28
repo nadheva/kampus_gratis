@@ -349,8 +349,15 @@ Counter END -->
 				<h2 class="mb-3">{{$sambutan->judul}}</h2>
 
 				<!-- Content -->
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				{{-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					{{$sambutan->isi}}
+				</p> --}}
+				<p align='justify' style="font-size: 13px">
+					Kampus Gratis, sebagai perguruan tinggi untuk mengemban misi memeratakan pendidikan bagi seluruh warga Negara Indonesia dimanapun mereka berada. Mulai didirikan pada tahun 2021 dan dirancang untuk memfasilitasi mereka yang tidak mempunyai kesempatan menyelesaikan studinya di perguruan tinggi karena berbagai hambatan termasuk faktor ekonomi, geografis dan demografis. Oleh karenanya, Kampus Gratis hadir untuk menjangkau yang tak terjangkau. Website ini adalah salah satu media untuk memperkenalkan dan memberikan informasi secara lengkap mengenai Kampus Gratis, baik untuk mahasiswa maupun masyarakat umum. Kampus Gratis secara konsisten dan konstruktif terus berupaya dan menunjukkan komitmen untuk menjadi yang terbaik dalam memberikan layanan pendidikan melalui sistem pendidikan tinggi terbuka dan jarak jauh (PTTJJ), yang disesuaikan dengan kebutuhan industri dan perkembangan teknologi.
+					<br> <br>
+					Sebagai bentuk kontribusi terhadap pendidikan tinggi nasional, Kampus Gratis terus melakukan terobosan baru yang inovatif untuk menghasilkan lulusan berkualitas tinggi. Disamping itu, sebagai realisasi dari filosofi pendidikan sepanjang hayat (lifelong learning), Kampus Gratis mengembangkan dan memberikan layanan program sertifikat serta berbagai layanan pendidikan gratis melalui berbagai Sumber Pembelajaran Terbuka dan kuliah gratis secara massif, terbuka dan daring/online.
+					<br> <br>
+					Bersama Anda semua, Kampus Gratis hadir untuk mengemban amanah bangsa yang luhur dalam meningkatkan kecerdasan dan martabat bangsa Indonesia tercinta. Mari kita bangun dan jaga negeri ini dengan mewujudkan pagar bangsa yang berkualitas.
 				</p>
 				<a class="btn btn-primary-soft mt-4" href="/sambutan">Baca Selengkapnya</a>
 			</div>	
@@ -364,7 +371,9 @@ Counter END -->
 		<div class="row mb-4">
 			<div class="col-sm-10 col-xl-6 text-center mx-auto">
 				<h2>Kenapa kamu harus bergabung belajar bersama kami?</h2>
-				<p class="mb-0">karena KG adalah kuliah berkualitas, sambil kuliah bisa bekerja, lulus dicarikan kerja, dibimbing oleh para dosen yg ingin berbakti pada bangsa, dosen berkualitas dan disediakan pendanaan bagi yang membutuhkan untuk biaya hidupnya, karena biayanya GRATISSSSSSSS BESTIE</p>
+				<p class="mb-0">
+					karena KG adalah kuliah berkualitas, sambil kuliah bisa bekerja, lulus dicarikan kerja, dibimbing oleh para dosen yg ingin berbakti pada bangsa, dosen berkualitas dan disediakan pendanaan bagi yang membutuhkan untuk biaya hidupnya, karena biayanya GRATISSSSSSSS BESTIE
+				</p>
 			</div>
 		</div>
 
@@ -390,6 +399,33 @@ Counter END -->
 				<img src="assets/images/element/earn-money.svg" class="h-200px" alt="">
 				<h4 class="mt-3">Gratis tanpa biaya</h4>
 				<p class="text-truncate-2 mb-0">Insipidity the sufficient discretion imprudence resolution sir him decisively.  Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src="assets/images/element/create-account.svg" class="h-200px" alt="">
+				<h4 class="mt-3">Universitas Pertama yang memberikan Edukasi secara Gratis</h4>
+				<p class="text-truncate-2 mb-0">
+					Kampus Gratis merupakan edutech pertama yang memberikan akses ke semua kursus secara Gratis di Indonesia. Tidak hanya itu, Kegiatan belajar dan mengajar di Kampus Gratis diadakan secara full online, sehingga mahasiswa dapat belajar kapan saja dan di mana saja. 
+				</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src="assets/images/element/add-course.svg" class="h-200px" alt="">
+				<h4 class="mt-3">Bekerjasama dengan Universitas dan Perusahaan ternama di Indonesia</h4>
+				<p class="text-truncate-2 mb-0">
+					Kampus Gratis bekerjasama dengan universitas-universitas ternama di Indonesia yang memiliki akreditasi A. Sehingga, semua mahasiswa Kampus Gratis dapat merasakan dan mempelajari materi-materi kuliah di universitas ternama dan  menambah wawasan mahasiswa. Selain itu, semua lulusan dari Kampus Gratis akan direkomendasikan kepada perusahaan-perusahaan ternama yang sudah bekerjasama dengan Kampus Gratis 
+				</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src="assets/images/element/earn-money.svg" class="h-200px" alt="">
+				<h4 class="mt-3">Materi kursus yang selalu up to date</h4>
+				<p class="text-truncate-2 mb-0">
+					Materi perkuliahan yang terus berganti dan selalu up to date dengan kurikulum dan trend yang ada, membuat semua mahasiswa Kampus gratis dapat mendapatkan ilmu terkini. 
+				</p>
 			</div>
 		</div> <!-- Row END -->
 	</div>
