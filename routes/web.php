@@ -121,6 +121,8 @@ Route::resource('data-pengabdian', PengabdianController::class);
 
 // Route::get('list', [SecondDBController::class, 'list']);
 
+Route::post('/registration', [BerandaController::class, 'registration'])->name('registration');
+
 Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
     Route::post('/post_registrasi', [BerandaController::class, 'post_registrasi']);
     Route::get('/dashboard', function () {
@@ -128,7 +130,7 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
     })->name('dashboard');
     Route::get('/administrasi-pengguna', [UserDashboardController::class, 'administrasiPengguna'])->name('administrasiPengguna');
     Route::put('/administrasi-pengguna', [UserDashboardController::class, 'administrasiUpdate'])->name('administrasiUpdate');
-    
+
 });
 
 

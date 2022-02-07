@@ -14,9 +14,11 @@ use Carbon\Carbon;
 use App\Models\Alumni;
 use App\Models\Banner;
 use App\Models\Prestasi;
+use App\Providers\RouteServiceProvider;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 
 class BerandaController extends Controller
@@ -165,5 +167,22 @@ class BerandaController extends Controller
         ]] );
         return redirect('/')
         ->with('success', 'Selamat anda sudah terdaftar!');
+    }
+
+    public function registration(Request $request)
+    {
+        $client = new Client();
+        $request = $client->post('http://127.0.0.1:8000/api/registration',
+        ['form_params' =>
+        [
+            'name' => $request->get('name'),
+            'email' => $request->get('email'),
+            'password' => $request->get('password'),
+        ]]);
+        
+
+        Auth::login($request);
+
+        return redirect(RouteServiceProvider::HOME);
     }
 }

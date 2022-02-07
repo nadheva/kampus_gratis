@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Eduport - LMS, Education and Course Theme</title>
+    <title>Kampus Gratis - Daftar Akun</title>
 
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Webestica.com">
-    <meta name="description" content="Eduport- LMS, Education and Course Theme">
+    <meta name="description" content="Kampus Gratis - Daftar Akun">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
@@ -75,7 +75,8 @@
                                 <p class="lead mb-4">Nice to see you! Please Sign up with your account.</p>
 
                                 <!-- Form START -->
-                                <form action="{{ route('register') }}" method="post">
+                                {{-- <form action="{{ route('register') }}" method="post"> --}}
+                                    <form action="{{ route('registration') }}" method="post">
                                     @csrf
                                     <!-- Name -->
                                     <div class="mb-4">
