@@ -113,8 +113,6 @@
                 <li>
                     <a class="dropdown-item" href="{{route('dashboard')}}"><i class="bi bi-person fa-fw me-2"></i>Dashboard</a>
                 </li>
-
-                <li><a class="dropdown-item" href="#"><i class="bi bi-person fa-fw me-2"></i>Dashboard</a></li>
                 <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan Akun</a></li>
                 <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Panduan</a></li>
                 <li><a class="dropdown-item bg-danger-soft-hover" href="{{ route('logout') }}"><i class="bi bi-power fa-fw me-2"></i>Keluar</a></li>

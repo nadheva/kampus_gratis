@@ -164,6 +164,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         RSmalc\Noty\NotyServiceProvider::class,
+        Kreait\Laravel\Firebase\ServiceProvider::class,
 
         /*
          * Package Service Providers...

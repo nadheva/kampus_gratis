@@ -14,11 +14,15 @@ use Carbon\Carbon;
 use App\Models\Alumni;
 use App\Models\Banner;
 use App\Models\Prestasi;
+use App\Models\User;
+use App\Models\UserDB2;
 use App\Providers\RouteServiceProvider;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
 
 class BerandaController extends Controller
@@ -171,18 +175,29 @@ class BerandaController extends Controller
 
     public function registration(Request $request)
     {
+        $user = UserDB2::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        // dd($user1);
         $client = new Client();
-        $request = $client->post('http://127.0.0.1:8000/api/registration',
+
+        $request = $client->post('http://127.0.0.1:8080/api/registration',
         ['form_params' =>
         [
             'name' => $request->get('name'),
             'email' => $request->get('email'),
             'password' => $request->get('password'),
+            'user_id' => (int)$user->id,
         ]]);
-        
 
-        Auth::login($request);
+        event(new Registered($user));
+
+        Auth::login($user);
 
         return redirect(RouteServiceProvider::HOME);
+
+
     }
 }

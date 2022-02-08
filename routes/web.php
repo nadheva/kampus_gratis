@@ -17,6 +17,7 @@ use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\PengabdianController;
 use App\Http\Controllers\FiturController;
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\SecondDBController;
 use App\Http\Controllers\UserDashboardController;
 
@@ -130,8 +131,11 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
     })->name('dashboard');
     Route::get('/administrasi-pengguna', [UserDashboardController::class, 'administrasiPengguna'])->name('administrasiPengguna');
     Route::put('/administrasi-pengguna', [UserDashboardController::class, 'administrasiUpdate'])->name('administrasiUpdate');
-
 });
 
+// Route Login
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('logout', [AuthenticatedSessionController::class, 'logout'])->name('logout');
+});
 
 require __DIR__ . '/auth.php';
