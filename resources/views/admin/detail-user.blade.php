@@ -5,7 +5,7 @@
 				<div class="card border rounded-3">
 					<!-- Card header -->
 					<div class="card-header border-bottom">
-						<h3 class="card-header-title mb-0">Edit Profile</h3>
+						<h3 class="card-header-title mb-0">Administrasi Pengguna</h3>
 					</div>
 					<!-- Card body START -->
 					<div class="card-body">
@@ -14,7 +14,7 @@
 
 							<!-- Profile picture -->
 							<div class="col-12 justify-content-center align-items-center">
-								<label class="form-label">Profile picture</label>
+								<label class="form-label">Foto Profil</label>
 								<div class="d-flex align-items-center">
 									<label class="position-relative me-4" for="uploadfile-1" title="Replace this pic">
 										<!-- Avatar place holder -->
@@ -25,65 +25,145 @@
 										<button type="button" class="uploadremove"><i class="bi bi-x text-white"></i></button>
 									</label>
 									<!-- Upload button -->
-									<label class="btn btn-primary-soft mb-0" for="uploadfile-1">Change</label>
+									<label class="btn btn-primary-soft mb-0" for="uploadfile-1">Ubah</label>
 									<input id="uploadfile-1" class="form-control d-none" type="file">
 								</div>
 							</div>
 
-							<!-- Full name -->
-							<div class="col-12">
-								<label class="form-label">Full name</label>
-								<div class="input-group">
-									<input type="text" class="form-control" value="Lori" placeholder="First name">
-									<input type="text" class="form-control" value="Stevens" placeholder="Last name">
-								</div>
-							</div>
-
-							<!-- Username -->
+							<!-- Nama Lengkap -->
 							<div class="col-md-6">
-								<label class="form-label">Username</label>
+								<label class="form-label">Nama Lengkap</label>
 								<div class="input-group">
-									<span class="input-group-text">Eduport.com</span>
 									<input type="text" class="form-control" value="loristev">
 								</div>
 							</div>
 
-							<!-- Email id -->
+							<!-- NIK -->
 							<div class="col-md-6">
-								<label class="form-label">Email id</label>
-								<input class="form-control" type="email" value="example@gmail.com"  placeholder="Email">
+								<label class="form-label">NIK</label>
+								<input class="form-control" type="numbe" value="example@gmail.com"  placeholder="Email">
+							</div>
+
+							<!-- Nomor Telepon -->
+							<div class="col-md-6">
+								<label class="form-label">Nomor Telepon</label>
+								<input type="text" class="form-control" value="1234567890" placeholder="Phone number">
+							</div>
+
+							<!-- Email -->
+							<div class="col-md-6">
+								<label class="form-label">Email</label>
+								<input class="form-control" type="email" value="California">
+							</div>
+
+							<!-- Strata / Jurusan -->
+							<div class="col-md-6">
+								<label class="form-label">Strata / Jurusan</label>
+								<div class="input-group">
+									<span class="input-group-text">D1</span>
+									<input type="text" class="form-control" value="loristev" readonly>
+								</div>
+							</div>
+
+							<!-- Tahun Ajar / Semester -->
+							<div class="col-md-6">
+								<label class="form-label">Tahun Ajar / Semester</label>
+								<div class="input-group">
+									<span class="input-group-text">Gasal 2021</span>
+									<input type="text" class="form-control" value="Semester 1" readonly>
+								</div>
+							</div>
+
+							<!-- Tempat Lahir -->
+							<div class="col-md-6">
+								<label class="form-label">Tempat Lahir</label>
+								<input type="text" class="form-control" value="1234567890" placeholder="Phone number">
+							</div>
+
+							<!-- Tanggal Lahir -->
+							<div class="col-md-6">
+								<label class="form-label">Tanggal Lahir</label>
+								<input class="form-control" type="date" value="California">
 							</div>
 
 							<!-- Phone number -->
 							<div class="col-md-6">
-								<label class="form-label">Phone number</label>
-								<input type="text" class="form-control" value="1234567890" placeholder="Phone number">
-							</div>
-
-							<!-- Location -->
-							<div class="col-md-6">
-								<label class="form-label">Location</label>
-								<input class="form-control" type="text" value="California">
+								<label class="form-label">Jenis Kelamin</label>
+								<div class="d-flex">
+									<div class="form-check radio-bg-light me-4">
+										<input class="form-check-input" type="radio" name="kelamin" value="laki=laki" checked>
+										<label class="form-check-label" for="flexRadioDefault1">
+											Male
+										</label>
+									</div>
+									<div class="form-check radio-bg-light">
+										<input class="form-check-input" type="radio" name="kelamin" value="perempuan">
+										<label class="form-check-label" for="flexRadioDefault2">
+											Female
+										</label>
+									</div>
+								</div>
 							</div>
 							
-							<!-- About me -->
+							<!-- Alamat Domisili -->
 							<div class="col-12">
-								<label class="form-label">About me</label>
+								<label class="form-label">Alamat Domisili</label>
 								<textarea class="form-control" rows="3">I’ve found a way to get paid for my favorite hobby, and do so while following my dream of traveling the world.</textarea>
-								<div class="form-text">Brief description for your profile.</div> 
+							</div>
+
+							<!-- Alamat KTP -->
+							<div class="col-12">
+								<label class="form-label">Alamat KTP</label>
+								<textarea class="form-control" rows="3">I’ve found a way to get paid for my favorite hobby, and do so while following my dream of traveling the world.</textarea>
 							</div>
 
 							<!-- Education -->
 							<div class="col-12">
-								<label class="form-label">Education</label>
-								<input class="form-control mb-2" type="text" value="Bachelor in Computer Graphics">
-								<input class="form-control mb-2" type="text" value="Masters in Computer Graphics">
-								<button class="btn btn-sm btn-light mb-0"><i class="bi bi-plus me-1"></i>Add more</button>
+								<label class="form-label">Kebutuhan Khusus</label> <br> 
+								<span class="text-danger">* boleh lebih dari 1</span> <br>
+								<div class="col-lg-8">
+									<div class="d-flex">
+									<div class="form-custom checkbox-bg-light me-4">
+										<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Tunanetra">
+										<label class="custom-control-label">Tunanetra</label>
+									</div>
+									</div>
+									<div class="d-flex">
+										<div class="form-custom checkbox-bg-light me-4">
+											<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Kekurangan secara fisik / mental">
+											<label class="custom-control-label">Kekurangan secara fisik / mental</label>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="form-custom checkbox-bg-light me-4">
+											<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Pengungsi">
+											<label class="custom-control-label">Pengungsi</label>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="form-custom checkbox-bg-light me-4">
+											<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Tenaga migran">
+											<label class="custom-control-label">Tenaga migran</label>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="form-custom checkbox-bg-light me-4">
+											<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Daerah konflik">
+											<label class="custom-control-label">Daerah konflik</label>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="form-custom checkbox-bg-light me-4">
+											<input type="checkbox" class="custom-control-input" name="kebutuhan_khusus[]" value="Menghidupi adik yang cacat">
+											<label class="custom-control-label">Menghidupi adik yang cacat</label>
+										</div>
+									</div>
+								</div>
 							</div>
 
 							<!-- Save button -->
 							<div class="d-sm-flex justify-content-end">
-								<button type="button" class="btn btn-primary mb-0">Save changes</button>
+								<button type="button" class="btn btn-primary mb-0">Simpan</button>
 							</div>
 						</form>
 					</div>
