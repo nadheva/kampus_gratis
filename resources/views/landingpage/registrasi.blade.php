@@ -14,8 +14,9 @@ Main part START -->
 					<li>Kolom yang memiliki tanda <span class="text-danger">*</span> merupakan kolom wajib untuk diisi</li>
 				</ul>
 				<!-- Form START -->
-				<form class="row g-3" action="/post_registrasi" method="POST">
+				<form class="row g-3" action="/post_registrasi" method="POST" enctype="multipart/form-data">
 					@csrf
+					@method('PUT')
 					<h5 class="mb-0">Data Diri</h5>
 
 					<!-- First name -->

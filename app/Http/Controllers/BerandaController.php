@@ -133,7 +133,8 @@ class BerandaController extends Controller
     public function post_registrasi(Request $request)
     {
         $client = new Client();
-        $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
+        // $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
+        $request = $client->put('http://dashboard.kampusgratis.id/api/administrasi',
         ['form_params' =>
         [
             'nama_lengkap' => $request->get('nama_lengkap'),
