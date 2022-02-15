@@ -51,4 +51,10 @@ class AuthenticatedSessionController extends Controller
 
         return redirect('/');
     }
+
+    public function logout()
+    {
+        Auth::logout(); // menghapus session yang aktif
+        return redirect()->route('login');
+    }
 }

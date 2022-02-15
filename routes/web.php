@@ -17,6 +17,9 @@ use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\PengabdianController;
 use App\Http\Controllers\FiturController;
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\SecondDBController;
+use App\Http\Controllers\UserDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +46,6 @@ Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/job-channel', [BerandaController::class, 'jobchannel']);
 Route::get('/job-channel/{id}', [BerandaController::class, 'showJobchannel'])->name('showJobchannel');
 Route::get('/registrasi', [BerandaController::class, 'registrasi']);
-Route::post('/post_registrasi', [BerandaController::class, 'post_registrasi']);
 
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
@@ -71,9 +73,6 @@ Route::get('/daftar-magang', function () {
 });
 
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->name('dashboard');
 
 Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
 Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
@@ -121,5 +120,33 @@ Route::resource('data-agenda', AgendaController::class);
 Route::resource('data-pengumuman', PengumumanController::class);
 Route::resource('data-pengabdian', PengabdianController::class);
 
+// Route::get('list', [SecondDBController::class, 'list']);
+
+Route::post('/registration', [BerandaController::class, 'registration'])->name('registration');
+
+Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
+    Route::put('/post_registrasi', [BerandaController::class, 'post_registrasi']);
+    // Route::get('/dashboard', function () {
+    //     return view('landingpage.dashboard');
+    // })->name('dashboard');
+    Route::get('/administrasi-pengguna', [UserDashboardController::class, 'administrasiPengguna'])->name('administrasiPengguna');
+    Route::get('/data-keluarga', [UserDashboardController::class, 'dataKeluarga'])->name('dataKeluarga');
+    Route::get('/dokumen-penting', [UserDashboardController::class, 'dokumenPenting'])->name('dokumenPenting');
+    Route::put('/administrasi-pengguna', [UserDashboardController::class, 'administrasiUpdate'])->name('administrasiUpdate');
+});
+
+Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
+    // Route::get('/dashboard', function () {
+    //     return view('admin.dashboard');
+    // })->name('dashboard');
+});
+
+// Route Login
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('logout', [AuthenticatedSessionController::class, 'logout'])->name('logout');
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
+});
 
 require __DIR__ . '/auth.php';

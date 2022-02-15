@@ -14,9 +14,15 @@ use Carbon\Carbon;
 use App\Models\Alumni;
 use App\Models\Banner;
 use App\Models\Prestasi;
+use App\Models\User;
+use App\Models\UserDB2;
+use App\Providers\RouteServiceProvider;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
 
 class BerandaController extends Controller
@@ -130,7 +136,8 @@ class BerandaController extends Controller
     public function post_registrasi(Request $request)
     {
         $client = new Client();
-        $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
+        // $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
+        $request = $client->put('http://dashboard.kampusgratis.id/api/administrasi',
         ['form_params' =>
         [
             'nama_lengkap' => $request->get('nama_lengkap'),
@@ -168,5 +175,33 @@ class BerandaController extends Controller
         ]] );
         return redirect('/')
         ->with('success', 'Selamat anda sudah terdaftar!');
+    }
+
+    public function registration(Request $request)
+    {
+        $user = UserDB2::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        // dd($user1);
+        $client = new Client();
+
+        $request = $client->post('http://127.0.0.1:8001/api/registration',
+        ['form_params' =>
+        [
+            'name' => $request->get('name'),
+            'email' => $request->get('email'),
+            'password' => $request->get('password'),
+            'user_id' => (int)$user->id,
+        ]]);
+
+        event(new Registered($user));
+
+        Auth::login($user);
+
+        return redirect(RouteServiceProvider::HOME);
+
+
     }
 }
