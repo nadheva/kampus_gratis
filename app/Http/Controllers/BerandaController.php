@@ -187,7 +187,7 @@ class BerandaController extends Controller
         // dd($user1);
         $client = new Client();
 
-        $request = $client->post('http://127.0.0.1:8001/api/registration',
+        $request = $client->post('http://dashboard.kampusgratis.id/api/registration',
         ['form_params' =>
         [
             'name' => $request->get('name'),
