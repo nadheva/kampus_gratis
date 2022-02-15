@@ -15,8 +15,9 @@
         <a class="list-group-item {{ request()->is('logout') ? 'active' : '' }} text-danger bg-danger-soft-hover" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
     @else
         <a class="list-group-item {{ request()->is('') ? 'active' : '' }} " href="{{ route('dashboard') }}"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('administrasiPengguna') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Administrasi</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('administrasiPengguna') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Data Keluarga</a>
+        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('administrasiPengguna') }}"><i class="bi bi-archive fa-fw me-2"></i>Administrasi</a>
+        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('dataKeluarga') }}"><i class="bi bi-file-earmark-person fa-fw me-2"></i>Data Keluarga</a>
+        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('dokumenPenting') }}"><i class="bi bi-file-text fa-fw me-2"></i>Dokumen yang Diperlukan</a>
         <a class="list-group-item {{ request()->is('setting') ? 'active' : '' }}" href="#"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan Akun</a>
         <a class="list-group-item {{ request()->is('logout') ? 'active' : '' }} text-danger bg-danger-soft-hover" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
     @endif

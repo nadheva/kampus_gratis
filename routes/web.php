@@ -127,10 +127,18 @@ Route::post('/registration', [BerandaController::class, 'registration'])->name('
 Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
     Route::put('/post_registrasi', [BerandaController::class, 'post_registrasi']);
     Route::get('/dashboard', function () {
-        return view('admin.user-dashboard');
+        return view('admin.dashboard');
     })->name('dashboard');
     Route::get('/administrasi-pengguna', [UserDashboardController::class, 'administrasiPengguna'])->name('administrasiPengguna');
+    Route::get('/data-keluarga', [UserDashboardController::class, 'dataKeluarga'])->name('dataKeluarga');
+    Route::get('/dokumen-penting', [UserDashboardController::class, 'dokumenPenting'])->name('dokumenPenting');
     Route::put('/administrasi-pengguna', [UserDashboardController::class, 'administrasiUpdate'])->name('administrasiUpdate');
+});
+
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
 });
 
 // Route Login

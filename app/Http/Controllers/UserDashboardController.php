@@ -6,12 +6,22 @@ use Illuminate\Http\Request;
 
 class UserDashboardController extends Controller
 {
-    function administrasiPengguna(){
-        return view ('admin.detail-user');
+    public function administrasiPengguna(){
+        return view ('admin.dashboard-user.detail-user');
     }
 
-    function administrasiUpdate()
+    public function administrasiUpdate()
     {
         
+    }
+
+    public function dataKeluarga()
+    {
+        return view('admin.dashboard-user.dataKeluarga');
+    }
+
+    public function dokumenPenting()
+    {
+        return view('admin.dashboard-user.dokumenPenting');
     }
 }
