@@ -140,7 +140,7 @@ class BerandaController extends Controller
         // dd($request);
         $userid = Auth::user()->id;
         // $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
-        $request = $client->put('http://127.0.0.1:8080/api/administrasi/'.$userid,
+        $request = $client->put('http://127.0.0.1:8000/api/administrasi',
         ['form_params' =>
         [
             'user_id' => $userid,
