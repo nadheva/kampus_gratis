@@ -144,7 +144,7 @@ class BerandaController extends Controller
         $request = $client->put('http://dashboard.kampusgratis.id/api/administrasi/'.$userid,
         ['form_params' =>
         [
-            'user_id' => (int)$userid,
+            // 'user_id' => (int)$userid,
             'nama_lengkap' => $request->get('nama_lengkap'),
             'nik' => $request->get('nik'),
             'email' => $request->get('email'),
