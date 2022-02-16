@@ -137,10 +137,10 @@ class BerandaController extends Controller
         // dd($request);
         $userid = Auth::user()->id;
         // $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
-        $request = $client->put('http://127.0.0.1:8000/api/administrasi',
+        $request1 = $client->put('http://kampusgratis.id/api/administrasi',
         ['form_params' =>
         [
-            'user_id' => (int)$userid,
+            'user_id' => $userid,
             'nama_lengkap' => $request->get('nama_lengkap'),
             'nik' => $request->get('nik'),
             'email' => $request->get('email'),
@@ -174,7 +174,7 @@ class BerandaController extends Controller
             'program' => $request->get('program'),
             'isVerified' => false,
         ]] );
-       
+        // dd($request);
         return redirect('/')
         ->with('success', $message);
         
