@@ -134,11 +134,13 @@ class BerandaController extends Controller
     {
         $message = "Update Berhasil";
         $client = new Client();
+        // dd($request);
+        $userid = Auth::user()->id;
         // $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
-        $request1 = $client->put('http://dashboard.kampusgratis.id/api/administrasi',
+        $request = $client->put('http://127.0.0.1:8000/api/administrasi',
         ['form_params' =>
         [
-            'user_id' => Auth::user()->id,
+            'user_id' => (int)$userid,
             'nama_lengkap' => $request->get('nama_lengkap'),
             'nik' => $request->get('nik'),
             'email' => $request->get('email'),
@@ -172,7 +174,7 @@ class BerandaController extends Controller
             'program' => $request->get('program'),
             'isVerified' => false,
         ]] );
-        dd($request);
+       
         return redirect('/')
         ->with('success', $message);
         
