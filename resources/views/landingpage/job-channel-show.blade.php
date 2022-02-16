@@ -9,9 +9,9 @@
             <div class="row py-5">
                 <div class="col-lg-8">
                     <!-- Badge -->
-                    <h6 class="mb-3 font-base bg-primary text-white py-2 px-4 rounded-2 d-inline-block">Digital Marketing</h6>
+                    <h6 class="mb-3 font-base bg-primary text-white py-2 px-4 rounded-2 d-inline-block">{{ $result['bidang'] }}</h6>
                     <!-- Title -->
-                    <h1>The Complete Digital Marketing Course - 12 Courses in 1</h1>
+                    <h1>{{ $result['posisi_pekerjaan'] }}</h1>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                         <ul class="nav nav-pills nav-tabs-line pt-0" id="course-pills-tab" role="tablist">
                             <!-- Tab item -->
                             <li class="nav-item me-2 me-sm-4" role="presentation">
-                                <button class="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-1" type="button" role="tab" aria-controls="course-pills-1" aria-selected="true">Overview</button>
+                                <button class="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-1" type="button" role="tab" aria-controls="course-pills-1" aria-selected="true">{{!! $result['gaji'] !!}}</button>
                             </li>
                         </ul>
                         <hr>
@@ -42,29 +42,15 @@
                             <!-- Content START -->
                             <div class="tab-pane fade show active" id="course-pills-1" role="tabpanel" aria-labelledby="course-pills-tab-1">
                                 <!-- Course detail START -->
-                                <h5 class="mb-3">Deskripsi Pekerjaan</h5>
-                                <p class="mb-3">Welcome to the <strong> Digital Marketing Ultimate Course Bundle - 12 Courses in 1 (Over 36 hours of content)</strong></p>
-                                <p class="mb-3">In this practical hands-on training, you’re going to learn to become a digital marketing expert with this <strong> ultimate course bundle that includes 12 digital marketing courses in 1!</strong></p>
-                                <p class="mb-3">If you wish to find out the skills that should be covered in a basic digital marketing course syllabus in India or anywhere around the world, then reading this blog will help. Before we delve into the advanced <strong><a href="#" class="text-reset text-decoration-underline">digital marketing course</a></strong> syllabus, let’s look at the scope of digital marketing and what the future holds.</p>
-                                <p class="mb-0">We focus a great deal on the understanding of behavioral psychology and influence triggers which are crucial for becoming a well rounded Digital Marketer. We understand that theory is important to build a solid foundation, we understand that theory alone isn’t going to get the job done so that’s why this course is packed with practical hands-on examples that you can follow step by step.</p>
-                                
+                                <h5 class="mb-3">Requirement</h5>
+                                <p class="mb-3">
+                                    {{!! $result['requirement'] !!}}
+                                </p>
                                 <!-- List content -->
-                                <h5 class="mt-4">What you’ll learn</h5>
-                                <ul class="list-group list-group-borderless mb-3">
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Digital marketing course introduction</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Customer Life cycle</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>What is Search engine optimization(SEO)</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Facebook ADS</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Facebook Messenger Chatbot</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Search engine optimization tools</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Why SEO</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>URL Structure</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Featured Snippet</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>SEO tips and tricks</li>
-                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i class="fas fa-check-circle text-success me-2"></i>Google tag manager</li>
-                                </ul>
-    
-                                <p class="mb-0">As it so contrasted oh estimating instrument. Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. </p>
+                                <h5 class="mt-4">Job Desk</h5>
+                                <p>
+                                    {{!! $result['job_desk'] !!}}
+                                </p>
                                 <!-- Course detail END -->
     
                             </div>
@@ -161,16 +147,11 @@
     
                             <!-- Tags START -->
                             <div class="card card-body shadow p-4">
-                                <h4 class="mb-3">Pekerjaan Lainnya</h4>
+                                <h4 class="mb-3">Bidang Pekerjaan</h4>
                                 <ul class="list-inline mb-0">
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">blog</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">business</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">theme</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">bootstrap</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">data science</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">web development</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">tips</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">machine learning</a> </li>
+                                    @foreach($hasil["data"] as  $key => $value)
+                                    <li class="list-inline-item"> <a class="btn btn-outline-light btn-sm" href="#">{{$value["bidang"]}}</a> </li>
+                                    @endforeach
                                 </ul>
                             </div>	
                             <!-- Tags END -->
@@ -191,7 +172,7 @@
         <div class="container">
             <!-- Title -->
             <div class="row mb-4">
-                <h2 class="mb-0">{{ $result->posisi_pekerjaan }}</h2>
+                <h2 class="mb-0">Lowongan Pekerjaan</h2>
             </div>
     
             <div class="row">
