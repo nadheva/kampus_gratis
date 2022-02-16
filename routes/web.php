@@ -125,7 +125,7 @@ Route::resource('data-pengabdian', PengabdianController::class);
 Route::post('/registration', [BerandaController::class, 'registration'])->name('registration');
 
 Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
-    Route::put('/post_registrasi', [BerandaController::class, 'post_registrasi']);
+    Route::post('/post_registrasi', [BerandaController::class, 'post_registrasi']);
     // Route::get('/dashboard', function () {
     //     return view('landingpage.dashboard');
     // })->name('dashboard');

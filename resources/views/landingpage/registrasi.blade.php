@@ -1,6 +1,13 @@
 <x-guest-layout>
     <!-- =======================
 Main part START -->
+@if($message = session('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Sukses</strong> {{$message}}
+            </button>
+        </div>
+    @endif
+
 <section>
 	<div class="container">
 		<div class="row g-5 justify-content-between">
@@ -16,9 +23,7 @@ Main part START -->
 				<!-- Form START -->
 				<form class="row g-3" action="/post_registrasi" method="POST" enctype="multipart/form-data">
 					@csrf
-					@method('PUT')
 					<h5 class="mb-0">Data Diri</h5>
-
 					<!-- First name -->
 					<div class="col-12">
 						<div class="row g-xl-0 align-items-center">

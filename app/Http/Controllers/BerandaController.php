@@ -132,11 +132,13 @@ class BerandaController extends Controller
 
     public function post_registrasi(Request $request)
     {
+        $message = "Update Berhasil";
         $client = new Client();
         // $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
-        $request = $client->put('http://dashboard.kampusgratis.id/api/administrasi',
+        $request1 = $client->put('http://dashboard.kampusgratis.id/api/administrasi',
         ['form_params' =>
         [
+            'user_id' => Auth::user()->id,
             'nama_lengkap' => $request->get('nama_lengkap'),
             'nik' => $request->get('nik'),
             'email' => $request->get('email'),
@@ -170,8 +172,10 @@ class BerandaController extends Controller
             'program' => $request->get('program'),
             'isVerified' => false,
         ]] );
+        dd($request);
         return redirect('/')
-        ->with('success', 'Selamat anda sudah terdaftar!');
+        ->with('success', $message);
+        
     }
 
     public function registration(Request $request)
@@ -184,7 +188,7 @@ class BerandaController extends Controller
         // dd($user1);
         $client = new Client();
 
-        $request = $client->post('http://127.0.0.1:8001/api/registration',
+        $request = $client->post('http://dashboard.kampusgratis.id/api/registration',
         ['form_params' =>
         [
             'name' => $request->get('name'),
