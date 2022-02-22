@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index() {
-        // $banner = Banner::all();
-        return view('admin.dashboard');
+        return view('admin.index');
     }
 }

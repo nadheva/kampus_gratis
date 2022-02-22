@@ -74,34 +74,36 @@ Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionS
 Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 
 Route::prefix('admin')->group(function () {
-    Route::resource('detail', DetailController::class);
-    Route::resource('data-penelitian', PenelitianController::class);
-    Route::resource('data-prestasi', PrestasiController::class);
-    Route::resource('data-berita', BeritaController::class);
-    Route::resource('data-faq', QuestionController::class);
-    Route::resource('data-fitur', FiturController::class);
+    Route::group(['middleware' => 'auth'], function () {
+        Route::get('logout', [AuthenticatedSessionController::class, 'logout'])->name('logout');
+        Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+        Route::resource('detail', DetailController::class);
+        Route::resource('data-penelitian', PenelitianController::class);
+        Route::resource('data-prestasi', PrestasiController::class);
+        Route::resource('data-berita', BeritaController::class);
+        Route::resource('data-faq', QuestionController::class);
+        Route::resource('data-fitur', FiturController::class);
 
 
-    Route::get('/tentang', [TentangController::class, 'view']);
+        Route::get('/tentang', [TentangController::class, 'view']);
 
-    Route::resource('banner', BannerController::class);
-    Route::resource('guru-besar', GuruBesarController::class);
-    Route::resource('agenda', AgendaController::class);
-    Route::resource('pengumuman', PengumumanController::class);
-    Route::resource('pengabdian', PengabdianController::class);
-    Route::resource('alumni', AlumniController::class);
+        Route::resource('banner', BannerController::class);
+        Route::resource('guru-besar', GuruBesarController::class);
+        Route::resource('agenda', AgendaController::class);
+        Route::resource('pengumuman', PengumumanController::class);
+        Route::resource('pengabdian', PengabdianController::class);
+        Route::resource('alumni', AlumniController::class);
 
-    Route::resource('data-jurnal', JurnalController::class);
-    Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
+        Route::resource('data-jurnal', JurnalController::class);
+        Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
+        Route::resource('data-banner', BannerController::class);
+        Route::resource('data-guru-besar', GuruBesarController::class);
+        Route::resource('data-agenda', AgendaController::class);
+        Route::resource('data-pengumuman', PengumumanController::class);
+        Route::resource('data-pengabdian', PengabdianController::class);
+    });
 });
-
-
-
-Route::resource('data-banner', BannerController::class);
-Route::resource('data-guru-besar', GuruBesarController::class);
-Route::resource('data-agenda', AgendaController::class);
-Route::resource('data-pengumuman', PengumumanController::class);
-Route::resource('data-pengabdian', PengabdianController::class);
 
 
 Route::post('/registration', [BerandaController::class, 'registration'])->name('registration');
@@ -118,9 +120,5 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
 // Route Login
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('logout', [AuthenticatedSessionController::class, 'logout'])->name('logout');
-    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-});
 
 require __DIR__ . '/auth.php';
