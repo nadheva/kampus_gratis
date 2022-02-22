@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\API\JobChannelController;
+// use App\Http\Controllers\API\JobChannelController;
 use Illuminate\Support\Facades\Route;
 
 /*
