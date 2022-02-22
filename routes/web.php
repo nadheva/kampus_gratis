@@ -119,7 +119,7 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 // Route Login
 Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', [AuthenticatedSessionController::class, 'logout'])->name('logout');
-    Route::get('/dashboard', function () {
+    Route::get('dashboard', function () {
         return view('admin.dashboard');
     })->name('dashboard');
 });
