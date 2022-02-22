@@ -18,6 +18,7 @@ use App\Http\Controllers\PengabdianController;
 use App\Http\Controllers\FiturController;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SecondDBController;
 use App\Http\Controllers\UserDashboardController;
 
@@ -119,9 +120,7 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 // Route Login
 Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', [AuthenticatedSessionController::class, 'logout'])->name('logout');
-    Route::get('dashboard', function () {
-        return view('admin.dashboard');
-    })->name('dashboard');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
 require __DIR__ . '/auth.php';
