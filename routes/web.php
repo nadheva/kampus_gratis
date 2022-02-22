@@ -32,9 +32,6 @@ use App\Http\Controllers\UserDashboardController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('landingpage.index');
-// });
 
 Route::get('/tentang', [BerandaController::class, 'tentang'])->name('tentang');
 Route::get('/mahasiswa', [BerandaController::class, 'mahasiswa'])->name('mahasiswa');
@@ -60,10 +57,6 @@ Route::get('/sarjana', function () {
 Route::get('/peraturan-akademik-sarjana', function () {
     return view('landingpage.pendidikan.sarjana.peraturan-akademik');
 });
-// Route::get('/registrasi', function () {
-//     return view('landingpage.registrasi');
-// });
-
 Route::get('/magang', function () {
     return view('landingpage.magang.index');
 });
@@ -101,18 +94,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/mahasiswa', [MahasiswaController::class, 'view']);
 });
 
-//Route Login
-// Route::group(['middleware' => 'auth'], function () {
-//     Route::get('/', [DashboardController::class, 'Dashboard'])
-//             ->name('Dashboard');
-//     Route::get('/form', function () {
-//         return view('form');
-//     })->name('form');
-//     Route::get('/tab', function () {
-//         return view('tab');
-//     })->name('form');
-//     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
-// });
+
 
 Route::resource('data-banner', BannerController::class);
 Route::resource('data-guru-besar', GuruBesarController::class);
@@ -120,15 +102,11 @@ Route::resource('data-agenda', AgendaController::class);
 Route::resource('data-pengumuman', PengumumanController::class);
 Route::resource('data-pengabdian', PengabdianController::class);
 
-// Route::get('list', [SecondDBController::class, 'list']);
 
 Route::post('/registration', [BerandaController::class, 'registration'])->name('registration');
 
 Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
     Route::put('/post_registrasi', [BerandaController::class, 'post_registrasi']);
-    // Route::get('/dashboard', function () {
-    //     return view('landingpage.dashboard');
-    // })->name('dashboard');
     Route::get('/administrasi-pengguna', [UserDashboardController::class, 'administrasiPengguna'])->name('administrasiPengguna');
     Route::get('/data-keluarga', [UserDashboardController::class, 'dataKeluarga'])->name('dataKeluarga');
     Route::get('/dokumen-penting', [UserDashboardController::class, 'dokumenPenting'])->name('dokumenPenting');
@@ -136,9 +114,6 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 });
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
-    // Route::get('/dashboard', function () {
-    //     return view('admin.dashboard');
-    // })->name('dashboard');
 });
 
 // Route Login
