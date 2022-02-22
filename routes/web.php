@@ -76,7 +76,7 @@ Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 Route::prefix('admin')->group(function () {
     Route::group(['middleware' => 'auth'], function () {
         Route::get('logout', [AuthenticatedSessionController::class, 'logout'])->name('logout');
-        Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
         Route::resource('detail', DetailController::class);
         Route::resource('data-penelitian', PenelitianController::class);
