@@ -124,12 +124,12 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
-Route::get('/testing_byyuda', function(){
+
+Route::get('/test',function() {
     return response()->json([
-        'msg'=>'Testing by Yuda'
+        "pesan"=>"Hello World!"
     ]);
 });
-
 // Route Login
 
 require __DIR__ . '/auth.php';
