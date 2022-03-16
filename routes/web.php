@@ -33,11 +33,6 @@ use App\Http\Controllers\UserDashboardController;
 |
 */
 
-Route::get('/test-ojan', function() {
-    return response()->json([
-        "pesan"=>"Test123"
-    ]);
-});
 
 Route::get('/tentang', [BerandaController::class, 'tentang'])->name('tentang');
 Route::get('/mahasiswa', [BerandaController::class, 'mahasiswa'])->name('mahasiswa');
@@ -125,12 +120,6 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
 Route::get('/testing_byyuda', function(){
-    return response()->json([
-        'msg'=>'Testing by Yuda'
-    ]);
-});
-
-Route::get('/testing_byyudaaa', function(){
     return response()->json([
         'msg'=>'Testing by Yuda'
     ]);
