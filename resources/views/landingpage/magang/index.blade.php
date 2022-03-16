@@ -205,7 +205,7 @@
             <div class="col-7 text-center mx-auto position-relative mt-4">
                 {{-- <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">DAFTAR MAGANG</a> --}}
                 <div class="d-grid gap-2">
-                    <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK" style="font-size: 25px; font-weight:bold;">DAFTAR MAGANG</a>
+                    <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">DAFTAR MAGANG</a>
                     {{--<a href="https://forms.gle/id6v3eTRe8CfCJLf7"><button class="btn btn-warning btn-lg mt-2" type="button" >Button</button></a>--}}
                 </div>
             </div>
