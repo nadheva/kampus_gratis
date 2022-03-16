@@ -130,6 +130,12 @@ Route::get('/testing_byyuda', function(){
     ]);
 });
 
+Route::get('/testing_byyuda', function(){
+    return response()->json([
+        'msg'=>'Testing by Yuda'
+    ]);
+});
+
 // Route Login
 
 require __DIR__ . '/auth.php';
