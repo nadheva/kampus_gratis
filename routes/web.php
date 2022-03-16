@@ -130,7 +130,7 @@ Route::get('/testing_byyuda', function(){
     ]);
 });
 
-Route::get('/testing_byyuda', function(){
+Route::get('/testing_byyudaaa', function(){
     return response()->json([
         'msg'=>'Testing by Yuda'
     ]);
