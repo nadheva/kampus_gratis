@@ -119,6 +119,9 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
+Route::get('/doc', function(){
+    return response()->json();
+});
 
 // Route Login
 
