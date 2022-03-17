@@ -119,12 +119,6 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
-Route::get('/testing', function(){
-    return response()->json([
-        'msg' => 'test url'
-    ]);
-});
-
 
 // Route Login
 
