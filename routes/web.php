@@ -121,6 +121,8 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
+Route::middleware(['auth', 'role:admin,mahasiswa,user'])->group(function () {
+});
 
 Route::get('/testingupstream', function(){
     return response()->json([
