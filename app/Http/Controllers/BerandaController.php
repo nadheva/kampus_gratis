@@ -192,7 +192,7 @@ class BerandaController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        dd($user);
+
         $client = new Client();
 
         $request = $client->post(
