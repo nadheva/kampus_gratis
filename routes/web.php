@@ -122,23 +122,6 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
-Route::get('/testingupstream', function(){
-    return response()->json([
-        'msg' => 'upstream'
-    ]);
-});
-
-Route::get('/testingupstream3', function(){
-    return response()->json([
-        'msg' => 'upstream'
-    ]);
-});
-
-Route::get('/testingupstream2', function(){
-    return response()->json([
-        'msg' => 'upstream'
-    ]);
-});
 // Route Login
 
 require __DIR__ . '/auth.php';
