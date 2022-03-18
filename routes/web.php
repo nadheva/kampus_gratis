@@ -127,6 +127,12 @@ Route::get('/testingupstream', function(){
         'msg' => 'upstream'
     ]);
 });
+
+Route::get('/testingupstream2', function(){
+    return response()->json([
+        'msg' => 'upstream'
+    ]);
+});
 // Route Login
 
 require __DIR__ . '/auth.php';
