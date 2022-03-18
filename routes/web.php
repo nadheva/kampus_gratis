@@ -128,6 +128,12 @@ Route::get('/testingupstream', function(){
     ]);
 });
 
+Route::get('/testingupstream3', function(){
+    return response()->json([
+        'msg' => 'upstream'
+    ]);
+});
+
 Route::get('/testingupstream2', function(){
     return response()->json([
         'msg' => 'upstream'
