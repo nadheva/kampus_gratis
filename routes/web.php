@@ -33,7 +33,6 @@ use App\Http\Controllers\UserDashboardController;
 |
 */
 
-
 Route::get('/tentang', [BerandaController::class, 'tentang'])->name('tentang');
 Route::get('/mahasiswa', [BerandaController::class, 'mahasiswa'])->name('mahasiswa');
 Route::get('/pengabdian', [BerandaController::class, 'pengabdian'])->name('pengabdian');
