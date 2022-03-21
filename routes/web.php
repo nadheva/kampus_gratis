@@ -33,7 +33,6 @@ use App\Http\Controllers\UserDashboardController;
 |
 */
 
-
 Route::get('/tentang', [BerandaController::class, 'tentang'])->name('tentang');
 Route::get('/mahasiswa', [BerandaController::class, 'mahasiswa'])->name('mahasiswa');
 Route::get('/pengabdian', [BerandaController::class, 'pengabdian'])->name('pengabdian');
@@ -55,8 +54,8 @@ Route::get('/pendidikan', function () {
 Route::get('/sarjana', function () {
     return view('landingpage.pendidikan.sarjana');
 });
-Route::get('/diploma', function () {
-    return view('landingpage.pendidikan.diploma');
+Route::get('/kursus', function () {
+    return view('landingpage.pendidikan.kursus');
 });
 Route::get('/peraturan-akademik-sarjana', function () {
     return view('landingpage.pendidikan.sarjana.peraturan-akademik');
@@ -121,7 +120,17 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
+Route::middleware(['auth', 'role:admin,mahasiswa,user'])->group(function () {
+});
 
+Route::get('/testlagi', function(){
+    return response()->json([
+        'msg' => 'Test aja'
+    ]);
+});
+
+// Tambahin komen
 // Route Login
 
+// Route Login
 require __DIR__ . '/auth.php';
