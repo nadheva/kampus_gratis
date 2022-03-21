@@ -1733,18 +1733,6 @@
         },
         {
             "name": "laravel/framework",
-<<<<<<< HEAD
-            "version": "v8.83.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "33b1b981266e3a19fbc826b60c4a6847e311ac95"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/33b1b981266e3a19fbc826b60c4a6847e311ac95",
-                "reference": "33b1b981266e3a19fbc826b60c4a6847e311ac95",
-=======
             "version": "v8.83.4",
             "source": {
                 "type": "git",
@@ -1755,7 +1743,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/97a549f1a83cfb32dab1eecab4c4d40a984a72b5",
                 "reference": "97a549f1a83cfb32dab1eecab4c4d40a984a72b5",
->>>>>>> upstream/master
                 "shasum": ""
             },
             "require": {
@@ -1915,11 +1902,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-<<<<<<< HEAD
-            "time": "2022-03-15T13:37:44+00:00"
-=======
             "time": "2022-03-08T16:12:54+00:00"
->>>>>>> upstream/master
         },
         {
             "name": "laravel/sanctum",
@@ -7395,18 +7378,6 @@
         },
         {
             "name": "laravel/sail",
-<<<<<<< HEAD
-            "version": "v1.13.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sail.git",
-                "reference": "2092e1ce6e4ba534bff443de8c3a7bb280aba121"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/2092e1ce6e4ba534bff443de8c3a7bb280aba121",
-                "reference": "2092e1ce6e4ba534bff443de8c3a7bb280aba121",
-=======
             "version": "v1.13.6",
             "source": {
                 "type": "git",
@@ -7417,7 +7388,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sail/zipball/6205041336b09b965af1d6af29261584e787bf52",
                 "reference": "6205041336b09b965af1d6af29261584e787bf52",
->>>>>>> upstream/master
                 "shasum": ""
             },
             "require": {
@@ -7464,11 +7434,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-<<<<<<< HEAD
-            "time": "2022-03-11T14:11:15+00:00"
-=======
             "time": "2022-03-07T15:35:47+00:00"
->>>>>>> upstream/master
         },
         {
             "name": "mockery/mockery",
@@ -8346,18 +8312,6 @@
         },
         {
             "name": "phpunit/phpunit",
-<<<<<<< HEAD
-            "version": "9.5.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "35ea4b7f3acabb26f4bb640f8c30866c401da807"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/35ea4b7f3acabb26f4bb640f8c30866c401da807",
-                "reference": "35ea4b7f3acabb26f4bb640f8c30866c401da807",
-=======
             "version": "9.5.18",
             "source": {
                 "type": "git",
@@ -8368,7 +8322,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1b5856028273bfd855e60a887278857d872ec67a",
                 "reference": "1b5856028273bfd855e60a887278857d872ec67a",
->>>>>>> upstream/master
                 "shasum": ""
             },
             "require": {
@@ -8446,11 +8399,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.19"
-=======
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.18"
->>>>>>> upstream/master
             },
             "funding": [
                 {
@@ -8462,11 +8411,7 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-            "time": "2022-03-15T09:57:31+00:00"
-=======
             "time": "2022-03-08T06:52:28+00:00"
->>>>>>> upstream/master
         },
         {
             "name": "sebastian/cli-parser",
