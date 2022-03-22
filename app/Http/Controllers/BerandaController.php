@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Agenda;
 use App\Models\Berita;
 use App\Models\GuruBesar;
@@ -73,7 +74,11 @@ class BerandaController extends Controller
         $question = UserQuestion::all()->count();
         $answer = UserQuestion::all()->sum('isanswer');
 
-        return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
+        if ($userQuestion == null) {
+            return view('landingpage.faq');
+        } else if ($userQuestion != null) {
+            return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
+        }
     }
 
     public function questionStore(Request $request)
@@ -102,7 +107,7 @@ class BerandaController extends Controller
         $banner = Banner::all();
         $sambutan = Berita::where('kategori', 'sambutan')->first();
         // dd($sambutan);
-        return view('landingpage.index',compact('banner', 'sambutan'));
+        return view('landingpage.index', compact('banner', 'sambutan'));
     }
 
     public function jobchannel()
@@ -111,20 +116,20 @@ class BerandaController extends Controller
         // $guzzleClient = new \GuzzleHttp\Client(['verify' => false]);
         $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel');
         $response = $request->getBody()->getContents();
-        $result = json_decode($response,true);
+        $result = json_decode($response, true);
         return view('landingpage.job-channel', compact('result'));
     }
 
     public function showJobchannel($id)
     {
-       $client = new Client();
+        $client = new Client();
         // $guzzleClient = new \GuzzleHttp\Client(['verify' => false]);
-        $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel/'.$id);
+        $request = $client->get('http://dashboard.kampusgratis.id/api/jobChannel/' . $id);
         $bidang = $client->get('http://dashboard.kampusgratis.id/api/jobChannel');
         $response = $request->getBody()->getContents();
         $bidangResponse = $bidang->getBody()->getContents();
-        $result = json_decode($response,true); 
-        $hasil = json_decode($bidangResponse,true); 
+        $result = json_decode($response, true);
+        $hasil = json_decode($bidangResponse, true);
         return view('landingpage.job-channel-show', compact('result', 'hasil'));
     }
 
@@ -140,47 +145,48 @@ class BerandaController extends Controller
         // dd($request);
         $userid = Auth::user()->id;
         // $request = $client->post('http://dashboard.kampusgratis.id/api/administrasi',
-        $request = $client->put('http://dashboard.kampusgratis.id/api/administrasi/'.$userid,
-        ['form_params' =>
-        [
-            'user_id' => (int)$userid,
-            'nama_lengkap' => $request->get('nama_lengkap'),
-            'nik' => $request->get('nik'),
-            'email' => $request->get('email'),
-            'prodi' => $request->get('prodi'),
-            'tahun_ajar' => $request->get('tahun_ajar'),
-            'semester' => $request->get('semester'),
-            'alamat_domisili' => $request->get('alamat_domisili'),
-            'alamat_ktp' => $request->get('alamat_ktp'),
-            'no_hp' => $request->get('no_hp'),
-            'tempat_lahir' => $request->get('tempat_lahir'),
-            'tgl_lahir' => $request->get('tgl_lahir'),
-            'kelamin' => $request->get('kelamin'),
-            'kebutuhan_khusus' => $request->get('kebutuhan_khusus'),
-            'tinggal' => $request->get('tinggal'),
-            'pembiaya' => $request->get('pembiaya'),
-            'nama_ayah' => $request->get('nama_ayah'),
-            'nama_ibu' => $request->get('nama_ibu'),
-            'kerja_ayah' => $request->get('kerja_ayah'),
-            'kerja_ibu' => $request->get('kerja_ibu'),
-            'pekerjaan' => $request->get('pekerjaan'),
-            'penghasilan' => $request->get('penghasilan'),
-            'penghasilan_ayah' => $request->get('penghasilan_ayah'),
-            'penghasilan_ibu' => $request->get('penghasilan_ibu'),
-            'pakta_integritas' => $request->get('pakta_integritas'),
-            'scan_ktp' => $request->get('scan_ktp'),
-            'scan_kk' => $request->get('scan_kk'),
-            'scan_ijazah' => $request->get('scan_ijazah'),
-            'pas_foto' => $request->get('pas_foto'),
-            'transkip' => $request->get('transkip'),
-            'surat_rekomendasi' => $request->get('surat_rekomendasi'),
-            'program_id' => $request->get('program_id'),
-            'isVerified' => false,
-        ]] );
+        $request = $client->put(
+            'http://dashboard.kampusgratis.id/api/administrasi/' . $userid,
+            ['form_params' =>
+            [
+                'user_id' => (int)$userid,
+                'nama_lengkap' => $request->get('nama_lengkap'),
+                'nik' => $request->get('nik'),
+                'email' => $request->get('email'),
+                'prodi' => $request->get('prodi'),
+                'tahun_ajar' => $request->get('tahun_ajar'),
+                'semester' => $request->get('semester'),
+                'alamat_domisili' => $request->get('alamat_domisili'),
+                'alamat_ktp' => $request->get('alamat_ktp'),
+                'no_hp' => $request->get('no_hp'),
+                'tempat_lahir' => $request->get('tempat_lahir'),
+                'tgl_lahir' => $request->get('tgl_lahir'),
+                'kelamin' => $request->get('kelamin'),
+                'kebutuhan_khusus' => $request->get('kebutuhan_khusus'),
+                'tinggal' => $request->get('tinggal'),
+                'pembiaya' => $request->get('pembiaya'),
+                'nama_ayah' => $request->get('nama_ayah'),
+                'nama_ibu' => $request->get('nama_ibu'),
+                'kerja_ayah' => $request->get('kerja_ayah'),
+                'kerja_ibu' => $request->get('kerja_ibu'),
+                'pekerjaan' => $request->get('pekerjaan'),
+                'penghasilan' => $request->get('penghasilan'),
+                'penghasilan_ayah' => $request->get('penghasilan_ayah'),
+                'penghasilan_ibu' => $request->get('penghasilan_ibu'),
+                'pakta_integritas' => $request->get('pakta_integritas'),
+                'scan_ktp' => $request->get('scan_ktp'),
+                'scan_kk' => $request->get('scan_kk'),
+                'scan_ijazah' => $request->get('scan_ijazah'),
+                'pas_foto' => $request->get('pas_foto'),
+                'transkip' => $request->get('transkip'),
+                'surat_rekomendasi' => $request->get('surat_rekomendasi'),
+                'program_id' => $request->get('program_id'),
+                'isVerified' => false,
+            ]]
+        );
         // dd($request);
         return redirect('/')
-        ->with('success', $message);
-        
+            ->with('success', $message);
     }
 
     public function registration(Request $request)
@@ -190,24 +196,25 @@ class BerandaController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        // dd($user1);
+
         $client = new Client();
 
-        $request = $client->post('http://dashboard.kampusgratis.id/api/registration',
-        ['form_params' =>
-        [
-            'name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'password' => $request->get('password'),
-            'user_id' => (int)$user->id,
-        ]]);
+        $request = $client->post(
+            'http://dashboard.kampusgratis.id/api/registration',
+            ['form_params' =>
+            [
+                'name' => $request->get('name'),
+                'email' => $request->get('email'),
+                'password' => $request->get('password'),
+                'user_id' => (int)$user->id,
+            ]]
+        );
 
         event(new Registered($user));
 
-        Auth::login($user);
+        // Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
-
-
+        // return redirect(RouteServiceProvider::HOME);
+        return redirect("/login");
     }
 }
