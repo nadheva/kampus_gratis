@@ -205,8 +205,8 @@
             <div class="col-7 text-center mx-auto position-relative mt-4">
                 {{-- <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">DAFTAR MAGANG</a> --}}
                 <div class="d-grid gap-2">
-                    <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">DAFTAR MAGANG</a>
-                    {{-- <button class="btn btn-primary" type="button">Button</button> --}}
+                    <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK" style="font-size: 25px; font-weight:bold;">DAFTAR MAGANG</a>
+                    {{--<a href="https://forms.gle/id6v3eTRe8CfCJLf7"><button class="btn btn-warning btn-lg mt-2" type="button" >Button</button></a>--}}
                 </div>
             </div>
         </div>
@@ -277,7 +277,7 @@
                     <!-- Title and button -->
                     <div class="d-sm-flex justify-content-sm-between">
                         <h2 class="mb-0">Peserta Magang Kami</h2>
-                        {{-- <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK">Daftar Magang</a> --}}
+                        <a href="https://forms.gle/id6v3eTRe8CfCJLf7" class="btn btn-warning btn-lg mt-2" target="_BLANK" style="font-size:25px;font-weight:bold;">Daftar Magang</a>
                     </div>
                     
                     <!-- Slider START -->
