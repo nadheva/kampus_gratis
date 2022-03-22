@@ -93,7 +93,8 @@
                                             <span
                                                 class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
                                                     class="bi bi-envelope-fill"></i></span>
-                                            <input type="email" name="email" class="form-control border-0 bg-light rounded-end ps-1"
+                                            <input type="email" name="email"
+                                                class="form-control border-0 bg-light rounded-end ps-1"
                                                 placeholder="E-mail" id="exampleInputEmail1">
                                         </div>
                                     </div>
@@ -127,7 +128,8 @@
                                     <!-- Button -->
                                     <div class="align-items-center mt-0">
                                         <div class="d-grid">
-                                            <button type="submit" class="btn btn-primary mb-0" type="button">Login</button>
+                                            <button type="submit" class="btn btn-primary mb-0"
+                                                type="button">Login</button>
                                         </div>
                                     </div>
                                 </form>

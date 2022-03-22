@@ -76,7 +76,7 @@
 
                                 <!-- Form START -->
                                 {{-- <form action="{{ route('register') }}" method="post"> --}}
-                                    <form action="{{ route('registration') }}" method="post">
+                                <form action="{{ route('registration') }}" method="post">
                                     @csrf
                                     <!-- Name -->
                                     <div class="mb-4">
@@ -87,7 +87,7 @@
                                                     class="bi bi-envelope-fill"></i></span>
                                             <input name="name" type="text"
                                                 class="form-control border-0 bg-light rounded-end ps-1"
-                                                placeholder="Username" >
+                                                placeholder="Username">
                                         </div>
                                     </div>
                                     <!-- Email -->

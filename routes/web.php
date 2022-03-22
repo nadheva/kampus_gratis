@@ -33,7 +33,6 @@ use App\Http\Controllers\UserDashboardController;
 |
 */
 
-
 Route::get('/tentang', [BerandaController::class, 'tentang'])->name('tentang');
 Route::get('/mahasiswa', [BerandaController::class, 'mahasiswa'])->name('mahasiswa');
 Route::get('/pengabdian', [BerandaController::class, 'pengabdian'])->name('pengabdian');
@@ -120,6 +119,14 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 });
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
+});
+Route::middleware(['auth', 'role:admin,mahasiswa,user'])->group(function () {
+});
+
+Route::get('/testlagi', function(){
+    return response()->json([
+        'msg' => 'Test aja'
+    ]);
 });
 
 // Route Login
