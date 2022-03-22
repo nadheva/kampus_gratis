@@ -74,7 +74,11 @@ class BerandaController extends Controller
         $question = UserQuestion::all()->count();
         $answer = UserQuestion::all()->sum('isanswer');
 
-        return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
+        if ($userQuestion == null) {
+            return view('landingpage.faq');
+        } else if ($userQuestion != null) {
+            return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
+        }
     }
 
     public function questionStore(Request $request)
