@@ -192,7 +192,7 @@ class BerandaController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        dd($user);
+
         $client = new Client();
 
         $request = $client->post(
@@ -208,8 +208,9 @@ class BerandaController extends Controller
 
         event(new Registered($user));
 
-        Auth::login($user);
+        // Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        // return redirect(RouteServiceProvider::HOME);
+        return redirect("/login");
     }
 }
