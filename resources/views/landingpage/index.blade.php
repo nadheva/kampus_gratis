@@ -162,7 +162,7 @@ Main Banner START -->
 
 				<div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
 					<!-- Button -->
-					<a href="#" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Daftar Sekarang!!</a>
+					<a href="/register" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Daftar Sekarang!!</a>
 					<!-- Video button -->
           <a data-glightbox data-gallery="office-tour" href="https://www.youtube.com/embed/tXHviS-4ygo" class="ms-0 ms-sm-4 d-block">
 						<div class="btn btn-round btn-primary-shadow mb-0 me-3 align-middle d-inline-block"> <i class="fas fa-play"></i></div>
@@ -779,7 +779,7 @@ Action box START -->
 						</div>
 						<!-- Button -->
 						<div class="col-md-6 col-lg-3 text-md-end">
-							<a href="#" class="btn btn-white mb-0 btn-lg">Daftar Sekarang!</a>
+							<a href="/register" class="btn btn-white mb-0 btn-lg">Daftar Sekarang!</a>
 						</div>		
 					</div> <!-- Row END -->
 				</div>

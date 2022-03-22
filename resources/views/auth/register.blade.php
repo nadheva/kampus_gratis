@@ -167,7 +167,7 @@
 
                                 <!-- Sign up link -->
                                 <div class="mt-4 text-center">
-                                    <span>Already have an account?<a href="sign-in.html"> Sign in here</a></span>
+                                    <span>Already have an account?<a href="/login"> Sign in here</a></span>
                                 </div>
                             </div>
                         </div>
