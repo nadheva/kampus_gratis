@@ -129,8 +129,5 @@ Route::get('/testlagi', function(){
     ]);
 });
 
-// Tambahin komen
-// Route Login
-
 // Route Login
 require __DIR__ . '/auth.php';
