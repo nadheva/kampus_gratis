@@ -167,7 +167,6 @@
                     <a class="nav-link" href="{{ route('register') }}">Daftar</a>
                 </li>
         </ul>
-            <!-- <a href="{{ route('login') }}" class="btn btn-primary py-2 px-3">Login</a> -->
         @endif
         <!-- Profile START -->
     </div>
