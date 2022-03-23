@@ -162,7 +162,7 @@ Main Banner START -->
 
 				<div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
 					<!-- Button -->
-					<a href="#" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Daftar Sekarang!!</a>
+					<a href="{{ route('register') }}" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Daftar Sekarang!!</a>
 					<!-- Video button -->
           <a data-glightbox data-gallery="office-tour" href="https://www.youtube.com/embed/tXHviS-4ygo" class="ms-0 ms-sm-4 d-block">
 						<div class="btn btn-round btn-primary-shadow mb-0 me-3 align-middle d-inline-block"> <i class="fas fa-play"></i></div>
@@ -346,12 +346,9 @@ Counter END -->
 
 			<div class="col-lg-7 mt-4 mt-lg-0">
 				<!-- Title -->
-				<h2 class="mb-3">{{$sambutan->judul}}</h2>
+				<h2 class="mb-3">@if($sambutan != null) {{$sambutan->judul}} @endif</h2>
 
 				<!-- Content -->
-				{{-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					{{$sambutan->isi}}
-				</p> --}}
 				<p align='justify' style="font-size: 13px">
 					Kampus Gratis, sebagai perguruan tinggi untuk mengemban misi memeratakan pendidikan bagi seluruh warga Negara Indonesia dimanapun mereka berada. Mulai didirikan pada tahun 2021 dan dirancang untuk memfasilitasi mereka yang tidak mempunyai kesempatan menyelesaikan studinya di perguruan tinggi karena berbagai hambatan termasuk faktor ekonomi, geografis dan demografis. Oleh karenanya, Kampus Gratis hadir untuk menjangkau yang tak terjangkau. Website ini adalah salah satu media untuk memperkenalkan dan memberikan informasi secara lengkap mengenai Kampus Gratis, baik untuk mahasiswa maupun masyarakat umum. Kampus Gratis secara konsisten dan konstruktif terus berupaya dan menunjukkan komitmen untuk menjadi yang terbaik dalam memberikan layanan pendidikan melalui sistem pendidikan tinggi terbuka dan jarak jauh (PTTJJ), yang disesuaikan dengan kebutuhan industri dan perkembangan teknologi.
 					<br> <br>
@@ -779,7 +776,7 @@ Action box START -->
 						</div>
 						<!-- Button -->
 						<div class="col-md-6 col-lg-3 text-md-end">
-							<a href="#" class="btn btn-white mb-0 btn-lg">Daftar Sekarang!</a>
+							<a href="{{ route('register') }}" class="btn btn-white mb-0 btn-lg">Daftar Sekarang!</a>
 						</div>		
 					</div> <!-- Row END -->
 				</div>
