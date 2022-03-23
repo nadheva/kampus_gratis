@@ -54,6 +54,9 @@ Route::get('/pendidikan', function () {
 Route::get('/sarjana', function () {
     return view('landingpage.pendidikan.sarjana');
 });
+Route::get('/diploma', function () {
+    return view('landingpage.pendidikan.diploma.diploma');
+});
 Route::get('/kursus', function () {
     return view('landingpage.pendidikan.kursus');
 });
