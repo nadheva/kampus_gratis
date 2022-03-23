@@ -3,12 +3,12 @@
         <div class="container">
             <div class="row position-relative">
                 <!-- SVG decoration -->
-                <figure class="position-absolute top-0 start-0 d-none d-sm-block">	
+                <figure class="position-absolute top-0 start-0 d-none d-sm-block">
                     <svg width="22px" height="22px" viewBox="0 0 22 22">
                         <polygon class="fill-purple" points="22,8.3 13.7,8.3 13.7,0 8.3,0 8.3,8.3 0,8.3 0,13.7 8.3,13.7 8.3,22 13.7,22 13.7,13.7 22,13.7 "></polygon>
                     </svg>
                 </figure>
-            
+
                 <!-- Title and breadcrumb -->
                 <div class="col-lg-10 mx-auto text-center position-relative">
                     <!-- SVG decoration -->
@@ -17,7 +17,7 @@
                             <path class="fill-orange" d="M13.122,5.946 L17.679,-0.001 L17.404,7.528 L24.661,5.946 L19.683,11.533 L26.244,15.056 L18.891,16.089 L21.686,23.068 L15.400,19.062 L13.122,26.232 L10.843,19.062 L4.557,23.068 L7.352,16.089 L-0.000,15.056 L6.561,11.533 L1.582,5.946 L8.839,7.528 L8.565,-0.001 L13.122,5.946 Z"></path>
                         </svg>
                     </figure>
-                    
+
                     <!-- Title -->
                     <h1>Tentang Kampus Gratis</h1>
                     <!-- Breadcrumb -->
@@ -38,9 +38,9 @@
             <div class="row">
               <!-- Right sidebar START -->
               <div class="col-lg-4">
-               
+
                     <div class="col-md-6 col-lg-12">
-                
+
                         <!-- Course info START -->
                         <div class="card card-body shadow p-4 mb-4">
                             <!-- Title -->
@@ -66,14 +66,14 @@
                         <!-- Course info END -->
                     </div>
                     </div>
-                
-          
+
+
                 <!-- Main content START -->
                 <div class="col-lg-8">
                     <div class="bg-body shadow rounded-2 p-4">
                         <div class="tab-content pt-2" id="course-pills-tabContent">
                                 <h5 class="mb-3">Sejarah Kampus Gratis</h5>
-                                <p class="mb-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salah satu mimpi pendiri PT Menara Indonesia adalah memberikan solusi pendidikan tinggi yang Gratis, Berkualitas, Bisa Diakses siapapun khususnya kalangan marjinal, dan selalu update, layaknya platform Wikipedia. 
+                                <p class="mb-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salah satu mimpi pendiri PT Menara Indonesia adalah memberikan solusi pendidikan tinggi yang Gratis, Berkualitas, Bisa Diakses siapapun khususnya kalangan marjinal, dan selalu update, layaknya platform Wikipedia.
                                     Di tahun 2022, PT Menara Indonesia mewujudkannya melalui produk aplikasi bernama KAMPUS GRATIS, yang menggunakan sistem belajar berbasis Online.
                                 </p>
                                 <p class="mb-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dasar dari KAMPUS GRATIS adalah system management e-learning yang mencantumkan laporan peningkatan atau progress pembelajaran siswa layaknya seperti kampus perguruan tinggi.
@@ -110,9 +110,9 @@
                                     <path class="fill-orange" d="M735,226.3c-5.7,0.6-11.5,1.1-17.2,1.7c-66.2,6.8-134.7,13.7-192.6-16.6c-34.6-18.1-61.4-47.9-87.3-76.7 c-21.4-23.8-43.6-48.5-70.2-66.7c-53.2-36.4-121.6-44.8-175.1-48c-13.6-0.8-27.5-1.4-40.9-1.9c-46.9-1.9-95.4-3.9-141.2-16.5 C8.3,1.2,6.2,0.6,4.2,0H0c3.3,1,6.6,2,10,3c46,12.5,94.5,14.6,141.5,16.5c13.4,0.6,27.3,1.1,40.8,1.9 c53.4,3.2,121.5,11.5,174.5,47.7c26.5,18.1,48.6,42.7,70,66.5c26,28.9,52.9,58.8,87.7,76.9c58.3,30.5,127,23.5,193.3,16.7 c5.8-0.6,11.5-1.2,17.2-1.7c26.2-2.6,55-4.2,83.5-2.2v-1.2C790,222,761.2,223.7,735,226.3z"></path>
                                 </svg>
                             </figure>
-                
+
                             <div class="row g-4 position-relative align-items-center justify-content-center">
-                
+
                                 <!-- Counter item -->
                                 <div class="col-sm-6 col-lg-3 text-center">
                                     <div class="d-flex justify-content-center">
@@ -121,16 +121,16 @@
                                     </div>
                                     <h6 class="mb-0 fw-bold">Jumlah Mahasiswa</h6>
                                 </div>
-                
+
                                 <!-- Counter item -->
                                 <div class="col-sm-6 col-lg-3 text-center">
                                     <div class="d-flex justify-content-center">
                                         <h4 class="purecounter display-6 text-orange fw-bold mb-0" data-purecounter-start="0" data-purecounter-end="25"	data-purecounter-delay="200">0</h4>
                                         <span class="display-6 text-orange mb-0">K</span>
-                                    </div>	
+                                    </div>
                                     <h6 class="mb-0 fw-bold">Total Dosen</h6>
                                 </div>
-                
+
                                 <!-- Counter item -->
                                 <div class="col-sm-6 col-lg-3 text-center">
                                     <div class="d-flex justify-content-center">
@@ -139,7 +139,7 @@
                                     </div>
                                     <h6 class="mb-0 fw-bold">Total Program Studi</h6>
                                 </div>
-                
+
                                 <!-- Counter item -->
                                 <div class="col-sm-6 col-lg-3 text-center">
                                     <div class="d-flex justify-content-center">
@@ -171,10 +171,10 @@
                     <div class="container">
                         <!-- Search option START -->
                         <!-- Search option END -->
-                
+
                         <!-- Instructor list START -->
                         <div class="row g-4 justify-content-center">
-                
+
                             <!-- Card item START -->
                             @foreach($gurubesar as $b)
                             <div class="col-lg-10 col-xl-6">
@@ -184,7 +184,7 @@
                                         <div class="col-md-4">
                                             <img src="{{ asset($b->foto) }}" class="rounded-3" alt="guru-besar">
                                         </div>
-                
+
                                         <!-- Card body -->
                                         <div class="col-md-8">
                                             <div class="card-body">
@@ -202,20 +202,20 @@
                                                 <div class="d-sm-flex justify-content-sm-between align-items-center">
                                                     <!-- Title -->
                                                     <h6 class="text-orange mb-0">Digital Marketing</h6>
-                
+
                                                     <!-- Social button -->
                                                     <ul class="list-inline mb-0 mt-3 mt-sm-0">
-                                                        <li class="list-inline-item"> 
-                                                            <a class="mb-0 me-1 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> 
+                                                        <li class="list-inline-item">
+                                                            <a class="mb-0 me-1 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
                                                         </li>
-                                                        <li class="list-inline-item"> 
-                                                            <a class="mb-0 me-1 text-instagram-gradient" href="#"><i class="fab fa-fw fa-instagram"></i></a> 
+                                                        <li class="list-inline-item">
+                                                            <a class="mb-0 me-1 text-instagram-gradient" href="#"><i class="fab fa-fw fa-instagram"></i></a>
                                                         </li>
-                                                        <li class="list-inline-item"> 
-                                                            <a class="mb-0 me-1 text-twitter" href="#"><i class="fab fa-fw fa-twitter"></i></a> 
+                                                        <li class="list-inline-item">
+                                                            <a class="mb-0 me-1 text-twitter" href="#"><i class="fab fa-fw fa-twitter"></i></a>
                                                         </li>
-                                                        <li class="list-inline-item"> 
-                                                            <a class="mb-0 text-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> 
+                                                        <li class="list-inline-item">
+                                                            <a class="mb-0 text-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -229,33 +229,33 @@
                                 </div>
                             </div>
                             <!-- Card item END -->
-                
+
                         </div>
                         <!-- Instructor list END -->
-                
+
                         <!-- Pagination START -->
                         <nav class="mt-4 d-flex justify-content-center" aria-label="navigation">
                             <ul class="pagination pagination-primary-soft rounded mb-0">
                                 <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-double-left"></i></a></li>
-                                <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item mb-0"><a class="page-link" href="#">..</a></li>
                                 <li class="page-item mb-0"><a class="page-link" href="#">6</a></li>
                                 <li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
                             </ul>
                         </nav>
                         <!-- Pagination END -->
-                
+
                     </div>
                 </section>
             </div>
                 </div>
                 <!-- Main content END -->
- 
-              
+
+
                 </div>
                 <!-- Right sidebar END -->
-    
+
             </div><!-- Row END -->
         </div>
     </section>
