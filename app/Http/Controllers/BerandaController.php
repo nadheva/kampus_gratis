@@ -174,7 +174,7 @@ class BerandaController extends Controller
             'pas_foto' => $request->get('pas_foto'),
             'transkip' => $request->get('transkip'),
             'surat_rekomendasi' => $request->get('surat_rekomendasi'),
-            'program_id' => $request->get('program_id'),
+            'program' => $request->get('program'),
             'isVerified' => false,
         ]] );
         // dd($request);
