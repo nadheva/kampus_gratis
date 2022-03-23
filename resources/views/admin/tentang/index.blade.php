@@ -1,22 +1,10 @@
 <x-app-layout>
-    <!-- =======================
-Page Banner START -->
-@include('partials.banner-dashboard')
-<!-- =======================
-Page Banner END -->
-
-<!-- =======================
-Page content START -->
-<section class="pt-0">
-	<div class="container">
-		<div class="row">
 
 			<!-- Right sidebar START -->
-			@include('partials.sidebar-dashboard')
 			<!-- Right sidebar END -->
 
 			<!-- Main content START -->
-			<div class="col-xl-9">
+			<div class="col">
 
 				<div class="card border rounded-3">
 					<!-- Card header START -->
@@ -166,11 +154,6 @@ Page content START -->
 				</div>
 			<!-- Main content END -->
 			</div><!-- Row END -->
-		</div>
-	</div>	
-</section>
-<!-- =======================
-Page content END -->
 <script>
     
     $('.show_confirm').click(function(event) {

@@ -41,7 +41,7 @@
 						<h5 class="mb-2 mb-md-4">Magang</h5>
 						<ul class="nav flex-column">
 							<li class="nav-item"><a class="nav-link" href="#">Tentang Magang</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Daftar Magang</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Daftar Magang</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">Posisi Magang</a></li>
 						</ul>
 					</div>
