@@ -18,7 +18,6 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    // public const HOME = [DashboardController::class, 'index'];
     public const HOME = "/";
 
     /**
