@@ -74,7 +74,11 @@ class BerandaController extends Controller
         $question = UserQuestion::all()->count();
         $answer = UserQuestion::all()->sum('isanswer');
 
-        return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
+        if ($userQuestion == null) {
+            return view('landingpage.faq');
+        } else if ($userQuestion != null) {
+            return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
+        }
     }
 
     public function questionStore(Request $request)
@@ -192,7 +196,7 @@ class BerandaController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        dd($user);
+
         $client = new Client();
 
         $request = $client->post(
@@ -208,8 +212,9 @@ class BerandaController extends Controller
 
         event(new Registered($user));
 
-        Auth::login($user);
+        // Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        // return redirect(RouteServiceProvider::HOME);
+        return redirect("/login");
     }
 }
