@@ -43,7 +43,7 @@ Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/job-channel', [BerandaController::class, 'jobchannel']);
 Route::get('/job-channel/{id}', [BerandaController::class, 'showJobchannel'])->name('showJobchannel');
 Route::get('/registrasi', [BerandaController::class, 'registrasi']);
-// coba
+
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
 });
@@ -122,15 +122,6 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 Route::middleware(['auth', 'role:admin,mahasiswa,user'])->group(function () {
 });
-
-Route::get('/testlagi', function(){
-    return response()->json([
-        'msg' => 'Test aja'
-    ]);
-});
-
-// Tambahin komen
-// Route Login
 
 // Route Login
 require __DIR__ . '/auth.php';
