@@ -18,7 +18,10 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
+<<<<<<< HEAD
     // public const HOME = [DashboardController::class, 'index'];
+=======
+>>>>>>> parent of 9588ea6 (Merge Kelompok1 (#34))
     public const HOME = "/";
 
     /**
