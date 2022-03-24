@@ -342,20 +342,26 @@ Prestasi Mahasiswa START -->
 			</div>
 		</div>
 
-		<!-- Tabs START -->
-		<ul class="nav nav-pills nav-pills-bg-soft justify-content-sm-center mb-4 px-3" id="course-pills-tab" role="tablist">
-			<!-- Tab item -->
-			<li class="nav-item me-2 me-sm-5">
-				<button class="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-tabs-1" type="button" role="tab" aria-controls="course-pills-tabs-1" aria-selected="false">Semua Prestasi</button>
-			</li>
-			<!-- Tab item -->
-			@foreach($prestasi as $p)
-			<li class="nav-item me-2 me-sm-5">
-				<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-{{$p->tahun}}" data-bs-toggle="pill" data-bs-target="#course-pills-tabs-{{$p->tahun}}" type="button" role="tab" aria-controls="course-pills-tabs-{{$p->tahun}}"	aria-selected="false">{{$p->tahun}}</button>
-			</li>
-			@endforeach
-		</ul>
-		<!-- Tabs END -->
+		<div class="row">
+			<div class="col-lg-12 mx-auto text-center">
+				<!-- Tabs START -->
+				<ul class="nav nav-pills nav-pills-bg-soft justify-content-sm-center mb-4 px-3" id="course-pills-tab" role="tablist">
+					<div class="mx-auto text-center">
+						<!-- Tab item -->
+						<li class="nav-item me-2 me-sm-5">
+							<button class="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-tabs-1" type="button" role="tab" aria-controls="course-pills-tabs-1" aria-selected="false">Semua Prestasi</button>
+						</li>
+						<!-- Tab item -->
+						@foreach($prestasi as $p)
+						<li class="nav-item me-2 me-sm-5">
+							<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-{{$p->tahun}}" data-bs-toggle="pill" data-bs-target="#course-pills-tabs-{{$p->tahun}}" type="button" role="tab" aria-controls="course-pills-tabs-{{$p->tahun}}"	aria-selected="false">{{$p->tahun}}</button>
+						</li>
+					@endforeach
+					</div>
+				</ul>
+				<!-- Tabs END -->
+			</div>
+		</div>
 
 		<!-- Tabs content START -->
 		<div class="tab-content" id="course-pills-tabContent">

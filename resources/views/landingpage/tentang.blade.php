@@ -87,11 +87,8 @@
                 </div>
                 <section>
                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    <div class="container d-flex justify-container-center">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div id="donutchart" style="width: 900px; height: 500px;"></div>
-                            </div>
+                        <div class="row text-center">
+                                <div class="col-lg-12 mx-auto" id="donutchart" style="width: 900px; height: 500px;"></div>
                         </div>
                     </div>
                 </section>
@@ -281,6 +278,23 @@
         title: 'Jumlah Mahasiswa',
         pieHole: 0.4,
         };
+
+        //css 
+        options.chartArea = { left: '10%', top: '5%', width: "85%", height: "80%" };
+
+        //create trigger to resizeEnd event     
+        $(window).resize(function() {
+          if(this.resizeTO) clearTimeout(this.resizeTO);
+          this.resizeTO = setTimeout(function() {
+            $(this).trigger('resizeEnd');
+          }, 500);
+        });
+
+        //redraw graph when window resize is completed  
+        $(window).on('resizeEnd', function() {
+        drawChart(data);
+        });
+        //end
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);

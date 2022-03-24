@@ -19,14 +19,14 @@
                     </figure>
                     
                     <!-- Title -->
-                    <h1>Program Sarjana</h1>
+                    <h1>Program Diploma 1</h1>
                     <!-- Breadcrumb -->
                     <div class="d-flex justify-content-center position-relative">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a href="/">Beranda</a></li>
                                 <li class="breadcrumb-item"><a href="{{url('pendidikan')}}">Pendidikan</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Sarjana</li>
+                                <li class="breadcrumb-item active" aria-current="page">Diploma 1</li>
                             </ol>
                         </nav>
                     </div>
@@ -48,7 +48,7 @@
                             <h6 class="mb-3">Peraturan Akademik dan Kurikulum</h6>
                             <ul class="list-group list-group-borderless">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <span class="h6 fw-light mb-0"><a href="/peraturan-akademik-sarjana">Peraturan Akademik</a></span>
+                                    <span class="h6 fw-light mb-0"><a href="#">Peraturan Akademik</a></span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     <span class="h6 fw-light mb-0"><a href="#">Kurikulum</a></span>
@@ -73,9 +73,9 @@
                 <div class="col-lg-8">
                     <div class="bg-body shadow rounded-2 p-4">
                         <div class="tab-content pt-2" id="course-pills-tabContent">
-                                <h5 class="mb-3">Program Sarjana</h5>
-                                <p class="mb-3">Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashboards see frankness objection abilities. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined. </p>
-                                <p class="mb-3">As it so contrasted oh estimating instrument. Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted.</p>
+                                <h5 class="mb-3">Program Diploma 1</h5>
+                                <p class="mb-3"> D1 is a diploma education program with the shortest lecture period. How many years of D1 course? Just one year, pal! During this period, there are around 32 credits that must be completed in two semesters. At the end of the lecture, there is usually a report of scientific work and practical work as a graduation requirement. </p>
+                                <p class="mb-3"> Some D1 programs such as Taxes, Customs and Excise, as well as the State Treasury at PKN STAN. The period of study at the D1 level at this Official School is also only one year. </p>
                                 <div class="col-12">
                                 </div>
                             </div>

@@ -62,7 +62,7 @@ Page content START -->
 				<div class="col-xl-8">
 					<div class="row g-3">
 						<!-- Select items -->
-						<div class="col-sm-6 col-md-3 pb-2 pb-md-0">
+						<div class="col-sm-6 col-md-4 pb-2 pb-md-0">
 							<select class="form-select form-select-sm js-choice" aria-label=".form-select-sm example">
 								<option value="">Kategori</option>
 								<option>All</option>
@@ -79,7 +79,7 @@ Page content START -->
 						</div>
 
 						<!-- Search item -->
-						<div class="col-sm-6 col-md-3 pb-2 pb-md-0">
+						<div class="col-sm-6 col-md-4 pb-2 pb-md-0">
 							<select class="form-select form-select-sm js-choice" aria-label=".form-select-sm example">
 								<option value="">Tipe</option>
 								<option>Full-time</option>
@@ -100,7 +100,7 @@ Page content START -->
 						</div> --}}
 
 						<!-- Search item -->
-						<div class="col-sm-6 col-md-3 pb-2 pb-md-0">
+						<div class="col-sm-6 col-md-4 pb-2 pb-md-0">
 							<select class="form-select form-select-sm js-choice" aria-label=".form-select-sm example">
 								<option value="">Language</option>
 								<option>English</option>
