@@ -70,7 +70,7 @@ class BerandaController extends Controller
     {
         $userQuestion = UserQuestion::latest()->first();
         $beda = '0';
-        if($userQuestion != null){
+        if ($userQuestion != null) {
             $beda = $userQuestion->created_at->diffForHumans();
         }
         $faq = Question::all();
@@ -108,9 +108,10 @@ class BerandaController extends Controller
     public function beranda()
     {
         $banner = Banner::all();
+        $berita =  Berita::latest()->paginate(6);
         $sambutan = Berita::where('kategori', 'sambutan')->first();
         // dd($sambutan);
-        return view('landingpage.index', compact('banner', 'sambutan'));
+        return view('landingpage.index', compact('banner', 'sambutan', 'berita'));
     }
 
     public function jobchannel()
