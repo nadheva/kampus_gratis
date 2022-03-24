@@ -120,8 +120,6 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
-Route::middleware(['auth', 'role:admin,mahasiswa,user'])->group(function () {
-});
 
 // Route Login
 require __DIR__ . '/auth.php';

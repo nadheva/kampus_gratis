@@ -1,16 +1,4 @@
-{{-- <nav class="navbar navbar-expand-xl navbar-up py-3">
-    <div class="container-fluid px-3 px-xl-5">
-        <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                <li class="nav-up-item menu"><a class="nav-up-link" href="index.html">Berita</a></li>
-                <li class="nav-up-item menu"><a class="nav-up-link" href="index.html">Alumni</a></li>
-                <li class="nav-up-item menu"><a class="nav-up-link" href="index.html">Pengumuman</a></li>
-                <li class="nav-up-item menu"><a class="nav-up-link" href="index.html">FAQ</a></li>
-            </ul>
-        </div>
-    </div>
-</nav> --}}
-<nav class="navbar navbar-expand-xl navbar-up">
+<nav class="navbar bg-primary navbar-expand-xl">
     <div class="container-fluid px-3 px-xl-5">
         <!-- Main navbar START -->
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
