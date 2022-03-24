@@ -1,7 +1,7 @@
 <x-app-layout>
     <!-- Main content START -->
     <div class="col-xl-9">
-    
+
     <!-- Counter boxes START -->
     <div class="row mb-4">
         <!-- Counter item -->
@@ -42,17 +42,17 @@
         </div>
     </div>
     <!-- Counter boxes END -->
-    
+
     <div class="card border rounded-3">
         <!-- Card header START -->
         <div class="card-header border-bottom">
             <h3 class="mb-0">My Courses List</h3>
         </div>
         <!-- Card header END -->
-    
+
         <!-- Card body START -->
         <div class="card-body">
-    
+
             <!-- Search and select START -->
             <div class="row g-3 align-items-center justify-content-between mb-4">
                 <!-- Content -->
@@ -62,7 +62,7 @@
                         <button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="fas fa-search fs-6 "></i></button>
                     </form>
                 </div>
-    
+
                 <!-- Select option -->
                 <div class="col-md-3">
                     <!-- Short by filter -->
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <!-- Search and select END -->
-    
+
             <!-- Course list table START -->
             <div class="table-responsive border-0">
                 <table class="table table-dark-gray align-middle p-4 mb-0 table-hover">
@@ -91,7 +91,7 @@
                             <th scope="col" class="border-0 rounded-end">Action</th>
                         </tr>
                     </thead>
-    
+
                     <!-- Table body START -->
                     <tbody>
                         <!-- Table item -->
@@ -117,19 +117,19 @@
                                     </div>
                                 </div>
                             </td>
-    
+
                             <!-- Table data -->
                             <td>56</td>
-    
+
                             <!-- Table data -->
                             <td>40</td>
-    
+
                             <!-- Table data -->
                             <td>
                                 <a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Continue</a>
                             </td>
                         </tr>
-    
+
                         <!-- Table item -->
                         <tr>
                             <!-- Table data -->
@@ -153,20 +153,20 @@
                                     </div>
                                 </div>
                             </td>
-    
+
                             <!-- Table data -->
                             <td>42</td>
-    
+
                             <!-- Table data -->
                             <td>42</td>
-    
+
                             <!-- Table data -->
                             <td>
                                 <button class="btn btn-sm btn-success me-1 mb-1 mb-x;-0 disabled"><i class="bi bi-check me-1"></i>Complete</button>
                                 <a href="#" class="btn btn-sm btn-light me-1"><i class="bi bi-arrow-repeat me-1"></i>Restart</a>
                             </td>
                         </tr>
-    
+
                         <!-- Table item -->
                         <tr>
                             <!-- Table data -->
@@ -190,19 +190,19 @@
                                     </div>
                                 </div>
                             </td>
-    
+
                             <!-- Table data -->
                             <td>28</td>
-    
+
                             <!-- Table data -->
                             <td>12</td>
-    
+
                             <!-- Table data -->
                             <td>
                                 <a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Continue</a>
                             </td>
                         </tr>
-    
+
                         <!-- Table item -->
                         <tr>
                             <!-- Table data -->
@@ -228,16 +228,16 @@
                             </td>
                             <!-- Table data -->
                             <td>32</td>
-    
+
                             <!-- Table data -->
                             <td>18</td>
-    
+
                             <!-- Table data -->
                             <td>
                                 <a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Continue</a>
                             </td>
                         </tr>
-    
+
                         <!-- Table item -->
                         <tr>
                             <!-- Table data -->
@@ -263,10 +263,10 @@
                             </td>
                             <!-- Table data -->
                             <td>16</td>
-    
+
                             <!-- Table data -->
                             <td>14</td>
-    
+
                             <!-- Table data -->
                             <td>
                                 <a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>Continue</a>
@@ -277,7 +277,7 @@
                 </table>
             </div>
             <!-- Course list table END -->
-    
+
             <!-- Pagination START -->
             <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
                 <!-- Content -->
@@ -286,8 +286,8 @@
                 <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
                     <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
                         <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
-                        <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
                         <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
                         <li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
                     </ul>
@@ -298,6 +298,5 @@
         <!-- Card body START -->
     </div>
     <!-- Main content END -->
-    
+
     </x-app-layout>
-    
