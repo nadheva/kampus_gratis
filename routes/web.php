@@ -128,6 +128,11 @@ Route::get('/testlagi', function(){
         'msg' => 'Test aja'
     ]);
 });
+Route::get('/testlagi', function(){
+    return response()->json([
+        'msg' => 'Test aja'
+    ]);
+});
 
 // Route Login
 require __DIR__ . '/auth.php';
