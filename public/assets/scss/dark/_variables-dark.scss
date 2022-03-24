@@ -9,9 +9,9 @@ $gray-200:    #f0f1f3;
 $gray-300:    #c5c6cc;
 $gray-400:    #a1a1a8;
 $gray-500:    #464950;
-$gray-600:    #2a2c31;
+$gray-600:    #2a2c31;//2a2c31 27292e
 $gray-700:    #202227;
-$gray-800:    #222529;
+$gray-800:    #222529; //#1a1c20
 $gray-900:    #0f0f10;
 $black:       #000;
 
@@ -22,7 +22,6 @@ $dark-gray:   $gray-400;
 $light-gray:  $gray-300;
 
 // theme colors map
-
 $theme-colors: (
   "primary":    $primary,
   "white":      $white,
@@ -56,17 +55,18 @@ $component-active-bg:           $primary;
 
 // shadow
 
-$box-shadow:                  0px 0px 20px rgba(0, 0, 0, .25);
+$box-shadow:                  none;
 $box-shadow-sm:               0 .125rem .25rem rgba(0, 0, 0, .25);
-$box-shadow-lg:               0 1rem 3rem rgba(0, 0, 0, .25);
+$box-shadow-lg:               none;
 
 $hr-color:                    $gray-500;
 $hr-opacity:                  0.2;
 
 // Cards
 
-$card-bg:                       $body-bg;
-$card-cap-bg:                   $body-bg;
+$card-bg:                       shade-color($body-bg, 20%);
+$card-cap-bg:                   shade-color($body-bg, 20%);
+// $card-border-color:             rgba($dark-gray, .07);
 
 // Accordion
 
@@ -154,12 +154,10 @@ $offcanvas-bg-color:                $modal-content-bg;
 $offcanvas-color:                   $modal-content-color;
 
 // btn close
-
 $btn-close-color:            $white;
 $btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>");
 
 // Navs 
-
 $nav-link-color:                    $body-color;
 $nav-pills-link-color:              $body-color;
 $nav-pills-link-active-color:       $component-active-color;
@@ -167,7 +165,6 @@ $nav-tabs-border-color:             $border-color;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color;
 
 // Pagination
-
 $pagination-bg:                     $body-bg;
 $pagination-color:                  $body-color;
 $pagination-border-color:           $gray-600;
@@ -177,7 +174,6 @@ $pagination-disabled-color:         $gray-500;
 $pagination-disabled-border-color:  $gray-600;
 
 // table
-
 $table-color:                 $body-color;
 $table-striped-color:         $table-color;
 $table-border-color:          $border-color;

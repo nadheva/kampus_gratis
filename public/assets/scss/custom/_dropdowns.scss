@@ -33,6 +33,7 @@
 @include media-breakpoint-down(sm) {
   .dropdown-menu-size-md{
     min-width: 16rem;
+    margin-right: -25px !important;
   }
   .dropdown-menu-size-sm{
     min-width: 13rem;

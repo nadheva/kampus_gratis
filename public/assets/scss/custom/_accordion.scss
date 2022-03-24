@@ -153,6 +153,7 @@
 .accordion.accordion-bg-light {
   .accordion-item {
     border: none;
+    background-color: transparent;
   }
   .accordion-button {
     background-color:rgba($light-gray, $soft-alpha)!important;
@@ -200,8 +201,12 @@
 }
 
 // Accordion flush
+.accordion-flush .accordion-item{
+  background-color: transparent;
+}
 .accordion-flush .accordion-button{
   padding: 1rem 0rem;
+  background-color: transparent;
 }
 .accordion-flush .accordion-button:after{
   background-size: 0.825rem;
@@ -234,6 +239,7 @@
 
 // accordion-flush-light
 .accordion.accordion-flush-light .accordion-item{
+  background-color: transparent;
   border-bottom:1px solid rgba($secondary, $soft-alpha);
 }
 .accordion.accordion-flush-light .accordion-header .accordion-button {

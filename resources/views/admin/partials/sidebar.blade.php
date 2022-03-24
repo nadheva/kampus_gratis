@@ -1,26 +1,108 @@
-<div class="list-group list-group-dark list-group-borderless">
+<nav class="navbar sidebar navbar-expand-xl navbar-dark bg-dark">
 
-    @if (Auth::user()->role == 'admin')
-        <a class="list-group-item {{ request()->is('') ? 'active' : '' }} " href="{{ route('dashboard') }}"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
-        <a class="list-group-item {{ request()->is('banner') ? 'active' : '' }}" href="{{ route('banner.index') }}"><i class="bi bi-card-checklist fa-fw me-2"></i>Banner (Front
-            Page)</a>
-        <a class="list-group-item {{ request()->is('hehe') ? 'active' : '' }}" href="#"><i class="bi bi-pencil-square fa-fw me-2"></i>Tentang
-            Kampus Gratis</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('detail.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Detail</a>
-        <a class="list-group-item {{ request()->is('data-penelitian*') ? 'active' : '' }}" href="{{ route('data-penelitian.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Penelitian</a>
-        <a class="list-group-item {{ request()->is('guru-besar*') ? 'active' : '' }}" href="{{ route('guru-besar.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Guru Besar</a>
-        <a class="list-group-item {{ request()->is('agenda*') ? 'active' : '' }}" href="{{ route('agenda.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Agenda</a>
-        <a class="list-group-item {{ request()->is('data-jurnal*') ? 'active' : '' }}" href="{{ route('data-jurnal.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Jurnal</a>
-        <a class="list-group-item {{ request()->is('setting') ? 'active' : '' }}" href="#"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan</a>
-        <a class="list-group-item {{ request()->is('logout') ? 'active' : '' }} text-danger bg-danger-soft-hover" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
-    @else
-        <a class="list-group-item {{ request()->is('') ? 'active' : '' }} " href="{{ route('dashboard') }}"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('administrasiPengguna') }}"><i class="bi bi-archive fa-fw me-2"></i>Administrasi</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('dataKeluarga') }}"><i class="bi bi-file-earmark-person fa-fw me-2"></i>Data Keluarga</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('dokumenPenting') }}"><i class="bi bi-file-text fa-fw me-2"></i>Dokumen yang Diperlukan</a>
-        <a class="list-group-item {{ request()->is('setting') ? 'active' : '' }}" href="#"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan Akun</a>
-        <a class="list-group-item {{ request()->is('logout') ? 'active' : '' }} text-danger bg-danger-soft-hover" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
-    @endif
-    
+	<!-- Navbar brand for xl START -->
+	<div class="d-flex align-items-center">
+		<a class="navbar-brand" href="index.html">
+			<img class="navbar-brand-item" src="assets/images/logo-light.svg" alt="">
+		</a>
+	</div>
+	<!-- Navbar brand for xl END -->
+	
+	<div class="offcanvas offcanvas-start flex-row custom-scrollbar h-100" data-bs-backdrop="true" tabindex="-1" id="offcanvasSidebar">
+		<div class="offcanvas-body sidebar-content d-flex flex-column bg-dark">
 
-</div>
+			<!-- Sidebar menu START -->
+			<ul class="navbar-nav flex-column" id="navbar-sidebar">
+				
+				<!-- Menu item 1 -->
+				<li class="nav-item"><a href="admin-dashboard.html" class="nav-link active"><i class="bi bi-house fa-fw me-2"></i>Dashboard</a></li>
+				
+				<!-- Title -->
+				<li class="nav-item ms-2 my-2">Pages</li>
+
+				<!-- menu item 2 -->
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="collapse" href="#collapsepage" role="button" aria-expanded="false" aria-controls="collapsepage">
+						<i class="bi bi-basket fa-fw me-2"></i>Courses
+					</a>
+					<!-- Submenu -->
+					<ul class="nav collapse flex-column" id="collapsepage" data-bs-parent="#navbar-sidebar">
+						<li class="nav-item"> <a class="nav-link" href="admin-course-list.html">All Courses</a></li>
+						<li class="nav-item"> <a class="nav-link" href="admin-course-category.html">Course Category</a></li>
+						<li class="nav-item"> <a class="nav-link" href="admin-course-detail.html">Course Detail</a></li>
+					</ul>
+				</li>
+
+				<!-- Menu item 3 -->
+				<li class="nav-item"> <a class="nav-link" href="admin-student-list.html"><i class="fas fa-user-graduate fa-fw me-2"></i>Students</a></li>
+
+				<!-- Menu item 4 -->
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="collapse" href="#collapseinstructors" role="button" aria-expanded="false" aria-controls="collapseinstructors">
+						<i class="fas fa-user-tie fa-fw me-2"></i>Instructors
+					</a>
+					<!-- Submenu -->
+					<ul class="nav collapse flex-column" id="collapseinstructors" data-bs-parent="#navbar-sidebar">
+						<li class="nav-item"> <a class="nav-link" href="admin-instructor-list.html">Instructors</a></li>
+						<li class="nav-item"> <a class="nav-link" href="admin-instructor-detail.html">Instructor Detail</a></li>
+						<li class="nav-item"> 
+							<a class="nav-link" href="admin-instructor-request.html">Instructor requests
+								<span class="badge bg-success text-white rounded-circle ms-2">2</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				
+				<!-- Menu item 5 -->
+				<li class="nav-item"> <a class="nav-link" href="admin-review.html"><i class="far fa-comment-dots fa-fw me-2"></i>Reviews</a></li>
+
+				<!-- Menu item 6 -->
+				<li class="nav-item"> <a class="nav-link" href="admin-earning.html"><i class="far fa-chart-bar fa-fw me-2"></i>Earnings</a></li>
+
+				<!-- Menu item 7 -->
+				<li class="nav-item"> <a class="nav-link" href="admin-setting.html"><i class="fas fa-user-cog fa-fw me-2"></i>Admin Settings</a></li>
+
+				<!-- Menu item 8 -->
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="collapse" href="#collapseauthentication" role="button" aria-expanded="false" aria-controls="collapseauthentication">
+						<i class="bi bi-lock fa-fw me-2"></i>Authentication
+					</a>
+					<!-- Submenu -->
+					<ul class="nav collapse flex-column" id="collapseauthentication" data-bs-parent="#navbar-sidebar">
+						<li class="nav-item"> <a class="nav-link" href="sign-up.html">Sign Up</a></li>
+						<li class="nav-item"> <a class="nav-link" href="sign-in.html">Sign In</a></li>
+						<li class="nav-item"> <a class="nav-link" href="forgot-password.html">Forgot Password</a></li>
+						<li class="nav-item"> <a class="nav-link" href="admin-error-404.html">Error 404</a></li>
+					</ul>
+				</li>
+
+				<!-- Title -->
+				<li class="nav-item ms-2 my-2">Documentation</li>
+
+				<!-- Menu item 9 -->
+				<li class="nav-item"> <a class="nav-link" href="docs/index.html"><i class="far fa-clipboard fa-fw me-2"></i>Documentation</a></li>
+
+				<!-- Menu item 10 -->
+				<li class="nav-item"> <a class="nav-link" href="docs/changelog.html"><i class="fas fa-sitemap fa-fw me-2"></i>Changelog</a></li>
+			</ul>
+			<!-- Sidebar menu end -->
+
+			<!-- Sidebar footer START -->
+			<div class="px-3 mt-auto pt-3">
+				<div class="d-flex align-items-center justify-content-between text-primary-hover">
+						<a class="h5 mb-0 text-body" href="admin-setting.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Settings">
+							<i class="bi bi-gear-fill"></i>
+						</a>
+						<a class="h5 mb-0 text-body" href="index.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Home">
+							<i class="bi bi-globe"></i>
+						</a>
+						<a class="h5 mb-0 text-body" href="sign-in.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Sign out">
+							<i class="bi bi-power"></i>
+						</a>
+				</div>
+			</div>
+			<!-- Sidebar footer END -->
+			
+		</div>
+	</div>
+</nav>
