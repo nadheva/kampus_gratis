@@ -84,13 +84,11 @@
                          </div>
                     </div>
                  <!-- Content END -->
-                </div>
                 <section>
                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                         <div class="row text-center">
-                                <div class="col-lg-12 mx-auto" id="donutchart" style="width: 900px; height: 500px;"></div>
+                            <div class="col-lg-12 mx-auto" id="donutchart" style="width: 900px; height: 500px;"></div>
                         </div>
-                    </div>
                 </section>
                 <section class="py-0 py-lg-5">
                     <div class="container">

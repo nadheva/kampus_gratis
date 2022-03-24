@@ -55,7 +55,7 @@
 									<div class="d-flex align-items-center">
 										<!-- Image -->
 										<div class="w-100px">
-											<img src="{{ url( $b->gambar) }}"  class="rounded" style="max-height: 300px" alt="banner">
+											<img src="{{ asset( $b->gambar) }}"  class="rounded" style="max-height: 300px" alt="banner">
 										</div>
 										<div class="mb-0 ms-2">
 											<!-- Title -->
