@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('admin.partials.head')
+<head>
+	<title>Eduport- LMS, Education and Course Theme</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Eduport- LMS, Education and Course Theme">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/font-awesome/css/all.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/apexcharts/css/apexcharts.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/overlay-scrollbar/css/OverlayScrollbars.min.css')}}">
+
+	<!-- Theme CSS -->
+	<link id="style-switch" rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
+
+</head>
 
 <body>
+
+
 <!-- **************** MAIN CONTENT START **************** -->
 <main>
+	@include('admin.partials.sidebar')
 	
-<!-- =======================
-Page Banner START -->
-@include('admin.partials.banner')
-<!-- =======================
-Page Banner END -->
-
-<!-- =======================
-Page content START -->
-<section class="pt-0">
-	<div class="container">
-		<div class="row">
-			<!-- Right sidebar START -->
-			<div class="col-xl-3">
-				<!-- Responsive offcanvas body START -->
-				<nav class="navbar navbar-light navbar-expand-xl mx-0">
-					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-						<!-- Offcanvas header -->
-						<div class="offcanvas-header bg-light">
-							<h5 class="offcanvas-title" id="offcanvasNavbarLabel">My profile</h5>
-							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						</div>
-						<!-- Offcanvas body -->
-						<div class="offcanvas-body p-3 p-xl-0">
-							<div class="bg-dark border rounded-3 pb-0 p-3 w-100">
-								<!-- Dashboard menu -->
-								@include('admin.partials.sidebar')
-							</div>
-						</div>
-					</div>
-				</nav>
-				<!-- Responsive offcanvas body END -->
-			</div>
-			<!-- Right sidebar END -->
-
-			<!-- Main content START -->
-			{{ $slot }}
-			<!-- Main content END -->
-		</div><!-- Row END -->
+	<div class="page-content">
+		
+		@include('admin.partials.navbar')
+		
+		<!-- Page main content START -->
+		@yield('content')
+		<!-- Page main content END -->
 	</div>
-</section>
-<!-- =======================
-Page content END -->
 
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
 
-<!-- =======================
-Footer START -->
-@include('admin.partials.footer')
-<!-- =======================
-Footer END -->
-
 <!-- Back to top -->
 <div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
 
-@include('admin.partials.scripts')
+<!-- Bootstrap JS -->
+<script src="{{asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+
+<!-- Vendors -->
+<script src="{{asset('assets/vendor/purecounterjs/dist/purecounter_vanilla.js')}}"></script>
+<script src="{{asset('assets/vendor/apexcharts/js/apexcharts.min.js')}}"></script>
+<script src="{{asset('assets/vendor/overlay-scrollbar/js/OverlayScrollbars.min.js')}}"></script>
+
+<!-- Template Functions -->
+<script src="{{asset('assets/js/functions.js')}}"></script>
+
+
 </body>
 </html>

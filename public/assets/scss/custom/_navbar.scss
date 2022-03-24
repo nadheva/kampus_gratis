@@ -242,7 +242,7 @@
     background-color: $body-bg;
     animation: fadeInDown .5s;
     width: 100%;
-    box-shadow: $box-shadow;
+    border-bottom: $border-width solid $border-color;
   }
   header.navbar-sticky-on .navbar-top {
     display: none !important;
