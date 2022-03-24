@@ -126,14 +126,5 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 Route::middleware(['auth', 'role:admin,mahasiswa,user'])->group(function () {
 });
 
-Route::get('/testlagi', function(){
-    return response()->json([
-        'msg' => 'Test aja'
-    ]);
-});
-
-// Tambahin komen
-// Route Login
-
 // Route Login
 require __DIR__ . '/auth.php';
