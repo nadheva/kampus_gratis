@@ -69,10 +69,7 @@ class BerandaController extends Controller
     public function faq()
     {
         $userQuestion = UserQuestion::latest()->first();
-        $beda = '0';
-        if($userQuestion != null){
-            $beda = $userQuestion->created_at->diffForHumans();
-        }
+        $beda = $userQuestion->created_at->diffForHumans();
         $faq = Question::all();
         $question = UserQuestion::all()->count();
         $answer = UserQuestion::all()->sum('isanswer');
