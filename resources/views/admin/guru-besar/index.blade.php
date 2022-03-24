@@ -45,7 +45,7 @@
 								<td>{{$b->pekerjaan}}</td>
 								<td>
 								<div class="w-100px">
-									<img src="{{ url($b->foto) }}"  class="rounded" alt="guru-besar" style="max-height: 300px">
+									<img src="{{ asset( $b->foto) }}"  class="rounded" alt="guru-besar" style="max-height: 300px">
 								</div>
 								</td>
 								<td>{{$b->deskripsi}}</td>
