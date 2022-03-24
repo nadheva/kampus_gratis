@@ -121,9 +121,5 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
-Route::get('admin_2', function(){
-    return view('admin.admin-dashboard');
-});
-
 // Route Login
 require __DIR__ . '/auth.php';
