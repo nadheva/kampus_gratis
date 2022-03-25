@@ -159,7 +159,7 @@
 									<div class="d-flex align-items-center">
 										<!-- Avatar -->
 										<div class="avatar me-3">
-											<img class="avatar-img rounded-circle shadow" src="assets/images/avatar/01.jpg"
+											<img class="avatar-img rounded-circle shadow" src="{{ asset('assets/images/avatar/01.jpg') }}"
 												alt="avatar">
 										</div>
 										<div>
