@@ -43,7 +43,7 @@ Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/job-channel', [BerandaController::class, 'jobchannel']);
 Route::get('/job-channel/{id}', [BerandaController::class, 'showJobchannel'])->name('showJobchannel');
 Route::get('/registrasi', [BerandaController::class, 'registrasi']);
-// coba
+
 Route::get('/sambutan', function () {
     return view('landingpage.sambutan');
 });
@@ -53,9 +53,6 @@ Route::get('/pendidikan', function () {
 });
 Route::get('/sarjana', function () {
     return view('landingpage.pendidikan.sarjana');
-});
-Route::get('/diploma', function () {
-    return view('landingpage.pendidikan.diploma.diploma');
 });
 Route::get('/kursus', function () {
     return view('landingpage.pendidikan.kursus');
@@ -124,9 +121,6 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
-
-// Tambahin komen
-// Route Login
 
 // Route Login
 require __DIR__ . '/auth.php';

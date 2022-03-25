@@ -780,7 +780,11 @@ Action box START -->
 						<!-- Button -->
 						<div class="col-md-6 col-lg-3 text-md-end">
 							<a href="#" class="btn btn-white mb-0 btn-lg">Daftar Sekarang!</a>
+<<<<<<< HEAD
+						</div>		
+=======
 						</div>
+>>>>>>> 94436dec698871fcd4a55dc19c5662f197bca502
 					</div> <!-- Row END -->
 				</div>
 			</div>
