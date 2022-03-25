@@ -95,6 +95,7 @@ Route::prefix('admin')->group(function () {
 
         Route::resource('banner', BannerController::class);
         Route::resource('guru-besar', GuruBesarController::class);
+        Route::resource('berita', BeritaController::class);
         Route::resource('agenda', AgendaController::class);
         Route::resource('pengumuman', PengumumanController::class);
         Route::resource('pengabdian', PengabdianController::class);
@@ -122,14 +123,6 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 });
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
-});
-Route::middleware(['auth', 'role:admin,mahasiswa,user'])->group(function () {
-});
-
-Route::get('/testlagi', function(){
-    return response()->json([
-        'msg' => 'Test aja'
-    ]);
 });
 
 // Tambahin komen
