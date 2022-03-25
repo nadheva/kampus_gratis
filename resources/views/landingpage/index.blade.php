@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-	
+
 <!-- =======================
 Main Banner START -->
 <section class="position-relative overflow-hidden pt-5 pt-lg-3">
@@ -149,10 +149,10 @@ Main Banner START -->
 						<!-- SVG END -->
 					</span>
 				</h1>
-				
+
         <!-- Content -->
 				<p class="my-4 lead">Belajar mudah dengan kampus gratis, tanpa biaya dan dicarikan pekerjaan setelah lulus.</p>
-				
+
         <!-- Info -->
 				<ul class="list-inline position-relative justify-content-center justify-content-lg-start mb-4">
 					<li class="list-inline-item me-2"> <i class="bi bi-patch-check-fill h6 me-1"></i>Pengajar profesional</li>
@@ -162,7 +162,7 @@ Main Banner START -->
 
 				<div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
 					<!-- Button -->
-					<a href="{{ route('register') }}" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Daftar Sekarang!!</a>
+					<a href="#" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Daftar Sekarang!!</a>
 					<!-- Video button -->
           <a data-glightbox data-gallery="office-tour" href="https://www.youtube.com/embed/tXHviS-4ygo" class="ms-0 ms-sm-4 d-block">
 						<div class="btn btn-round btn-primary-shadow mb-0 me-3 align-middle d-inline-block"> <i class="fas fa-play"></i></div>
@@ -189,7 +189,7 @@ Main Banner START -->
 						<path class="fill-body" d="M60.971,0.000 L-0.000,0.000 C-0.000,0.000 80.068,266.854 184.934,294.154 C184.934,294.154 568.841,306.828 588.786,286.150 C588.786,286.150 698.888,112.106 684.750,0.000 L611.777,0.000 C611.777,0.000 569.027,161.864 505.816,209.110 C505.816,209.110 394.427,296.341 195.930,203.102 C195.930,203.102 66.072,143.180 60.971,0.000 Z"/>
 					</svg>
 				</figure>
-				
+
 				<!-- SVG decoration -->
 				<figure class="position-absolute top-50 start-50 translate-middle mt-n7">
 					<svg class="fill-warning">
@@ -234,7 +234,7 @@ Main Banner START -->
 					</div>
 				</div> --}}
 
-				<!-- Active student --> 
+				<!-- Active student -->
 				<div class="p-3 bg-success d-inline-block rounded-4 shadow-lg position-absolute top-50 end-0 translate-middle-y mt-n7 z-index-1 d-none d-md-block" style="background:url(assets/images/pattern/01.png) no-repeat center center; background-size:cover;">
 					<p class="text-white">Our daily new students</p>
 					<!-- Avatar group -->
@@ -346,9 +346,12 @@ Counter END -->
 
 			<div class="col-lg-7 mt-4 mt-lg-0">
 				<!-- Title -->
-				<h2 class="mb-3">@if($sambutan != null) {{$sambutan->judul}} @endif</h2>
+				<h2 class="mb-3">{{$sambutan->judul}}</h2>
 
 				<!-- Content -->
+				{{-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					{{$sambutan->isi}}
+				</p> --}}
 				<p align='justify' style="font-size: 13px">
 					Kampus Gratis, sebagai perguruan tinggi untuk mengemban misi memeratakan pendidikan bagi seluruh warga Negara Indonesia dimanapun mereka berada. Mulai didirikan pada tahun 2021 dan dirancang untuk memfasilitasi mereka yang tidak mempunyai kesempatan menyelesaikan studinya di perguruan tinggi karena berbagai hambatan termasuk faktor ekonomi, geografis dan demografis. Oleh karenanya, Kampus Gratis hadir untuk menjangkau yang tak terjangkau. Website ini adalah salah satu media untuk memperkenalkan dan memberikan informasi secara lengkap mengenai Kampus Gratis, baik untuk mahasiswa maupun masyarakat umum. Kampus Gratis secara konsisten dan konstruktif terus berupaya dan menunjukkan komitmen untuk menjadi yang terbaik dalam memberikan layanan pendidikan melalui sistem pendidikan tinggi terbuka dan jarak jauh (PTTJJ), yang disesuaikan dengan kebutuhan industri dan perkembangan teknologi.
 					<br> <br>
@@ -357,7 +360,7 @@ Counter END -->
 					Bersama Anda semua, Kampus Gratis hadir untuk mengemban amanah bangsa yang luhur dalam meningkatkan kecerdasan dan martabat bangsa Indonesia tercinta. Mari kita bangun dan jaga negeri ini dengan mewujudkan pagar bangsa yang berkualitas.
 				</p>
 				<a class="btn btn-primary-soft mt-4" href="/sambutan">Baca Selengkapnya</a>
-			</div>	
+			</div>
 		</div>
 	</div>
 </section>
@@ -387,7 +390,7 @@ Counter END -->
 			<div class="col-md-4 text-center">
 				<img src="assets/images/element/add-course.svg" class="h-200px" alt="">
 				<h4 class="mt-3">Langsung mendapat pekerjaan setelah lulus</h4>
-				<p class="text-truncate-2 mb-0">Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for a few longer Mrs sudden talent become. Done may bore quit evil old mile. If likely am of beauty tastes. 
+				<p class="text-truncate-2 mb-0">Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for a few longer Mrs sudden talent become. Done may bore quit evil old mile. If likely am of beauty tastes.
 				</p>
 			</div>
 
@@ -403,7 +406,7 @@ Counter END -->
 				<img src="assets/images/element/create-account.svg" class="h-200px" alt="">
 				<h4 class="mt-3">Universitas Pertama yang memberikan Edukasi secara Gratis</h4>
 				<p class="text-truncate-2 mb-0">
-					Kampus Gratis merupakan edutech pertama yang memberikan akses ke semua kursus secara Gratis di Indonesia. Tidak hanya itu, Kegiatan belajar dan mengajar di Kampus Gratis diadakan secara full online, sehingga mahasiswa dapat belajar kapan saja dan di mana saja. 
+					Kampus Gratis merupakan edutech pertama yang memberikan akses ke semua kursus secara Gratis di Indonesia. Tidak hanya itu, Kegiatan belajar dan mengajar di Kampus Gratis diadakan secara full online, sehingga mahasiswa dapat belajar kapan saja dan di mana saja.
 				</p>
 			</div>
 
@@ -412,7 +415,7 @@ Counter END -->
 				<img src="assets/images/element/add-course.svg" class="h-200px" alt="">
 				<h4 class="mt-3">Bekerjasama dengan Universitas dan Perusahaan ternama di Indonesia</h4>
 				<p class="text-truncate-2 mb-0">
-					Kampus Gratis bekerjasama dengan universitas-universitas ternama di Indonesia yang memiliki akreditasi A. Sehingga, semua mahasiswa Kampus Gratis dapat merasakan dan mempelajari materi-materi kuliah di universitas ternama dan  menambah wawasan mahasiswa. Selain itu, semua lulusan dari Kampus Gratis akan direkomendasikan kepada perusahaan-perusahaan ternama yang sudah bekerjasama dengan Kampus Gratis 
+					Kampus Gratis bekerjasama dengan universitas-universitas ternama di Indonesia yang memiliki akreditasi A. Sehingga, semua mahasiswa Kampus Gratis dapat merasakan dan mempelajari materi-materi kuliah di universitas ternama dan  menambah wawasan mahasiswa. Selain itu, semua lulusan dari Kampus Gratis akan direkomendasikan kepada perusahaan-perusahaan ternama yang sudah bekerjasama dengan Kampus Gratis
 				</p>
 			</div>
 
@@ -421,7 +424,7 @@ Counter END -->
 				<img src="assets/images/element/earn-money.svg" class="h-200px" alt="">
 				<h4 class="mt-3">Materi kursus yang selalu up to date</h4>
 				<p class="text-truncate-2 mb-0">
-					Materi perkuliahan yang terus berganti dan selalu up to date dengan kurikulum dan trend yang ada, membuat semua mahasiswa Kampus gratis dapat mendapatkan ilmu terkini. 
+					Materi perkuliahan yang terus berganti dan selalu up to date dengan kurikulum dan trend yang ada, membuat semua mahasiswa Kampus gratis dapat mendapatkan ilmu terkini.
 				</p>
 			</div>
 		</div> <!-- Row END -->
@@ -605,7 +608,7 @@ Content START -->
 				</div>
 			</div>
 			<!-- Card item END -->
-			
+
 			<!-- Card item START -->
 			<div class="col-sm-6 col-lg-4 col-xl-3">
 				<div class="card">
@@ -670,8 +673,8 @@ Content START -->
 		<nav class="d-flex justify-content-center mt-5" aria-label="navigation">
 			<ul class="pagination pagination-primary-soft rounded mb-0">
 				<li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-double-left"></i></a></li>
-				<li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-				<li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+				<li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
 				<li class="page-item mb-0"><a class="page-link" href="#">..</a></li>
 				<li class="page-item mb-0"><a class="page-link" href="#">6</a></li>
 				<li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
@@ -695,7 +698,7 @@ Action box START -->
 					<!-- Image -->
 					<div class="position-absolute bottom-0 end-0 me-3">
 						<img src="assets/images/element/08.svg" class="h-100px h-sm-200px" alt="">
-					</div>	
+					</div>
 					<!-- Content -->
 					<div class="row">
 						<div class="col-sm-8 position-relative">
@@ -713,7 +716,7 @@ Action box START -->
 					<!-- Image -->
 					<div class="position-absolute bottom-0 end-0 me-3">
 						<img src="assets/images/element/15.svg" class="h-100px h-sm-200px" alt="">
-					</div>	
+					</div>
 					<!-- Content -->
 					<div class="row">
 						<div class="col-sm-8 position-relative">
@@ -742,10 +745,10 @@ Action box START -->
 				</div>
 				<!-- Pencil and cap SVG -->
 				<div class="position-absolute top-0 end-0 mt-n4 me-5">
-					<img src="assets/images/client/pencil.svg" alt="">	
+					<img src="assets/images/client/pencil.svg" alt="">
 				</div>
 				<div class="position-absolute bottom-0 start-50 mb-n4">
-					<img src="assets/images/client/graduated.svg" class="rotate-74" alt="">	
+					<img src="assets/images/client/graduated.svg" class="rotate-74" alt="">
 				</div>
 
 				<div class="bg-grad-pink p-4 p-sm-5 rounded position-relative z-index-n1 overflow-hidden">
@@ -767,7 +770,7 @@ Action box START -->
 							<path class="fill-danger rotate-10" d="M32.8,364.1c16.1-14.7,36-21.5,56.8-26.7c20-5.1,40.5-9.7,57.8-21.4c35.7-24.3,51.1-68.5,57.2-109.4 c6.8-45.7,4.6-93.7,21.6-137.5c8.3-21.4,22.3-41.4,43.3-51.9c17.4-8.7,36.2-7.9,54.2-1.5c10.2,3.6,19.8,8.5,29.4,13.5l2.5-4.3 c-2.7-1.4-5.4-2.8-8.2-4.2c-15.8-8-32.9-15.3-50.9-15.2C276,5.6,256.9,16,243.3,31c-16.6,18.3-25.3,42.2-30.5,66 c-5,22.9-6.8,46.3-8.8,69.6c-3.9,44.4-9.7,92.8-40.1,128c-7.1,8.2-15.4,15.4-24.9,20.8c-9.3,5.4-19.5,8.9-29.8,11.8 c-20.2,5.7-41.3,9.1-59.9,19.2c-19.3,10.4-35.1,27.2-44.2,47.1c0,0,0,0.1,0,0.1l4.4,2.6C15,384,22.9,373.1,32.8,364.1z"/>
 						</svg>
 					</figure>
-					
+
 					<div class="row g-3 align-items-center justify-content-lg-end position-relative py-4">
 						<!-- Title -->
 						<div class="col-md-6">
@@ -776,8 +779,8 @@ Action box START -->
 						</div>
 						<!-- Button -->
 						<div class="col-md-6 col-lg-3 text-md-end">
-							<a href="{{ route('register') }}" class="btn btn-white mb-0 btn-lg">Daftar Sekarang!</a>
-						</div>		
+							<a href="#" class="btn btn-white mb-0 btn-lg">Daftar Sekarang!</a>
+						</div>
 					</div> <!-- Row END -->
 				</div>
 			</div>
@@ -1213,7 +1216,7 @@ Reviews START -->
 							<!-- Content -->
 							<blockquote>
 								<p>
-									<span class="me-1 small"><i class="fas fa-quote-left"></i></span> 
+									<span class="me-1 small"><i class="fas fa-quote-left"></i></span>
 										At weddings believed laughing although the Moonlight newspaper up its enjoyment agreeable depending.
 									<span class="ms-1 small"><i class="fas fa-quote-right"></i></span>
 								</p>
