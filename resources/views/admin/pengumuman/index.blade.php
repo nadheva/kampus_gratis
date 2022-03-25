@@ -97,8 +97,8 @@
                     <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
                         <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
                             <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
-                            <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
                         </ul>
