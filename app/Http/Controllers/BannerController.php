@@ -9,6 +9,7 @@ class BannerController extends Controller
     public function index() {
         $banner = Banner::all();
         return view('admin.banner.index', compact('banner'));
+        // return response()->json($banner);
     }
 
     public function create() {
@@ -42,6 +43,12 @@ class BannerController extends Controller
             ->with('success', 'Banner Berhasil Ditambahkan');
     }
 
+    public function show($id)
+    {
+        $banner = Banner::find($id);
+        return view('admin.banner.detail', compact('banner'));
+    }
+
     public function edit($id)
     {
         $banner = Banner::find($id);
@@ -60,9 +67,10 @@ class BannerController extends Controller
             $txt = "storage/banner/". $file_name;
             $request->gambar->storeAs('public/banner', $file_name);
             $banner->gambar = $txt;
-            $banner->deskripsi = $request->deskripsi;
-            $banner->heading = $request->heading;
-        }else{}
+        }
+
+        $banner->heading = $request->heading;
+        $banner->deskripsi = $request->deskripsi;
 
         $banner->save();
         return redirect()->route('banner.index')
