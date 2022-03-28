@@ -9,12 +9,13 @@ class Alumni extends Model
 {
     use HasFactory;
     protected $table = 'alumni';
-    protected $fillable = [
-        'nama',
-        'foto',
-        'program_studi',
-        'lulusan',
-        'program',
-        'deskripsi'
-    ];
+    protected $guarded = ['id'];
+    // protected $fillable = [
+    //     'nama',
+    //     'foto',
+    //     'program_studi',
+    //     'lulusan',
+    //     'program',
+    //     'deskripsi'
+    // ];
 }
