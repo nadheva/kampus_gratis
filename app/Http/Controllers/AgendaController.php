@@ -8,7 +8,9 @@ class AgendaController extends Controller
 {
     public function index() {
         $agenda = Agenda::all();
-        return view('admin.agenda.index', compact('agenda'));
+        $running = Agenda::where('tanggal', '=', date('Y-m-d'))->get();
+        $upcoming = Agenda::where('tanggal', '>', date('Y-m-d'))->get();
+        return view('admin.agenda.index', compact('agenda', 'running', 'upcoming'));
     }
 
     public function create() {
@@ -45,6 +47,11 @@ class AgendaController extends Controller
         return redirect()->route('agenda.index')
             ->with('success', 'Agenda Berhasil Ditambahkan');
     }
+    public function show($id)
+    {
+        $agenda = Agenda::find($id);
+        return view('admin.agenda.detail', compact('agenda'));
+    }
 
     public function edit($id)
     {
@@ -52,6 +59,7 @@ class AgendaController extends Controller
 
         return view('admin.agenda.edit', compact('agenda'));
     }
+
 
     public function update(Request $request, $id)
     {
@@ -62,11 +70,12 @@ class AgendaController extends Controller
             $txt = "storage/agenda/". $file_name;
             $request->gambar->storeAs('public/agenda', $file_name);
             $agenda->gambar = $txt;
-            $agenda->deskripsi = $request->deskripsi;
-            $agenda->judul = $request->judul;
-            $agenda->tanggal = $request->tanggal;
-            $agenda->jenis = $request->jenis;
-        }else{}
+        }
+
+        $agenda->deskripsi = $request->deskripsi;
+        $agenda->judul = $request->judul;
+        $agenda->tanggal = $request->tanggal;
+        $agenda->jenis = $request->jenis;
 
         $agenda->save();
         return redirect()->route('agenda.index')
