@@ -101,130 +101,66 @@
                                             </a>
                                         </li>
 
-                                        <!-- Notif item -->
-                                        <li>
-                                            <a href="#"
-                                                class="list-group-item-action border-0 border-bottom d-flex p-3">
-                                                <div class="me-3">
-                                                    <div class="avatar avatar-md">
-                                                        <img class="avatar-img rounded-circle"
-                                                            src="assets/images/avatar/02.jpg" alt="avatar">
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <h6 class="mb-1">Larry Lawson Added a new course</h6>
-                                                    <p class="small text-body m-0">What's new! Find out about new
-                                                        features</p>
-                                                    <u class="small">View detail</u>
-                                                </div>
+                                        <!-- Profile dropdown START -->
+                                        <li class="nav-item ms-2 ms-md-3 dropdown">
+                                            <!-- Avatar -->
+                                            <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
+                                                data-bs-auto-close="outside" data-bs-display="static"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img class="avatar-img rounded-circle"
+                                                    src="{{ asset('assets/images/avatar/01.jpg') }}" alt="avatar">
                                             </a>
-                                        </li>
-
-                                        <!-- Notif item -->
-                                        <li>
-                                            <a href="#"
-                                                class="list-group-item-action border-0 border-bottom d-flex p-3">
-                                                <div class="me-3">
-                                                    <div class="avatar avatar-md">
-                                                        <img class="avatar-img rounded-circle"
-                                                            src="assets/images/avatar/05.jpg" alt="avatar">
+                                            <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3"
+                                                aria-labelledby="profileDropdown">
+                                                <!-- Profile info -->
+                                                <li class="px-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <!-- Avatar -->
+                                                        <div class="avatar me-3">
+                                                            <img class="avatar-img rounded-circle shadow"
+                                                                src="{{ asset('assets/images/avatar/01.jpg') }}"
+                                                                alt="avatar">
+                                                        </div>
+                                                        <div>
+                                                            <a class="h6"
+                                                                href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
+                                                            <p class="small m-0">{{ Auth::user()->email }}</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div>
-                                                    <h6 class="mb-1">New request to apply for Instructor</h6>
-                                                    <u class="small">View detail</u>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <!-- Notif item -->
-                                        <li>
-                                            <a href="#"
-                                                class="list-group-item-action border-0 border-bottom d-flex p-3">
-                                                <div class="me-3">
-                                                    <div class="avatar avatar-md">
-                                                        <img class="avatar-img rounded-circle"
-                                                            src="assets/images/avatar/03.jpg" alt="avatar">
+                                                    <hr>
+                                                </li>
+                                                <!-- Links -->
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('dashboard') }}"><i
+                                                            class="bi bi-person fa-fw me-2"></i>Dashboard</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#"><i
+                                                            class="bi bi-gear fa-fw me-2"></i>Pengaturan Akun</a></li>
+                                                <li><a class="dropdown-item" href="#"><i
+                                                            class="bi bi-info-circle fa-fw me-2"></i>Panduan</a></li>
+                                                <li><a class="dropdown-item bg-danger-soft-hover"
+                                                        href="{{ route('logout') }}"><i
+                                                            class="bi bi-power fa-fw me-2"></i>Keluar</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <!-- Dark mode switch START -->
+                                                <li>
+                                                    <div class="modeswitch-wrap" id="darkModeSwitch">
+                                                        <div class="modeswitch-item">
+                                                            <div class="modeswitch-icon"></div>
+                                                        </div>
+                                                        <span>Dark mode</span>
                                                     </div>
-                                                </div>
-                                                <div>
-                                                    <h6 class="mb-1">Update v2.3 completed successfully</h6>
-                                                    <p class="small text-body m-0">What's new! Find out about new
-                                                        features</p>
-                                                    <small class="text-body">5 min ago</small>
-                                                </div>
-                                            </a>
+                                                </li>
+                                                <!-- Dark mode switch END -->
+                                            </ul>
+                                            <!-- Profile dropdown END -->
                                         </li>
+                                        <!-- Profile dropdown END -->
                                     </ul>
                                 </div>
-                                <!-- Button -->
-                                <div class="card-footer bg-transparent border-0 py-3 text-center position-relative">
-                                    <a href="#" class="stretched-link">See all incoming activity</a>
-                                </div>
+                                <!-- Top bar right END -->
                             </div>
                         </div>
-                        <!-- Notification dropdown menu END -->
-                    </li>
-                    <!-- Notification dropdown END -->
-
-                    <!-- Profile dropdown START -->
-                    <li class="nav-item ms-2 ms-md-3 dropdown">
-                        <!-- Avatar -->
-                        <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
-                            data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img class="avatar-img rounded-circle" src="{{ asset('assets/images/avatar/01.jpg') }}"
-                                alt="avatar">
-                        </a>
-                        <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3"
-                            aria-labelledby="profileDropdown">
-                            <!-- Profile info -->
-                            <li class="px-3">
-                                <div class="d-flex align-items-center">
-                                    <!-- Avatar -->
-                                    <div class="avatar me-3">
-                                        <img class="avatar-img rounded-circle shadow"
-                                            src="{{ asset('assets/images/avatar/01.jpg') }}" alt="avatar">
-                                    </div>
-                                    <div>
-                                        <a class="h6"
-                                            href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
-                                        <p class="small m-0">{{ Auth::user()->email }}</p>
-                                    </div>
-                                </div>
-                                <hr>
-                            </li>
-                            <!-- Links -->
-                            <li>
-                                <a class="dropdown-item" href="{{ route('dashboard') }}"><i
-                                        class="bi bi-person fa-fw me-2"></i>Dashboard</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan
-                                    Akun</a></li>
-                            <li><a class="dropdown-item" href="#"><i
-                                        class="bi bi-info-circle fa-fw me-2"></i>Panduan</a></li>
-                            <li><a class="dropdown-item bg-danger-soft-hover" href="{{ route('logout') }}"><i
-                                        class="bi bi-power fa-fw me-2"></i>Keluar</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <!-- Dark mode switch START -->
-                            <li>
-                                <div class="modeswitch-wrap" id="darkModeSwitch">
-                                    <div class="modeswitch-item">
-                                        <div class="modeswitch-icon"></div>
-                                    </div>
-                                    <span>Dark mode</span>
-                                </div>
-                            </li>
-                            <!-- Dark mode switch END -->
-                        </ul>
-                        <!-- Profile dropdown END -->
-                    </li>
-                    <!-- Profile dropdown END -->
-                </ul>
-            </div>
-            <!-- Top bar right END -->
-        </div>
-    </div>
 </nav>

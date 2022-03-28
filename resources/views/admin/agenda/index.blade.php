@@ -11,7 +11,33 @@
             </div>
         </div>
 
+        <!-- Course boxes START -->
+        <div class="row g-4 mb-4">
+            <!-- Course item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="text-center p-4 bg-primary bg-opacity-10 border border-primary rounded-3">
+                    <h6>Total Agenda</h6>
+                    <h2 class="mb-0 fs-1 text-primary">{{ count($agenda) }}</h2>
+                </div>
+            </div>
 
+            <!-- Course item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="text-center p-4 bg-success bg-opacity-10 border border-success rounded-3">
+                    <h6>Sedang berjalan</h6>
+                    <h2 class="mb-0 fs-1 text-success">{{ count($running) }}</h2>
+                </div>
+            </div>
+
+            <!-- Course item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="text-center p-4  bg-warning bg-opacity-15 border border-warning rounded-3">
+                    <h6>Akan datang</h6>
+                    <h2 class="mb-0 fs-1 text-warning">{{ count($upcoming) }}</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Course boxes END -->
 
         <!-- Card START -->
         <div class="card bg-transparent border">
@@ -52,7 +78,7 @@
                 <!-- Course table START -->
                 <div class="table-responsive border-0 rounded-3">
                     <!-- Table START -->
-                    <table class="table table-dark-gray align-middle p-4 mb-0 table-hover">
+                    <table class="table table-dark-gray align-middle p-4 mb-0 table-hover text-center">
                         <!-- Table head -->
                         <thead>
                             <tr>
@@ -62,12 +88,16 @@
                                 <th scope="col" class="border-0 rounded-start">Tanggal</th>
                                 <th scope="col" class="border-0">Deskripsi</th>
                                 <th scope="col" class="border-0 rounded-end">Aksi</th>
+
+                                <th scope="col" class="border-0">Jenis Agenda</th>
+                                <th scope="col" class="border-0">Tanggal</th>
+                                <th scope="col" colspan="2" class="border-0 rounded-end">Action</th>
+
                             </tr>
                         </thead>
 
                         <!-- Table body START -->
                         <tbody>
-
                             @foreach ($agenda as $b)
                                 <!-- Table item -->
                                 <tr>
@@ -96,6 +126,25 @@
                                     </td>
                                 </tr>
                             @endforeach
+
+                            @foreach ($agenda as $a)
+                                <tr>
+                                    <td>
+                                        <h6 class="mb-0 ms-2">
+                                            <a href="#">{{ $a->judul }}</a>
+                                        </h6>
+                                    </td>
+                                    <td>{{ $a->jenis }}</td>
+                                    <td>{{ $a->tanggal }}</td>
+                                    <td>
+                                        <a href="{{ route('agenda.show', $a->id) }}"
+                                            class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
+                                        <a href="{{ route('agenda.edit', $a->id) }}"
+                                            class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+
 
                         </tbody>
                         <!-- Table body END -->

@@ -9,12 +9,13 @@ class Detail extends Model
 {
     use HasFactory;
     protected $table = 'detail';
-    protected $fillable = [
-        'sejarah',
-        'latar_belakang',
-        'visi',
-        'misi',
-        'identitas'
-    ];
+    // protected $fillable = [
+    //     'sejarah',
+    //     'latar_belakang',
+    //     'visi',
+    //     'misi',
+    //     'identitas'
+    // ];
+    protected $guarded = ['id'];
     protected $primaryKey = 'id';
 }
