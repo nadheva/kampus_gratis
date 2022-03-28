@@ -9,10 +9,11 @@ class Fitur extends Model
 {
     use HasFactory;
     protected $table = 'fitur';
-    protected $fillable = [
-        'fitur',
-        'deskripsi',
-        'gambar'
-    ];
+    protected $guarded = ['id'];
+    // protected $fillable = [
+    //     'fitur',
+    //     'deskripsi',
+    //     'gambar'
+    // ];
     protected $primaryKey = 'id';
 }

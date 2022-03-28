@@ -1,26 +1,83 @@
-<div class="list-group list-group-dark list-group-borderless">
+<nav class="navbar sidebar navbar-expand-xl navbar-dark bg-dark">
 
-    @if (Auth::user()->role == 'admin')
-        <a class="list-group-item {{ request()->is('') ? 'active' : '' }} " href="{{ route('dashboard') }}"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
-        <a class="list-group-item {{ request()->is('banner') ? 'active' : '' }}" href="{{ route('banner.index') }}"><i class="bi bi-card-checklist fa-fw me-2"></i>Banner (Front
-            Page)</a>
-        <a class="list-group-item {{ request()->is('hehe') ? 'active' : '' }}" href="#"><i class="bi bi-pencil-square fa-fw me-2"></i>Tentang
-            Kampus Gratis</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('detail.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Detail</a>
-        <a class="list-group-item {{ request()->is('data-penelitian*') ? 'active' : '' }}" href="{{ route('data-penelitian.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Penelitian</a>
-        <a class="list-group-item {{ request()->is('guru-besar*') ? 'active' : '' }}" href="{{ route('guru-besar.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Guru Besar</a>
-        <a class="list-group-item {{ request()->is('agenda*') ? 'active' : '' }}" href="{{ route('agenda.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Agenda</a>
-        <a class="list-group-item {{ request()->is('data-jurnal*') ? 'active' : '' }}" href="{{ route('data-jurnal.index') }}"><i class="bi bi-cart-check fa-fw me-2"></i>Jurnal</a>
-        <a class="list-group-item {{ request()->is('setting') ? 'active' : '' }}" href="#"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan</a>
-        <a class="list-group-item {{ request()->is('logout') ? 'active' : '' }} text-danger bg-danger-soft-hover" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
-    @else
-        <a class="list-group-item {{ request()->is('') ? 'active' : '' }} " href="{{ route('dashboard') }}"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('administrasiPengguna') }}"><i class="bi bi-archive fa-fw me-2"></i>Administrasi</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('dataKeluarga') }}"><i class="bi bi-file-earmark-person fa-fw me-2"></i>Data Keluarga</a>
-        <a class="list-group-item {{ request()->is('detail*') ? 'active' : '' }}" href="{{ route('dokumenPenting') }}"><i class="bi bi-file-text fa-fw me-2"></i>Dokumen yang Diperlukan</a>
-        <a class="list-group-item {{ request()->is('setting') ? 'active' : '' }}" href="#"><i class="bi bi-gear fa-fw me-2"></i>Pengaturan Akun</a>
-        <a class="list-group-item {{ request()->is('logout') ? 'active' : '' }} text-danger bg-danger-soft-hover" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
-    @endif
-    
+    <!-- Navbar brand for xl START -->
+    <div class="d-flex align-items-center justify-content-center">
+        <a class="navbar-brand" href="index.html">
+            <img class="navbar-brand-item" src="{{ asset('assets/images/logo.png') }}" alt="logo">
+        </a>
+    </div>
+    <!-- Navbar brand for xl END -->
 
-</div>
+    <div class="offcanvas offcanvas-start flex-row custom-scrollbar h-100" data-bs-backdrop="true" tabindex="-1"
+        id="offcanvasSidebar">
+        <div class="offcanvas-body sidebar-content d-flex flex-column bg-dark">
+
+            <!-- Sidebar menu START -->
+            <ul class="navbar-nav flex-column" id="navbar-sidebar">
+
+                <!-- Menu item 1 -->
+                <li class="nav-item"><a href="/admin" class="nav-link active"><i
+                            class="bi bi-house fa-fw me-2"></i>Dashboard</a></li>
+
+                <!-- Title -->
+                <li class="nav-item ms-2 my-2">Pages</li>
+
+                <!-- Banner -->
+                <li class="nav-item"> <a class="nav-link" href="{{ route('banner.index') }}"><i
+                            class="fas fa-book-reader fa-fw me-2"></i>Banner</a></li>
+
+                <!-- Tentang Kampus Gratis -->
+                <li class="nav-item"> <a class="nav-link" href="#"><i
+                            class="fas fa-info fa-fw me-2"></i>Tentang
+                        Kampus Gratis</a></li>
+
+                <!-- Detail -->
+                <li class="nav-item"> <a class="nav-link" href="{{ route('banner.index') }}"><i
+                            class="fas fa-list fa-fw me-2"></i>Detail</a></li>
+
+                <!-- Penelitian -->
+                <li class="nav-item"> <a class="nav-link" href="{{ route('data-penelitian.index') }}"><i
+                            class="fas fa-school fa-fw me-2"></i>Penelitian</a></li>
+
+                <!-- Berita -->
+                <li class="nav-item"> <a class="nav-link" href="{{ route('berita.index') }}"><i
+                            class="fas fa-newspaper fa-fw me-2"></i>Berita</a></li>
+
+                <!-- Guru Besar -->
+                <li class="nav-item"> <a class="nav-link" href="{{ route('guru-besar.index') }}"><i
+                            class="fas fa-user-graduate fa-fw me-2"></i>Guru Besar</a></li>
+
+                <!-- Agenda -->
+                <li class="nav-item"> <a class="nav-link" href="{{ route('agenda.index') }}"><i
+                            class="fas fa-address-book fa-fw me-2"></i>Agenda</a></li>
+                <!-- Jurnal -->
+                <li class="nav-item"> <a class="nav-link" href="{{ route('data-jurnal.index') }}"><i
+                            class="fas fa-book fa-fw me-2"></i>Jurnal</a></li>
+                <hr>
+                <a class="list-group-item {{ request()->is('logout') ? 'active' : '' }} text-danger bg-danger-soft-hover"
+                    href="{{ route('logout') }}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Keluar</a>
+            </ul>
+            <!-- Sidebar menu end -->
+
+            <!-- Sidebar footer START -->
+            <div class="px-3 mt-auto pt-3">
+                <div class="d-flex align-items-center justify-content-between text-primary-hover">
+                    <a class="h5 mb-0 text-body" href="admin-setting.html" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Settings">
+                        <i class="bi bi-gear-fill"></i>
+                    </a>
+                    <a class="h5 mb-0 text-body" href="index.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Home">
+                        <i class="bi bi-globe"></i>
+                    </a>
+                    <a class="h5 mb-0 text-body" href="sign-in.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Sign out">
+                        <i class="bi bi-power"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Sidebar footer END -->
+
+        </div>
+    </div>
+</nav>
