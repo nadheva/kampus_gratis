@@ -17,7 +17,13 @@ class DatabaseSeeder extends Seeder
             QuestionSeeder::class,
             BeritaSeeder::class,
             FaqSeeder::class,
-            UserSeeder::class
+            UserSeeder::class,
+            AgendaSeeder::class,
+            AlumniSeeder::class,
+            BannerSeeder::class,
+            DetailSeeder::class,
+            FiturSeeder::class,
+            GuruBesarSeeder::class,
         ]);
     }
 }

@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 @endforeach
-                
+
                 <!-- Pagination START -->
                 <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
                     <!-- Content -->
@@ -43,8 +43,8 @@
                     <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
                         <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
                             <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
-                            <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
                         </ul>
@@ -56,7 +56,7 @@
         </div>
         <!-- Card END -->
     </div>
-    
+
     <div class="col-xl-12">
         <!-- Card START -->
         <div class="card border rounded-3">
@@ -96,7 +96,7 @@
                                                 <h6 class="mb-0"><a href="#" class="stretched-link">{{ $item->user }}</a></h6>
                                                 <!-- Address -->
                                                 <span class="text-body small" style="word-break: break-word">
-                                                {{ $item->ask }}    
+                                                {{ $item->ask }}
                                                 </span>
                                             </div>
                                         </div>
@@ -107,18 +107,18 @@
 
                                     <!-- Table data -->
                                     <td>
-                                        
+
                                         <a href="#" class="btn btn-success-soft btn-round me-1 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Message"><i class="far fa-envelope"></i></a>
                                         <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="fas fa-ban"></i></button>
                                     </td>
                                 </tr>
                             @endforeach
-                            
+
                         </tbody>
                         <!-- Table body END -->
                     </table>
                 </div>
-                
+
                 <!-- Pagination START -->
                 <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
                     <!-- Content -->
@@ -127,8 +127,8 @@
                     <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
                         <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
                             <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
-                            <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
                         </ul>
@@ -142,6 +142,6 @@
     </div>
 
     {{-- Message Modal --}}
-    
+
 
 </x-app-layout>
