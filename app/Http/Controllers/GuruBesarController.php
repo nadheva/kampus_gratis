@@ -46,6 +46,12 @@ class GuruBesarController extends Controller
             ->with('success', 'Guru Besar Berhasil Ditambahkan');
     }
 
+    public function show($id)
+    {
+        $gurubesar = GuruBesar::find($id);
+        return view('admin.guru-besar.detail', compact('gurubesar'));
+    }
+
     public function edit($id)
     {
         $gurubesar = GuruBesar::find($id);
@@ -62,11 +68,12 @@ class GuruBesarController extends Controller
             $txt = "storage/gurubesar/". $file_name;
             $request->foto->storeAs('public/gurubesar', $file_name);
             $gurubesar->foto = $txt;
-            $gurubesar->deskripsi = $request->deskripsi;
-            $gurubesar->nama = $request->nama;
-            $gurubesar->pekerjaan = $request->pekerjaan;
-            $gurubesar->lulusan = $request->lulusan;
-        }else{}
+        }
+        
+        $gurubesar->deskripsi = $request->deskripsi;
+        $gurubesar->nama = $request->nama;
+        $gurubesar->pekerjaan = $request->pekerjaan;
+        $gurubesar->lulusan = $request->lulusan;
 
         $gurubesar->save();
         return redirect()->route('guru-besar.index')

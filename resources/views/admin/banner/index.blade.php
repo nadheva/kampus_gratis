@@ -55,7 +55,7 @@
                             <tr>
                                 <th scope="col" class="border-0 rounded-start">Judul</th>
                                 <th scope="col" class="border-0">Gambar</th>
-                                <th scope="col" class="border-0">Diupload pada</th>
+                                <th scope="col" class="border-0">Diupload</th>
                                 <th scope="col" colspan="2" class="border-0 rounded-end">Action</th>
                             </tr>
                         </thead>

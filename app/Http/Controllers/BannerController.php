@@ -67,9 +67,10 @@ class BannerController extends Controller
             $txt = "storage/banner/". $file_name;
             $request->gambar->storeAs('public/banner', $file_name);
             $banner->gambar = $txt;
-            $banner->deskripsi = $request->deskripsi;
-            $banner->heading = $request->heading;
         }
+
+        $banner->heading = $request->heading;
+        $banner->deskripsi = $request->deskripsi;
 
         $banner->save();
         return redirect()->route('banner.index')
