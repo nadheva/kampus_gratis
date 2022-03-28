@@ -1,105 +1,42 @@
-{{-- <x-guest-layout>
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-lg-9 col-12 mx-auto">
-          <div class="card card-body mt-4">
-            <h6 class="mb-0">Edit Guru Besar</h6>
-            <hr class="horizontal dark my-3">
-            <div class="card-body">
-              <form role="form text-left" action="{{url('guru-besar-update',$gurubesar->id)}}" method="POST" enctype="multipart/form-data">
-                @csrf
-                @method('PUT')
-                <input type="hidden" name="id">
-                <div class="mb-3">
-                  <label for="exampleFormControlSelect1">Nama</label>
-                  <input type="text" class="form-control" name="nama" value="{{$gurubesar->nama}}">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlSelect1">Lulusan</label>
-                    <input type="text" class="form-control" name="lulusan" value="{{$gurubesar->lulusan}}">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlSelect1">Pekerjaan</label>
-                    <input type="text" class="form-control" name="pekerjaan" value="{{$gurubesar->pekerjaan}}">
-                  </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlSelect1">Foto</label>
-                  <input type="file" class="form-control" name="foto" value="{{$gurubesar->foto}}">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlSelect1">Deskripsi</label>
-                  <textarea class="form-control" aria-label="With textarea" name="deskripsi" rows="4">{{$gurubesar->deskripsi}}</textarea>
-                </div>
-                <div class="text-end">
-                        <a href="javascript:history.back()" class="btn bg-gradient-danger"><i class="ni ni-bold-left"></i>&nbsp;&nbsp;Batal</a>
-                  <button type="submit" class="btn bg-gradient-dark"><i class="fas fa-plus"></i>&nbsp;&nbsp;Edit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </x-guest-layout> --}}
+@extends('../../layouts/app')
+@section('title', 'Edit Guru besar')
+@section('content')
+<div class="page-content-wrapper border js-choice">
 
-  <x-app-layout>
-
-    <div class="col-xl-9">
-      <!-- Card START -->
-      <div class="card border rounded-3">
-          <!-- Card header START -->
-          <div class="card-header border-bottom">
-              <h3 class="mb-0">Edit Data {{$gurubesar->nama}}</h3>
-          </div>
-          <!-- Card header END -->
-  
-          <!-- Card body START -->
-          <div class="card-body">
-            <form role="form text-left" action="{{route('guru-besar.update',$gurubesar->id)}}" method="POST" enctype="multipart/form-data">
-              @csrf
-              @method('PUT')
-              <input type="hidden" name="id">
-              <div class="mb-3">
-                <label for="exampleFormControlSelect1">Nama</label>
-                <input type="text" class="form-control" name="nama" value="{{$gurubesar->nama}}">
-              </div>
-              <div class="mb-3">
-                  <label for="exampleFormControlSelect1">Lulusan</label>
-                  <input type="text" class="form-control" name="lulusan" value="{{$gurubesar->lulusan}}">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlSelect1">Pekerjaan</label>
-                  <input type="text" class="form-control" name="pekerjaan" value="{{$gurubesar->pekerjaan}}">
-                </div>
-              <div class="mb-3">
-                <label for="exampleFormControlSelect1">Foto</label>
-                <input type="file" class="form-control" name="foto" value="{{$gurubesar->foto}}">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlSelect1">Deskripsi</label>
-                <textarea class="form-control" aria-label="With textarea" name="deskripsi" rows="4">{{$gurubesar->deskripsi}}</textarea>
-              </div>
-              <div class="text-end">
-                      <a href="javascript:history.back()" class="btn bg-gradient-danger"><i class="ni ni-bold-left"></i>&nbsp;&nbsp;Batal</a>
-                <button type="submit" class="btn bg-gradient-dark"><i class="fas fa-plus"></i>&nbsp;&nbsp;Edit</button>
-              </div>
-            </form>
-          </div>
-          <!-- Card body START -->
-      </div>
-      <!-- Card END -->
+  <!-- Title -->
+  <div class="row mb-3">
+    <div class="col-12 d-sm-flex justify-content-between align-items-center">
+      <h1 class="h3 mb-2 mb-sm-0">@yield('title')</h1>
     </div>
-  
-      {{-- @push('scripts')
-      <script>
-        tinymce.init({
-          selector: 'textarea',
-          plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-          toolbar_mode: 'floating',
-        });
-      </script>
-      @endpush --}}
-      
-  </x-app-layout>
-    
-  
+  </div>
+
+  <form role="form text-left" action="{{route('guru-besar.update', $gurubesar->id)}}" method="POST" enctype="multipart/form-data">
+    @csrf
+    @method('PUT')
+    <div class="mb-3">
+      <label for="exampleFormControlSelect1">Nama</label>
+      <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama" value="{{ $gurubesar->nama }}" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlSelect1">Lulusan</label>
+      <input type="text" class="form-control" name="lulusan" placeholder="Masukkan Lulusan" value="{{ $gurubesar->lulusan }}" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlSelect1">Pekerjaan</label>
+      <input type="text" class="form-control" name="pekerjaan" placeholder="Masukkan Pekerjaan" value="{{ $gurubesar->pekerjaan }}" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlSelect1">Foto</label>
+      <input type="file" class="form-control" name="foto">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlSelect1">Deskripsi</label>
+      <textarea class="form-control" aria-label="With textarea" name="deskripsi" rows="4" required>{{$gurubesar->deskripsi}}</textarea>
+    </div>
+    <div class="text-end">
+      <a href="{{ route('guru-besar.index') }}" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i> Batal</a>
+      <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i> Simpan</button>
+    </div>
+  </form>
+</div>
+@stop
