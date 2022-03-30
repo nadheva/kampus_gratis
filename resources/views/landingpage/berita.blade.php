@@ -47,12 +47,12 @@
         <div class="container">
             <div class="row">
                 <!-- Main content START -->
-                <div class="col-lg-8 col-xl-9">
+                <div class="col-lg-12">
 
                     <!-- Search option START -->
                     <div class="row mb-4 align-items-center">
                         <!-- Search bar -->
-                        <div class="col-xl-6">
+                        <div class="col-xl-8">
                             <form class="bg-body shadow rounded p-2">
                                 <div class="input-group input-borderless">
                                     <input class="form-control me-1" type="search" placeholder="Cari disini">
@@ -62,7 +62,7 @@
                         </div>
 
                         <!-- Select option -->
-                        <div class="col-xl-3 mt-3 mt-xl-0">
+                        <div class="col-xl-4">
                             <form class="bg-body shadow rounded p-2 input-borderless">
                                 <select class="form-select form-select-sm js-choice border-0" aria-label=".form-select-sm">
                                     <option value="">Paling banyak dilihat</option>
@@ -74,13 +74,11 @@
                         </div>
 
                         <!-- Content -->
-                        <div class="col-12 col-xl-3 d-flex justify-content-between align-items-center mt-3 mt-xl-0">
+                        <div class="col-12 col-xl-4 d-flex justify-content-between align-items-center mt-3 mt-xl-0">
                             <!-- Advanced filter responsive toggler START -->
                             <button class="btn btn-primary mb-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                                 <i class="fas fa-sliders-h me-1"></i> Show filter
                             </button>
-                            <!-- Advanced filter responsive toggler END -->
-                            <p class="mb-0 text-end">Menampilkan 1-7 dari 32 hasil </p>
                         </div>
 
                     </div>
@@ -95,7 +93,7 @@
                         <div class="col-sm-6 col-lg-4 col-xl-3">
                             <div class="card">
                                 <div class="overflow-hidden rounded-3">
-                                    <img src="assets/images/event/02.jpg" class="card-img" alt="course image">
+                                    <img src="{{ $item->gambar }}" class="card-img" alt="course image">
                                     <!-- Overlay -->
                                     <div class="bg-overlay bg-dark opacity-4"></div>
                                     <div class="card-img-overlay d-flex align-items-start p-3">
@@ -107,7 +105,7 @@
                                 <!-- Card body -->
                                 <div class="card-body">
                                     <!-- Title -->
-                                    <h5 class="card-title"><a href="#">{{ $item->judul }}</a></h5>
+                                    <h5 class="card-title"><a href="{{route('berita_detail', $item->id)}}">{{ $item->judul }}</a></h5>
                                     <p class="text-truncate-2">{{ $item->isi }}</p>
                                     <!-- Info -->
                                     <div class="d-flex justify-content-between">
@@ -139,204 +137,6 @@
                     <!-- Pagination END -->
                 </div>
                 <!-- Main content END -->
-
-                <!-- Right sidebar START -->
-                <div class="col-lg-4 col-xl-3 pt-5 pt-lg-0">
-                    <!-- Responsive offcanvas body START -->
-                    <nav class="navbar navbar-light navbar-expand-lg mx-0">
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header bg-light">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Advance Filter</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body p-3 p-lg-0">
-                                <form>
-                                        <!-- Category START -->
-                                        <div class="card card-body shadow p-4 mb-4">
-                                            <!-- Title -->
-                                            <h4 class="mb-3">Filter</h4>
-                                            <!-- Category group -->
-                                            <div class="col-12">
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
-                                                        <label class="form-check-label" for="flexCheckDefault9">Semua</label>
-                                                    </div>
-                                                    <span class="small">(1256)</span>
-                                                </div>
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
-                                                        <label class="form-check-label" for="flexCheckDefault10">Pendidikan</label>
-                                                    </div>
-                                                    <span class="small">(365)</span>
-                                                </div>
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
-                                                        <label class="form-check-label" for="flexCheckDefault11">Penelitian</label>
-                                                    </div>
-                                                    <span class="small">(156)</span>
-                                                </div>
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
-                                                        <label class="form-check-label" for="flexCheckDefault12">Pengabdian</label>
-                                                    </div>
-                                                    <span class="small">(65)</span>
-                                                </div>
-                                                <!-- Checkbox -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
-                                                        <label class="form-check-label" for="flexCheckDefault17">Prestasi</label>
-                                                    </div>
-                                                    <span class="small">(245)</span>
-                                                </div>
-
-
-                                                <!-- Collapse body -->
-                                                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                                    <div class="card card-body p-0">
-                                                        <!-- Checkbox -->
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16">
-                                                                <label class="form-check-label" for="flexCheckDefault16">Writing</label>
-                                                            </div>
-                                                            <span class="small">(178)</span>
-                                                        </div>
-                                                        <!-- Checkbox -->
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18">
-                                                                <label class="form-check-label" for="flexCheckDefault18">Marketing</label>
-                                                            </div>
-                                                            <span class="small">(104)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Collapse button -->
-                                                <a class=" p-0 mb-0 mt-2 btn-more d-flex align-items-center" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
-                                                    See <span class="see-more ms-1">more</span><span class="see-less ms-1">less</span><i class="fas fa-angle-down ms-2"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- Category END -->
-
-                                        <!-- Price START -->
-                                        <div class="card card-body shadow p-4 mb-4">
-                                            <!-- Title -->
-                                            <h4 class="mb-3">Price Level</h4>
-                                            <ul class="list-inline mb-0">
-                                                <!-- Rent -->
-                                                <li class="list-inline-item">
-                                                    <input type="radio" class="btn-check" name="options" id="option1">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="option1">All</label>
-                                                </li>
-                                                <!-- Sale -->
-                                                <li class="list-inline-item">
-                                                    <input type="radio" class="btn-check" name="options" id="option2">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="option2">Free</label>
-                                                </li>
-                                                <!-- Buy -->
-                                                <li class="list-inline-item">
-                                                    <input type="radio" class="btn-check" name="options" id="option3">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="option3">Paid</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Price END -->
-
-                                        <!-- Skill level START -->
-                                        <div class="card card-body shadow p-4 mb-4">
-                                            <!-- Title -->
-                                            <h4 class="mb-3">Skill level</h4>
-                                            <ul class="list-inline mb-0">
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-12">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-12">All levels</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-9">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-9">Beginner</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-10">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-10">Intermediate</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-11">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-11">Advanced</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Skill level END -->
-
-                                        <!-- Language START -->
-                                        <div class="card card-body shadow p-4 mb-4">
-                                            <!-- Title -->
-                                            <h4 class="mb-3">Language</h4>
-                                            <ul class="list-inline mb-0 g-3">
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-2">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-2">English</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-3">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-3">Francas</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-4">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-4">Hindi</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-5">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-5">Russian</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-6">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-6">Spanish</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-7">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-7">Bengali</label>
-                                                </li>
-                                                <!-- Item -->
-                                                <li class="list-inline-item mb-2">
-                                                    <input type="checkbox" class="btn-check" id="btn-check-8">
-                                                    <label class="btn btn-light btn-primary-soft-check" for="btn-check-8">Portuguese</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Language END -->
-                                </form><!-- Form End -->
-                            </div>
-
-                            <!-- Button -->
-                            <div class="d-grid p-2 p-lg-0 text-center">
-                                <button class="btn btn-primary mb-0">Filter Hasil</button>
-                            </div>
-
-                        </div>
-                    </nav>
-                    <!-- Responsive offcanvas body END -->
-                </div>
-                <!-- Right sidebar END -->
             </div><!-- Row END -->
         </div>
         </section>
