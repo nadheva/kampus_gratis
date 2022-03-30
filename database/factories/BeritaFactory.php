@@ -15,7 +15,7 @@ class BeritaFactory extends Factory
     {
         return [
             'judul' => $this->faker->sentence(3),
-            'isi' => $this->faker->paragraph(5),
+            'isi' => $this->faker->paragraph(500),
             'penulis' => $this->faker->name(),
             'gambar' => $this->faker->imageUrl(640, 480, 'example', true),
             'kategori' => $this->faker->randomElement(['Pendidikan', 'Penelitian', 'Pengabdian', 'Prestasi']),
