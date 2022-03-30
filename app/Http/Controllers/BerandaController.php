@@ -69,16 +69,12 @@ class BerandaController extends Controller
     public function faq()
     {
         $userQuestion = UserQuestion::latest()->first();
-        $beda = $userQuestion->created_at->diffForHumans();
+        $beda = ($userQuestion) ? $userQuestion->created_at->diffForHumans() : "0";
         $faq = Question::all();
         $question = UserQuestion::all()->count();
         $answer = UserQuestion::all()->sum('isanswer');
 
-        if ($userQuestion == null) {
-            return view('landingpage.faq');
-        } else if ($userQuestion != null) {
-            return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
-        }
+        return view('landingpage.faq', compact('beda', 'faq', 'question', 'answer'));
     }
 
     public function questionStore(Request $request)
@@ -106,8 +102,9 @@ class BerandaController extends Controller
     {
         $banner = Banner::all();
         $sambutan = Berita::where('kategori', 'sambutan')->first();
+        $berita = Berita::all();
         // dd($sambutan);
-        return view('landingpage.index', compact('banner', 'sambutan'));
+        return view('landingpage.index', compact('banner', 'sambutan', 'berita'));
     }
 
     public function jobchannel()

@@ -16,7 +16,7 @@
             <ul class="navbar-nav flex-column" id="navbar-sidebar">
 
                 <!-- Menu item 1 -->
-                <li class="nav-item"><a href="admin-dashboard.html" class="nav-link active"><i
+                <li class="nav-item"><a href="/admin" class="nav-link active"><i
                             class="bi bi-house fa-fw me-2"></i>Dashboard</a></li>
 
                 <!-- Title -->
