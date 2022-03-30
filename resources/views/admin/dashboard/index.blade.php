@@ -9,7 +9,7 @@
         </div>
 
         <!-- Counter boxes START -->
-        <div class="row">
+        <div class="row g-4 mb-4">
             <!-- Counter item -->
             <div class="col-md-6 col-xxl-3">
                 <div class="card card-body bg-warning bg-opacity-15 p-4 h-100">
