@@ -55,8 +55,16 @@ class BerandaController extends Controller
     public function berita()
     {
         $berita = Berita::all();
-        // $beda = $berita->created_at->diffForHumans();
         return view('landingpage.berita', compact('berita'));
+        // return response()->json($berita);
+    }
+
+    public function beritaDetail($id)
+    {
+        $berita = Berita::where('id', $id)->first();
+        $firstLetter = ($berita) ? substr($berita->isi, 0, 1) : '';
+        $related = ($berita) ? Berita::where('kategori', 'LIKE', '%' . $berita->kategori . '%')->where('id','!=', $id)->get() : [];
+        return view('landingpage.detailberita', compact('berita', 'firstLetter', 'related'));
     }
 
     public function penelitian()
