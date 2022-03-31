@@ -47,7 +47,7 @@ class BeritaController extends Controller
         if (isset($request->gambar)) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
-            $txt = "storage/berita/". $file_name;
+            $txt = "storage/berita/" . $file_name;
             $request->gambar->storeAs('public/berita', $file_name);
         } else {
             $file_name = null;
@@ -98,21 +98,22 @@ class BeritaController extends Controller
     public function update(Request $request, $id)
     {
         $berita = Berita::findOrFail($id);
-        if (isset($request->gambar)){
+        if (isset($request->gambar)) {
             $extention = $request->gambar->extension();
-            $file_name = time().'.'.$extention;
-            $txt = "storage/berita/". $file_name;
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/berita/" . $file_name;
             $request->gambar->storeAs('public/berita', $file_name);
             $berita->gambar = $txt;
             $berita->judul = $request->judul;
             $berita->isi = $request->isi;
             $berita->penulis = $request->penulis;
             $berita->status = $request->status;
-        }else{}
+        } else {
+        }
 
         $berita->save();
         return redirect()->route('data-berita.index')
-        ->with('edit', 'Berita Berhasil Diedit');
+            ->with('edit', 'Berita Berhasil Diedit');
     }
 
     /**
@@ -125,6 +126,6 @@ class BeritaController extends Controller
     {
         Berita::where('id', $id)->delete();
         return redirect()->route('data-berita.index')
-        ->with('delete', 'Berita Berhasil Dihapus');
+            ->with('delete', 'Berita Berhasil Dihapus');
     }
 }
