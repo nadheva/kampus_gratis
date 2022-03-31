@@ -83,7 +83,7 @@
             <!-- Nav Main menu END -->
 
             <!-- Nav Search START -->
-            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+            <!-- <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
                 <div class="nav-item w-100">
                     <form class="position-relative">
                         <input class="form-control pe-5 bg-transparent" type="search" placeholder="Search"
@@ -92,7 +92,7 @@
                             type="submit"><i class="fas fa-search fs-6 "></i></button>
                     </form>
                 </div>
-            </div>
+            </div> -->
             <!-- Nav Search END -->
         </div>
         <!-- Main navbar END -->
@@ -115,7 +115,7 @@
                                     alt="avatar">
                             </div>
                             <div>
-                                <a class="h6" href="#">{{ Auth::user()->name }}</a>
+                                <a class="h6" href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
                                 <p class="small m-0">{{ Auth::user()->email }}</p>
                             </div>
                         </div>
@@ -146,7 +146,15 @@
                 </ul>
             </div>
         @else
-            <a href="{{ route('login') }}" class="btn btn-primary py-2 px-3">Login</a>
+        <ul class="navbar-nav mx-auto order-0">
+                <li class="nav-item menu ">
+                    <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}" style="margin-right: 5px">Masuk</a>
+                </li>
+                
+                <li class="nav-item menu ">
+                    <a class="btn btn-warning btn-md mt-2" href="{{ route('register') }}">Daftar</a>
+                </li>
+        </ul>
         @endif
         <!-- Profile START -->
     </div>

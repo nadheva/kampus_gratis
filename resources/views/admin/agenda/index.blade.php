@@ -1,7 +1,7 @@
 @extends('../../layouts/app')
 @section('title', 'Agenda')
 @section('content')
-    <div class="page-content-wrapper border">
+    <div class="page-content-wrapper border js-choice">
 
         <!-- Title -->
         <div class="row mb-3">
@@ -17,7 +17,7 @@
             <div class="col-sm-6 col-lg-4">
                 <div class="text-center p-4 bg-primary bg-opacity-10 border border-primary rounded-3">
                     <h6>Total Agenda</h6>
-                    <h2 class="mb-0 fs-1 text-primary">{{count($agenda)}}</h2>
+                    <h2 class="mb-0 fs-1 text-primary">{{ count($agenda) }}</h2>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                     <div class="col-md-3">
                         <!-- Short by filter -->
                         <form>
-                            <select class="form-select js-choice border-0 z-index-9" aria-label=".form-select-sm">
+                            <select class="form-select border-0 z-index-9" aria-label=".form-select-sm">
                                 <option value="">Sort by</option>
                                 <option>Newest</option>
                                 <option>Oldest</option>
@@ -139,4 +139,5 @@
             </div>
             <!-- Card footer END -->
         </div>
-    @stop
+    </div>
+@stop
