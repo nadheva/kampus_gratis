@@ -72,6 +72,7 @@ Route::get('/daftar-magang', function () {
 
 Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
 Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
+Route::get('berita/{id}', [BerandaController::class, 'beritaDetail'])->name('berita_detail');
 Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionStore');
 Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 
