@@ -83,68 +83,29 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="border-0 rounded-start">Judul</th>
-                                <th scope="col" class="border-0 rounded-start">Gambar</th>
-                                <th scope="col" class="border-0 rounded-start">Jenis</th>
-                                <th scope="col" class="border-0 rounded-start">Tanggal</th>
-                                <th scope="col" class="border-0">Deskripsi</th>
-                                <th scope="col" class="border-0 rounded-end">Aksi</th>
-
                                 <th scope="col" class="border-0">Jenis Agenda</th>
                                 <th scope="col" class="border-0">Tanggal</th>
                                 <th scope="col" colspan="2" class="border-0 rounded-end">Action</th>
-
                             </tr>
                         </thead>
 
                         <!-- Table body START -->
                         <tbody>
-                            @foreach ($agenda as $b)
-                                <!-- Table item -->
-                                <tr>
-                                    <td>{{ $b->judul }}</td>
-                                    <td>
-                                        <div class="w-100px">
-                                            <img src="{{ asset($b->gambar) }}" class="rounded" alt="">
-                                        </div>
-                                    </td>
-                                    <td>{{ $b->jenis }}</td>
-                                    <td>{{ $b->tanggal }}</td>
-                                    <td>{{ $b->deskripsi }}</td>
-                                    <td>
-                                        <a href="{{ route('agenda.edit', $b->id) }}"
-                                            class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i
-                                                class="bi bi-play-circle me-1"></i>Edit</a>
-                                        <form id="form-delete" action="{{ route('agenda.destroy', $b->id) }}"
-                                            method="POST" style="display: inline">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit"
-                                                class="btn btn-sm btn-danger-soft me-1 mb-1 mb-md-0 show_confirm"
-                                                data-toggle="tooltip" title='Delete'><i
-                                                    class="bi bi-arrow-repeat me-1"></i>Hapus</button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            @endforeach
-
-                            @foreach ($agenda as $a)
-                                <tr>
-                                    <td>
-                                        <h6 class="mb-0 ms-2">
-                                            <a href="#">{{ $a->judul }}</a>
-                                        </h6>
-                                    </td>
-                                    <td>{{ $a->jenis }}</td>
-                                    <td>{{ $a->tanggal }}</td>
-                                    <td>
-                                        <a href="{{ route('agenda.show', $a->id) }}"
-                                            class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
-                                        <a href="{{ route('agenda.edit', $a->id) }}"
-                                            class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
-                                    </td>
-                                </tr>
-                            @endforeach
-
+							@foreach($agenda as $a)
+							<tr>
+                                <td>
+									<h6 class="mb-0 ms-2">
+										<a href="#">{{ $a->judul }}</a>
+									</h6>
+                                </td>
+                                <td>{{ $a->jenis }}</td>
+                                <td>{{ $a->tanggal }}</td>
+                                <td>
+                                    <a href="{{route('agenda.show', $a->id)}}" class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
+                                    <a href="{{route('agenda.edit', $a->id)}}" class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
+                                </td>
+                            </tr>
+							@endforeach
 
                         </tbody>
                         <!-- Table body END -->
