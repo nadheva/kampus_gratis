@@ -93,7 +93,7 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
-            var isi = "{!! $berita->isi !!}";
+            var isi = `{!! $berita->isi !!}`;
             quill.root.innerHTML = isi;
         });
 
