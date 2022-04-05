@@ -39,10 +39,8 @@
                                     value="{{ $penelitian->status }}" required>
                             </div>
                             <div class="text-end">
-                                <a href="javascript:history.back()" class="btn bg-gradient-danger"><i
-                                        class="ni ni-bold-left"></i>&nbsp;&nbsp;Batal</a>
-                                <button id="btn-submit" class="btn bg-gradient-dark"><i
-                                        class="fas fa-plus"></i>&nbsp;&nbsp;Edit</button>
+                                <a href="javascript:history.back()" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Batal</a>
+                                <button id="btn-submit" class="btn btn-primary"><i class="fas fa-check"></i>&nbsp;&nbsp;Simpan</button>
                             </div>
                         </form>
                     </div>
