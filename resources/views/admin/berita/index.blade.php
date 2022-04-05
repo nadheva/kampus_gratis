@@ -80,7 +80,8 @@
                                                 </div>
                                             </td>
                                             <!-- Isi item -->
-                                            <td class="text-center text-sm-start"><a href="#">Lihat berita</a></td>
+                                            <td class="text-center text-sm-start"><a href="/berita/{{ $item->id }}"
+                                                    target="_blank">Lihat berita</a></td>
                                             <!-- Status item -->
                                             <td>
                                                 <div class="badge bg-success bg-opacity-10 text-success">
