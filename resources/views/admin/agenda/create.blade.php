@@ -45,14 +45,14 @@
             </div>
             <div class="mb-3">
             <label for="exampleFormControlSelect1">Deskripsi</label>
-                                <div id="editor">
-                                </div>
-                                <input type="hidden" name="deskripsi" id="deskripsi">
+                <div id="editor">
+                </div>
+                <input type="hidden" name="deskripsi" id="deskripsi">
             </div>
             <div class="text-end">
                 <a href="{{ route('agenda.index') }}" class="btn btn-outline-secondary"><i
                         class="fas fa-chevron-left"></i> Batal</a>
-                <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</button>
+                <button id="btn-submit" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</button>
             </div>
         </form>
     </div>
@@ -86,7 +86,7 @@
     });
 
     document.querySelector('#btn-submit').addEventListener('click', function() {
-        document.querySelector('#isi').value = quill.root.innerHTML;
+        document.querySelector('#deskripsi').value = quill.root.innerHTML;
         document.querySelector('form').submit();
     });
 
