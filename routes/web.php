@@ -51,6 +51,9 @@ Route::get('/sambutan', function () {
 Route::get('/pendidikan', function () {
     return view('landingpage.pendidikan');
 });
+Route::get('/diploma', function () {
+    return view('landingpage.pendidikan.diploma');
+});
 Route::get('/sarjana', function () {
     return view('landingpage.pendidikan.sarjana');
 });
@@ -71,6 +74,9 @@ Route::get('/daftar-magang', function () {
     return view('landingpage.magang.daftar-magang');
 });
 
+Route::get('/odcp', function () {
+    return view('landingpage.odcp');
+});
 
 
 Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
@@ -124,6 +130,10 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 });
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
+});
+
+Route::get('/texteditor', function () {
+    return view('texteditor');
 });
 
 // Route Login

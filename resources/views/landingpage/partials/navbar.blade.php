@@ -79,6 +79,8 @@
                         href="{{ url('job-channel') }}">Karir</a></li>
                 <li class="nav-item menu"><a class="nav-link {{ request()->is('magang*') ? 'active' : '' }}"
                         href="{{ url('magang') }}">Program Magang Kampus Gratis II</a></li>
+                <li class="nav-item menu"><a class="nav-link {{ request()->is('odcp*') ? 'active' : '' }}"
+                        href="{{ url('odcp') }}">Program ODCP</a></li>
             </ul>
             <!-- Nav Main menu END -->
 
@@ -115,7 +117,8 @@
                                     alt="avatar">
                             </div>
                             <div>
-                                <a class="h6" href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
+                                <a class="h6"
+                                    href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
                                 <p class="small m-0">{{ Auth::user()->email }}</p>
                             </div>
                         </div>
@@ -146,15 +149,16 @@
                 </ul>
             </div>
         @else
-        <ul class="navbar-nav mx-auto order-0">
+            <ul class="navbar-nav mx-auto order-0">
                 <li class="nav-item menu ">
-                    <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}" style="margin-right: 5px">Masuk</a>
+                    <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}"
+                        style="margin-right: 5px">Masuk</a>
                 </li>
-                
+
                 <li class="nav-item menu ">
                     <a class="btn btn-warning btn-md mt-2" href="{{ route('register') }}">Daftar</a>
                 </li>
-        </ul>
+            </ul>
         @endif
         <!-- Profile START -->
     </div>
