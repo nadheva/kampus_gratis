@@ -14,6 +14,7 @@ use App\Models\UserQuestion;
 use Carbon\Carbon;
 use App\Models\Alumni;
 use App\Models\Banner;
+use App\Models\KategoriBerita;
 use App\Models\Prestasi;
 use App\Models\User;
 use App\Models\UserDB2;
@@ -25,6 +26,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
+use PhpParser\NodeVisitor\FirstFindingVisitor;
 
 class BerandaController extends Controller
 {
@@ -54,19 +56,31 @@ class BerandaController extends Controller
 
     public function berita()
     {
-        $berita = Berita::all();
-        return view('landingpage.berita', compact('berita'));
+        return view('landingpage.berita', [
+            'title' => 'Berita Kampus Gratis',
+            'berita' => Berita::with('category')->latest()->paginate(10)
+        ]);
         // return response()->json($berita);
     }
 
-    public function beritaDetail($id)
+    public function kategori_berita(KategoriBerita $category)
     {
-        $berita = Berita::where('id', $id)->first();
+        return view('landingpage.beritaCategory', [
+            'title' => 'Berita Kampus Gratis',
+            'berita' => $category->berita,
+        ]);
+    }
+
+    public function beritaDetail(Berita $berita)
+    {
+        $berita = $berita;
         $firstLetter = '';
-        if($berita && substr($berita->isi, 0, 1) != '<'){
+        if ($berita && substr($berita->isi, 0, 1) != '<') {
             $firstLetter = substr($berita->isi, 0, 1);
         }
-        $related = ($berita) ? Berita::where('kategori', 'LIKE', '%' . $berita->kategori . '%')->where('id','!=', $id)->get() : [];
+        $related = ($berita) ? Berita::where('category_id', 'LIKE', '%' . $berita->kategori . '%')->where('id', '!=', $berita)->get() : [];
+        $firstLetter = ($berita) ? substr($berita->isi, 0, 1) : '';
+        $related = ($berita) ? Berita::where('category_id', 'LIKE', '%' . $berita->kategori . '%')->where('id', '!=', $berita)->get() : [];
         return view('landingpage.detailberita', compact('berita', 'firstLetter', 'related'));
     }
 
@@ -112,7 +126,7 @@ class BerandaController extends Controller
     public function beranda()
     {
         $banner = Banner::all();
-        $sambutan = Berita::where('kategori', 'sambutan')->first();
+        $sambutan = Berita::where('id', '1')->first();
         $berita = Berita::all();
         // dd($sambutan);
         return view('landingpage.index', compact('banner', 'sambutan', 'berita'));

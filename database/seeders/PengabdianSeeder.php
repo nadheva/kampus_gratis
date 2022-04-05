@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\GuruBesar;
+use App\Models\Pengabdian;
 use Illuminate\Database\Seeder;
 
-class GuruBesarSeeder extends Seeder
+class PengabdianSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class GuruBesarSeeder extends Seeder
      */
     public function run()
     {
-        GuruBesar::factory(10)->create();
+        Pengabdian::factory(10)->create();
     }
 }
