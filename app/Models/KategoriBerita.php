@@ -10,10 +10,9 @@ class KategoriBerita extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-    protected $primaryKey = 'id';
 
     public function berita()
     {
-        return $this->hasMany(Berita::class);
+        return $this->hasMany(Berita::class, 'category_id', 'id');
     }
 }

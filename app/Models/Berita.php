@@ -10,7 +10,6 @@ class Berita extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-    protected $primaryKey = 'id';
 
     public function category()
     {

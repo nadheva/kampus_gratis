@@ -26,6 +26,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
+use PhpParser\NodeVisitor\FirstFindingVisitor;
 
 class BerandaController extends Controller
 {
@@ -57,7 +58,7 @@ class BerandaController extends Controller
     {
         return view('landingpage.berita', [
             'title' => 'Berita Kampus Gratis',
-            'berita' => Berita::with('category')->latest()->paginate(6)
+            'berita' => Berita::with('category')->latest()->paginate(10)
         ]);
         // return response()->json($berita);
     }
@@ -66,9 +67,8 @@ class BerandaController extends Controller
     {
         return view('landingpage.beritaCategory', [
             'title' => 'Berita Kampus Gratis',
-            'berita' => Berita::find($category->berita)
+            'berita' => $category->berita,
         ]);
-        // return response()->json($berita);
     }
 
     public function beritaDetail(Berita $berita)

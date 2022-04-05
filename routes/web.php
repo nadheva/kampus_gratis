@@ -82,7 +82,7 @@ Route::get('/odcp', function () {
 // Halaman Berita 
 Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
 Route::get('berita/{berita:slug}', [BerandaController::class, 'beritaDetail'])->name('detail_berita');
-Route::get('berita/categories/{category:slug}', [BerandaController::class, 'kategori_berita'])->name('kategori_berita');
+Route::get('berita-categories/{category:slug}', [BerandaController::class, 'kategori_berita'])->name('kategori_berita');
 
 
 
