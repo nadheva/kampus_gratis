@@ -126,5 +126,9 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 });
 
+Route::get('/texteditor', function () {
+    return view('texteditor');
+});
+
 // Route Login
 require __DIR__ . '/auth.php';
