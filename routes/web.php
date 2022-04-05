@@ -21,6 +21,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SecondDBController;
 use App\Http\Controllers\UserDashboardController;
+use App\Models\KategoriBerita;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,10 +79,16 @@ Route::get('/odcp', function () {
     return view('landingpage.odcp');
 });
 
+// Halaman Berita 
+Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
+Route::get('berita/{berita:slug}', [BerandaController::class, 'beritaDetail'])->name('detail_berita');
+Route::get('berita/categories/{category:slug}', [BerandaController::class, 'kategori_berita'])->name('kategori_berita');
+
+
+
+
 
 Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
-Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
-Route::get('berita/{id}', [BerandaController::class, 'beritaDetail'])->name('berita_detail');
 Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionStore');
 Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 
