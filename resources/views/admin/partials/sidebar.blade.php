@@ -32,7 +32,7 @@
                         Kampus Gratis</a></li>
 
                 <!-- Detail -->
-                <li class="nav-item"> <a class="nav-link" href="{{ route('banner.index') }}"><i
+                <li class="nav-item"> <a class="nav-link" href="#"><i
                             class="fas fa-list fa-fw me-2"></i>Detail</a></li>
 
                 <!-- Penelitian -->

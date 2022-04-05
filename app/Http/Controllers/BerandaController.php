@@ -62,7 +62,10 @@ class BerandaController extends Controller
     public function beritaDetail($id)
     {
         $berita = Berita::where('id', $id)->first();
-        $firstLetter = ($berita) ? substr($berita->isi, 0, 1) : '';
+        $firstLetter = '';
+        if($berita && substr($berita->isi, 0, 1) != '<'){
+            $firstLetter = substr($berita->isi, 0, 1);
+        }
         $related = ($berita) ? Berita::where('kategori', 'LIKE', '%' . $berita->kategori . '%')->where('id','!=', $id)->get() : [];
         return view('landingpage.detailberita', compact('berita', 'firstLetter', 'related'));
     }
