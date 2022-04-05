@@ -38,7 +38,7 @@
 				<div class="row mt-4">
 					<!-- Content -->
 					<div class="col-12 mt-4 mt-lg-0">
-						<p><span class="dropcap h6 mb-0 px-2">{{$firstLetter}}</span> {{ $berita->isi }}</p>
+						<p><span class="dropcap h6 mb-0 px-2">{{$firstLetter}}</span> {!! $berita->isi !!}</p>
 					</div>
 				</div>
 
