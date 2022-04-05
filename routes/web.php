@@ -71,6 +71,9 @@ Route::get('/daftar-magang', function () {
     return view('landingpage.magang.daftar-magang');
 });
 
+Route::get('/odcp', function () {
+    return view('landingpage.odcp');
+});
 
 
 Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
