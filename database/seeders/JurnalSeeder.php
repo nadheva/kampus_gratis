@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Jurnal;
 use Illuminate\Database\Seeder;
 
 class JurnalSeeder extends Seeder
@@ -13,6 +14,6 @@ class JurnalSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Jurnal::factory(10)->create();
     }
 }

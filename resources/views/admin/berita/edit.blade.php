@@ -34,8 +34,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlSelect1">Gambar</label>
-                                <input type="file" class="form-control" name="gambar" value="{{ $berita->gambar }}"
-                                    required>
+                                <input type="file" class="form-control" name="gambar" value="{{ $berita->gambar }}">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlSelect1">Isi</label>
@@ -44,10 +43,8 @@
                                 <input type="hidden" name="isi" id="isi">
                             </div>
                             <div class="text-end">
-                                <a href="javascript:history.back()" class="btn bg-gradient-danger"><i
-                                        class="ni ni-bold-left"></i>&nbsp;&nbsp;Batal</a>
-                                <button type="submit" class="btn bg-gradient-dark"><i
-                                        class="fas fa-plus"></i>&nbsp;&nbsp;Edit</button>
+                                <a href="javascript:history.back()" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Batal</a>
+                                <button id="btn-submit" class="btn btn-primary"><i class="fas fa-check"></i>&nbsp;&nbsp;Simpan</button>
                             </div>
                         </form>
                     </div>
@@ -93,10 +90,14 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
-            var isi = "{!! $berita->isi !!}";
+            var isi = `{!! $berita->isi !!}`;
             quill.root.innerHTML = isi;
         });
 
+        document.querySelector('#btn-submit').addEventListener('click', function() {
+        document.querySelector('#isi').value = quill.root.innerHTML;
+        document.querySelector('form').submit();
+        });
     </script>
     @stop
 </x-app-layout>

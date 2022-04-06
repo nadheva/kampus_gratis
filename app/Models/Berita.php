@@ -2,22 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\KategoriBerita;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Berita extends Model
 {
     use HasFactory;
-    protected $table = 'berita';
-    // protected $fillable = [
-    //     'judul',
-    //     'isi',
-    //     'penulis',
-    //     'gambar',
-    //     'kategori',
-    //     'status'
-    // ];
-
     protected $guarded = ['id'];
-    protected $primaryKey = 'id';
+
+    public function category()
+    {
+        return $this->belongsTo(KategoriBerita::class);
+    }
 }
