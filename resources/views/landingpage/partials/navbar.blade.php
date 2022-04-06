@@ -149,16 +149,18 @@
                 </ul>
             </div>
         @else
-            <ul class="navbar-nav mx-auto order-0">
-                <li class="nav-item menu ">
-                    <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}"
-                        style="margin-right: 5px">Masuk</a>
-                </li>
+            <div class="d-sm-none d-lg-block d-block">
+                <ul class="navbar-nav mx-auto order-0">
+                    <li class="nav-item menu ">
+                        <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}"
+                            style="margin-right: 5px">Masuk</a>
+                    </li>
 
-                <li class="nav-item menu ">
-                    <a class="btn btn-warning btn-md mt-2" href="{{ route('register') }}">Daftar</a>
-                </li>
-            </ul>
+                    <li class="nav-item menu ">
+                        <a class="btn btn-warning btn-md mt-2" href="{{ route('register') }}">Daftar</a>
+                    </li>
+                </ul>
+            </div>
         @endif
         <!-- Profile START -->
     </div>
