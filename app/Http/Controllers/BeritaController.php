@@ -15,8 +15,14 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        $berita = Berita::all();
-        return view('admin.berita.index', compact('berita'));
+        $berita = Berita::latest();
+
+        if (request('search')) {
+            $berita->where('judul', 'like', '%' . request('search') . '%')
+                ->orWhere('penulis', 'like', '%' . request('search') . '%');
+        }
+
+        return view('admin.berita.index', ["berita" => $berita->get()]);
     }
 
     /**
@@ -132,11 +138,5 @@ class BeritaController extends Controller
         Berita::where('id', $id)->delete();
         return redirect()->route('data-berita.index')
             ->with('delete', 'Berita Berhasil Dihapus');
-    }
-
-    public function checkSlug(Request $request)
-    {
-        $slug = SlugService::createSlug(Berita::class, 'slug', $request->title);
-        return response()->json(['slug' => $slug]);
     }
 }

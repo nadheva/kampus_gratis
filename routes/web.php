@@ -79,7 +79,7 @@ Route::get('/odcp', function () {
     return view('landingpage.odcp');
 });
 
-// Halaman Berita 
+// Halaman Berita
 Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
 Route::get('berita/{berita:slug}', [BerandaController::class, 'beritaDetail'])->name('detail_berita');
 Route::get('berita-categories/{category:slug}', [BerandaController::class, 'kategori_berita'])->name('kategori_berita');
@@ -100,11 +100,11 @@ Route::prefix('admin')->group(function () {
         Route::resource('detail', DetailController::class);
         Route::resource('data-penelitian', PenelitianController::class);
         Route::resource('data-prestasi', PrestasiController::class);
-        Route::resource('data-berita', BeritaController::class);
         Route::resource('data-faq', QuestionController::class);
         Route::resource('data-fitur', FiturController::class);
 
-
+        // Halaman Berita
+        Route::resource('data-berita', BeritaController::class);
 
         Route::get('/tentang', [TentangController::class, 'view']);
 
