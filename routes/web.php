@@ -105,6 +105,7 @@ Route::prefix('admin')->group(function () {
         Route::resource('data-fitur', FiturController::class);
 
 
+
         Route::get('/tentang', [TentangController::class, 'view']);
 
         Route::resource('banner', BannerController::class);
@@ -142,6 +143,9 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 Route::get('/texteditor', function () {
     return view('texteditor');
 });
+
+// Sluggable
+// Route::get('/admin/berita/checkSlug', [BeritaController::class, 'checkSlug'])->middleware('auth');
 
 // Route Login
 require __DIR__ . '/auth.php';

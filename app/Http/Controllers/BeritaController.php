@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Berita;
 use Illuminate\Http\Request;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class BeritaController extends Controller
 {
@@ -56,6 +57,9 @@ class BeritaController extends Controller
 
         Berita::create([
             'judul' => $request->judul,
+            'slug' => SlugService::createSlug(Berita::class, 'slug', $request->judul),
+            'category_id' => 1,
+            'excerpt' => 'saddsadasdsa',
             'isi' => $request->isi,
             'gambar' => $txt,
             'status' => $request->status,
@@ -128,5 +132,11 @@ class BeritaController extends Controller
         Berita::where('id', $id)->delete();
         return redirect()->route('data-berita.index')
             ->with('delete', 'Berita Berhasil Dihapus');
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Berita::class, 'slug', $request->title);
+        return response()->json(['slug' => $slug]);
     }
 }
