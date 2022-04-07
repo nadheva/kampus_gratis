@@ -31,6 +31,6 @@ class BeritaSeeder extends Seeder
             '
         ]);
 
-        Berita::factory(9)->create();
+        Berita::factory(50)->create();
     }
 }
