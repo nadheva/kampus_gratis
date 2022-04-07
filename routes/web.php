@@ -19,6 +19,7 @@ use App\Http\Controllers\FiturController;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KategoriBeritaController;
 use App\Http\Controllers\SecondDBController;
 use App\Http\Controllers\UserDashboardController;
 use App\Models\KategoriBerita;
@@ -105,6 +106,7 @@ Route::prefix('admin')->group(function () {
 
         // Halaman Berita
         Route::resource('data-berita', BeritaController::class);
+        Route::resource('berita-category', KategoriBeritaController::class);
 
         Route::get('/tentang', [TentangController::class, 'view']);
 

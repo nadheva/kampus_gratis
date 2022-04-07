@@ -20,29 +20,65 @@
                             enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
-                                <label for="exampleFormControlSelect1">Judul</label>
-                                <input type="text" class="form-control" name="judul" id="judul"
-                                    placeholder="Masukkan Judul" required>
+                                <label for="judul">Judul</label>
+                                <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul"
+                                    id="judul" placeholder="Masukkan Judul" required>
+                                @error('judul')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
-                            {{-- <div class="mb-3">
-                                <label for="exampleFormControlSelect1">Slug</label>
-                                <input type="text" class="form-control" name="slug" id="slug" placeholder="Masukkan Slug"
-                                    required>
-                            </div> --}}
                             <div class="mb-3">
-                                <label for="exampleFormControlSelect1">Penulis</label>
-                                <input type="text" class="form-control" name="penulis" placeholder="Nama Penulis" required>
+                                <label for="category">Kategori</label>
+                                <select class="form-select" aria-label="Default select example" id="kategori_id"
+                                    name="kategori_id">
+                                    <option selected>Pilih Kategori</option>
+                                    @foreach ($categories as $item)
+                                        <option value="{{ $item->category_id }}">
+                                            {{ $item->name }}
+                                        </option>
+                                        {{-- @if (old('kategori_id') == $item->category_id)
+                                            <option value="{{ $item->category_id }}" selected>
+                                                {{ $item->name }}
+                                            </option>
+                                        @else
+                                          
+                                        @endif --}}
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="penulis">Penulis</label>
+                                <input type="text" class="form-control @error('penulis') is-invalid @enderror"
+                                    name="penulis" placeholder="Nama Penulis" required>
+                                @error('penulis')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 <input type="hidden" class="form-control" name="status" value="live" required>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlSelect1">Gambar</label>
-                                <input type="file" class="form-control" name="gambar" required>
+                                <label for="gambar">Gambar</label>
+                                <input type="file" class="form-control @error('gambar') is-invalid @enderror" name="gambar"
+                                    required>
+                                @error('gambar')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlSelect1">Isi</label>
+                                <label for="isi">Isi</label>
                                 <div id="editor">
                                 </div>
-                                <input type="hidden" name="isi" id="isi">
+                                <input type="hidden" class="@error('isi') is-invalid @enderror" name="isi" id="isi">
+                                @error('isi')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                             <div class="text-end">
                                 <a href="javascript:history.back()" class="btn btn-outline-secondary"><i
@@ -126,17 +162,5 @@
                 document.querySelector('form').submit();
             });
         </script>
-
-        {{-- Sluggable --}}
-        {{-- <script>
-            const judul = document.querySelector('#judul');
-            const slug = document.querySelector('#slug');
-
-            judul.addEventListener('change', function() {
-                fetch('/admin/berita/checkSlug?judul=' + judul.value)
-                    .then(response => response.json())
-                    .then(data => slug.value = data.slug)
-            });
-        </script> --}}
     @stop
 </x-app-layout>
