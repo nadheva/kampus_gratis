@@ -13,7 +13,7 @@
 
                     <!-- Card body START -->
                     <div class="card-body">
-                        <form role="form text-left" action="{{ url('data-penelitian', $penelitian->id) }}" method="POST"
+                        <form role="form text-left" action="{{ route('data-penelitian.update', $penelitian->id) }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
