@@ -127,7 +127,7 @@ class BerandaController extends Controller
     {
         $banner = Banner::all();
         $sambutan = Berita::where('id', '1')->first();
-        $berita = Berita::all();
+        $berita = Berita::paginate(8);
         // dd($sambutan);
         return view('landingpage.index', compact('banner', 'sambutan', 'berita'));
     }
