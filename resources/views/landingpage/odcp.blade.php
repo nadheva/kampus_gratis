@@ -45,10 +45,7 @@
                     <!-- Title and SVG END -->
                 </div>
 
-                <!-- Images START -->
                 <div class="row g-4 mt-0 mt-lg-5  d-flex justify-content-between">
-
-
                     <div class="col-lg-5 col-sm-8">
                         <div class="row g-4">
 
@@ -75,22 +72,15 @@
 
                             </p>
                             <div class=" col-lg-1 col-sm-12 text-center">
-                                <a href="https://forms.gle/id6v3eTRe8CfCJLf7"
-                                    class="btn btn-warning btn-lg mt-2 rounded-pill" target="_BLANK"
+                                <a href="#" class="btn btn-warning btn-lg mt-2 rounded-pill" target="_BLANK"
                                     style="font-size:25px;font-weight:bold;">Daftar Program</a>
                             </div>
                         </div>
                     </div>
-
-
                     <div class="col-lg-6 col-md-6 ">
-
                         <img class="rounded-1" src="{{ asset('assets/images/odcp/1.png') }}" alt="">
                     </div>
-
-
                 </div>
-
             </div>
         </section>
         <!-- =======================
@@ -102,65 +92,59 @@
             <div class="container">
                 <!-- Title -->
 
-
+                {{-- Alur Program --}}
                 <div class="mt-5">
-                    <h4 class="mb-3  text-center">Alur Program</h4>
-                    <div class="col-lg-12 position-relative text-center">
-                        <!-- Image -->
-                        <img src="{{ asset('assets/images/odcp/2.png') }}" class="" alt="">
-                    </div>
-
-                    {{-- <div class=" mt-4 mt-lg-0 bg-primary d-flex justify-content-around flex-wrap">
-                        <div class="card" style="width: 250px">
-                            <h3 class=" text-center">01</h3>
-                            <p class="text-center">
-                                Recruitment & Seleksi Mahasiswa
-
+                    <div>
+                        <h4 class="mb-3  text-center">Alur Program</h4>
+                        <div class="col-lg-12 position-relative text-center">
+                            <!-- Image -->
+                            <img src="{{ asset('assets/images/odcp/2.png') }}" class="" alt="">
                         </div>
-                    </div> --}}
-                </div>
-                <div class="row g-4 mt-0 mt-lg-5   d-flex justify-content-between">
-                    <div class="col-lg-6 col-md-6 d-block text-center">
-
-                        <img class="rounded-1" src="{{ asset('assets/images/odcp/3.png') }}" alt="" width="400px"
-                            height="400px">
                     </div>
+                    <div class="row g-4 mt-0 mt-lg-5   d-flex justify-content-between">
+                        <div class="col-lg-6 col-md-6 d-block text-center">
 
-                    <div class="col-lg-5 col-sm-8">
-                        <div class="row g-4">
-                            <h3>Proses Recruitment &
-                                On Boarding
-                            </h3>
-                            <p class="mb-0" align="justify">
-                                1. Recruitment 300 mahasiswa dilakukan bulan April 2022.
-                            </p>
-                            <p class="mb-0" align="justify">
-                                2. Persyaratan seleksi mahasiswa tingkat skripsi (tugas akhir), atau yang sudah lulus
-                                atau maksimal selama Covid, (2 tahun terakhir) belum mendapatkan pekerjaan.
+                            <img class="rounded-1" src="{{ asset('assets/images/odcp/3.png') }}" alt=""
+                                width="400px" height="400px">
+                        </div>
 
-                            </p>
-                            <p class="mb-0" align="justify">
-                                3. Pembuatan Kontrak kerja dan MOU dengan universitas (pusat karir).
+                        {{-- Proses Recruitment & On Boarding --}}
+                        <div class="col-lg-5 col-sm-8">
+                            <div class="row g-4">
+                                <h3>Proses Recruitment &
+                                    On Boarding
+                                </h3>
+                                <p class="mb-0" align="justify">
+                                    1. Recruitment 300 mahasiswa dilakukan bulan April 2022.
+                                </p>
+                                <p class="mb-0" align="justify">
+                                    2. Persyaratan seleksi mahasiswa tingkat skripsi (tugas akhir), atau yang sudah
+                                    lulus
+                                    atau maksimal selama Covid, (2 tahun terakhir) belum mendapatkan pekerjaan.
 
-                            </p>
-                            <p class="mb-0" align="justify">
-                                4. Mahasiswa melakukan onboarding dan mulai mengikuti pelatihan.
+                                </p>
+                                <p class="mb-0" align="justify">
+                                    3. Pembuatan Kontrak kerja dan MOU dengan universitas (pusat karir).
 
-                            </p>
+                                </p>
+                                <p class="mb-0" align="justify">
+                                    4. Mahasiswa melakukan onboarding dan mulai mengikuti pelatihan.
 
+                                </p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+                {{-- Kerangka Program --}}
                 <div class="row g-4 mt-5 mt-lg-5  d-flex justify-content-between">
-
-
                     <div class="col-lg-5 col-sm-8">
                         <div class="row g-4">
                             <h3>Kerangka Program</h3>
                             <p class="mb-0" align="justify">
                                 Aktivitas magang yang kami rancang adalah untuk mahasiswa dapat diterima bekerja di
                                 perusahaan keuangan, yang bernama Officer Development Crash Program (ODCP).
-
+                            </p>
                             <p class="mb-0" align="justify">
                                 ODCP memiliki keunggulan, karena mahasiswa diberikan kemampuan atau keahlian yang
                                 spesifik, seperti Sales, Credit dan Collection sesuai kebutuhan dari perusahaan keuangan
@@ -180,27 +164,15 @@
                                 <li class="my-2">SPRINT Restrospective,</li>
                                 <li class="my-2">Improvement.</li>
                             </ol>
-
-
-
-                            </p>
-
-                            </p>
                         </div>
                     </div>
-
-
                     <div class="col-lg-6 col-md-6 ">
-
                         <img class="rounded-1" src="{{ asset('assets/images/odcp/4.png') }}" alt="">
                     </div>
-
-
                 </div>
 
+                {{-- Proses Pelatihan --}}
                 <div class="row g-4 mt-5 mt-lg-5  d-flex justify-content-between">
-
-
                     <div class="col-lg-5 col-sm-8">
                         <div class="row g-4">
                             <h3>Proses Pelatihan</h3>
@@ -208,53 +180,51 @@
                                 Pemberian materi diberikan baik secara synchronous (melalui online meeting), dan
                                 asynchronous (dengan disediakannya video ajar dan white paper di aplikasi
                                 kampusgratis.id).
-
                             </p>
                             <p class="mb-0" align="justify">
                                 Sesi tatap muka atau zoom dibutuhkan untuk pada penugasan dan mentoring yang membutuhkan
                                 untuk dilakukan secara langsung.
-
-
                             </p>
                             <p class="mb-0" align="justify">
                                 Setiap materi pembelajaran akan dilengkapi dengan kuis dan latihan, penugasan, ujian
                                 akhir dan uji kompetensi berupa studi kasus, role play dan drill, sebagai evaluasi
                                 apakah peserta sudah mencapai minimum standar kompetensi.
-
-
                             </p>
                         </div>
                     </div>
-
-
                     <div class="col-lg-6 col-md-6 d-block text-center ">
-
                         <img class="rounded-1" src="{{ asset('assets/images/odcp/5.png') }}" alt="">
                     </div>
-
-
                 </div>
 
+                {{-- Monitoring & Evaluasi --}}
                 <div class="row g-4 mt-5 mt-lg-5  d-flex justify-content-between">
                     <h3 class="text-center">Monitoring & Evaluasi</h3>
                     <p class="text-center">Peserta program akan dimonitor kinerjanya meliputi:</p>
 
                     <div class="d-lg-flex justify-content-between">
                         <div style="width: 350px">
-                            <h3 class="bg-primary rounded-circle text-center text-light"
-                                style="width: 40px; color: blue">1
-                            </h3>
+                            <div class="d-flex bg-primary rounded-circle justify-content-center mb-1"
+                                style="width: 2.5em; height: 2.5em">
+                                <h3 class="text-center text-light my-auto">1</h3>
+                            </div>
                             <h5>Professional Working Attitude</h5>
                             <p>Meliputi disiplin, intensi belajar, sopan santun, tingkat energi, Fokus dan komitment.
                             </p>
                         </div>
                         <div style="width: 350px">
-                            <h3 class="bg-primary rounded-circle text-center text-light" style="width: 40px">2</h3>
+                            <div class="d-flex bg-primary rounded-circle justify-content-center  mb-1"
+                                style="width: 2.5em; height: 2.5em">
+                                <h3 class="text-center text-light my-auto">2</h3>
+                            </div>
                             <h5>Pantang Menyerah Terhadap Hasil</h5>
                             <p>Meliputi kualitas hasil penugasan, nilai kinerja, nilai uji kompetensi.</p>
                         </div>
                         <div style="width: 350px">
-                            <h3 class="bg-primary rounded-circle text-center text-light" style="width: 40px">3</h3>
+                            <div class="d-flex bg-primary rounded-circle justify-content-center  mb-1"
+                                style="width: 2.5em; height: 2.5em">
+                                <h3 class="text-center text-light my-auto">3</h3>
+                            </div>
                             <h5>Penguasaan Kompetensi Teknis & Non Teknis </h5>
                             <p>Meliputi standar kompetensi yang M-Knows Terapkan, dimana Gap Kompetensi akan di
                                 identifikasi dan ditentukan solusi perbaikannya.
@@ -270,8 +240,6 @@
                             sesuai kebutuhan dan kepentingannya.
                         </p>
                     </div>
-
-
                 </div>
             </div>
         </section>
