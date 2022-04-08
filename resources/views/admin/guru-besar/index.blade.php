@@ -62,21 +62,23 @@
 
                         <!-- Table body START -->
                         <tbody>
-							@foreach($gurubesar as $b)
-							<tr>
-                                <td>
-									<h6 class="mb-0 ms-2">
-										<a href="#">{{ $b->nama }}</a>
-									</h6>
-                                </td>
-                                <td>{{ $b->lulusan }}</td>
-                                <td>{{ $b->pekerjaan }}</td>
-                                <td>
-                                    <a href="{{route('guru-besar.show', $b->id)}}" class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
-                                    <a href="{{route('guru-besar.edit', $b->id)}}" class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
-                                </td>
-                            </tr>
-							@endforeach
+                            @foreach ($gurubesar as $b)
+                                <tr>
+                                    <td>
+                                        <h6 class="mb-0 ms-2">
+                                            <a href="#">{{ $b->nama }}</a>
+                                        </h6>
+                                    </td>
+                                    <td>{{ $b->lulusan }}</td>
+                                    <td>{{ $b->pekerjaan }}</td>
+                                    <td>
+                                        <a href="{{ route('guru-besar.show', $b->id) }}"
+                                            class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
+                                        <a href="{{ route('guru-besar.edit', $b->id) }}"
+                                            class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
 
                         </tbody>
                         <!-- Table body END -->
