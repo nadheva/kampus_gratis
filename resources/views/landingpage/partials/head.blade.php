@@ -27,6 +27,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+    <link id="style-switch" rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
     @stack('css')
 </head>

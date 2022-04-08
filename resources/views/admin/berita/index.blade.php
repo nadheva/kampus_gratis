@@ -29,11 +29,15 @@
                             <!-- Button -->
                             <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
                                 <div class="nav-wrguester position-relative end-0">
-                                    <div class="text-end ms-auto">
+                                    <div class="text-end ms-auto d-flex justify-content-around">
                                         <div class="mt-2 mt-sm-0">
                                             <a href="{{ route('data-berita.create') }}"
                                                 class="btn btn-success mb-0">Tambah
                                                 Berita</a>
+                                        </div>
+                                        <div class="mt-2 mt-sm-0">
+                                            <a href="{{ route('data-berita.create') }}" class="btn btn-info mb-0">Tambah
+                                                Kategori</a>
                                         </div>
                                     </div>
                                 </div>
