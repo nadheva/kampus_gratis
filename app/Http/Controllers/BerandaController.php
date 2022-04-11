@@ -58,7 +58,7 @@ class BerandaController extends Controller
     {
         return view('landingpage.berita', [
             'title' => 'Berita Kampus Gratis',
-            'berita' => Berita::with('category')->latest()->paginate(10)
+            'berita' => Berita::with('category')->latest()->paginate(8)
         ]);
         // return response()->json($berita);
     }

@@ -19,6 +19,7 @@ use App\Http\Controllers\FiturController;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KategoriBeritaController;
 use App\Http\Controllers\SecondDBController;
 use App\Http\Controllers\UserDashboardController;
 use App\Models\KategoriBerita;
@@ -79,7 +80,7 @@ Route::get('/odcp', function () {
     return view('landingpage.odcp');
 });
 
-// Halaman Berita 
+// Halaman Berita
 Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
 Route::get('berita/{berita:slug}', [BerandaController::class, 'beritaDetail'])->name('detail_berita');
 Route::get('berita-categories/{category:slug}', [BerandaController::class, 'kategori_berita'])->name('kategori_berita');
@@ -100,10 +101,12 @@ Route::prefix('admin')->group(function () {
         Route::resource('detail', DetailController::class);
         Route::resource('data-penelitian', PenelitianController::class);
         Route::resource('data-prestasi', PrestasiController::class);
-        Route::resource('data-berita', BeritaController::class);
         Route::resource('data-faq', QuestionController::class);
         Route::resource('data-fitur', FiturController::class);
 
+        // Halaman Berita
+        Route::resource('data-berita', BeritaController::class);
+        Route::resource('berita-category', KategoriBeritaController::class);
 
         Route::get('/tentang', [TentangController::class, 'view']);
 
@@ -142,6 +145,9 @@ Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
 Route::get('/texteditor', function () {
     return view('texteditor');
 });
+
+// Sluggable
+// Route::get('/admin/berita/checkSlug', [BeritaController::class, 'checkSlug'])->middleware('auth');
 
 // Route Login
 require __DIR__ . '/auth.php';

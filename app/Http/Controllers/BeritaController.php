@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Berita;
+use Google\Cloud\Core\Retry;
 use Illuminate\Http\Request;
+use App\Models\KategoriBerita;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class BeritaController extends Controller
 {
@@ -15,7 +18,13 @@ class BeritaController extends Controller
     public function index()
     {
         $berita = Berita::latest()->paginate(5);
-        return view('admin.berita.index', compact('berita'));
+
+        if (request('search')) {
+            $berita->where('judul', 'like', '%' . request('search') . '%')
+                ->orWhere('penulis', 'like', '%' . request('search') . '%');
+        }
+
+        return view('admin.berita.index', ["berita" => $berita]);
     }
 
     /**
@@ -25,9 +34,10 @@ class BeritaController extends Controller
      */
     public function create()
     {
-        return view('admin.berita.create');
+        return view('admin.berita.create', [
+            'categories' => KategoriBerita::all()
+        ]);
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -38,11 +48,12 @@ class BeritaController extends Controller
     {
 
         $request->validate([
-            'judul' => 'required',
-            'isi' => 'required',
+            'kategori_id' => 'required',
+            'judul' => 'required|string|max:255|min:5',
+            'isi' => 'required|max:255',
+            'penulis' => 'required|min:3',
             'gambar' => 'required',
             'status' => 'required',
-            'penulis' => 'required'
         ]);
 
         if (isset($request->gambar)) {
@@ -55,11 +66,13 @@ class BeritaController extends Controller
         }
 
         Berita::create([
+            'category_id' => $request->kategori_id,
+            'slug' => SlugService::createSlug(Berita::class, 'slug', $request->judul),
             'judul' => $request->judul,
             'isi' => $request->isi,
-            'gambar' => $txt,
             'status' => $request->status,
-            'penulis' => $request->penulis
+            'penulis' => $request->penulis,
+            'gambar' => $txt,
         ]);
 
         return redirect()->route('data-berita.index')
