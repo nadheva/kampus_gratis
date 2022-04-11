@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Berita;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             QuestionSeeder::class,
+            KategoriBeritaSeeder::class,
             BeritaSeeder::class,
             FaqSeeder::class,
             UserSeeder::class,
