@@ -14,7 +14,7 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        $berita = Berita::all();
+        $berita = Berita::latest()->paginate(5);
         return view('admin.berita.index', compact('berita'));
     }
 
@@ -36,6 +36,7 @@ class BeritaController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'judul' => 'required',
             'isi' => 'required',

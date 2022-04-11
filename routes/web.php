@@ -21,6 +21,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SecondDBController;
 use App\Http\Controllers\UserDashboardController;
+use App\Models\KategoriBerita;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,8 +52,14 @@ Route::get('/sambutan', function () {
 Route::get('/pendidikan', function () {
     return view('landingpage.pendidikan');
 });
+Route::get('/diploma', function () {
+    return view('landingpage.pendidikan.diploma');
+});
 Route::get('/sarjana', function () {
     return view('landingpage.pendidikan.sarjana');
+});
+Route::get('/diploma', function () {
+    return view('landingpage.pendidikan.diploma.diploma');
 });
 Route::get('/kursus', function () {
     return view('landingpage.pendidikan.kursus');
@@ -68,10 +75,20 @@ Route::get('/daftar-magang', function () {
     return view('landingpage.magang.daftar-magang');
 });
 
+Route::get('/odcp', function () {
+    return view('landingpage.odcp');
+});
+
+// Halaman Berita 
+Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
+Route::get('berita/{berita:slug}', [BerandaController::class, 'beritaDetail'])->name('detail_berita');
+Route::get('berita-categories/{category:slug}', [BerandaController::class, 'kategori_berita'])->name('kategori_berita');
+
+
+
 
 
 Route::get('penelitian', [BerandaController::class, 'penelitian'])->name('penelitian');
-Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
 Route::post('faq', [BerandaController::class, 'questionStore'])->name('questionStore');
 Route::get('faq', [BerandaController::class, 'faq'])->name('faq');
 
@@ -120,6 +137,10 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
 });
 
 Route::middleware(['auth', 'role:admin,mahasiswa'])->group(function () {
+});
+
+Route::get('/texteditor', function () {
+    return view('texteditor');
 });
 
 // Route Login

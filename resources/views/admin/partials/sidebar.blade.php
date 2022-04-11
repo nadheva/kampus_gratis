@@ -2,7 +2,7 @@
 
     <!-- Navbar brand for xl START -->
     <div class="d-flex align-items-center justify-content-center">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/admin">
             <img class="navbar-brand-item" src="{{ asset('assets/images/logo.png') }}" alt="logo">
         </a>
     </div>
@@ -32,7 +32,7 @@
                         Kampus Gratis</a></li>
 
                 <!-- Detail -->
-                <li class="nav-item"> <a class="nav-link" href="{{ route('banner.index') }}"><i
+                <li class="nav-item"> <a class="nav-link" href="#"><i
                             class="fas fa-list fa-fw me-2"></i>Detail</a></li>
 
                 <!-- Penelitian -->
@@ -66,7 +66,7 @@
                         data-bs-placement="top" title="Settings">
                         <i class="bi bi-gear-fill"></i>
                     </a>
-                    <a class="h5 mb-0 text-body" href="index.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                    <a class="h5 mb-0 text-body" href="/admin" data-bs-toggle="tooltip" data-bs-placement="top"
                         title="Home">
                         <i class="bi bi-globe"></i>
                     </a>

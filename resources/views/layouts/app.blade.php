@@ -26,6 +26,8 @@
     <link rel="stylesheet" type="text/css"
         href="{{ asset('assets/vendor/overlay-scrollbar/css/OverlayScrollbars.min.css') }}">
 
+    @yield('css')
+
     <!-- Theme CSS -->
     <link id="style-switch" rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 

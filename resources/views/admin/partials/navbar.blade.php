@@ -4,7 +4,7 @@
 
             <!-- Logo START -->
             <div class="d-flex align-items-center d-xl-none">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img class="light-mode-item navbar-brand-item h-30px" src="assets/images/logo-mobile.svg" alt="">
                     <img class="dark-mode-item navbar-brand-item h-30px" src="assets/images/logo-mobile-light.svg"
                         alt="">

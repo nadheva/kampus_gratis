@@ -1,0 +1,13 @@
+#navButtonMasuk {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #navButton {
+        display: none;
+    }
+    #navButtonMasuk {
+        display: block;
+        margin: auto;
+    }
+}
