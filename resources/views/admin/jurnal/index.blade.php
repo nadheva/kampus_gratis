@@ -27,16 +27,18 @@
                                 </form>
                             </div>
 
-                            <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
+                             <!-- Title -->
+                             <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
                                 <div class="nav-wrguester position-relative end-0">
                                     <div class="text-end ms-auto">
                                         <div class="mt-2 mt-sm-0">
                                             <a href="{{ route('data-jurnal.create') }}"
-                                                class="btn btn-outline-primary mb-0">Tambah</a>
+                                                class="btn btn-success mb-0">Tambah Jurnal</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        
                         </div>
                         <!-- Search and select END -->
 
@@ -111,8 +113,8 @@
                                 <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
                                     <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i
                                                 class="fas fa-angle-left"></i></a></li>
-                                    <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
                                     <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item mb-0"><a class="page-link" href="#"><i
                                                 class="fas fa-angle-right"></i></a></li>
