@@ -55,6 +55,7 @@
         <!-- Main navbar START -->
         <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
             <ul class="navbar-nav mx-auto order-0">
+
                 <li class="nav-item menu "><a class="nav-link {{ request()->is('tentang*') ? 'active' : '' }}"
                         href="{{ route('tentang') }}">Tentang Kampus Gratis</a></li>
                 <li class="nav-item dropdown">
@@ -73,12 +74,20 @@
                     </ul>
                 </li>
 
+
                 <li class="nav-item menu"><a class="nav-link {{ request()->is('mahasiswa*') ? 'active' : '' }}"
                         href="{{ route('mahasiswa') }}">Mahasiswa</a></li>
                 <li class="nav-item menu"><a class="nav-link {{ request()->is('job*') ? 'active' : '' }}"
                         href="{{ url('job-channel') }}">Karir</a></li>
                 <li class="nav-item menu"><a class="nav-link {{ request()->is('magang*') ? 'active' : '' }}"
                         href="{{ url('magang') }}">Program Magang Kampus Gratis II</a></li>
+                <li class="nav-item menu"><a class="nav-link {{ request()->is('odcp*') ? 'active' : '' }}"
+                        href="{{ url('odcp') }}">Program ODCP</a></li>
+                <li class="nav-item menu " id="navButtonMasuk">
+                    <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}"
+                        style="margin-right: 5px">Masuk</a>
+                    <a class="btn btn-warning btn-md mt-2" href="{{ route('register') }}">Daftar</a>
+                </li>
             </ul>
             <!-- Nav Main menu END -->
 
@@ -115,7 +124,8 @@
                                     alt="avatar">
                             </div>
                             <div>
-                                <a class="h6" href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
+                                <a class="h6"
+                                    href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
                                 <p class="small m-0">{{ Auth::user()->email }}</p>
                             </div>
                         </div>
@@ -146,15 +156,18 @@
                 </ul>
             </div>
         @else
-        <ul class="navbar-nav mx-auto order-0">
-                <li class="nav-item menu ">
-                    <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}" style="margin-right: 5px">Masuk</a>
-                </li>
-                
-                <li class="nav-item menu ">
-                    <a class="btn btn-warning btn-md mt-2" href="{{ route('register') }}">Daftar</a>
-                </li>
-        </ul>
+            <div id="navButton">
+                <ul class="navbar-nav mx-auto order-0">
+                    <li class="nav-item menu ">
+                        <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}"
+                            style="margin-right: 5px">Masuk</a>
+                    </li>
+
+                    <li class="nav-item menu " id="navButtonDaftar">
+                        <a class="btn btn-warning btn-md mt-2" href="{{ route('register') }}">Daftar</a>
+                    </li>
+                </ul>
+            </div>
         @endif
         <!-- Profile START -->
     </div>
