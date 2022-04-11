@@ -62,21 +62,23 @@
 
                         <!-- Table body START -->
                         <tbody>
-							@foreach($gurubesar as $b)
-							<tr>
-                                <td>
-									<h6 class="mb-0 ms-2">
-										<a href="#">{{ $b->nama }}</a>
-									</h6>
-                                </td>
-                                <td>{{ $b->lulusan }}</td>
-                                <td>{{ $b->pekerjaan }}</td>
-                                <td>
-                                    <a href="{{route('guru-besar.show', $b->id)}}" class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
-                                    <a href="{{route('guru-besar.edit', $b->id)}}" class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
-                                </td>
-                            </tr>
-							@endforeach
+                            @foreach ($gurubesar as $b)
+                                <tr>
+                                    <td>
+                                        <h6 class="mb-0 ms-2">
+                                            <a href="#">{{ $b->nama }}</a>
+                                        </h6>
+                                    </td>
+                                    <td>{{ $b->lulusan }}</td>
+                                    <td>{{ $b->pekerjaan }}</td>
+                                    <td>
+                                        <a href="{{ route('guru-besar.show', $b->id) }}"
+                                            class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
+                                        <a href="{{ route('guru-besar.edit', $b->id) }}"
+                                            class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
 
                         </tbody>
                         <!-- Table body END -->
@@ -98,8 +100,8 @@
                         <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
                             <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i
                                         class="fas fa-angle-left"></i></a></li>
-                            <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
                             <li class="page-item mb-0"><a class="page-link" href="#"><i
                                         class="fas fa-angle-right"></i></a></li>
