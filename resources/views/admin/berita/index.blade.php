@@ -26,18 +26,24 @@
                                         type="submit"><i class="fas fa-search fs-6 "></i></button>
                                 </form>
                             </div>
+                            <div class="col-md-3">
+                        <!-- Short by filter -->
+                        <form>
+                            <select id="sorting" class="form-select js-choice border-0 z-index-9" aria-label=".form-select-sm">
+                                <option value="">Sort by</option>
+                                <option>Newest</option>
+                                <option>Oldest</option>
+                            </select>
+                        </form>
+                    </div>
                             <!-- Button -->
                             <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
                                 <div class="nav-wrguester position-relative end-0">
-                                    <div class="text-end ms-auto d-flex justify-content-around">
+                                    <div class="text-end ms-auto">
                                         <div class="mt-2 mt-sm-0">
                                             <a href="{{ route('data-berita.create') }}"
                                                 class="btn btn-success mb-0">Tambah
                                                 Berita</a>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0">
-                                            <a href="{{ route('data-berita.create') }}" class="btn btn-info mb-0">Tambah
-                                                Kategori</a>
                                         </div>
                                     </div>
                                 </div>
@@ -68,8 +74,8 @@
                                                 <div class="d-flex align-items-center">
                                                     <!-- Image -->
                                                     <div class="w-100px">
-                                                        <img style="max-height: 300px" src={{ asset($item->gambar) }}
-                                                            class="rounded" alt="prestasi">
+                                                        <img style="max-height: 300px" src="{{ asset($item->gambar) }}"
+                                                            class="rounded" alt="{{ $item->judul }}">
                                                     </div>
                                                     <div class="mb-0 ms-2">
                                                         <!-- Title -->
@@ -142,8 +148,21 @@
                     status: '{{ $item->status }}',
                     gambar: '{{ $item->gambar }}',
                     slug: '{{ $item->slug }}',
+                    update_at: '{{ $item->updated_at }}',
                 });
             @endforeach
+
+            document.querySelector('#sorting').addEventListener('change', function(){
+                let sorting = this.value;
+                dataBerita.sort(function(a, b){
+                    if(sorting == 'Newest'){
+                        return new Date(b.update_at) - new Date(a.update_at);
+                    }else if(sorting == 'Oldest'){
+                        return new Date(a.update_at) - new Date(b.update_at);
+                    }
+                });
+                renderRowTable(dataBerita);
+            });
             
             document.querySelector('#search').addEventListener('keydown', e => {
                 const filteredBerita = dataBerita.filter(berita => {
@@ -151,15 +170,19 @@
                         berita.penulis.toLowerCase().includes(e.target.value.toLowerCase());
                 });
                 
-                const html = filteredBerita.map( (berita) => `
+                renderRowTable(filteredBerita);
+            })
+
+            const renderRowTable = (data) => {
+                document.querySelector('tbody').innerHTML = data.map( (berita) => `
                 <tr>
                     <!-- Course item -->
                     <td>
                         <div class="d-flex align-items-center">
                             <!-- Image -->
                             <div class="w-100px">
-                                <img style="max-height: 300px" src=${berita.gambar}
-                                    class="rounded" alt="prestasi">
+                                <img style="max-height: 300px" src="${berita.gambar}"
+                                    class="rounded" alt="${berita.judul}">
                             </div>
                             <div class="mb-0 ms-2">
                                 <!-- Title -->
@@ -198,9 +221,7 @@
                     </td>
                 </tr>
                 `).join('')
-
-                document.querySelector('tbody').innerHTML = html;
-            })
+            }
         </script>
     @stop
 </x-app-layout>

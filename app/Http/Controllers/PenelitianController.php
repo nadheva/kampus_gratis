@@ -14,7 +14,7 @@ class PenelitianController extends Controller
      */
     public function index()
     {
-        $penelitian = Penelitian::all();
+        $penelitian = Penelitian::paginate(5);
         return view('admin.penelitian.index', compact('penelitian'));
 
     }
