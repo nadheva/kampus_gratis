@@ -10,7 +10,7 @@
                 <div class="card border rounded-3">
                     <!-- Card header START -->
                     <div class="card-header border-bottom">
-                        <h3 class="mb-0">Tambah Data</h3>
+                        <h3 class="mb-0">Tambah Data Jurnal</h3>
                     </div>
                     <!-- Card header END -->
 
@@ -92,11 +92,9 @@
                             </div>
 
                             <div class="text-end">
-                                <a href="javascript:history.back()" class="btn bg-gradient-danger"><i
-                                        class="ni ni-bold-left"></i>&nbsp;&nbsp;Batal</a>
+                                <a href="javascript:history.back()" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Batal</a>
                                
-                                <button id="btn-submit" class="btn bg-gradient-dark"><i
-                                        class="fas fa-plus"></i>&nbsp;&nbsp;Tambah</button>
+                                <button id="btn-submit" class="btn btn-primary"><i class="fas fa-plus"></i>&nbsp;&nbsp;Tambah</button>
                             </div>
                         </form>
                     </div>

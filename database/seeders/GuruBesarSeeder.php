@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\GuruBesar;
 use Illuminate\Database\Seeder;
 
 class GuruBesarSeeder extends Seeder
@@ -13,6 +14,6 @@ class GuruBesarSeeder extends Seeder
      */
     public function run()
     {
-        //
+        GuruBesar::factory(10)->create();
     }
 }
