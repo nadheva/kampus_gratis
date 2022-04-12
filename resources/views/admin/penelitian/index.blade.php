@@ -19,7 +19,7 @@
                             <!-- Search -->
                             <div class="col-md-8">
                                 <form class="rounded position-relative">
-                                    <input class="form-control pe-5 bg-transparent" type="search" placeholder="Search"
+                                    <input class="form-control pe-5 bg-transparent" id="search" type="search" placeholder="Search"
                                         aria-label="Search">
                                     <button
                                         class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
@@ -79,7 +79,8 @@
                                                 </div>
                                             </td>
                                             <!-- Isi item -->
-                                            <td class="text-center text-sm-start"><a href="#">Lihat penelitian</a></td>
+                                            <td class="text-center text-sm-start"><a href="/penelitian/{{ $item->slug }}"
+                                                    target="_blank">Lihat Penelitian</a></td>
                                             <!-- Status item -->
                                             <td>
                                                 <div class="badge bg-success bg-opacity-10 text-success">
@@ -115,13 +116,7 @@
                             <!-- Pagination -->
                             <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
                                 <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
-                                    <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i
-                                                class="fas fa-angle-left"></i></a></li>
-                                    <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item mb-0"><a class="page-link" href="#"><i
-                                                class="fas fa-angle-right"></i></a></li>
+                                    {{ $penelitian->onEachSide(1)->links() }}
                                 </ul>
                             </nav>
                         </div>
@@ -132,5 +127,69 @@
                 <!-- Card END -->
             </div>
         </div>
+        <script>
+            const dataPenelitian = [];
+            @foreach ($penelitian as $item)
+                dataPenelitian.push({
+                    id: '{{ $item->id }}',
+                    judul: '{{ $item->judul }}',
+                    penulis: '{{ $item->penulis }}',
+                    status: '{{ $item->status }}',
+                    slug: '{{ $item->slug }}',
+                });
+            @endforeach
+            
+            document.querySelector('#search').addEventListener('keydown', e => {
+                const filteredPenelitian = dataPenelitian.filter(penelitian => {
+                    return penelitian.judul.toLowerCase().includes(e.target.value.toLowerCase()) ||
+                        penelitian.penulis.toLowerCase().includes(e.target.value.toLowerCase());
+                });
+                
+                const html = filteredPenelitian.map( (penelitian) => `
+                <tr>
+                    <!-- Course item -->
+                    <td>
+                        <div class="d-flex align-items-center">
+                        <div class="mb-0 ms-2">        
+                            <!-- Title -->
+                                <h6><a href="/data-penelitian/${penelitian.id}/edit">${penelitian.judul}</a></h6>
+                                <!-- Info -->
+                                <div class="d-sm-flex">
+                                    <p class="h6 fw-light mb-0 small me-3"><i
+                                            class="fas fa-user text-orange me-2"></i>${penelitian.penulis}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- Isi item -->
+                    <td class="text-center text-sm-start"><a href="/penelitian/${penelitian.slug}"
+                            target="_blank">Lihat Penelitian</a></td>
+                    <!-- Status item -->
+                    <td>
+                        <div class="badge bg-success bg-opacity-10 text-success">
+                            ${penelitian.status}
+                        </div>
+                    </td>
+                    <!-- Action item -->
+                    <td>
+                        <a href="#"
+                            class="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i
+                                class="far fa-fw fa-edit"></i></a>
+                        <form id="form-delete"
+                            action="/admin/data-penelitian/${penelitian.id}/edit" method="POST"
+                            style="display: inline">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-sm btn-danger-soft btn-round mb-0"><i
+                                    class="fas fa-fw fa-times"></i></button>
+                        </form>
+                    </td>
+                </tr>
+                `).join('')
+
+                document.querySelector('tbody').innerHTML = html;
+            })
+        </script>
     @stop
 </x-app-layout>
