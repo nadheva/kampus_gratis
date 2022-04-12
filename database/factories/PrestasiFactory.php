@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class BeritaFactory extends Factory
+class PrestasiFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -15,12 +15,11 @@ class BeritaFactory extends Factory
     {
         return [
             'judul' => $this->faker->sentence(3),
-            'slug' => $this->faker->slug(3),
-            'excerpt' => $this->faker->paragraph(1),
-            'isi' => $this->faker->paragraph(100),
+            'isi' => $this->faker->paragraph(2),
             'penulis' => $this->faker->name(),
-            'gambar' => $this->faker->imageUrl(640, 480, 'example', true),
-            'category_id' => $this->faker->numberBetween(1, 4),
+            'gambar' => $this->faker->imageUrl(640, 480, 'animals', true),
+            'tahun' => $this->faker->year('+10 years'),
+            'jenis' => $this->faker->randomElement(['Mahasiswa', 'Dosen', 'Lembaga']),
             'status' => $this->faker->randomElement(['live', 'draft']),
             'created_at' => $this->faker->dateTimeBetween('-1 day'),
             'updated_at' => $this->faker->dateTimeBetween('-1 day'),

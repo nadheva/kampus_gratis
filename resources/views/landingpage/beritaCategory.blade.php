@@ -118,12 +118,12 @@
                                         <!-- Title -->
                                         <h5 class="card-title">
                                             <a
-                                                href="{{ route('detail_berita', $item->slug) }}">{{ $item->judul }}</a>
+                                                href="{{ route('detail_berita', $item->category->slug) }}">{{ $item->judul }}</a>
                                         </h5>
                                         <p class="text-truncate-2">{{ $item->isi }}</p>
                                         <!-- Info -->
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="mb-0"><a href="#">{{ $item->penulis }}</a></h6>
+                                            <h6 class="mb-0">{{ $item->penulis }}</h6>
                                             <span
                                                 class="small">{{ $item->created_at->diffForHumans() }}</span>
                                         </div>
