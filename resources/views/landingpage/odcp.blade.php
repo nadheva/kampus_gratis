@@ -40,7 +40,7 @@
                         </figure>
 
                         <!-- Title -->
-                        <h1 class="position-relative fs-2">Program ODCP Kampus Gratis</h1>
+                        <h1 class="position-relative fs-2">Program ODP Kampus Gratis</h1>
                     </div>
                     <!-- Title and SVG END -->
                 </div>
@@ -50,7 +50,7 @@
                         <div class="row g-4">
 
                             <p class="mb-0" align="justify">
-                                <strong>Officer Development Crash Program</strong> adalah program pelatihan & magang
+                                <strong>Officer Development Program</strong> adalah program pelatihan & magang
                                 yang
                                 merupakan
                                 penciptaan kompetensi di bidang Sales, Credit & Collection, guna menghasilkan SDM yang
