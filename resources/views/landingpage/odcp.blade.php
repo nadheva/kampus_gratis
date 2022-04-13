@@ -72,7 +72,7 @@
 
                             </p>
                             <div class=" col-lg-1 col-sm-12 text-center">
-                                <a href="#" class="btn btn-warning btn-lg mt-2 rounded-pill" target="_BLANK"
+                                <a href="https://forms.gle/BCAnhWDwu4p4MWin8" class="btn btn-warning btn-lg mt-2 rounded-pill" target="_BLANK"
                                     style="font-size:25px;font-weight:bold;">Daftar Program</a>
                             </div>
                         </div>
