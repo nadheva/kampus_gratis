@@ -75,11 +75,11 @@ Route::get('/daftar-magang', function () {
     return view('landingpage.magang.daftar-magang');
 });
 
-Route::get('/odcp', function () {
+Route::get('/odp', function () {
     return view('landingpage.odcp');
 });
 
-// Halaman Berita 
+// Halaman Berita
 Route::get('berita', [BerandaController::class, 'berita'])->name('berita');
 Route::get('berita/{berita:slug}', [BerandaController::class, 'beritaDetail'])->name('detail_berita');
 Route::get('berita-categories/{category:slug}', [BerandaController::class, 'kategori_berita'])->name('kategori_berita');
