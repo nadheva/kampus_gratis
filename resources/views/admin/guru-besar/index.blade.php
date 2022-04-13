@@ -174,11 +174,10 @@
                         </div>
                     </td>
                     <!-- Isi item -->
-                    <td class="text-center text-sm-start"><a href="/guru/${guru.slug}"
-                            target="_blank">Lihat guru</a></td>
-                    <!-- Status item -->
+                    <td class="text-center text-sm-start">${guru.lulusan}"</td>
+                    <!-- pekerjaan item -->
                     <td>
-                        <div class="badge bg-success bg-opacity-10 text-success">
+                        <div class="">
                             ${guru.pekerjaan}
                         </div>
                     </td>
