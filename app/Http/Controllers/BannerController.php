@@ -8,8 +8,8 @@ class BannerController extends Controller
 {
     public function index() {
         $banner = Banner::all();
-        // return view('admin.banner.index', compact('banner'));
-        return response()->json($banner);
+        return view('admin.banner.index', compact('banner'));
+        // return response()->json($banner);
     }
 
     public function create() {
