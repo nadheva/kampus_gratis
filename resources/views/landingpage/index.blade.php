@@ -680,7 +680,7 @@ Action box START -->
                         <div class="row g-3 align-items-center justify-content-lg-end position-relative py-4">
                             <!-- Title -->
                             <div class="col-md-9">
-                                <h2 class="text-white">Mulai belajar gratis dengan Kampus Gratis</h2>
+                                <h2 class="text-white">Mulai Belajar Gratis Dengan Kampus Gratis</h2>
                                 <a href="{{ route('register') }}" class="btn btn-white mb-1 btn-lg">Daftar
                                     Sekarang!</a>
                             </div>
