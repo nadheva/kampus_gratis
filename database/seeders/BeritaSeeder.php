@@ -17,7 +17,6 @@ class BeritaSeeder extends Seeder
         Berita::create([
             'judul' => 'Sambutan Pimpinan Kampus Gratis',
             'slug' => 'sambutan-pimpinan-kampus-gratis',
-            'excerpt' => 'Kampus Gratis, sebagai perguruan tinggi untuk mengemban misi memeratakan pendidikan bagi seluruh warga Negara Indonesia dimanapun mereka berada.',
             'penulis' => 'Bunaiya',
             'gambar' => '03',
             'category_id' => 2,
@@ -31,6 +30,6 @@ class BeritaSeeder extends Seeder
             '
         ]);
 
-        Berita::factory(50)->create();
+        Berita::factory(10)->create();
     }
 }
