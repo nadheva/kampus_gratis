@@ -1,7 +1,7 @@
 <x-app-layout>
     @section('title', 'Berita')
     @section('css')
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     @stop
     @section('content')
         <div class="page-content-wrapper border js-choice">
@@ -26,6 +26,24 @@
                                     required>
                             </div>
                             <div class="mb-3">
+                                <label for="Kategori" class="form-label">Kategori</label>
+                                <select class="form-select" aria-label="Default select example" id="kategori_id"
+                                    name="kategori_id">
+                                    <option selected>Pilih Kategori</option>
+                                    @foreach ($categories as $category)
+                                        @if (old('kategori_id', $berita->category_id) == $category->id)
+                                            <option value="{{ $category->id }}" selected>
+                                                {{ $category->name }}
+                                            </option>
+                                        @else
+                                            <option value="{{ $category->id }}">
+                                                {{ $category->name }}
+                                            </option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="mb-3">
                                 <label for="exampleFormControlSelect1">Penulis</label>
                                 <input type="text" class="form-control" name="penulis" value="{{ $berita->penulis }}"
                                     required>
@@ -43,8 +61,10 @@
                                 <input type="hidden" name="isi" id="isi">
                             </div>
                             <div class="text-end">
-                                <a href="javascript:history.back()" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Batal</a>
-                                <button id="btn-submit" class="btn btn-primary"><i class="fas fa-check"></i>&nbsp;&nbsp;Simpan</button>
+                                <a href="javascript:history.back()" class="btn btn-outline-secondary"><i
+                                        class="fas fa-chevron-left"></i>&nbsp;&nbsp;Batal</a>
+                                <button id="btn-submit" class="btn btn-primary"><i
+                                        class="fas fa-check"></i>&nbsp;&nbsp;Simpan</button>
                             </div>
                         </form>
                     </div>
@@ -62,42 +82,66 @@
       });
     </script>
     @endpush --}}
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-    <script>
-        var toolbarOptions = [
-            [{ 'font': [] }],
-            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-            ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-            [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-            ['blockquote', 'code-block'],
-            [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-            [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-            [{ 'align': [] }],
-              // custom button values
-            [{ 'direction': 'rtl' }],                         // text direction
+        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+        <script>
+            var toolbarOptions = [
+                [{
+                    'font': []
+                }],
+                [{
+                    'header': [1, 2, 3, 4, 5, 6, false]
+                }],
+                ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+                [{
+                    'color': []
+                }, {
+                    'background': []
+                }], // dropdown with defaults from theme
+                ['blockquote', 'code-block'],
+                [{
+                    'script': 'sub'
+                }, {
+                    'script': 'super'
+                }], // superscript/subscript
+                [{
+                    'list': 'ordered'
+                }, {
+                    'list': 'bullet'
+                }],
+                [{
+                    'indent': '-1'
+                }, {
+                    'indent': '+1'
+                }], // outdent/indent
+                [{
+                    'align': []
+                }],
+                // custom button values
+                [{
+                    'direction': 'rtl'
+                }], // text direction
 
-            [ 'link', 'image', 'video', 'formula' ],          // add's image support
+                ['link', 'image', 'video', 'formula'], // add's image support
 
-            ['clean']                                         // remove formatting button
-        ];
+                ['clean'] // remove formatting button
+            ];
 
-        var quill = new Quill('#editor', {
-            modules: {
-                toolbar: toolbarOptions
-            },
-            theme: 'snow'
-        });
+            var quill = new Quill('#editor', {
+                modules: {
+                    toolbar: toolbarOptions
+                },
+                theme: 'snow'
+            });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var isi = `{!! $berita->isi !!}`;
-            quill.root.innerHTML = isi;
-        });
+            document.addEventListener('DOMContentLoaded', function() {
+                var isi = `{!! $berita->isi !!}`;
+                quill.root.innerHTML = isi;
+            });
 
-        document.querySelector('#btn-submit').addEventListener('click', function() {
-        document.querySelector('#isi').value = quill.root.innerHTML;
-        document.querySelector('form').submit();
-        });
-    </script>
+            document.querySelector('#btn-submit').addEventListener('click', function() {
+                document.querySelector('#isi').value = quill.root.innerHTML;
+                document.querySelector('form').submit();
+            });
+        </script>
     @stop
 </x-app-layout>

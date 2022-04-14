@@ -16,7 +16,6 @@ class BeritaFactory extends Factory
         return [
             'judul' => $this->faker->sentence(3),
             'slug' => $this->faker->slug(3),
-            'excerpt' => $this->faker->paragraph(1),
             'isi' => $this->faker->paragraph(100),
             'penulis' => $this->faker->name(),
             'gambar' => $this->faker->imageUrl(640, 480, 'example', true),
