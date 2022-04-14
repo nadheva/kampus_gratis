@@ -31,7 +31,6 @@ class DatabaseSeeder extends Seeder
             PengabdianSeeder::class,
             PengumumanSeeder::class,
             PrestasiSeeder::class,
-
         ]);
     }
 }
