@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 class AgendaController extends Controller
 {
     public function index() {
-        $agenda = Agenda::all();
+        $agenda = Agenda::paginate(5);
         $running = Agenda::where('tanggal', '=', date('Y-m-d'))->get();
         $upcoming = Agenda::where('tanggal', '>', date('Y-m-d'))->get();
+        
         return view('admin.agenda.index', compact('agenda', 'running', 'upcoming'));
     }
 

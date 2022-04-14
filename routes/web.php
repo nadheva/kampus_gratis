@@ -76,7 +76,7 @@ Route::get('/daftar-magang', function () {
     return view('landingpage.magang.daftar-magang');
 });
 
-Route::get('/odcp', function () {
+Route::get('/odp', function () {
     return view('landingpage.odcp');
 });
 
