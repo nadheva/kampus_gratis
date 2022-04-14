@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Berita;
+use Google\Cloud\Core\Retry;
 use Illuminate\Http\Request;
+use App\Models\KategoriBerita;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class BeritaController extends Controller
 {
@@ -14,8 +17,9 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        $berita = Berita::latest()->paginate(5);
-        return view('admin.berita.index', compact('berita'));
+        return view('admin.berita.index', [
+            'berita' => Berita::latest()->paginate(5)
+        ]);
     }
 
     /**
@@ -25,9 +29,10 @@ class BeritaController extends Controller
      */
     public function create()
     {
-        return view('admin.berita.create');
+        return view('admin.berita.create', [
+            'categories' => KategoriBerita::all()
+        ]);
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -38,11 +43,12 @@ class BeritaController extends Controller
     {
 
         $request->validate([
-            'judul' => 'required',
-            'isi' => 'required',
-            'gambar' => 'required',
+            'judul' => 'required|string|max:255|min:5',
+            'isi' => 'required|min:20',
+            'penulis' => 'required|min:3',
+            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'kategori_id' => 'required',
             'status' => 'required',
-            'penulis' => 'required'
         ]);
 
         if (isset($request->gambar)) {
@@ -55,11 +61,13 @@ class BeritaController extends Controller
         }
 
         Berita::create([
+            'category_id' => $request->kategori_id,
+            'slug' => SlugService::createSlug(Berita::class, 'slug', $request->judul),
             'judul' => $request->judul,
             'isi' => $request->isi,
-            'gambar' => $txt,
             'status' => $request->status,
-            'penulis' => $request->penulis
+            'penulis' => $request->penulis,
+            'gambar' => $txt,
         ]);
 
         return redirect()->route('data-berita.index')
@@ -80,13 +88,13 @@ class BeritaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Berita  $berita
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         $berita = Berita::find($id);
-        return view('admin.berita.edit', compact('berita'));
+        $categories = KategoriBerita::all();
+        return view('admin.berita.edit', compact('berita', 'categories'));
     }
 
     /**
@@ -105,6 +113,7 @@ class BeritaController extends Controller
             $txt = "storage/berita/" . $file_name;
             $request->gambar->storeAs('public/berita', $file_name);
             $berita->gambar = $txt;
+            $berita->category_id = $request->kategori_id;
             $berita->judul = $request->judul;
             $berita->isi = $request->isi;
             $berita->penulis = $request->penulis;
@@ -112,7 +121,9 @@ class BeritaController extends Controller
         } else {
         }
 
-        $berita->save();
+        dd($berita);
+
+        $berita->update();
         return redirect()->route('data-berita.index')
             ->with('edit', 'Berita Berhasil Diedit');
     }

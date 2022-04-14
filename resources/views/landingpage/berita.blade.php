@@ -123,7 +123,7 @@
                                         <p class="text-truncate-2">{{ $item->isi }}</p>
                                         <!-- Info -->
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="mb-0"><a href="#">{{ $item->penulis }}</a></h6>
+                                            <h6 class="mb-0"><a>{{ $item->penulis }}</a></h6>
                                             <span
                                                 class="small">{{ $item->created_at->diffForHumans() }}</span>
                                         </div>

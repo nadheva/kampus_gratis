@@ -82,7 +82,7 @@
                 <li class="nav-item menu"><a class="nav-link {{ request()->is('magang*') ? 'active' : '' }}"
                         href="{{ url('magang') }}">Program Magang Kampus Gratis II</a></li>
                 <li class="nav-item menu"><a class="nav-link {{ request()->is('odcp*') ? 'active' : '' }}"
-                        href="{{ url('odcp') }}">Program ODCP</a></li>
+                        href="{{ url('odp') }}">Program ODP</a></li>
                 <li class="nav-item menu " id="navButtonMasuk">
                     <a class="btn btn-success btn-md mt-2" href="{{ route('login') }}"
                         style="margin-right: 5px">Masuk</a>
