@@ -20,9 +20,11 @@
                     <!-- Search bar -->
                     <div class="col-md-8">
                         <form class="rounded position-relative">
-                            <input class="form-control bg-body" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
-                                type="submit"><i class="fas fa-search fs-6 "></i></button>
+                            <input class="form-control pe-5 bg-transparent" id="search" type="search" placeholder="Search"
+                                        aria-label="Search">
+                            <button
+                                        class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
+                                        type="submit"><i class="fas fa-search fs-6 "></i></button>
                         </form>
                     </div>
 
@@ -69,8 +71,8 @@
 										<a href="#">{{ $b->heading }}</a>
 									</h6>
                                 </td>
-                                <td>
-									<div class="w-60px">
+                                <td >
+									<div class="w-100px">
                                         <img src="{{ url($b->gambar) }}" class="rounded" alt="">
                                     </div>
                                 </td>
@@ -93,25 +95,81 @@
 
             <!-- Card footer START -->
             <div class="card-footer bg-transparent pt-0">
-                <!-- Pagination START -->
-                <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
-                    <!-- Content -->
-                    <p class="mb-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
-                    <!-- Pagination -->
-                    <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
-                        <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
-                            <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i
-                                        class="fas fa-angle-left"></i></a></li>
-                            <li class="page-item mb-0 active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item mb-0"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item mb-0"><a class="page-link" href="#"><i
-                                        class="fas fa-angle-right"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Pagination END -->
+               <!-- Pagination START -->
+               <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
+                            <!-- Content -->
+                            <p class="mb-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
+                            <!-- Pagination -->
+                            <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
+                                <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
+                                    {{ $banner->onEachSide(1)->links() }}
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Pagination END -->
             </div>
             <!-- Card footer END -->
         </div>
+        <script>
+            const dataBanner = [];
+            @foreach ($banner as $b)
+                dataBanner.push({
+                    id: '{{ $b->id }}',
+                    heading: '{{ $b->heading }}',
+                    gambar: '{{ $b->gambar }}',
+                    created_at: '{{ $b->created_at->diffForHumans() }}',
+                });
+            @endforeach
+
+            document.querySelector('#search').addEventListener('keydown', e => {
+                const filteredBanner = dataBanner.filter(banner => {
+                    return banner.heading.toLowerCase().includes(e.target.value.toLowerCase())
+                });
+                
+                renderRowTable(filteredBanner);
+            })
+
+            const renderRowTable = (data) => {
+                document.querySelector('tbody').innerHTML = data.map( (banner) => `
+                <tr>
+                    <!-- Course item -->
+                    <td>
+                        <div class="mb-0 ms-2">
+                                <!-- Title -->
+                                <h6><a href="/data-banner/${banner.id}/edit">${banner.heading}</a></h6>
+                        </div>
+                    </td>
+                    <td>
+                    <div class="d-flex align-items-center">
+                            <!-- Image -->
+                            <div class="w-100px">
+                                <img style="max-height: 300px" src="${banner.gambar}"
+                                    class="rounded" alt="${banner.heading}">
+                            </div>
+                    </div>
+                    </td>
+                    <td>
+                    <div class="d-flex align-items-center">
+                                <!-- Title -->
+                                <h6><a href="/data-banner/${banner.created_at}/edit">${banner.created_at}</a></h6>
+                        </div>
+                    </td>
+                    <!-- Action item -->
+                    <td>
+                        <a href="#"
+                            class="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i
+                                class="far fa-fw fa-edit"></i></a>
+                        <form id="form-delete"
+                            action="/admin/data-banner/${banner.id}/edit" method="POST"
+                            style="display: inline">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-sm btn-danger-soft btn-round mb-0"><i
+                                    class="fas fa-fw fa-times"></i></button>
+                        </form>
+                    </td>
+                </tr>
+                `).join('')
+            }
+        </script>
     @stop
