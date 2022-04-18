@@ -21,10 +21,9 @@
                     <div class="col-md-8">
                         <form class="rounded position-relative">
                             <input class="form-control pe-5 bg-transparent" id="search" type="search" placeholder="Search"
-                                        aria-label="Search">
-                            <button
-                                        class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
-                                        type="submit"><i class="fas fa-search fs-6 "></i></button>
+                                aria-label="Search">
+                            <button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
+                                type="submit"><i class="fas fa-search fs-6 "></i></button>
                         </form>
                     </div>
 
@@ -64,25 +63,27 @@
 
                         <!-- Table body START -->
                         <tbody>
-							@foreach($banner as $b)
-							<tr>
-                                <td>
-									<h6 class="mb-0 ms-2">
-										<a href="#">{{ $b->heading }}</a>
-									</h6>
-                                </td>
-                                <td >
-									<div class="w-100px">
-                                        <img src="{{ url($b->gambar) }}" class="rounded" alt="">
-                                    </div>
-                                </td>
-                                <td>{{ $b->created_at->diffForHumans() }}</td>
-                                <td>
-                                    <a href="{{route('banner.show', $b->id)}}" class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
-                                    <a href="{{route('banner.edit', $b->id)}}" class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
-                                </td>
-                            </tr>
-							@endforeach
+                            @foreach ($banner as $b)
+                                <tr>
+                                    <td>
+                                        <h6 class="mb-0 ms-2">
+                                            <a href="#">{{ $b->heading }}</a>
+                                        </h6>
+                                    </td>
+                                    <td>
+                                        <div class="w-100px">
+                                            <img src="{{ url($b->gambar) }}" class="rounded" alt="">
+                                        </div>
+                                    </td>
+                                    <td>{{ $b->created_at->diffForHumans() }}</td>
+                                    <td>
+                                        <a href="{{ route('banner.show', $b->id) }}"
+                                            class="btn btn-sm btn-success-soft me-1 mb-1 mb-md-0">Lihat</a>
+                                        <a href="{{ route('banner.edit', $b->id) }}"
+                                            class="btn btn-sm btn-secondary-soft mb-0">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
 
                         </tbody>
                         <!-- Table body END -->
@@ -95,18 +96,18 @@
 
             <!-- Card footer START -->
             <div class="card-footer bg-transparent pt-0">
-               <!-- Pagination START -->
-               <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
-                            <!-- Content -->
-                            <p class="mb-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
-                            <!-- Pagination -->
-                            <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
-                                <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
-                                    {{ $banner->onEachSide(1)->links() }}
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- Pagination END -->
+                <!-- Pagination START -->
+                <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
+                    <!-- Content -->
+                    <p class="mb-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
+                    <!-- Pagination -->
+                    <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
+                        <ul class="pagination pagination-sm pagination-primary-soft mb-0 pb-0">
+                            {{ $banner->onEachSide(1)->links() }}
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Pagination END -->
             </div>
             <!-- Card footer END -->
         </div>
@@ -114,10 +115,10 @@
             const dataBanner = [];
             @foreach ($banner as $b)
                 dataBanner.push({
-                    id: '{{ $b->id }}',
-                    heading: '{{ $b->heading }}',
-                    gambar: '{{ $b->gambar }}',
-                    created_at: '{{ $b->created_at->diffForHumans() }}',
+                id: '{{ $b->id }}',
+                heading: '{{ $b->heading }}',
+                gambar: '{{ $b->gambar }}',
+                created_at: '{{ $b->created_at->diffForHumans() }}',
                 });
             @endforeach
 
@@ -125,12 +126,12 @@
                 const filteredBanner = dataBanner.filter(banner => {
                     return banner.heading.toLowerCase().includes(e.target.value.toLowerCase())
                 });
-                
+
                 renderRowTable(filteredBanner);
             })
 
             const renderRowTable = (data) => {
-                document.querySelector('tbody').innerHTML = data.map( (banner) => `
+                document.querySelector('tbody').innerHTML = data.map((banner) => `
                 <tr>
                     <!-- Course item -->
                     <td>

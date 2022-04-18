@@ -38,6 +38,7 @@
 
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
+        @include('sweetalert::alert')
         @include('admin.partials.sidebar')
 
         <div class="page-content">
