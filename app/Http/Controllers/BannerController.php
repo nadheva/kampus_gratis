@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class BannerController extends Controller
 {
     public function index() {
-        $banner = Banner::all();
+        $banner = Banner::latest()->paginate(8);
         return view('admin.banner.index', compact('banner'));
         //return response()->json($banner);
     }
