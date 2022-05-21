@@ -5,11 +5,11 @@ namespace App\Models;
 use App\Models\KategoriBerita;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Cviebrock\EloquentSluggable\Sluggable;
+// use Cviebrock\EloquentSluggable\Sluggable;
 
 class Berita extends Model
 {
-    use HasFactory, Sluggable;
+    use HasFactory;
 
     protected $guarded = ['id'];
     protected $primaryKey = 'id';
