@@ -57,10 +57,8 @@ class BerandaController extends Controller
     public function berita()
     {
         return view('landingpage.berita', [
-            'title' => 'Berita Kampus Gratis',
-            'berita' => Berita::with('category')->latest()->paginate(10)
+            'berita' => Berita::with('category')->latest()->paginate(8)
         ]);
-        // return response()->json($berita);
     }
 
     public function kategori_berita(KategoriBerita $category)
@@ -81,6 +79,7 @@ class BerandaController extends Controller
         $related = ($berita) ? Berita::where('category_id', 'LIKE', '%' . $berita->kategori . '%')->where('id', '!=', $berita)->get() : [];
         $firstLetter = ($berita) ? substr($berita->isi, 0, 1) : '';
         $related = ($berita) ? Berita::where('category_id', 'LIKE', '%' . $berita->kategori . '%')->where('id', '!=', $berita)->get() : [];
+
         return view('landingpage.detailberita', compact('berita', 'firstLetter', 'related'));
     }
 

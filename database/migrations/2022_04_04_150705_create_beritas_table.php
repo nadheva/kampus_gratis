@@ -19,7 +19,6 @@ class CreateBeritasTable extends Migration
                 ->onDelete('cascade');;
             $table->string('slug')->unique();
             $table->string('judul');
-            $table->text('excerpt');
             $table->text('isi');
             $table->string('penulis');
             $table->string('gambar');
